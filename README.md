@@ -32,6 +32,13 @@ Deployment über Vercel, direkt aus diesem Repository.
    Text — geprüft über `tools/fix_qalqala_answers.py` und
    `tools/fix_qalqala_counts.py`.
 
+5. **Falsch beschriftete Regel bei Idgham / Ikhfāʾ / Iqlāb.** Die Frage im
+   Titel entsteht aus dem Feld `rule`. In Lektion 24/25 stand dort „ikhfa",
+   obwohl die Fundstellen (م مّ, ن مّ, ٌ مّ …) ein Idgham sind, in Lektion 27/28
+   ebenso, obwohl ن ب ein Iqlāb ist. 63 Aufgaben umbeschriftet; dazu 29
+   Antworten und 14 Muster berichtigt, weil Fundstellen fehlten.
+   Ausgewertet mit `tools/nun_rules.py`, siehe `docs/idgham-ikhfa-iqlab.md`.
+
 ## Aufbau
 
     index.html   die Seite selbst (Daten und Hausschrift eingebettet)
