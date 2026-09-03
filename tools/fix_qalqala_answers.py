@@ -11,7 +11,9 @@ selbst trägt — beim Anhalten wird der aber gar nicht gesprochen.
 
 Der Sollwert wird aus dem Verstext hergeleitet, nicht aus dem Muster im Titel:
   * Qalqala-Stelle = Buchstabe aus ق ط ب ج د mit Sukun, dazu der Endbuchstabe
-    des letzten Wortes (Qalqala beim Waqf).
+    des letzten Wortes — aber nur, wenn der Text am Versende steht (Qalqala
+    beim Waqf; erkennbar an der Versnummer). Sonst wird mit allen Harakat
+    gelesen, auch dem auf dem letzten Buchstaben.
   * Vokal davor = Haraka des vorangehenden Buchstabens; ein Langvokal zählt als
     sein kurzes Pendant (ـَا→Fatha, ـُو→Damma, ـِي→Kasra).
   * Hamzat Wasl ٱ übernimmt den Auslaut des Vorworts; am Satzanfang trägt der
@@ -36,6 +38,11 @@ TANWIN = {"ً": FA, "ٌ": DA, "ٍ": KA}
 NAME = {FA: "Fatha", DA: "Damma", KA: "Kasra"}
 WAQF = "ۖۗۘۙۚۛۜ۝۞۩ۭ"
 DIGITS = "٠١٢٣٤٥٦٧٨٩"
+# Qalqala am Wortende entsteht nur beim Anhalten — und angehalten wird am
+# Versende. Im Datensatz ist das Versende an der Versnummer zu erkennen.
+# Steht der Text nicht am Versende, wird der Endvokal mitgelesen; dann fehlt
+# das Sukun und es entsteht dort keine Qalqala.
+VERSE_END = re.compile(r"[٠-٩۰-۹]+\s*$")
 
 
 def words(text):
@@ -115,6 +122,7 @@ def preceding_vowel(w, i, prev_word):
 
 
 def occurrences(text):
+    at_verse_end = bool(VERSE_END.search(text.rstrip()))
     ws = words(text)
     out = []
     for wi, w in enumerate(ws):
@@ -122,7 +130,7 @@ def occurrences(text):
         for k in li:
             if w[k] not in QALQ:
                 continue
-            final = (k == li[-1]) and wi == len(ws) - 1
+            final = at_verse_end and (k == li[-1]) and wi == len(ws) - 1
             if SUK in marks(w, k) or final:
                 v, why = preceding_vowel(w, k, ws[wi - 1] if wi else None)
                 out.append({"wort": w, "letter": w[k], "vokal": NAME.get(v, "?"),

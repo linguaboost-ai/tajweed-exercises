@@ -15,16 +15,6 @@ geändert wurden nur die folgenden.
 |---|---|---|---|
 | ٱلسِّدْرَةَ | د | Sukūn im Wort | س mit Kasra |
 
-## Aufgabe 777 (Lektion 13, has_rule)
-
-> يَكْسِبُ
-
-* bisher: **no** — jetzt: **yes**
-
-| Fundstelle | Buchstabe | Art | Begründung |
-|---|---|---|---|
-| يَكْسِبُ | ب | Ende – beim Anhalten | س mit Kasra |
-
 ## Aufgabe 831 (Lektion 13, count_rule)
 
 > هُدًى وَذِكْرَىٰ لِأُو۟لِى ٱلْأَلْبَٰبِ ٥٤
