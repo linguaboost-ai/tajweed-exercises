@@ -12,13 +12,27 @@ Deployment über Vercel, direkt aus diesem Repository.
    Die Kartusche kommt aus *Amiri Quran* (`fonts/`, SIL OFL), der übrige
    arabische Text bleibt in der eingebetteten Hausschrift.
 
+2. **Qalqala: unvollständige Antwortschlüssel.** Gefragt ist der Vokal *vor*
+   dem Qalqala-Buchstaben. Bei Versen mit mehreren Fundstellen war nur die
+   erste als richtig markiert; die Stelle am Versende (Qalqala beim Anhalten)
+   fehlte. 11 Aufgaben korrigiert, hergeleitet aus dem Verstext —
+   siehe `docs/qalqala-korrektur.md`.
+
+3. **Versnummer am Versende.** Aufgaben, die einen ganzen Vers zeigen, tragen
+   jetzt die Versnummer in der Kartusche (855 Aufgaben). Aufgaben, die nur
+   einen Ausschnitt zeigen, bekommen keine — dort endet der Text nicht am
+   Versende. Siehe `docs/versnummern.md`.
+
 ## Aufbau
 
     index.html   die Seite selbst (Daten und Hausschrift eingebettet)
     fonts/       Amiri Quran, nur für das Versnummern-Ornament
     tools/       Korrekturskripte, die auf index.html angewandt wurden
+    docs/        Begründung der inhaltlichen Korrekturen
 
-`tools/fix_ayah.py` ist idempotent und dokumentiert, was genau geändert wurde.
+Alle Skripte in `tools/` sind idempotent und dokumentieren im Kopfkommentar,
+was genau sie ändern. `tools/add_verse_numbers.py` gleicht die Aufgabentexte
+mit dem Korantext ab (`quran-json`, Tanzil/Uthmani).
 
 ## Deployment
 
