@@ -79,7 +79,12 @@ def _article_lam(toks, i):
     if toks[i][0] != "ل" or i == 0:
         return False
     prev = toks[i - 1]
-    return prev[0] in "ٱا" and not prev[1] and prev[2] == toks[i][2]
+    if prev[2] != toks[i][2]:
+        return False
+    if prev[0] in "ٱا" and not prev[1]:
+        return True
+    # لِلنَّاسِ, لِلزَّكَوٰةِ: das Alif des Artikels fällt nach لِ weg
+    return prev[0] == "ل" and "ِ" in prev[1] and (i < 2 or toks[i - 2][2] != toks[i][2])
 
 
 def _next_letter(toks, i):

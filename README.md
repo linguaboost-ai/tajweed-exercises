@@ -39,6 +39,18 @@ Deployment über Vercel, direkt aus diesem Repository.
    Antworten und 14 Muster berichtigt, weil Fundstellen fehlten.
    Ausgewertet mit `tools/nun_rules.py`, siehe `docs/idgham-ikhfa-iqlab.md`.
 
+6. **Antwortmöglichkeit „kommt nicht vor".** Aufgaben nach Vokal, Stelle oder
+   auslösendem Buchstaben setzten voraus, dass die Regel überhaupt vorkommt.
+   Alle 485 Aufgaben dieser Fragetypen haben die Option jetzt; bei 1611 und
+   1643 (Izhār, kein Ichfāʾ) ist sie die richtige Antwort. 20 Behelfsoptionen
+   („Keine", bei 1377 sogar Ja/Nein) sind darin aufgegangen.
+
+7. **Idgham-Ablenker mit verstecktem Idgham.** Fünf Aufgaben in Lektion 16/19
+   mit richtiger Antwort 0 enthielten doch ein Idgham — nur eines aus einer
+   späteren Lektion. Sie haben einen anderen Vers gleicher Länge bekommen, in
+   dem gar keines vorkommt. Siehe `docs/idgham-ablenker.md`; **die Tonaufnahmen
+   dieser fünf Aufgaben müssen neu eingesprochen werden.**
+
 ## Aufbau
 
     index.html   die Seite selbst (Daten und Hausschrift eingebettet)
