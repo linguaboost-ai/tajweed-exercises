@@ -465,9 +465,32 @@ function patternHTML(p){
 }
 
 /* ---------- Fragetext ---------- */
+/* Beim Madd fragt der Kurs nicht nach dem natürlichen Langvokal — der gehört
+   zum normalen Lesen —, sondern nach der Dehnung darüber hinaus. */
+function maddQuestion(x){
+  const woerter = (((x.subject && x.subject.text) || "").trim().split(/\s+/) || []).length;
+  switch (x.question_type){
+    case "has_rule":
+      return woerter > 1
+        ? "Enthalten diese W\u00f6rter eine Dehnung, die l\u00e4nger als zwei Einheiten ist?"
+        : "Enth\u00e4lt dieses Wort eine Dehnung, die l\u00e4nger als zwei Einheiten ist?";
+    case "count_rule":
+      return "Wie oft kommt eine Dehnung vor, die l\u00e4nger als zwei Einheiten ist?";
+    case "match_rule":
+      return "Welche W\u00f6rter enthalten eine Dehnung, die l\u00e4nger als zwei Einheiten ist?";
+    case "mark_rule_in_verse":
+      return "Markiere jede Stelle im Vers, an der l\u00e4nger als zwei Einheiten gedehnt wird.";
+    default:
+      return null;
+  }
+}
 function questionText(x){
   const R = ruleName(x.rule), p = x.pattern;
   const withPat = base => p ? `${base} <span style="color:var(--ink-2);font-weight:400">(</span>${patternHTML(p)}<span style="color:var(--ink-2);font-weight:400">)</span>` : base;
+  if (x.rule === "madd"){
+    const q = maddQuestion(x);
+    if (q) return withPat(q);
+  }
   switch (x.question_type){
     case "has_rule":              return withPat(`Enthält dieses Wort ein ${R}?`);
     case "count_rule":            return withPat(`Wie oft kommt ${R} vor?`);

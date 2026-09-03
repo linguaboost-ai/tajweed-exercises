@@ -53,6 +53,13 @@ Deployment über Vercel, direkt aus diesem Repository.
    `docs/idgham-verse-getauscht.md`; **die Tonaufnahmen dieser elf Aufgaben
    müssen neu eingesprochen werden.**
 
+8. **Fragestellung beim Madd.** Der Kurs behandelt den natürlichen Langvokal
+   nicht als eigenes Thema — streng genommen ist قَالَ ein Madd ṭabīʿī, im Kurs
+   zählt es nicht als Madd. Die Frage „Enthält dieses Wort ein Madd?" stand
+   damit im Widerspruch zur hinterlegten Antwort „nein". Alle 257 Aufgaben der
+   Lektionen 29–34 fragen jetzt nach der Dehnung über zwei Einheiten hinaus.
+   Die Antwortschlüssel bleiben unverändert — sie waren schon so gesetzt.
+
 ## Aufbau
 
     index.html   die Seite selbst (Daten und Hausschrift eingebettet)
