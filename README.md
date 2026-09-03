@@ -19,3 +19,9 @@ Deployment über Vercel, direkt aus diesem Repository.
     tools/       Korrekturskripte, die auf index.html angewandt wurden
 
 `tools/fix_ayah.py` ist idempotent und dokumentiert, was genau geändert wurde.
+
+## Deployment
+
+Vercel-Projekt `tajweed-exercises` (Team „Linguaboost AI's projects"), verknüpft
+mit diesem Repository. Jeder Push auf den Produktionszweig veröffentlicht die
+Seite neu; der alte Pfad `/tajweed/tajweed-exercises.html` wird auf `/` geleitet.
