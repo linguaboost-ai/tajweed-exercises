@@ -23,6 +23,11 @@ Deployment über Vercel, direkt aus diesem Repository.
    einen Ausschnitt zeigen, bekommen keine — dort endet der Text nicht am
    Versende. Siehe `docs/versnummern.md`.
 
+4. **Qalqala am Vers-/Wortende.** Beim Anhalten verliert der Endbuchstabe
+   seinen Vokal — dort entsteht Qalqala kubrā. Der Datensatz zählt das meist
+   schon mit; drei Aufgaben taten es nicht (735, 777, 831). Alle 121 Zähl- und
+   Ja/Nein-Aufgaben gegen den Text geprüft, siehe `docs/qalqala-versende.md`.
+
 ## Aufbau
 
     index.html   die Seite selbst (Daten und Hausschrift eingebettet)
