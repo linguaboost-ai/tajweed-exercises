@@ -45,11 +45,13 @@ Deployment über Vercel, direkt aus diesem Repository.
    1643 (Izhār, kein Ichfāʾ) ist sie die richtige Antwort. 20 Behelfsoptionen
    („Keine", bei 1377 sogar Ja/Nein) sind darin aufgegangen.
 
-7. **Idgham-Ablenker mit verstecktem Idgham.** Fünf Aufgaben in Lektion 16/19
-   mit richtiger Antwort 0 enthielten doch ein Idgham — nur eines aus einer
-   späteren Lektion. Sie haben einen anderen Vers gleicher Länge bekommen, in
-   dem gar keines vorkommt. Siehe `docs/idgham-ablenker.md`; **die Tonaufnahmen
-   dieser fünf Aufgaben müssen neu eingesprochen werden.**
+7. **Getauschte Verse in den Idgham-Lektionen.** Der Generator zählte in
+   Lektion 15–21 nur die Idgham-Art der jeweiligen Lektion; bei elf Aufgaben
+   passte die Zahl deshalb nicht zum Text. Sie haben einen anderen Vers
+   gleicher Länge und Wortzahl bekommen, in dem nur Idgham aus der laufenden
+   oder einer früheren Lektion vorkommt. Siehe
+   `docs/idgham-verse-getauscht.md`; **die Tonaufnahmen dieser elf Aufgaben
+   müssen neu eingesprochen werden.**
 
 ## Aufbau
 

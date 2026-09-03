@@ -1,23 +1,23 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-Korrektur 7: Ablenker in den Idgham-Lektionen, in denen doch ein Idgham steckt.
+Korrektur 7: Verse in den Idgham-Lektionen, die nicht zur Lektion passen.
 
-In Lektion 15–21 gibt es Aufgaben mit der richtigen Antwort 0. In fünf davon
-kommt aber sehr wohl ein Idgham vor — nur eines aus einer späteren Lektion,
-weshalb der Generator es nicht mitzählte. Da der Kurs keine Idgham-Arten
-unterscheidet, ist die Antwort 0 dort falsch.
+Der Generator zählte in Lektion 15–21 nur die Idgham-Art der jeweiligen
+Lektion. Bei elf Aufgaben stimmt die hinterlegte Zahl deshalb nicht mit dem
+Text überein — mal steckt in einem Ablenker mit Antwort 0 doch ein Idgham,
+mal fehlt in der Zahl eines aus einer späteren Lektion.
 
-Diese Aufgaben bekommen einen anderen Vers gleicher Länge und Wortzahl, in dem
-gar kein Idgham vorkommt. Ausgewählt wurde jeweils ein Vers, der den
-Auslösebuchstaben der Lektion sākin enthält, ohne dass ein Idgham entsteht —
-der Ablenker bleibt also lehrreich.
+Auf Wunsch des Kursautors wird nicht die Zahl angehoben, sondern der Vers
+getauscht: gleiche Länge und Wortzahl, und darin nur Idgham aus der laufenden
+oder einer bereits behandelten Lektion. Der Schüler muss also nichts zählen,
+was er noch nicht gelernt hat, und die hinterlegte Zahl stimmt.
 
 Dazu Aufgabe 1220, die zwei Idgham zählte, wo nur eines steht: das ٱلنَّعِيمِ
 am Ende ist das Lām des Artikels, keine Aufgabe dieser Lektion.
 
 ACHTUNG: Die Tonaufnahmen (audio/<id>.wav) gehören noch zum alten Vers und
-müssen für die fünf Aufgaben neu eingesprochen werden.
+müssen für die getauschten Aufgaben neu eingesprochen werden.
 
 Idempotent.
 """
@@ -33,17 +33,26 @@ from quran_text import to_dataset                                 # noqa: E402
 
 HTML = Path(sys.argv[1] if len(sys.argv) > 1 else "index.html")
 CORPUS = Path(os.environ.get("QURAN_JSON", "/tmp/quran/package/dist/quran.json"))
-REPORT = Path("docs/idgham-ablenker.md")
+REPORT = Path("docs/idgham-verse-getauscht.md")
 
 AR_DIGITS = "٠١٢٣٤٥٦٧٨٩"
 
 # Aufgabe -> neue Stelle. Der alte Vers steht im Bericht.
 REPLACE = {
-    974:  (23, 49),    # وَلَقَدْ ءَاتَيْنَا ... — Dāl sākin vor Hamza, kein Idgham
-    975:  (15, 13),    # ... وَقَدْ خَلَتْ سُنَّةُ ... — Dāl und Tāʾ sākin, kein Partner
-    982:  (23, 105),   # أَلَمْ تَكُنْ ... تُتْلَىٰ ... — Tāʾ sākin, kein Idgham
-    983:  (10, 96),    # ... حَقَّتْ عَلَيْهِمْ ... — Tāʾ sākin vor ʿAin
+    # Ablenker mit Antwort 0, in denen doch ein Idgham steckte
+    974:  (23, 49),    # وَلَقَدْ ءَاتَيْنَا … — Dāl sākin vor Hamza, kein Idgham
+    975:  (15, 13),    # … وَقَدْ خَلَتْ سُنَّةُ … — Dāl und Tāʾ sākin ohne Partner
+    982:  (23, 105),   # أَلَمْ تَكُنْ … تُتْلَىٰ … — Tāʾ sākin, kein Idgham
+    983:  (10, 96),    # … حَقَّتْ عَلَيْهِمْ … — Tāʾ sākin vor ʿAin
     1175: (7, 15),     # قَالَ إِنَّكَ مِنَ ٱلْمُنظَرِينَ — Nūn sākin vor Ẓāʾ (Ichfāʾ)
+    # Zählaufgaben, in deren Vers ein Idgham einer späteren Lektion steckte
+    964:  (37, 56),    # كِدتَّ — Dāl in Tāʾ (Lektion 16)
+    965:  (26, 22),    # عَبَّدتَّ — Dāl in Tāʾ. Antwort 2 → 1: im ganzen Koran gibt
+                       # es keinen Vers mit zwei solchen Stellen und sonst nichts
+    972:  (19, 33),    # وُلِدتُّ — Dāl in Tāʾ
+    1173: (78, 30),    # فَلَن نَّزِيدَكُمْ — Nūn in Nūn (Lektion 19)
+    1292: (74, 9),     # يَوْمَئِذٍ يَوْمٌ — Tanwīn in Yāʾ (Lektion 21)
+    1308: (81, 28),    # أَن يَسْتَقِيمَ — Nūn in Yāʾ
 }
 RECOUNT = (1220,)
 
@@ -70,14 +79,25 @@ def main() -> int:
             continue
         if ref in used and (x["sura"], x["verse"]) != ref:
             raise SystemExit(f"FEHLER: {ref[0]}:{ref[1]} kommt schon im Datensatz vor.")
-        if nr.count(text, "idgham"):
-            raise SystemExit(f"FEHLER: {ref[0]}:{ref[1]} enthält doch ein Idgham.")
-        want = [o["id"] for o in x["options"] if o["text"] == "0"]
+
+        n = str(nr.count(text, x["rule"]))
+        want = [o["id"] for o in x["options"] if o["text"] == n]
+        if not want:
+            raise SystemExit(f"FEHLER: {n} steht bei {i} nicht zur Auswahl.")
+        had = "+".join(o["text"] for o in x["options"] if o["id"] in x["answer"])
         rows.append((i, x["lesson"], f"{x['sura']}:{x['verse']}", x["subject"]["text"],
-                     f"{ref[0]}:{ref[1]}", text))
+                     f"{ref[0]}:{ref[1]}", text, had, n))
         x["sura"], x["verse"] = ref
         x["subject"]["text"] = text
+        pat = nr.pattern(text, x["rule"])
         x.pop("pattern", None)
+        if pat:
+            items = list(x.items())
+            x.clear()
+            for k, v in items:
+                x[k] = v
+                if k == "verse":
+                    x["pattern"] = pat
         x["answer"] = want
 
     fixed = []
@@ -100,16 +120,17 @@ def main() -> int:
     new_blob = json.dumps(data, ensure_ascii=False, separators=(",", ":"))
     HTML.write_text(src.replace(blob, new_blob, 1), encoding="utf-8")
 
-    L = ["# Idgham-Ablenker mit verstecktem Idgham", "",
-         "Aufgaben in Lektion 15–21, deren richtige Antwort 0 lautet, in denen aber",
-         "ein Idgham einer späteren Lektion steckt. Da der Kurs keine Idgham-Arten",
-         "unterscheidet, wäre 0 dort falsch. Ersetzt durch einen Vers gleicher Länge",
-         "und Wortzahl ganz ohne Idgham.", "",
-         "**Die Tonaufnahmen dieser fünf Aufgaben gehören noch zum alten Vers.**", "",
-         "| ID | Lektion | alt | neu |", "|---|---|---|---|"]
-    for i, les, oref, otext, nref, ntext in rows:
-        L.append(f"| {i} | {les} | {oref} — {otext} | {nref} — {ntext} |")
-        print(f"  {i:>5} L{les:<3} {oref} → {nref}")
+    L = ["# Getauschte Verse in den Idgham-Lektionen", "",
+         "Der Generator zählte nur die Idgham-Art der jeweiligen Lektion. Statt die",
+         "Zahl anzuheben — der Schüler müsste sonst etwas mitzählen, das erst später",
+         "drankommt — wurde der Vers getauscht: gleiche Länge und Wortzahl, und darin",
+         "nur Idgham aus der laufenden oder einer bereits behandelten Lektion.", "",
+         "**Die Tonaufnahmen dieser Aufgaben gehören noch zum alten Vers.**", "",
+         "| ID | Lektion | Antwort | alt | neu |", "|---|---|---|---|---|"]
+    for i, les, oref, otext, nref, ntext, had, n in rows:
+        ans = n if had == n else f"{had} → {n}"
+        L.append(f"| {i} | {les} | {ans} | {oref} — {otext} | {nref} — {ntext} |")
+        print(f"  {i:>5} L{les:<3} {oref} → {nref}   Antwort {ans}")
     if fixed:
         L += ["", "## Zahl berichtigt", "", "| ID | Lektion | vorher | jetzt | Vers |", "|---|---|---|---|---|"]
         for i, les, had, want, t in fixed:
