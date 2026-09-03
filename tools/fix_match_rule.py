@@ -17,9 +17,10 @@ Die Frage unterscheidet jetzt beides. Dazu die inhaltlichen Korrekturen:
         Jetzt vier einzelne Wörter, zwei mit Ichfāʾ, zwei mit Izhār.
   1619  hatte يُمْسِكُ als Vorgabewort, obwohl die Wörter einzeln gemeint sind.
         Das Wort steht jetzt als vierte Antwortmöglichkeit, „Keine" als fünfte.
-  1624  bot يَأْتِكُم بَشِيرٌ an — darin steckt das Ichfāʾ schon, die Aufgabe
-        prüfte also nicht die Verbindung mit أَلَمْ. Jetzt nur noch يَأْتِكُم;
-        mit أَلَمْ entsteht kein Ichfāʾ, richtig ist „Keine".
+  1624  stellte أَلَمْ vor und bot يَأْتِكُم بَشِيرٌ an — darin steckt das Ichfāʾ
+        schon, geprüft wurde also nicht die Verbindung. Jetzt steht بَشِيرٌ als
+        Vorgabewort, أَلَمْ يَأْتِكُم als erste Antwort: erst zusammen ergibt
+        sich das Ichfāʾ.
   984, 1577, 1587  ließen eine Antwort aus, deren Idgham-Art aus einer
         früheren Lektion stammt (قَالَتْ تَّعْبُدُ, أَن يَكُونَ, غَفُورٌ رَحِيمٌ).
 
@@ -49,13 +50,16 @@ OPTIONS = {
     1619: ([("يَعْلَمُونَ", "1619_1.wav"), ("يَمْشُونَ", "1619_2.wav"),
             ("يُوقِنُونَ", "1619_3.wav"), ("يُمْسِكُ", "1619_prompt.wav"),
             (NONE, "1619_4.wav")], [5], None),
-    # بَشِيرٌ weg: gefragt ist die Verbindung mit أَلَمْ, und die ergibt kein Ichfāʾ
-    1624: ([("يَأْتِكُم", "1624_1.wav"), ("يَعْلَمُونَ", "1624_2.wav"),
+    # Vorgabewort ist بَشِيرٌ; أَلَمْ يَأْتِكُم gehört als Ganzes in die erste
+    # Antwort — erst die Verbindung يَأْتِكُم + بَشِيرٌ ergibt das Ichfāʾ.
+    1624: ([("أَلَمْ يَأْتِكُم", "1624_1.wav"), ("يَعْلَمُونَ", "1624_2.wav"),
             ("يَمْشُونَ", "1624_3.wav"), ("يُمْسِكُ", "1624_4.wav"),
-            (NONE, None)], [5], None),
+            (NONE, None)], [1], "م ب"),
 }
 ANSWERS = {984: [1, 2], 1577: [1, 3], 1587: [2]}
 PROMPTLESS_NOW = (1619,)
+# Aufgabe -> neues Vorgabewort
+SUBJECT = {1624: ("بَشِيرٌ", "1624_prompt.wav")}
 
 EDIT = (
     "Frage nach Bauart der Zuordnungsaufgabe",
@@ -64,7 +68,7 @@ EDIT = (
       /* Mit Vorgabewort ist die Verbindung gemeint, ohne es das Wort für sich. */
       const vorgabe = (x.subject && x.subject.text) || "";
       return vorgabe && vorgabe !== "اختر"
-        ? withPat(`Mit welchen Wörtern wird ein ${R} gebildet?`)
+        ? withPat(`Welche der folgenden Wörter bilden mit diesem ein ${R}?`)
         : withPat(`Markiere alle Wörter mit ${R}. <span style="color:var(--ink-3);font-weight:400">(Mehrfachauswahl möglich)</span>`);
     }''',
 )
@@ -73,10 +77,15 @@ EDIT = (
 def main() -> int:
     src = HTML.read_text(encoding="utf-8")
     out = src
-    if 'case "match_rule": {' in out:
+    label, needle, rep = EDIT
+    alt = "        ? withPat(`Mit welchen Wörtern wird ein ${R} gebildet?`)"
+    neu = "        ? withPat(`Welche der folgenden Wörter bilden mit diesem ein ${R}?`)"
+    if neu in out:
         print("Fragetext war schon angepasst.")
+    elif alt in out:                      # ältere Fassung dieses Skripts
+        out = out.replace(alt, neu, 1)
+        print("  ✓ Fragetext nachgezogen")
     else:
-        label, needle, rep = EDIT
         if out.count(needle) != 1:
             raise SystemExit(f"FEHLER: Anker „{label}“ {out.count(needle)}× gefunden.")
         out = out.replace(needle, rep, 1)
@@ -93,10 +102,14 @@ def main() -> int:
             opts, ans, pat = OPTIONS[i]
             new = [{"id": k + 1, "text": t, **({"audio": a} if a else {"audio": None})}
                    for k, (t, a) in enumerate(opts)]
-            if [(o["text"], o.get("audio")) for o in x["options"]] != [(o["text"], o["audio"]) for o in new]:
+            ist = [(o["text"], o.get("audio")) for o in x["options"]]
+            soll = [(o["text"], o["audio"]) for o in new]
+            if ist[:len(soll)] != soll or ist[len(soll):] not in ([], [(NONE, None)]):
                 x["options"], x["answer"] = new, ans
                 if i in PROMPTLESS_NOW:
                     x["subject"] = {"text": PROMPTLESS, "audio": None}
+                elif i in SUBJECT:
+                    x["subject"] = {"text": SUBJECT[i][0], "audio": SUBJECT[i][1]}
                 set_pattern(x, pat)
                 notes.append(f"{i}: Antwortmöglichkeiten neu")
         elif i in ANSWERS and x["answer"] != ANSWERS[i]:

@@ -61,8 +61,8 @@ Deployment über Vercel, direkt aus diesem Repository.
    Die Antwortschlüssel bleiben unverändert — sie waren schon so gesetzt.
 
 9. **Zuordnungsfragen.** Der Fragetyp „Welche Wörter enthalten ein …?" deckt
-   zwei Bauarten ab: mit Vorgabewort ist die *Verbindung* gemeint, ohne es das
-   Wort für sich. Die Frage unterscheidet das jetzt. Dazu 1378 (war unbrauchbar),
+   zwei Bauarten ab: mit Vorgabewort ist die *Verbindung* gemeint („Welche der
+   folgenden Wörter bilden mit diesem ein …?"), ohne es das Wort für sich. Dazu 1378 (war unbrauchbar),
    1619, 1624 und die ausgelassenen Antworten in 984, 1577, 1587. „Keine" stand
    bisher nur in den 37 Aufgaben zur Auswahl, in denen es auch die Antwort war —
    jetzt überall.
