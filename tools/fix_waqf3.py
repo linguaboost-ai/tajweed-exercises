@@ -14,7 +14,8 @@ behandelten Lektionen.
   Lektion 37 (قلى)  -> Vers mit ۗ, ۚ und ۖ erlaubt
 
 Dazu die acht Qalqala-Aufgaben, deren Muster im Titel eine „1" zeigte, obwohl
-keine Fundstelle vorliegt: dort steht jetzt „0".
+keine Fundstelle vorliegt. Der Hinweis fällt weg — so wie bei den übrigen 197
+Aufgaben, deren Antwort 0 lautet.
 
 ACHTUNG: Die Tonaufnahmen der 19 Aufgaben gehören zum alten Vers.
 
@@ -65,7 +66,7 @@ def main() -> int:
              if x["rule"] == "waqf" and x["question_type"] == "identify_waqf_sign"
              and [o["text"] for o in x["options"]][:2] == ["ج", "صلى"]
              and any(LEK[c] > x["lesson"] for c in signs(x["subject"]["text"]))]
-    muster = [x for x in data if x["id"] in MUSTER_NULL and x.get("pattern") == "1"]
+    muster = [x for x in data if x["id"] in MUSTER_NULL and x.get("pattern") in ("1", "0")]
     if not offen and not muster:
         print("Nichts zu tun – bereits korrigiert.")
         return 0
@@ -108,7 +109,7 @@ def main() -> int:
         x["answer"] = sorted(o["id"] for o in x["options"] if o["text"] in {NAME[c] for c in da})
 
     for x in muster:
-        set_pattern(x, "0")
+        set_pattern(x, None)
 
     HTML.write_text(src.replace(blob, json.dumps(data, ensure_ascii=False,
                                                  separators=(",", ":")), 1), encoding="utf-8")
@@ -126,9 +127,9 @@ def main() -> int:
     if muster:
         L += ["", "## Muster im Titel", "",
               f"{len(muster)} Qalqala-Aufgaben zeigten die Ziffer 1, obwohl keine",
-              "Fundstelle vorliegt; jetzt steht dort 0: "
-              + ", ".join(str(x["id"]) for x in muster), ""]
-        print(f"\n  {len(muster)} Muster „1“ → „0“")
+              "Fundstelle vorliegt. Der Hinweis fällt weg, wie bei allen anderen",
+              "Aufgaben mit der Antwort 0: " + ", ".join(str(x["id"]) for x in muster), ""]
+        print(f"\n  {len(muster)} Muster im Titel entfernt")
     REPORT.parent.mkdir(exist_ok=True)
     REPORT.write_text("\n".join(L) + "\n", encoding="utf-8")
     print(f"\nBericht: {REPORT}")

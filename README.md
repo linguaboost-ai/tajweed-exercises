@@ -98,7 +98,8 @@ Deployment über Vercel, direkt aus diesem Repository.
     Lektion darin, sonst nur bereits behandelte. Siehe
     `docs/waqf-lektionsreihenfolge.md`; **die Tonaufnahmen dieser 19 Aufgaben
     gehören zum alten Vers.** Dazu acht Qalqala-Aufgaben, deren Muster im Titel
-    eine „1" zeigte, obwohl es keine Fundstelle gibt — dort steht jetzt „0".
+    eine „1" zeigte, obwohl es keine Fundstelle gibt — der Hinweis fällt weg,
+    wie bei allen anderen Aufgaben mit der Antwort 0.
 
 ## Aufbau
 
