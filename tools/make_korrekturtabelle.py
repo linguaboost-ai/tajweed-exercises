@@ -73,6 +73,18 @@ MADD = ([1804,1805,1806,1807] + list(range(1820,1824)) + [1868,1869,1870,1871]
 MADD_MEHR = list(range(1824,1840)) + list(range(1888,1902)) + list(range(1952,1968))
 for i in MADD: FB[i] = "Frage anders formulieren, hier kommt Madd vor"
 for i in MADD_MEHR: FB[i] = "Frage anders formulieren, hier kommt mehrfach Madd vor"
+# Lektion 35-40, Halt-Zeichen
+FB[2152] = "Erstes Zeichen ist kein freiwilliger Halt; bei „Firʿaun“ darf man anhalten"
+FB[2158] = "Die falsche Stelle wurde markiert"
+for i in list(range(2161,2177)) + list(range(2203,2209)) + list(range(2234,2238)) \
+        + [2239,2240] + list(range(2297,2305)):
+    FB[i] = "Noch eine Antwortmöglichkeit"
+FB[2161] = "Noch eine Antwortmöglichkeit oder Frage anders formulieren"
+FB[2286] = "Schrift muss verbessert werden"
+FB[2294] = "Schrift muss verbessert werden (Mīm-Zeichen besser positionieren)"
+FB[2300] = "Noch eine Antwortmöglichkeit; Mīm-Zeichen besser positionieren"
+for i in range(2321,2331): FB[i] = "Man darf an einer von beiden anhalten — noch eine Antwort oder Frage ändern"
+for i in range(2331,2337): FB[i] = "Antwort ist falsch"
 
 # ---- Korrektur ----------------------------------------------------------
 def korrektur(i):
@@ -117,7 +129,18 @@ SPEZIAL = {
  1643: "Antwort auf „kommt nicht vor“ gesetzt (Izhar, kein Ikhfa)",
  1570: "Antwort ergänzt: alle vier Wörter bilden mit سِحْرٌ ein Idgham",
  1220: "Antwort 2 → 1; das Lam des Artikels (ٱلنَّعِيمِ) zählt nicht als Idgham — 1236 bleibt daher bei 2",
+ 2152: "Markierung auf آلَ فِرْعَوْنَ gesetzt; das erste فِرْعَوْنَ trägt „Halt verboten“",
+ 2158: "Markierung auf يُؤْمِنُ بِهِۦ gesetzt; das erste بِهِۦ trägt „besser weiterlesen“",
+ 2286: "Unverändert — das kleine Sīn in وَيَبْصُۜطُ ist kein Halt-Zeichen, sondern die Lesehilfe ص/س; braucht deine Entscheidung",
+ 2294: "Antwortschlüssel war schon vollständig; die Schriftdarstellung ist nicht geändert",
 }
+def waqf_text(i):
+    a, b = OLD[i], NEW[i]
+    if NEW[i].get("pattern") == "ۛ":
+        return ("Beide Wörter sind richtig; die Frage sagt jetzt, dass nur an einer "
+                "der beiden Stellen angehalten wird")
+    neu = [o["text"] for o in b["options"] if o["id"] in b["answer"]]
+    return "Antwort um alle im Vers vorkommenden Zeichen ergänzt: " + " + ".join(neu)
 def madd_text(i):
     q = NEW[i]["question_type"]
     frage = ("Enthält dieses Wort eine Dehnung, die länger als zwei Einheiten ist?"
@@ -148,6 +171,7 @@ rows, prev = [], None
 for i in ids:
     fb = FB.get(i, "")
     if i in SPEZIAL: k = SPEZIAL[i]
+    elif NEW[i]["rule"] == "waqf" and NEW[i]["question_type"] == "identify_waqf_sign": k = waqf_text(i)
     elif NEW[i]["rule"] == "madd": k = madd_text(i)
     else: k = korrektur(i)
     show = "s. o." if fb and fb == prev else fb

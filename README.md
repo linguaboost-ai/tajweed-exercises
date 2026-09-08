@@ -67,6 +67,13 @@ Deployment über Vercel, direkt aus diesem Repository.
    bisher nur in den 37 Aufgaben zur Auswahl, in denen es auch die Antwort war —
    jetzt überall.
 
+10. **Halt-Zeichen (Lektion 35–40).** „Welches Waqf-Zeichen steht in diesem
+    Vers?" ist eine Mehrfachauswahl, im Schlüssel stand aber nur das Zeichen
+    der Lektion — 40 Aufgaben führen jetzt alle auf, die vorkommen. Bei
+    Muʿānaqa sind beide Wörter richtig (16 Aufgaben), und die Frage sagt, dass
+    nur an einer der Stellen angehalten wird. 2152 und 2158 markierten das
+    falsche Vorkommen eines doppelt vorkommenden Wortes.
+
 ## Aufbau
 
     index.html   die Seite selbst (Daten und Hausschrift eingebettet)
