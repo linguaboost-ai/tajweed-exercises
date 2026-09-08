@@ -85,6 +85,13 @@ Deployment über Vercel, direkt aus diesem Repository.
     Idgham-Aufgabe `يَجْعَل لَّكُمْ` hat die Nummer 2339 bekommen — mitsamt
     Tonaufnahme, denn beide teilten sich auch `896.wav`.
 
+12. **„Kommt nicht vor" bei den Markieraufgaben.** 30 Markieraufgaben haben
+    nichts zu markieren, weil die gefragte Regel im Vers nicht vorkommt — das
+    ist die richtige Antwort. Die Seite zeigte dort einen leeren Abschnitt und
+    den Hinweisbalken „kein Antwortschlüssel". Jetzt steht dort „Kommt nicht
+    vor"; bei einer Markieraufgabe ist die leere Liste ein Antwortschlüssel.
+    Damit ist der ganze Datensatz ohne Auffälligkeit.
+
 ## Aufbau
 
     index.html   die Seite selbst (Daten und Hausschrift eingebettet)

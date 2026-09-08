@@ -414,7 +414,10 @@ DATA.forEach(x => ID_COUNT.set(x.id, (ID_COUNT.get(x.id) || 0) + 1));
 
 function issues(x){
   const out = [];
-  if (!x.answer || !x.answer.length) out.push("kein Antwortschlüssel");
+  /* Bei einer Markieraufgabe heißt die leere Liste „kommt nicht vor“ —
+     das ist eine Antwort, keine Lücke. */
+  if ((!x.answer || !x.answer.length) && x.task_type !== "mark_verse")
+    out.push("kein Antwortschlüssel");
   if (ID_COUNT.get(x.id) > 1) out.push("doppelte ID");
   const shape = (x.options || []).map(o => o.text).join("|");
   if (shape === "Ja|Nein" && x.question_type !== "has_rule")
@@ -723,12 +726,19 @@ function render(x){
     sheet.append(s);
   } else if (x.task_type === "mark_verse"){
     const n = (x.answer || []).length;
-    const s = sectionEl("Zu markierende Stellen", n ? `${n} ${n === 1 ? "Stelle" : "Stellen"}` : "keine");
+    const s = sectionEl("Zu markierende Stellen",
+      n ? `${n} ${n === 1 ? "Stelle" : "Stellen"}` : "1 richtige Antwort");
     if (n){
       const spans = el("div", "spans");
       x.answer.forEach(t => { const c = el("span", "span-chip ar"); c.textContent = t; spans.append(c); });
       s.append(spans);
-    } else s.append(el("div", "empty", "—"));
+    } else {
+      const row = el("div", "opt wide correct");
+      row.append(el("div", "otx", "Kommt nicht vor"), el("span", "tick", "richtig"));
+      const wrap = el("div", "opts cols1");
+      wrap.append(row);
+      s.append(wrap);
+    }
     sheet.append(s);
   } else if (x.options && x.options.length){
     const n = x.answer.length;
