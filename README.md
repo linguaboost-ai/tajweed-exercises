@@ -79,6 +79,12 @@ Deployment über Vercel, direkt aus diesem Repository.
     ohne Anhalten weiterlesen?"); 2286 zeigte statt eines Halts die Lesehilfe
     ص/س und hat einen Vers mit Mīm-Zeichen bekommen (3:181).
 
+11. **Doppelte Aufgabennummer 896.** Beim Zusammenführen der Quelldateien sind
+    die Nummern an der Nahtstelle kollidiert: Der Qalqala-Block reicht
+    lückenlos bis 896, der Idgham-Block begann ebenfalls bei 896. Die
+    Idgham-Aufgabe `يَجْعَل لَّكُمْ` hat die Nummer 2339 bekommen — mitsamt
+    Tonaufnahme, denn beide teilten sich auch `896.wav`.
+
 ## Aufbau
 
     index.html   die Seite selbst (Daten und Hausschrift eingebettet)
