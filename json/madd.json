@@ -1,0 +1,9724 @@
+[
+  {
+    "id": 1792,
+    "rule": "madd",
+    "lesson": 29,
+    "task_type": "yes_no",
+    "question_type": "has_rule",
+    "modality": "audio",
+    "sura": null,
+    "verse": null,
+    "subject": {
+      "text": "جَآءَ",
+      "spots": [
+        {
+          "start": 0,
+          "end": 3,
+          "text": "جَآ"
+        }
+      ],
+      "audio": "1792.wav"
+    },
+    "options": [
+      {
+        "id": 1,
+        "text": "yes"
+      },
+      {
+        "id": 2,
+        "text": "no"
+      }
+    ],
+    "answer": [
+      1
+    ],
+    "pattern": "◌َآ"
+  },
+  {
+    "id": 1793,
+    "rule": "madd",
+    "lesson": 29,
+    "task_type": "yes_no",
+    "question_type": "has_rule",
+    "modality": "audio",
+    "sura": null,
+    "verse": null,
+    "subject": {
+      "text": "شَآءَ",
+      "spots": [
+        {
+          "start": 0,
+          "end": 3,
+          "text": "شَآ"
+        }
+      ],
+      "audio": "1793.wav"
+    },
+    "options": [
+      {
+        "id": 1,
+        "text": "yes"
+      },
+      {
+        "id": 2,
+        "text": "no"
+      }
+    ],
+    "answer": [
+      1
+    ],
+    "pattern": "◌َآ"
+  },
+  {
+    "id": 1794,
+    "rule": "madd",
+    "lesson": 29,
+    "task_type": "yes_no",
+    "question_type": "has_rule",
+    "modality": "audio",
+    "sura": null,
+    "verse": null,
+    "subject": {
+      "text": "مَآءً",
+      "spots": [
+        {
+          "start": 0,
+          "end": 3,
+          "text": "مَآ"
+        }
+      ],
+      "audio": "1794.wav"
+    },
+    "options": [
+      {
+        "id": 1,
+        "text": "yes"
+      },
+      {
+        "id": 2,
+        "text": "no"
+      }
+    ],
+    "answer": [
+      1
+    ],
+    "pattern": "◌َآ"
+  },
+  {
+    "id": 1795,
+    "rule": "madd",
+    "lesson": 29,
+    "task_type": "yes_no",
+    "question_type": "has_rule",
+    "modality": "audio",
+    "sura": null,
+    "verse": null,
+    "subject": {
+      "text": "سَمَآءِ",
+      "spots": [
+        {
+          "start": 2,
+          "end": 5,
+          "text": "مَآ"
+        }
+      ],
+      "audio": "1795.wav"
+    },
+    "options": [
+      {
+        "id": 1,
+        "text": "yes"
+      },
+      {
+        "id": 2,
+        "text": "no"
+      }
+    ],
+    "answer": [
+      1
+    ],
+    "pattern": "◌َآ"
+  },
+  {
+    "id": 1796,
+    "rule": "madd",
+    "lesson": 29,
+    "task_type": "yes_no",
+    "question_type": "has_rule",
+    "modality": "audio",
+    "sura": null,
+    "verse": null,
+    "subject": {
+      "text": "سَوَآءٌ",
+      "spots": [
+        {
+          "start": 2,
+          "end": 5,
+          "text": "وَآ"
+        }
+      ],
+      "audio": "1796.wav"
+    },
+    "options": [
+      {
+        "id": 1,
+        "text": "yes"
+      },
+      {
+        "id": 2,
+        "text": "no"
+      }
+    ],
+    "answer": [
+      1
+    ],
+    "pattern": "◌َآ"
+  },
+  {
+    "id": 1797,
+    "rule": "madd",
+    "lesson": 29,
+    "task_type": "yes_no",
+    "question_type": "has_rule",
+    "modality": "audio",
+    "sura": null,
+    "verse": null,
+    "subject": {
+      "text": "نِسَآءِ",
+      "spots": [
+        {
+          "start": 2,
+          "end": 5,
+          "text": "سَآ"
+        }
+      ],
+      "audio": "1797.wav"
+    },
+    "options": [
+      {
+        "id": 1,
+        "text": "yes"
+      },
+      {
+        "id": 2,
+        "text": "no"
+      }
+    ],
+    "answer": [
+      1
+    ],
+    "pattern": "◌َآ"
+  },
+  {
+    "id": 1798,
+    "rule": "madd",
+    "lesson": 29,
+    "task_type": "yes_no",
+    "question_type": "has_rule",
+    "modality": "audio",
+    "sura": null,
+    "verse": null,
+    "subject": {
+      "text": "نِدَآءً",
+      "spots": [
+        {
+          "start": 2,
+          "end": 5,
+          "text": "دَآ"
+        }
+      ],
+      "audio": "1798.wav"
+    },
+    "options": [
+      {
+        "id": 1,
+        "text": "yes"
+      },
+      {
+        "id": 2,
+        "text": "no"
+      }
+    ],
+    "answer": [
+      1
+    ],
+    "pattern": "◌َآ"
+  },
+  {
+    "id": 1799,
+    "rule": "madd",
+    "lesson": 29,
+    "task_type": "yes_no",
+    "question_type": "has_rule",
+    "modality": "audio",
+    "sura": null,
+    "verse": null,
+    "subject": {
+      "text": "دُعَآءً",
+      "spots": [
+        {
+          "start": 2,
+          "end": 5,
+          "text": "عَآ"
+        }
+      ],
+      "audio": "1799.wav"
+    },
+    "options": [
+      {
+        "id": 1,
+        "text": "yes"
+      },
+      {
+        "id": 2,
+        "text": "no"
+      }
+    ],
+    "answer": [
+      1
+    ],
+    "pattern": "◌َآ"
+  },
+  {
+    "id": 1800,
+    "rule": "madd",
+    "lesson": 29,
+    "task_type": "yes_no",
+    "question_type": "has_rule",
+    "modality": "audio",
+    "sura": null,
+    "verse": null,
+    "subject": {
+      "text": "شُهَدَآءَ",
+      "spots": [
+        {
+          "start": 4,
+          "end": 7,
+          "text": "دَآ"
+        }
+      ],
+      "audio": "1800.wav"
+    },
+    "options": [
+      {
+        "id": 1,
+        "text": "yes"
+      },
+      {
+        "id": 2,
+        "text": "no"
+      }
+    ],
+    "answer": [
+      1
+    ],
+    "pattern": "◌َآ"
+  },
+  {
+    "id": 1801,
+    "rule": "madd",
+    "lesson": 29,
+    "task_type": "yes_no",
+    "question_type": "has_rule",
+    "modality": "audio",
+    "sura": null,
+    "verse": null,
+    "subject": {
+      "text": "أَوْلِيَآءُ",
+      "spots": [
+        {
+          "start": 6,
+          "end": 9,
+          "text": "يَآ"
+        }
+      ],
+      "audio": "1801.wav"
+    },
+    "options": [
+      {
+        "id": 1,
+        "text": "yes"
+      },
+      {
+        "id": 2,
+        "text": "no"
+      }
+    ],
+    "answer": [
+      1
+    ],
+    "pattern": "◌َآ"
+  },
+  {
+    "id": 1802,
+    "rule": "madd",
+    "lesson": 29,
+    "task_type": "yes_no",
+    "question_type": "has_rule",
+    "modality": "audio",
+    "sura": null,
+    "verse": null,
+    "subject": {
+      "text": "بِنَآءً",
+      "spots": [
+        {
+          "start": 2,
+          "end": 5,
+          "text": "نَآ"
+        }
+      ],
+      "audio": "1802.wav"
+    },
+    "options": [
+      {
+        "id": 1,
+        "text": "yes"
+      },
+      {
+        "id": 2,
+        "text": "no"
+      }
+    ],
+    "answer": [
+      1
+    ],
+    "pattern": "◌َآ"
+  },
+  {
+    "id": 1803,
+    "rule": "madd",
+    "lesson": 29,
+    "task_type": "yes_no",
+    "question_type": "has_rule",
+    "modality": "audio",
+    "sura": null,
+    "verse": null,
+    "subject": {
+      "text": "غِطَآءً",
+      "spots": [
+        {
+          "start": 2,
+          "end": 5,
+          "text": "طَآ"
+        }
+      ],
+      "audio": "1803.wav"
+    },
+    "options": [
+      {
+        "id": 1,
+        "text": "yes"
+      },
+      {
+        "id": 2,
+        "text": "no"
+      }
+    ],
+    "answer": [
+      1
+    ],
+    "pattern": "◌َآ"
+  },
+  {
+    "id": 1804,
+    "rule": "madd",
+    "lesson": 29,
+    "task_type": "yes_no",
+    "question_type": "has_rule",
+    "modality": "audio",
+    "sura": null,
+    "verse": null,
+    "subject": {
+      "text": "قَالَ",
+      "audio": "1804.wav"
+    },
+    "options": [
+      {
+        "id": 1,
+        "text": "yes"
+      },
+      {
+        "id": 2,
+        "text": "no"
+      }
+    ],
+    "answer": [
+      2
+    ]
+  },
+  {
+    "id": 1805,
+    "rule": "madd",
+    "lesson": 29,
+    "task_type": "yes_no",
+    "question_type": "has_rule",
+    "modality": "audio",
+    "sura": null,
+    "verse": null,
+    "subject": {
+      "text": "كَانَ",
+      "audio": "1805.wav"
+    },
+    "options": [
+      {
+        "id": 1,
+        "text": "yes"
+      },
+      {
+        "id": 2,
+        "text": "no"
+      }
+    ],
+    "answer": [
+      2
+    ]
+  },
+  {
+    "id": 1806,
+    "rule": "madd",
+    "lesson": 29,
+    "task_type": "yes_no",
+    "question_type": "has_rule",
+    "modality": "audio",
+    "sura": null,
+    "verse": null,
+    "subject": {
+      "text": "يَقُولُ",
+      "audio": "1806.wav"
+    },
+    "options": [
+      {
+        "id": 1,
+        "text": "yes"
+      },
+      {
+        "id": 2,
+        "text": "no"
+      }
+    ],
+    "answer": [
+      2
+    ]
+  },
+  {
+    "id": 1807,
+    "rule": "madd",
+    "lesson": 29,
+    "task_type": "yes_no",
+    "question_type": "has_rule",
+    "modality": "audio",
+    "sura": null,
+    "verse": null,
+    "subject": {
+      "text": "قِيلَ",
+      "audio": "1807.wav"
+    },
+    "options": [
+      {
+        "id": 1,
+        "text": "yes"
+      },
+      {
+        "id": 2,
+        "text": "no"
+      }
+    ],
+    "answer": [
+      2
+    ]
+  },
+  {
+    "id": 1808,
+    "rule": "madd",
+    "lesson": 29,
+    "task_type": "yes_no",
+    "question_type": "has_rule",
+    "modality": "text",
+    "sura": null,
+    "verse": null,
+    "subject": {
+      "text": "هَبَاءً",
+      "spots": [
+        {
+          "start": 2,
+          "end": 5,
+          "text": "بَا"
+        }
+      ],
+      "audio": null
+    },
+    "options": [
+      {
+        "id": 1,
+        "text": "yes"
+      },
+      {
+        "id": 2,
+        "text": "no"
+      }
+    ],
+    "answer": [
+      1
+    ],
+    "pattern": "◌َآ"
+  },
+  {
+    "id": 1809,
+    "rule": "madd",
+    "lesson": 29,
+    "task_type": "yes_no",
+    "question_type": "has_rule",
+    "modality": "text",
+    "sura": null,
+    "verse": null,
+    "subject": {
+      "text": "غُثَاءً",
+      "spots": [
+        {
+          "start": 2,
+          "end": 5,
+          "text": "ثَا"
+        }
+      ],
+      "audio": null
+    },
+    "options": [
+      {
+        "id": 1,
+        "text": "yes"
+      },
+      {
+        "id": 2,
+        "text": "no"
+      }
+    ],
+    "answer": [
+      1
+    ],
+    "pattern": "◌َآ"
+  },
+  {
+    "id": 1810,
+    "rule": "madd",
+    "lesson": 29,
+    "task_type": "yes_no",
+    "question_type": "has_rule",
+    "modality": "text",
+    "sura": null,
+    "verse": null,
+    "subject": {
+      "text": "جَزَاءً",
+      "spots": [
+        {
+          "start": 2,
+          "end": 5,
+          "text": "زَا"
+        }
+      ],
+      "audio": null
+    },
+    "options": [
+      {
+        "id": 1,
+        "text": "yes"
+      },
+      {
+        "id": 2,
+        "text": "no"
+      }
+    ],
+    "answer": [
+      1
+    ],
+    "pattern": "◌َآ"
+  },
+  {
+    "id": 1811,
+    "rule": "madd",
+    "lesson": 29,
+    "task_type": "yes_no",
+    "question_type": "has_rule",
+    "modality": "text",
+    "sura": null,
+    "verse": null,
+    "subject": {
+      "text": "بَلَاءٌ",
+      "spots": [
+        {
+          "start": 2,
+          "end": 5,
+          "text": "لَا"
+        }
+      ],
+      "audio": null
+    },
+    "options": [
+      {
+        "id": 1,
+        "text": "yes"
+      },
+      {
+        "id": 2,
+        "text": "no"
+      }
+    ],
+    "answer": [
+      1
+    ],
+    "pattern": "◌َآ"
+  },
+  {
+    "id": 1812,
+    "rule": "madd",
+    "lesson": 29,
+    "task_type": "yes_no",
+    "question_type": "has_rule",
+    "modality": "text",
+    "sura": null,
+    "verse": null,
+    "subject": {
+      "text": "مَلَاءِ",
+      "spots": [
+        {
+          "start": 2,
+          "end": 5,
+          "text": "لَا"
+        }
+      ],
+      "audio": null
+    },
+    "options": [
+      {
+        "id": 1,
+        "text": "yes"
+      },
+      {
+        "id": 2,
+        "text": "no"
+      }
+    ],
+    "answer": [
+      1
+    ],
+    "pattern": "◌َآ"
+  },
+  {
+    "id": 1813,
+    "rule": "madd",
+    "lesson": 29,
+    "task_type": "yes_no",
+    "question_type": "has_rule",
+    "modality": "text",
+    "sura": null,
+    "verse": null,
+    "subject": {
+      "text": "شُرَكَاءُ",
+      "spots": [
+        {
+          "start": 4,
+          "end": 7,
+          "text": "كَا"
+        }
+      ],
+      "audio": null
+    },
+    "options": [
+      {
+        "id": 1,
+        "text": "yes"
+      },
+      {
+        "id": 2,
+        "text": "no"
+      }
+    ],
+    "answer": [
+      1
+    ],
+    "pattern": "◌َآ"
+  },
+  {
+    "id": 1814,
+    "rule": "madd",
+    "lesson": 29,
+    "task_type": "yes_no",
+    "question_type": "has_rule",
+    "modality": "text",
+    "sura": null,
+    "verse": null,
+    "subject": {
+      "text": "سُفَهَاءُ",
+      "spots": [
+        {
+          "start": 4,
+          "end": 7,
+          "text": "هَا"
+        }
+      ],
+      "audio": null
+    },
+    "options": [
+      {
+        "id": 1,
+        "text": "yes"
+      },
+      {
+        "id": 2,
+        "text": "no"
+      }
+    ],
+    "answer": [
+      1
+    ],
+    "pattern": "◌َآ"
+  },
+  {
+    "id": 1815,
+    "rule": "madd",
+    "lesson": 29,
+    "task_type": "yes_no",
+    "question_type": "has_rule",
+    "modality": "text",
+    "sura": null,
+    "verse": null,
+    "subject": {
+      "text": "فُقَرَاءُ",
+      "spots": [
+        {
+          "start": 4,
+          "end": 7,
+          "text": "رَا"
+        }
+      ],
+      "audio": null
+    },
+    "options": [
+      {
+        "id": 1,
+        "text": "yes"
+      },
+      {
+        "id": 2,
+        "text": "no"
+      }
+    ],
+    "answer": [
+      1
+    ],
+    "pattern": "◌َآ"
+  },
+  {
+    "id": 1816,
+    "rule": "madd",
+    "lesson": 29,
+    "task_type": "yes_no",
+    "question_type": "has_rule",
+    "modality": "text",
+    "sura": null,
+    "verse": null,
+    "subject": {
+      "text": "أَغْنِيَاءُ",
+      "spots": [
+        {
+          "start": 6,
+          "end": 9,
+          "text": "يَا"
+        }
+      ],
+      "audio": null
+    },
+    "options": [
+      {
+        "id": 1,
+        "text": "yes"
+      },
+      {
+        "id": 2,
+        "text": "no"
+      }
+    ],
+    "answer": [
+      1
+    ],
+    "pattern": "◌َآ"
+  },
+  {
+    "id": 1817,
+    "rule": "madd",
+    "lesson": 29,
+    "task_type": "yes_no",
+    "question_type": "has_rule",
+    "modality": "text",
+    "sura": null,
+    "verse": null,
+    "subject": {
+      "text": "أَنۢبِيَاءَ",
+      "spots": [
+        {
+          "start": 6,
+          "end": 9,
+          "text": "يَا"
+        }
+      ],
+      "audio": null
+    },
+    "options": [
+      {
+        "id": 1,
+        "text": "yes"
+      },
+      {
+        "id": 2,
+        "text": "no"
+      }
+    ],
+    "answer": [
+      1
+    ],
+    "pattern": "◌َآ"
+  },
+  {
+    "id": 1818,
+    "rule": "madd",
+    "lesson": 29,
+    "task_type": "yes_no",
+    "question_type": "has_rule",
+    "modality": "text",
+    "sura": null,
+    "verse": null,
+    "subject": {
+      "text": "أَشِدَّاءُ",
+      "spots": [
+        {
+          "start": 4,
+          "end": 8,
+          "text": "دَّا"
+        }
+      ],
+      "audio": null
+    },
+    "options": [
+      {
+        "id": 1,
+        "text": "yes"
+      },
+      {
+        "id": 2,
+        "text": "no"
+      }
+    ],
+    "answer": [
+      1
+    ],
+    "pattern": "◌َآ"
+  },
+  {
+    "id": 1819,
+    "rule": "madd",
+    "lesson": 29,
+    "task_type": "yes_no",
+    "question_type": "has_rule",
+    "modality": "text",
+    "sura": null,
+    "verse": null,
+    "subject": {
+      "text": "رُحَمَاءُ",
+      "spots": [
+        {
+          "start": 4,
+          "end": 7,
+          "text": "مَا"
+        }
+      ],
+      "audio": null
+    },
+    "options": [
+      {
+        "id": 1,
+        "text": "yes"
+      },
+      {
+        "id": 2,
+        "text": "no"
+      }
+    ],
+    "answer": [
+      1
+    ],
+    "pattern": "◌َآ"
+  },
+  {
+    "id": 1820,
+    "rule": "madd",
+    "lesson": 29,
+    "task_type": "yes_no",
+    "question_type": "has_rule",
+    "modality": "text",
+    "sura": null,
+    "verse": null,
+    "subject": {
+      "text": "فِيهِ",
+      "audio": null
+    },
+    "options": [
+      {
+        "id": 1,
+        "text": "yes"
+      },
+      {
+        "id": 2,
+        "text": "no"
+      }
+    ],
+    "answer": [
+      2
+    ]
+  },
+  {
+    "id": 1821,
+    "rule": "madd",
+    "lesson": 29,
+    "task_type": "yes_no",
+    "question_type": "has_rule",
+    "modality": "text",
+    "sura": null,
+    "verse": null,
+    "subject": {
+      "text": "نُورٌ",
+      "audio": null
+    },
+    "options": [
+      {
+        "id": 1,
+        "text": "yes"
+      },
+      {
+        "id": 2,
+        "text": "no"
+      }
+    ],
+    "answer": [
+      2
+    ]
+  },
+  {
+    "id": 1822,
+    "rule": "madd",
+    "lesson": 29,
+    "task_type": "yes_no",
+    "question_type": "has_rule",
+    "modality": "text",
+    "sura": null,
+    "verse": null,
+    "subject": {
+      "text": "كِتَابٌ",
+      "audio": null
+    },
+    "options": [
+      {
+        "id": 1,
+        "text": "yes"
+      },
+      {
+        "id": 2,
+        "text": "no"
+      }
+    ],
+    "answer": [
+      2
+    ]
+  },
+  {
+    "id": 1823,
+    "rule": "madd",
+    "lesson": 29,
+    "task_type": "yes_no",
+    "question_type": "has_rule",
+    "modality": "text",
+    "sura": null,
+    "verse": null,
+    "subject": {
+      "text": "رَسُولٌ",
+      "audio": null
+    },
+    "options": [
+      {
+        "id": 1,
+        "text": "yes"
+      },
+      {
+        "id": 2,
+        "text": "no"
+      }
+    ],
+    "answer": [
+      2
+    ]
+  },
+  {
+    "id": 1824,
+    "rule": "madd",
+    "lesson": 29,
+    "task_type": "select_count",
+    "question_type": "count_rule",
+    "modality": "audio",
+    "sura": 7,
+    "verse": 4,
+    "subject": {
+      "text": "وَكَم مِّن قَرْيَةٍ أَهْلَكْنَٰهَا فَجَآءَهَا بَأْسُنَا بَيَٰتًا أَوْ هُمْ قَآئِلُونَ ٤",
+      "spots": [
+        {
+          "start": 37,
+          "end": 41,
+          "text": "جَآ"
+        },
+        {
+          "start": 76,
+          "end": 80,
+          "text": "قَآ"
+        }
+      ],
+      "audio": "1824.wav"
+    },
+    "options": [
+      {
+        "id": 1,
+        "text": "0"
+      },
+      {
+        "id": 2,
+        "text": "1"
+      },
+      {
+        "id": 3,
+        "text": "2"
+      },
+      {
+        "id": 4,
+        "text": "3"
+      }
+    ],
+    "answer": [
+      3
+    ],
+    "pattern": "◌َآ"
+  },
+  {
+    "id": 1825,
+    "rule": "madd",
+    "lesson": 29,
+    "task_type": "select_count",
+    "question_type": "count_rule",
+    "modality": "audio",
+    "sura": 17,
+    "verse": 20,
+    "subject": {
+      "text": "كُلًّا نُّّمِدُّ هَٰٓؤُلَآءِ وَهَٰٓؤُلَآءِ مِنْ عَطَآءِ رَبِّكَ ۚ وَمَا كَانَ عَطَآءُ رَبِّكَ مَحْظُورًا ٢٠",
+      "spots": [
+        {
+          "start": 17,
+          "end": 21,
+          "text": "هَٰٓ"
+        },
+        {
+          "start": 25,
+          "end": 27,
+          "text": "آ"
+        },
+        {
+          "start": 32,
+          "end": 36,
+          "text": "هَٰٓ"
+        },
+        {
+          "start": 40,
+          "end": 42,
+          "text": "آ"
+        },
+        {
+          "start": 54,
+          "end": 56,
+          "text": "آ"
+        },
+        {
+          "start": 85,
+          "end": 87,
+          "text": "آ"
+        }
+      ],
+      "audio": "1825.wav"
+    },
+    "options": [
+      {
+        "id": 1,
+        "text": "3"
+      },
+      {
+        "id": 2,
+        "text": "4"
+      },
+      {
+        "id": 3,
+        "text": "5"
+      },
+      {
+        "id": 4,
+        "text": "6"
+      }
+    ],
+    "answer": [
+      4
+    ],
+    "pattern": "◌َآ"
+  },
+  {
+    "id": 1826,
+    "rule": "madd",
+    "lesson": 29,
+    "task_type": "select_count",
+    "question_type": "count_rule",
+    "modality": "audio",
+    "sura": 2,
+    "verse": 22,
+    "subject": {
+      "text": "ٱلَّذِى جَعَلَ لَكُمُ ٱلْأَرْضَ فِرَٰشًا وَٱلسَّمَآءَ بِنَآءً وَأَنزَلَ مِنَ ٱلسَّمَآءِ مَآءً فَأَخْرَجَ بِهِۦ مِنَ ٱلثَّمَرَٰتِ رِزْقًا لَّّكُمْ ۖ فَلَا تَجْعَلُوا۟ لِلَّهِ أَندَادًا وَأَنتُمْ تَعْلَمُونَ ٢٢",
+      "spots": [
+        {
+          "start": 48,
+          "end": 52,
+          "text": "مَآ"
+        },
+        {
+          "start": 57,
+          "end": 61,
+          "text": "نَآ"
+        },
+        {
+          "start": 84,
+          "end": 88,
+          "text": "مَآ"
+        },
+        {
+          "start": 91,
+          "end": 95,
+          "text": "مَآ"
+        }
+      ],
+      "audio": "1826.wav"
+    },
+    "options": [
+      {
+        "id": 1,
+        "text": "1"
+      },
+      {
+        "id": 2,
+        "text": "2"
+      },
+      {
+        "id": 3,
+        "text": "3"
+      },
+      {
+        "id": 4,
+        "text": "4"
+      }
+    ],
+    "answer": [
+      4
+    ],
+    "pattern": "◌َآ"
+  },
+  {
+    "id": 1827,
+    "rule": "madd",
+    "lesson": 29,
+    "task_type": "select_count",
+    "question_type": "count_rule",
+    "modality": "audio",
+    "sura": 2,
+    "verse": 31,
+    "subject": {
+      "text": "وَعَلَّمَ آدَمَ ٱلْأَسْمَآءَ كُلَّهَا ثُمَّ عَرَضَهُمْ عَلَى ٱلْمَلَٰٓئِكَةِ فَقَالَ أَنبِـُٔونِى بِأَسْمَآءِ هَٰٓؤُلَآءِ إِن كُنتُمْ صَٰدِقِينَ ٣١",
+      "spots": [
+        {
+          "start": 23,
+          "end": 27,
+          "text": "مَآ"
+        },
+        {
+          "start": 67,
+          "end": 71,
+          "text": "لَٰٓ"
+        },
+        {
+          "start": 105,
+          "end": 109,
+          "text": "مَآ"
+        },
+        {
+          "start": 112,
+          "end": 116,
+          "text": "هَٰٓ"
+        },
+        {
+          "start": 118,
+          "end": 122,
+          "text": "لَآ"
+        }
+      ],
+      "audio": "1827.wav"
+    },
+    "options": [
+      {
+        "id": 1,
+        "text": "3"
+      },
+      {
+        "id": 2,
+        "text": "4"
+      },
+      {
+        "id": 3,
+        "text": "5"
+      },
+      {
+        "id": 4,
+        "text": "6"
+      }
+    ],
+    "answer": [
+      3
+    ],
+    "pattern": "◌َآ"
+  },
+  {
+    "id": 1828,
+    "rule": "madd",
+    "lesson": 29,
+    "task_type": "select_count",
+    "question_type": "count_rule",
+    "modality": "audio",
+    "sura": 24,
+    "verse": 13,
+    "subject": {
+      "text": "لَّوْلَا جَآءُو عَلَيْهِ بِأَرْبَعَةِ شُهَدَآءَ ۚ فَإِذْ لَمْ يَأْتُوا۟ بِٱلشُّهَدَآءِ فَأُو۟لَٰٓئِكَ عِندَ ٱللَّهِ هُمُ ٱلْكَٰذِبُونَ ١٣",
+      "spots": [
+        {
+          "start": 11,
+          "end": 13,
+          "text": "آ"
+        },
+        {
+          "start": 45,
+          "end": 47,
+          "text": "آ"
+        },
+        {
+          "start": 85,
+          "end": 87,
+          "text": "آ"
+        },
+        {
+          "start": 96,
+          "end": 100,
+          "text": "لَٰٓ"
+        }
+      ],
+      "audio": "1828.wav"
+    },
+    "options": [
+      {
+        "id": 1,
+        "text": "1"
+      },
+      {
+        "id": 2,
+        "text": "2"
+      },
+      {
+        "id": 3,
+        "text": "3"
+      },
+      {
+        "id": 4,
+        "text": "4"
+      }
+    ],
+    "answer": [
+      4
+    ],
+    "pattern": "◌َآ"
+  },
+  {
+    "id": 1829,
+    "rule": "madd",
+    "lesson": 29,
+    "task_type": "select_count",
+    "question_type": "count_rule",
+    "modality": "audio",
+    "sura": 3,
+    "verse": 113,
+    "subject": {
+      "text": "۞ لَيْسُوا۟ سَوَآءً ۗ مِّنْ أَهْلِ ٱلْكِتَٰبِ أُمَّةٌ قَآئِمَةٌ يَتْلُونَ آيَٰتِ ٱللَّهِ آنَآءَ ٱلَّيْلِ وَهُمْ يَسْجُدُونَ ١١٣",
+      "spots": [
+        {
+          "start": 14,
+          "end": 18,
+          "text": "وَآ"
+        },
+        {
+          "start": 55,
+          "end": 59,
+          "text": "قَآ"
+        },
+        {
+          "start": 92,
+          "end": 96,
+          "text": "نَآ"
+        }
+      ],
+      "audio": "1829.wav"
+    },
+    "options": [
+      {
+        "id": 1,
+        "text": "0"
+      },
+      {
+        "id": 2,
+        "text": "1"
+      },
+      {
+        "id": 3,
+        "text": "2"
+      },
+      {
+        "id": 4,
+        "text": "3"
+      }
+    ],
+    "answer": [
+      4
+    ],
+    "pattern": "◌َآ"
+  },
+  {
+    "id": 1830,
+    "rule": "madd",
+    "lesson": 29,
+    "task_type": "select_count",
+    "question_type": "count_rule",
+    "modality": "audio",
+    "sura": 41,
+    "verse": 28,
+    "subject": {
+      "text": "ذَٰلِكَ جَزَآءُ أَعْدَآءِ ٱللَّهِ ٱلنَّارُ ۖ لَهُمْ فِيهَا دَارُ ٱلْخُلْدِ ۖ جَزَآءً بِمَا كَانُوا۟ بِـَٔايَٰتِنَا يَجْحَدُونَ ٢٨",
+      "spots": [
+        {
+          "start": 10,
+          "end": 14,
+          "text": "زَآ"
+        },
+        {
+          "start": 21,
+          "end": 25,
+          "text": "دَآ"
+        },
+        {
+          "start": 81,
+          "end": 85,
+          "text": "زَآ"
+        }
+      ],
+      "audio": "1830.wav"
+    },
+    "options": [
+      {
+        "id": 1,
+        "text": "0"
+      },
+      {
+        "id": 2,
+        "text": "1"
+      },
+      {
+        "id": 3,
+        "text": "2"
+      },
+      {
+        "id": 4,
+        "text": "3"
+      }
+    ],
+    "answer": [
+      4
+    ],
+    "pattern": "◌َآ"
+  },
+  {
+    "id": 1831,
+    "rule": "madd",
+    "lesson": 29,
+    "task_type": "select_count",
+    "question_type": "count_rule",
+    "modality": "audio",
+    "sura": 42,
+    "verse": 49,
+    "subject": {
+      "text": "لِّلَّهِ مُلْكُ ٱلسَّمَٰوَٰتِ وَٱلْأَرْضِ ۚ يَخْلُقُ مَا يَشَآءُ ۚ يَهَبُ لِمَن يَشَآءُ إِنَٰثًا وَيَهَبُ لِمَن يَشَآءُ ٱلذُّكُورَ ٤٩",
+      "spots": [
+        {
+          "start": 59,
+          "end": 63,
+          "text": "شَآ"
+        },
+        {
+          "start": 83,
+          "end": 87,
+          "text": "شَآ"
+        },
+        {
+          "start": 116,
+          "end": 120,
+          "text": "شَآ"
+        }
+      ],
+      "audio": "1831.wav"
+    },
+    "options": [
+      {
+        "id": 1,
+        "text": "0"
+      },
+      {
+        "id": 2,
+        "text": "1"
+      },
+      {
+        "id": 3,
+        "text": "2"
+      },
+      {
+        "id": 4,
+        "text": "3"
+      }
+    ],
+    "answer": [
+      4
+    ],
+    "pattern": "◌َآ"
+  },
+  {
+    "id": 1832,
+    "rule": "madd",
+    "lesson": 29,
+    "task_type": "select_count",
+    "question_type": "count_rule",
+    "modality": "audio",
+    "sura": 4,
+    "verse": 22,
+    "subject": {
+      "text": "وَلَا تَنكِحُوا۟ مَا نَكَحَ آبَآؤُكُم مِّنَ ٱلنِّسَآءِ إِلَّا مَا قَدْ سَلَفَ ۚ إِنَّهُ كَانَ فَٰحِشَةً وَمَقْتًا وَسَآءَ سَبِيلًا ٢٢",
+      "spots": [
+        {
+          "start": 29,
+          "end": 33,
+          "text": "بَآ"
+        },
+        {
+          "start": 50,
+          "end": 54,
+          "text": "سَآ"
+        },
+        {
+          "start": 118,
+          "end": 122,
+          "text": "سَآ"
+        }
+      ],
+      "audio": "1832.wav"
+    },
+    "options": [
+      {
+        "id": 1,
+        "text": "0"
+      },
+      {
+        "id": 2,
+        "text": "1"
+      },
+      {
+        "id": 3,
+        "text": "2"
+      },
+      {
+        "id": 4,
+        "text": "3"
+      }
+    ],
+    "answer": [
+      4
+    ],
+    "pattern": "◌َآ"
+  },
+  {
+    "id": 1833,
+    "rule": "madd",
+    "lesson": 29,
+    "task_type": "select_count",
+    "question_type": "count_rule",
+    "modality": "audio",
+    "sura": 7,
+    "verse": 95,
+    "subject": {
+      "text": "ثُمَّ بَدَّلْنَا مَكَانَ ٱلسَّيِّئَةِ ٱلْحَسَنَةَ حَتَّىٰ عَفَوا۟ وَّقَالُوا۟ قَدْ مَسَّ آبَآءَنَا ٱلضَّرَّآءُ وَٱلسَّرَّآءُ فَأَخَذْنَٰهُم بَغْتَةً وَهُمْ لَا يَشْعُرُونَ ٩٥",
+      "spots": [
+        {
+          "start": 90,
+          "end": 94,
+          "text": "بَآ"
+        },
+        {
+          "start": 105,
+          "end": 110,
+          "text": "رَّآ"
+        },
+        {
+          "start": 120,
+          "end": 125,
+          "text": "رَّآ"
+        }
+      ],
+      "audio": "1833.wav"
+    },
+    "options": [
+      {
+        "id": 1,
+        "text": "0"
+      },
+      {
+        "id": 2,
+        "text": "1"
+      },
+      {
+        "id": 3,
+        "text": "2"
+      },
+      {
+        "id": 4,
+        "text": "3"
+      }
+    ],
+    "answer": [
+      4
+    ],
+    "pattern": "◌َآ"
+  },
+  {
+    "id": 1834,
+    "rule": "madd",
+    "lesson": 29,
+    "task_type": "select_count",
+    "question_type": "count_rule",
+    "modality": "audio",
+    "sura": 11,
+    "verse": 44,
+    "subject": {
+      "text": "وَقِيلَ يَٰٓأَرْضُ ٱبْلَعِى مَآءَكِ وَيَٰسَمَآءُ أَقْلِعِى وَغِيضَ ٱلْمَآءُ وَقُضِىَ ٱلْأَمْرُ وَٱسْتَوَتْ عَلَى ٱلْجُودِىِّ ۖ وَقِيلَ بُعْدًا لِّّلْقَوْمِ ٱلظَّٰلِمِينَ ٤٤",
+      "spots": [
+        {
+          "start": 8,
+          "end": 12,
+          "text": "يَٰٓ"
+        },
+        {
+          "start": 30,
+          "end": 32,
+          "text": "آ"
+        },
+        {
+          "start": 46,
+          "end": 48,
+          "text": "آ"
+        },
+        {
+          "start": 74,
+          "end": 76,
+          "text": "آ"
+        }
+      ],
+      "audio": "1834.wav"
+    },
+    "options": [
+      {
+        "id": 1,
+        "text": "2"
+      },
+      {
+        "id": 2,
+        "text": "3"
+      },
+      {
+        "id": 3,
+        "text": "4"
+      },
+      {
+        "id": 4,
+        "text": "5"
+      }
+    ],
+    "answer": [
+      3
+    ],
+    "pattern": "◌َآ"
+  },
+  {
+    "id": 1835,
+    "rule": "madd",
+    "lesson": 29,
+    "task_type": "select_count",
+    "question_type": "count_rule",
+    "modality": "audio",
+    "sura": 16,
+    "verse": 93,
+    "subject": {
+      "text": "وَلَوْ شَآءَ ٱللَّهُ لَجَعَلَكُمْ أُمَّةً وَٰحِدَةً وَلَٰكِن يُضِلُّ مَن يَشَآءُ وَيَهْدِى مَن يَشَآءُ ۚ وَلَتُسْـَٔلُنَّ عَمَّا كُنتُمْ تَعْمَلُونَ ٩٣",
+      "spots": [
+        {
+          "start": 7,
+          "end": 11,
+          "text": "شَآ"
+        },
+        {
+          "start": 76,
+          "end": 80,
+          "text": "شَآ"
+        },
+        {
+          "start": 99,
+          "end": 103,
+          "text": "شَآ"
+        }
+      ],
+      "audio": "1835.wav"
+    },
+    "options": [
+      {
+        "id": 1,
+        "text": "0"
+      },
+      {
+        "id": 2,
+        "text": "1"
+      },
+      {
+        "id": 3,
+        "text": "2"
+      },
+      {
+        "id": 4,
+        "text": "3"
+      }
+    ],
+    "answer": [
+      4
+    ],
+    "pattern": "◌َآ"
+  },
+  {
+    "id": 1836,
+    "rule": "madd",
+    "lesson": 29,
+    "task_type": "select_count",
+    "question_type": "count_rule",
+    "modality": "audio",
+    "sura": 2,
+    "verse": 53,
+    "subject": {
+      "text": "وَإِذْ آتَيْنَا مُوسَى ٱلْكِتَٰبَ وَٱلْفُرْقَانَ لَعَلَّكُمْ تَهْتَدُونَ ٥٣",
+      "audio": "1836.wav"
+    },
+    "options": [
+      {
+        "id": 1,
+        "text": "0"
+      },
+      {
+        "id": 2,
+        "text": "1"
+      },
+      {
+        "id": 3,
+        "text": "2"
+      },
+      {
+        "id": 4,
+        "text": "3"
+      }
+    ],
+    "answer": [
+      1
+    ]
+  },
+  {
+    "id": 1837,
+    "rule": "madd",
+    "lesson": 29,
+    "task_type": "select_count",
+    "question_type": "count_rule",
+    "modality": "audio",
+    "sura": 2,
+    "verse": 242,
+    "subject": {
+      "text": "كَذَٰلِكَ يُبَيِّنُ ٱللَّهُ لَكُمْ آيَٰتِهِۦ لَعَلَّكُمْ تَعْقِلُونَ ٢٤٢",
+      "audio": "1837.wav"
+    },
+    "options": [
+      {
+        "id": 1,
+        "text": "0"
+      },
+      {
+        "id": 2,
+        "text": "1"
+      },
+      {
+        "id": 3,
+        "text": "2"
+      },
+      {
+        "id": 4,
+        "text": "3"
+      }
+    ],
+    "answer": [
+      1
+    ]
+  },
+  {
+    "id": 1838,
+    "rule": "madd",
+    "lesson": 29,
+    "task_type": "select_count",
+    "question_type": "count_rule",
+    "modality": "audio",
+    "sura": 3,
+    "verse": 141,
+    "subject": {
+      "text": "وَلِيُمَحِّصَ ٱللَّهُ ٱلَّذِينَ آمَنُوا۟ وَيَمْحَقَ ٱلْكَٰفِرِينَ ١٤١",
+      "audio": "1838.wav"
+    },
+    "options": [
+      {
+        "id": 1,
+        "text": "0"
+      },
+      {
+        "id": 2,
+        "text": "1"
+      },
+      {
+        "id": 3,
+        "text": "2"
+      },
+      {
+        "id": 4,
+        "text": "3"
+      }
+    ],
+    "answer": [
+      1
+    ]
+  },
+  {
+    "id": 1839,
+    "rule": "madd",
+    "lesson": 29,
+    "task_type": "select_count",
+    "question_type": "count_rule",
+    "modality": "audio",
+    "sura": 10,
+    "verse": 63,
+    "subject": {
+      "text": "ٱلَّذِينَ آمَنُوا۟ وَكَانُوا۟ يَتَّقُونَ ٦٣",
+      "audio": "1839.wav"
+    },
+    "options": [
+      {
+        "id": 1,
+        "text": "0"
+      },
+      {
+        "id": 2,
+        "text": "1"
+      },
+      {
+        "id": 3,
+        "text": "2"
+      },
+      {
+        "id": 4,
+        "text": "3"
+      }
+    ],
+    "answer": [
+      1
+    ]
+  },
+  {
+    "id": 1856,
+    "rule": "madd",
+    "lesson": 30,
+    "task_type": "yes_no",
+    "question_type": "has_rule",
+    "modality": "audio",
+    "sura": null,
+    "verse": null,
+    "subject": {
+      "text": "سُوٓءَ",
+      "spots": [
+        {
+          "start": 0,
+          "end": 4,
+          "text": "سُوٓ"
+        }
+      ],
+      "audio": "1856.wav"
+    },
+    "options": [
+      {
+        "id": 1,
+        "text": "yes"
+      },
+      {
+        "id": 2,
+        "text": "no"
+      }
+    ],
+    "answer": [
+      1
+    ],
+    "pattern": "◌ُوٓ"
+  },
+  {
+    "id": 1857,
+    "rule": "madd",
+    "lesson": 30,
+    "task_type": "yes_no",
+    "question_type": "has_rule",
+    "modality": "audio",
+    "sura": null,
+    "verse": null,
+    "subject": {
+      "text": "سِيٓءَ",
+      "spots": [
+        {
+          "start": 0,
+          "end": 4,
+          "text": "سِيٓ"
+        }
+      ],
+      "audio": "1857.wav"
+    },
+    "options": [
+      {
+        "id": 1,
+        "text": "yes"
+      },
+      {
+        "id": 2,
+        "text": "no"
+      }
+    ],
+    "answer": [
+      1
+    ],
+    "pattern": "◌ِيٓ"
+  },
+  {
+    "id": 1858,
+    "rule": "madd",
+    "lesson": 30,
+    "task_type": "yes_no",
+    "question_type": "has_rule",
+    "modality": "audio",
+    "sura": null,
+    "verse": null,
+    "subject": {
+      "text": "قُرُوٓءٍ",
+      "spots": [
+        {
+          "start": 2,
+          "end": 6,
+          "text": "رُوٓ"
+        }
+      ],
+      "audio": "1858.wav"
+    },
+    "options": [
+      {
+        "id": 1,
+        "text": "yes"
+      },
+      {
+        "id": 2,
+        "text": "no"
+      }
+    ],
+    "answer": [
+      1
+    ],
+    "pattern": "◌ُوٓ"
+  },
+  {
+    "id": 1859,
+    "rule": "madd",
+    "lesson": 30,
+    "task_type": "yes_no",
+    "question_type": "has_rule",
+    "modality": "audio",
+    "sura": null,
+    "verse": null,
+    "subject": {
+      "text": "خَطِيٓـَٔةً",
+      "spots": [
+        {
+          "start": 2,
+          "end": 9,
+          "text": "طِيٓـَٔ"
+        }
+      ],
+      "audio": "1859.wav"
+    },
+    "options": [
+      {
+        "id": 1,
+        "text": "yes"
+      },
+      {
+        "id": 2,
+        "text": "no"
+      }
+    ],
+    "answer": [
+      1
+    ],
+    "pattern": "◌ِيٓ"
+  },
+  {
+    "id": 1860,
+    "rule": "madd",
+    "lesson": 30,
+    "task_type": "yes_no",
+    "question_type": "has_rule",
+    "modality": "audio",
+    "sura": null,
+    "verse": null,
+    "subject": {
+      "text": "السُّوٓءَ",
+      "spots": [
+        {
+          "start": 2,
+          "end": 7,
+          "text": "سُّوٓ"
+        }
+      ],
+      "audio": "1860.wav"
+    },
+    "options": [
+      {
+        "id": 1,
+        "text": "yes"
+      },
+      {
+        "id": 2,
+        "text": "no"
+      }
+    ],
+    "answer": [
+      1
+    ],
+    "pattern": "◌ُوٓ"
+  },
+  {
+    "id": 1861,
+    "rule": "madd",
+    "lesson": 30,
+    "task_type": "yes_no",
+    "question_type": "has_rule",
+    "modality": "audio",
+    "sura": null,
+    "verse": null,
+    "subject": {
+      "text": "بَرِيٓءٌ",
+      "spots": [
+        {
+          "start": 2,
+          "end": 6,
+          "text": "رِيٓ"
+        }
+      ],
+      "audio": "1861.wav"
+    },
+    "options": [
+      {
+        "id": 1,
+        "text": "yes"
+      },
+      {
+        "id": 2,
+        "text": "no"
+      }
+    ],
+    "answer": [
+      1
+    ],
+    "pattern": "◌ِيٓ"
+  },
+  {
+    "id": 1862,
+    "rule": "madd",
+    "lesson": 30,
+    "task_type": "yes_no",
+    "question_type": "has_rule",
+    "modality": "audio",
+    "sura": null,
+    "verse": null,
+    "subject": {
+      "text": "تَبُوٓءَ",
+      "spots": [
+        {
+          "start": 2,
+          "end": 6,
+          "text": "بُوٓ"
+        }
+      ],
+      "audio": "1862.wav"
+    },
+    "options": [
+      {
+        "id": 1,
+        "text": "yes"
+      },
+      {
+        "id": 2,
+        "text": "no"
+      }
+    ],
+    "answer": [
+      1
+    ],
+    "pattern": "◌ُوٓ"
+  },
+  {
+    "id": 1863,
+    "rule": "madd",
+    "lesson": 30,
+    "task_type": "yes_no",
+    "question_type": "has_rule",
+    "modality": "audio",
+    "sura": null,
+    "verse": null,
+    "subject": {
+      "text": "هَنِيٓـًٔا",
+      "spots": [
+        {
+          "start": 2,
+          "end": 9,
+          "text": "نِيٓـًٔ"
+        }
+      ],
+      "audio": "1863.wav"
+    },
+    "options": [
+      {
+        "id": 1,
+        "text": "yes"
+      },
+      {
+        "id": 2,
+        "text": "no"
+      }
+    ],
+    "answer": [
+      1
+    ],
+    "pattern": "◌ِيٓ"
+  },
+  {
+    "id": 1864,
+    "rule": "madd",
+    "lesson": 30,
+    "task_type": "yes_no",
+    "question_type": "has_rule",
+    "modality": "audio",
+    "sura": null,
+    "verse": null,
+    "subject": {
+      "text": "يَسُوٓءَ",
+      "spots": [
+        {
+          "start": 2,
+          "end": 6,
+          "text": "سُوٓ"
+        }
+      ],
+      "audio": "1864.wav"
+    },
+    "options": [
+      {
+        "id": 1,
+        "text": "yes"
+      },
+      {
+        "id": 2,
+        "text": "no"
+      }
+    ],
+    "answer": [
+      1
+    ],
+    "pattern": "◌ُوٓ"
+  },
+  {
+    "id": 1865,
+    "rule": "madd",
+    "lesson": 30,
+    "task_type": "yes_no",
+    "question_type": "has_rule",
+    "modality": "audio",
+    "sura": null,
+    "verse": null,
+    "subject": {
+      "text": "جِيٓءَ",
+      "spots": [
+        {
+          "start": 0,
+          "end": 4,
+          "text": "جِيٓ"
+        }
+      ],
+      "audio": "1865.wav"
+    },
+    "options": [
+      {
+        "id": 1,
+        "text": "yes"
+      },
+      {
+        "id": 2,
+        "text": "no"
+      }
+    ],
+    "answer": [
+      1
+    ],
+    "pattern": "◌ِيٓ"
+  },
+  {
+    "id": 1866,
+    "rule": "madd",
+    "lesson": 30,
+    "task_type": "yes_no",
+    "question_type": "has_rule",
+    "modality": "audio",
+    "sura": null,
+    "verse": null,
+    "subject": {
+      "text": "يَبُوٓءُ",
+      "spots": [
+        {
+          "start": 2,
+          "end": 6,
+          "text": "بُوٓ"
+        }
+      ],
+      "audio": "1866.wav"
+    },
+    "options": [
+      {
+        "id": 1,
+        "text": "yes"
+      },
+      {
+        "id": 2,
+        "text": "no"
+      }
+    ],
+    "answer": [
+      1
+    ],
+    "pattern": "◌ُوٓ"
+  },
+  {
+    "id": 1867,
+    "rule": "madd",
+    "lesson": 30,
+    "task_type": "yes_no",
+    "question_type": "has_rule",
+    "modality": "audio",
+    "sura": null,
+    "verse": null,
+    "subject": {
+      "text": "مَرِيٓـًٔا",
+      "spots": [
+        {
+          "start": 2,
+          "end": 9,
+          "text": "رِيٓـًٔ"
+        }
+      ],
+      "audio": "1867.wav"
+    },
+    "options": [
+      {
+        "id": 1,
+        "text": "yes"
+      },
+      {
+        "id": 2,
+        "text": "no"
+      }
+    ],
+    "answer": [
+      1
+    ],
+    "pattern": "◌ِيٓ"
+  },
+  {
+    "id": 1868,
+    "rule": "madd",
+    "lesson": 30,
+    "task_type": "yes_no",
+    "question_type": "has_rule",
+    "modality": "audio",
+    "sura": null,
+    "verse": null,
+    "subject": {
+      "text": "صَامَ",
+      "audio": "1868.wav"
+    },
+    "options": [
+      {
+        "id": 1,
+        "text": "yes"
+      },
+      {
+        "id": 2,
+        "text": "no"
+      }
+    ],
+    "answer": [
+      2
+    ]
+  },
+  {
+    "id": 1869,
+    "rule": "madd",
+    "lesson": 30,
+    "task_type": "yes_no",
+    "question_type": "has_rule",
+    "modality": "audio",
+    "sura": null,
+    "verse": null,
+    "subject": {
+      "text": "قَامَ",
+      "audio": "1869.wav"
+    },
+    "options": [
+      {
+        "id": 1,
+        "text": "yes"
+      },
+      {
+        "id": 2,
+        "text": "no"
+      }
+    ],
+    "answer": [
+      2
+    ]
+  },
+  {
+    "id": 1870,
+    "rule": "madd",
+    "lesson": 30,
+    "task_type": "yes_no",
+    "question_type": "has_rule",
+    "modality": "audio",
+    "sura": null,
+    "verse": null,
+    "subject": {
+      "text": "يَقُومُ",
+      "audio": "1870.wav"
+    },
+    "options": [
+      {
+        "id": 1,
+        "text": "yes"
+      },
+      {
+        "id": 2,
+        "text": "no"
+      }
+    ],
+    "answer": [
+      2
+    ]
+  },
+  {
+    "id": 1871,
+    "rule": "madd",
+    "lesson": 30,
+    "task_type": "yes_no",
+    "question_type": "has_rule",
+    "modality": "audio",
+    "sura": null,
+    "verse": null,
+    "subject": {
+      "text": "يَتُوبُ",
+      "audio": "1871.wav"
+    },
+    "options": [
+      {
+        "id": 1,
+        "text": "yes"
+      },
+      {
+        "id": 2,
+        "text": "no"
+      }
+    ],
+    "answer": [
+      2
+    ]
+  },
+  {
+    "id": 1872,
+    "rule": "madd",
+    "lesson": 30,
+    "task_type": "yes_no",
+    "question_type": "has_rule",
+    "modality": "text",
+    "sura": null,
+    "verse": null,
+    "subject": {
+      "text": "سُوءِ",
+      "spots": [
+        {
+          "start": 0,
+          "end": 3,
+          "text": "سُو"
+        }
+      ],
+      "audio": null
+    },
+    "options": [
+      {
+        "id": 1,
+        "text": "yes"
+      },
+      {
+        "id": 2,
+        "text": "no"
+      }
+    ],
+    "answer": [
+      1
+    ],
+    "pattern": "◌ُوٓ"
+  },
+  {
+    "id": 1873,
+    "rule": "madd",
+    "lesson": 30,
+    "task_type": "yes_no",
+    "question_type": "has_rule",
+    "modality": "text",
+    "sura": null,
+    "verse": null,
+    "subject": {
+      "text": "سِيـَٔتْ",
+      "spots": [
+        {
+          "start": 0,
+          "end": 6,
+          "text": "سِيـَٔ"
+        }
+      ],
+      "audio": null
+    },
+    "options": [
+      {
+        "id": 1,
+        "text": "yes"
+      },
+      {
+        "id": 2,
+        "text": "no"
+      }
+    ],
+    "answer": [
+      1
+    ],
+    "pattern": "◌ِيٓ"
+  },
+  {
+    "id": 1874,
+    "rule": "madd",
+    "lesson": 30,
+    "task_type": "yes_no",
+    "question_type": "has_rule",
+    "modality": "text",
+    "sura": null,
+    "verse": null,
+    "subject": {
+      "text": "تَسُوءُ",
+      "spots": [
+        {
+          "start": 2,
+          "end": 5,
+          "text": "سُو"
+        }
+      ],
+      "audio": null
+    },
+    "options": [
+      {
+        "id": 1,
+        "text": "yes"
+      },
+      {
+        "id": 2,
+        "text": "no"
+      }
+    ],
+    "answer": [
+      1
+    ],
+    "pattern": "◌ُوٓ"
+  },
+  {
+    "id": 1875,
+    "rule": "madd",
+    "lesson": 30,
+    "task_type": "yes_no",
+    "question_type": "has_rule",
+    "modality": "text",
+    "sura": null,
+    "verse": null,
+    "subject": {
+      "text": "خَطِيـَٔتُهُ",
+      "spots": [
+        {
+          "start": 2,
+          "end": 8,
+          "text": "طِيـَٔ"
+        }
+      ],
+      "audio": null
+    },
+    "options": [
+      {
+        "id": 1,
+        "text": "yes"
+      },
+      {
+        "id": 2,
+        "text": "no"
+      }
+    ],
+    "answer": [
+      1
+    ],
+    "pattern": "◌ِيٓ"
+  },
+  {
+    "id": 1876,
+    "rule": "madd",
+    "lesson": 30,
+    "task_type": "yes_no",
+    "question_type": "has_rule",
+    "modality": "text",
+    "sura": null,
+    "verse": null,
+    "subject": {
+      "text": "السُّوءِ",
+      "spots": [
+        {
+          "start": 2,
+          "end": 6,
+          "text": "سُّو"
+        }
+      ],
+      "audio": null
+    },
+    "options": [
+      {
+        "id": 1,
+        "text": "yes"
+      },
+      {
+        "id": 2,
+        "text": "no"
+      }
+    ],
+    "answer": [
+      1
+    ],
+    "pattern": "◌ُوٓ"
+  },
+  {
+    "id": 1877,
+    "rule": "madd",
+    "lesson": 30,
+    "task_type": "yes_no",
+    "question_type": "has_rule",
+    "modality": "text",
+    "sura": null,
+    "verse": null,
+    "subject": {
+      "text": "بَرِيـُٔونَ",
+      "spots": [
+        {
+          "start": 2,
+          "end": 8,
+          "text": "رِيـُٔ"
+        }
+      ],
+      "audio": null
+    },
+    "options": [
+      {
+        "id": 1,
+        "text": "yes"
+      },
+      {
+        "id": 2,
+        "text": "no"
+      }
+    ],
+    "answer": [
+      1
+    ],
+    "pattern": "◌ِيٓ"
+  },
+  {
+    "id": 1878,
+    "rule": "madd",
+    "lesson": 30,
+    "task_type": "yes_no",
+    "question_type": "has_rule",
+    "modality": "text",
+    "sura": null,
+    "verse": null,
+    "subject": {
+      "text": "لِيَسُوءُوا۟",
+      "spots": [
+        {
+          "start": 4,
+          "end": 7,
+          "text": "سُو"
+        }
+      ],
+      "audio": null
+    },
+    "options": [
+      {
+        "id": 1,
+        "text": "yes"
+      },
+      {
+        "id": 2,
+        "text": "no"
+      }
+    ],
+    "answer": [
+      1
+    ],
+    "pattern": "◌ُوٓ"
+  },
+  {
+    "id": 1879,
+    "rule": "madd",
+    "lesson": 30,
+    "task_type": "yes_no",
+    "question_type": "has_rule",
+    "modality": "text",
+    "sura": null,
+    "verse": null,
+    "subject": {
+      "text": "يُضِيءُ",
+      "spots": [
+        {
+          "start": 2,
+          "end": 5,
+          "text": "ضِي"
+        }
+      ],
+      "audio": null
+    },
+    "options": [
+      {
+        "id": 1,
+        "text": "yes"
+      },
+      {
+        "id": 2,
+        "text": "no"
+      }
+    ],
+    "answer": [
+      1
+    ],
+    "pattern": "◌ِيٓ"
+  },
+  {
+    "id": 1880,
+    "rule": "madd",
+    "lesson": 30,
+    "task_type": "yes_no",
+    "question_type": "has_rule",
+    "modality": "text",
+    "sura": null,
+    "verse": null,
+    "subject": {
+      "text": "سُوءُ",
+      "spots": [
+        {
+          "start": 0,
+          "end": 3,
+          "text": "سُو"
+        }
+      ],
+      "audio": null
+    },
+    "options": [
+      {
+        "id": 1,
+        "text": "yes"
+      },
+      {
+        "id": 2,
+        "text": "no"
+      }
+    ],
+    "answer": [
+      1
+    ],
+    "pattern": "◌ُوٓ"
+  },
+  {
+    "id": 1881,
+    "rule": "madd",
+    "lesson": 30,
+    "task_type": "yes_no",
+    "question_type": "has_rule",
+    "modality": "text",
+    "sura": null,
+    "verse": null,
+    "subject": {
+      "text": "النَّسِيءُ",
+      "spots": [
+        {
+          "start": 5,
+          "end": 8,
+          "text": "سِي"
+        }
+      ],
+      "audio": null
+    },
+    "options": [
+      {
+        "id": 1,
+        "text": "yes"
+      },
+      {
+        "id": 2,
+        "text": "no"
+      }
+    ],
+    "answer": [
+      1
+    ],
+    "pattern": "◌ِيٓ"
+  },
+  {
+    "id": 1882,
+    "rule": "madd",
+    "lesson": 30,
+    "task_type": "yes_no",
+    "question_type": "has_rule",
+    "modality": "text",
+    "sura": null,
+    "verse": null,
+    "subject": {
+      "text": "السُّوءُ",
+      "spots": [
+        {
+          "start": 2,
+          "end": 6,
+          "text": "سُّو"
+        }
+      ],
+      "audio": null
+    },
+    "options": [
+      {
+        "id": 1,
+        "text": "yes"
+      },
+      {
+        "id": 2,
+        "text": "no"
+      }
+    ],
+    "answer": [
+      1
+    ],
+    "pattern": "◌ُوٓ"
+  },
+  {
+    "id": 1883,
+    "rule": "madd",
+    "lesson": 30,
+    "task_type": "yes_no",
+    "question_type": "has_rule",
+    "modality": "text",
+    "sura": null,
+    "verse": null,
+    "subject": {
+      "text": "دُرِّيءٌ",
+      "spots": [
+        {
+          "start": 2,
+          "end": 6,
+          "text": "رِّي"
+        }
+      ],
+      "audio": null
+    },
+    "options": [
+      {
+        "id": 1,
+        "text": "yes"
+      },
+      {
+        "id": 2,
+        "text": "no"
+      }
+    ],
+    "answer": [
+      1
+    ],
+    "pattern": "◌ِيٓ"
+  },
+  {
+    "id": 1884,
+    "rule": "madd",
+    "lesson": 30,
+    "task_type": "yes_no",
+    "question_type": "has_rule",
+    "modality": "text",
+    "sura": null,
+    "verse": null,
+    "subject": {
+      "text": "سِيقَ",
+      "audio": null
+    },
+    "options": [
+      {
+        "id": 1,
+        "text": "yes"
+      },
+      {
+        "id": 2,
+        "text": "no"
+      }
+    ],
+    "answer": [
+      2
+    ]
+  },
+  {
+    "id": 1885,
+    "rule": "madd",
+    "lesson": 30,
+    "task_type": "yes_no",
+    "question_type": "has_rule",
+    "modality": "text",
+    "sura": null,
+    "verse": null,
+    "subject": {
+      "text": "دِينِ",
+      "audio": null
+    },
+    "options": [
+      {
+        "id": 1,
+        "text": "yes"
+      },
+      {
+        "id": 2,
+        "text": "no"
+      }
+    ],
+    "answer": [
+      2
+    ]
+  },
+  {
+    "id": 1886,
+    "rule": "madd",
+    "lesson": 30,
+    "task_type": "yes_no",
+    "question_type": "has_rule",
+    "modality": "text",
+    "sura": null,
+    "verse": null,
+    "subject": {
+      "text": "مَالٌ",
+      "audio": null
+    },
+    "options": [
+      {
+        "id": 1,
+        "text": "yes"
+      },
+      {
+        "id": 2,
+        "text": "no"
+      }
+    ],
+    "answer": [
+      2
+    ]
+  },
+  {
+    "id": 1887,
+    "rule": "madd",
+    "lesson": 30,
+    "task_type": "yes_no",
+    "question_type": "has_rule",
+    "modality": "text",
+    "sura": null,
+    "verse": null,
+    "subject": {
+      "text": "رُوحٌ",
+      "audio": null
+    },
+    "options": [
+      {
+        "id": 1,
+        "text": "yes"
+      },
+      {
+        "id": 2,
+        "text": "no"
+      }
+    ],
+    "answer": [
+      2
+    ]
+  },
+  {
+    "id": 1888,
+    "rule": "madd",
+    "lesson": 30,
+    "task_type": "select_count",
+    "question_type": "count_rule",
+    "modality": "audio",
+    "sura": 35,
+    "verse": 8,
+    "subject": {
+      "text": "أَفَمَن زُيِّنَ لَهُ سُوٓءُ عَمَلِهِۦ فَرَءَاهُ حَسَنًا ۖ فَإِنَّ ٱللَّهَ يُضِلُّ مَن يَشَآءُ وَيَهْدِى مَن يَشَآءُ ۖ فَلَا تَذْهَبْ نَفْسُكَ عَلَيْهِمْ حَسَرَٰتٍ ۚ إِنَّ ٱللَّهَ عَلِيمٌ بِمَا يَصْنَعُونَ ٨",
+      "spots": [
+        {
+          "start": 21,
+          "end": 25,
+          "text": "سُوٓ"
+        },
+        {
+          "start": 88,
+          "end": 92,
+          "text": "شَآ"
+        },
+        {
+          "start": 111,
+          "end": 115,
+          "text": "شَآ"
+        }
+      ],
+      "audio": "1888.wav"
+    },
+    "options": [
+      {
+        "id": 1,
+        "text": "1"
+      },
+      {
+        "id": 2,
+        "text": "2"
+      },
+      {
+        "id": 3,
+        "text": "3"
+      },
+      {
+        "id": 4,
+        "text": "4"
+      }
+    ],
+    "answer": [
+      3
+    ],
+    "pattern": "◌ُوٓ:◌ِيٓ:◌َآ"
+  },
+  {
+    "id": 1889,
+    "rule": "madd",
+    "lesson": 30,
+    "task_type": "select_count",
+    "question_type": "count_rule",
+    "modality": "audio",
+    "sura": 2,
+    "verse": 169,
+    "subject": {
+      "text": "إِنَّمَا يَأْمُرُكُم بِٱلسُّوٓءِ وَٱلْفَحْشَآءِ وَأَن تَقُولُوا۟ عَلَى ٱللَّهِ مَا لَا تَعْلَمُونَ ١٦٩",
+      "spots": [
+        {
+          "start": 25,
+          "end": 30,
+          "text": "سُّوٓ"
+        },
+        {
+          "start": 42,
+          "end": 46,
+          "text": "شَآ"
+        }
+      ],
+      "audio": "1889.wav"
+    },
+    "options": [
+      {
+        "id": 1,
+        "text": "0"
+      },
+      {
+        "id": 2,
+        "text": "1"
+      },
+      {
+        "id": 3,
+        "text": "2"
+      },
+      {
+        "id": 4,
+        "text": "3"
+      }
+    ],
+    "answer": [
+      3
+    ],
+    "pattern": "◌ُوٓ:◌ِيٓ:◌َآ"
+  },
+  {
+    "id": 1890,
+    "rule": "madd",
+    "lesson": 30,
+    "task_type": "select_count",
+    "question_type": "count_rule",
+    "modality": "audio",
+    "sura": 20,
+    "verse": 22,
+    "subject": {
+      "text": "وَٱضْمُمْ يَدَكَ إِلَىٰ جَنَاحِكَ تَخْرُجْ بَيْضَآءَ مِنْ غَيْرِ سُوٓءٍ آيَةً أُخْرَىٰ ٢٢",
+      "spots": [
+        {
+          "start": 47,
+          "end": 51,
+          "text": "ضَآ"
+        },
+        {
+          "start": 66,
+          "end": 70,
+          "text": "سُوٓ"
+        }
+      ],
+      "audio": "1890.wav"
+    },
+    "options": [
+      {
+        "id": 1,
+        "text": "0"
+      },
+      {
+        "id": 2,
+        "text": "1"
+      },
+      {
+        "id": 3,
+        "text": "2"
+      },
+      {
+        "id": 4,
+        "text": "3"
+      }
+    ],
+    "answer": [
+      3
+    ],
+    "pattern": "◌ُوٓ:◌ِيٓ:◌َآ"
+  },
+  {
+    "id": 1891,
+    "rule": "madd",
+    "lesson": 30,
+    "task_type": "select_count",
+    "question_type": "count_rule",
+    "modality": "audio",
+    "sura": 27,
+    "verse": 62,
+    "subject": {
+      "text": "أَمَّن يُجِيبُ ٱلْمُضْطَرَّ إِذَا دَعَاهُ وَيَكْشِفُ ٱلسُّوٓءَ وَيَجْعَلُكُمْ خُلَفَآءَ ٱلْأَرْضِ ۗ أَءِلَٰهٌ مَّعَ ٱللَّهِ ۚ قَلِيلًا مَّا تَذَكَّرُونَ ٦٢",
+      "spots": [
+        {
+          "start": 55,
+          "end": 60,
+          "text": "سُّوٓ"
+        },
+        {
+          "start": 82,
+          "end": 86,
+          "text": "فَآ"
+        }
+      ],
+      "audio": "1891.wav"
+    },
+    "options": [
+      {
+        "id": 1,
+        "text": "0"
+      },
+      {
+        "id": 2,
+        "text": "1"
+      },
+      {
+        "id": 3,
+        "text": "2"
+      },
+      {
+        "id": 4,
+        "text": "3"
+      }
+    ],
+    "answer": [
+      3
+    ],
+    "pattern": "◌ُوٓ:◌ِيٓ:◌َآ"
+  },
+  {
+    "id": 1892,
+    "rule": "madd",
+    "lesson": 30,
+    "task_type": "select_count",
+    "question_type": "count_rule",
+    "modality": "audio",
+    "sura": 16,
+    "verse": 27,
+    "subject": {
+      "text": "ثُمَّ يَوْمَ ٱلْقِيَٰمَةِ يُخْزِيهِمْ وَيَقُولُ أَيْنَ شُرَكَآءِىَ ٱلَّذِينَ كُنتُمْ تُشَٰٓقُّونَ فِيهِمْ ۚ قَالَ ٱلَّذِينَ أُوتُوا۟ ٱلْعِلْمَ إِنَّ ٱلْخِزْىَ ٱلْيَوْمَ وَٱلسُّوٓءَ عَلَى ٱلْكَٰفِرِينَ ٢٧",
+      "spots": [
+        {
+          "start": 59,
+          "end": 63,
+          "text": "كَآ"
+        },
+        {
+          "start": 174,
+          "end": 179,
+          "text": "سُّوٓ"
+        }
+      ],
+      "audio": "1892.wav"
+    },
+    "options": [
+      {
+        "id": 1,
+        "text": "0"
+      },
+      {
+        "id": 2,
+        "text": "1"
+      },
+      {
+        "id": 3,
+        "text": "2"
+      },
+      {
+        "id": 4,
+        "text": "3"
+      }
+    ],
+    "answer": [
+      3
+    ],
+    "pattern": "◌ُوٓ:◌ِيٓ:◌َآ"
+  },
+  {
+    "id": 1893,
+    "rule": "madd",
+    "lesson": 30,
+    "task_type": "select_count",
+    "question_type": "count_rule",
+    "modality": "audio",
+    "sura": 26,
+    "verse": 156,
+    "subject": {
+      "text": "وَلَا تَمَسُّوهَا بِسُوٓءٍ فَيَأْخُذَكُمْ عَذَابُ يَوْمٍ عَظِيمٍ ١٥٦",
+      "spots": [
+        {
+          "start": 20,
+          "end": 24,
+          "text": "سُوٓ"
+        }
+      ],
+      "audio": "1893.wav"
+    },
+    "options": [
+      {
+        "id": 1,
+        "text": "0"
+      },
+      {
+        "id": 2,
+        "text": "1"
+      },
+      {
+        "id": 3,
+        "text": "2"
+      },
+      {
+        "id": 4,
+        "text": "3"
+      }
+    ],
+    "answer": [
+      2
+    ],
+    "pattern": "◌ُوٓ:◌ِيٓ:◌َآ"
+  },
+  {
+    "id": 1894,
+    "rule": "madd",
+    "lesson": 30,
+    "task_type": "select_count",
+    "question_type": "count_rule",
+    "modality": "audio",
+    "sura": 11,
+    "verse": 77,
+    "subject": {
+      "text": "وَلَمَّا جَآءَتْ رُسُلُنَا لُوطًا سِيٓءَ بِهِمْ وَضَاقَ بِهِمْ ذَرْعًا وَقَالَ هَٰذَا يَوْمٌ عَصِيبٌ ٧٧",
+      "spots": [
+        {
+          "start": 9,
+          "end": 13,
+          "text": "جَآ"
+        },
+        {
+          "start": 35,
+          "end": 39,
+          "text": "سِيٓ"
+        }
+      ],
+      "audio": "1894.wav"
+    },
+    "options": [
+      {
+        "id": 1,
+        "text": "0"
+      },
+      {
+        "id": 2,
+        "text": "1"
+      },
+      {
+        "id": 3,
+        "text": "2"
+      },
+      {
+        "id": 4,
+        "text": "3"
+      }
+    ],
+    "answer": [
+      3
+    ],
+    "pattern": "◌ُوٓ:◌ِيٓ:◌َآ"
+  },
+  {
+    "id": 1895,
+    "rule": "madd",
+    "lesson": 30,
+    "task_type": "select_count",
+    "question_type": "count_rule",
+    "modality": "audio",
+    "sura": 67,
+    "verse": 27,
+    "subject": {
+      "text": "فَلَمَّا رَأَوْهُ زُلْفَةً سِيٓـَٔتْ وُجُوهُ ٱلَّذِينَ كَفَرُوا۟ وَقِيلَ هَٰذَا ٱلَّذِى كُنتُم بِهِۦ تَدَّعُونَ ٢٧",
+      "spots": [
+        {
+          "start": 27,
+          "end": 34,
+          "text": "سِيٓـَٔ"
+        }
+      ],
+      "audio": "1895.wav"
+    },
+    "options": [
+      {
+        "id": 1,
+        "text": "0"
+      },
+      {
+        "id": 2,
+        "text": "1"
+      },
+      {
+        "id": 3,
+        "text": "2"
+      },
+      {
+        "id": 4,
+        "text": "3"
+      }
+    ],
+    "answer": [
+      2
+    ],
+    "pattern": "◌ُوٓ:◌ِيٓ:◌َآ"
+  },
+  {
+    "id": 1896,
+    "rule": "madd",
+    "lesson": 30,
+    "task_type": "select_count",
+    "question_type": "count_rule",
+    "modality": "audio",
+    "sura": 4,
+    "verse": 112,
+    "subject": {
+      "text": "وَمَن يَكْسِبْ خَطِيٓـَٔةً أَوْ إِثْمًا ثُمَّ يَرْمِ بِهِۦ بَرِيٓـًٔا فَقَدِ ٱحْتَمَلَ بُهْتَٰنًا وَإِثْمًا مُّبِينًا ١١٢",
+      "spots": [
+        {
+          "start": 17,
+          "end": 24,
+          "text": "طِيٓـَٔ"
+        },
+        {
+          "start": 61,
+          "end": 68,
+          "text": "رِيٓـًٔ"
+        }
+      ],
+      "audio": "1896.wav"
+    },
+    "options": [
+      {
+        "id": 1,
+        "text": "0"
+      },
+      {
+        "id": 2,
+        "text": "1"
+      },
+      {
+        "id": 3,
+        "text": "2"
+      },
+      {
+        "id": 4,
+        "text": "3"
+      }
+    ],
+    "answer": [
+      3
+    ],
+    "pattern": "◌ُوٓ:◌ِيٓ:◌َآ"
+  },
+  {
+    "id": 1897,
+    "rule": "madd",
+    "lesson": 30,
+    "task_type": "select_count",
+    "question_type": "count_rule",
+    "modality": "audio",
+    "sura": 2,
+    "verse": 81,
+    "subject": {
+      "text": "بَلَىٰ مَن كَسَبَ سَيِّئَةً وَأَحَاطَتْ بِهِۦ خَطِيٓـَٔتُهُۥ فَأُو۟لَٰٓئِكَ أَصْحَٰبُ ٱلنَّارِ ۖ هُمْ فِيهَا خَٰلِدُونَ ٨١",
+      "spots": [
+        {
+          "start": 50,
+          "end": 55,
+          "text": "يٓـَٔ"
+        },
+        {
+          "start": 67,
+          "end": 71,
+          "text": "لَٰٓ"
+        }
+      ],
+      "audio": "1897.wav"
+    },
+    "options": [
+      {
+        "id": 1,
+        "text": "0"
+      },
+      {
+        "id": 2,
+        "text": "1"
+      },
+      {
+        "id": 3,
+        "text": "2"
+      },
+      {
+        "id": 4,
+        "text": "3"
+      }
+    ],
+    "answer": [
+      3
+    ],
+    "pattern": "◌ُوٓ:◌ِيٓ:◌َآ"
+  },
+  {
+    "id": 1898,
+    "rule": "madd",
+    "lesson": 30,
+    "task_type": "select_count",
+    "question_type": "count_rule",
+    "modality": "audio",
+    "sura": 26,
+    "verse": 216,
+    "subject": {
+      "text": "فَإِنْ عَصَوْكَ فَقُلْ إِنِّى بَرِيٓءٌ مِّمَّا تَعْمَلُونَ ٢١٦",
+      "spots": [
+        {
+          "start": 32,
+          "end": 36,
+          "text": "رِيٓ"
+        }
+      ],
+      "audio": "1898.wav"
+    },
+    "options": [
+      {
+        "id": 1,
+        "text": "0"
+      },
+      {
+        "id": 2,
+        "text": "1"
+      },
+      {
+        "id": 3,
+        "text": "2"
+      },
+      {
+        "id": 4,
+        "text": "3"
+      }
+    ],
+    "answer": [
+      2
+    ],
+    "pattern": "◌ُوٓ:◌ِيٓ:◌َآ"
+  },
+  {
+    "id": 1899,
+    "rule": "madd",
+    "lesson": 30,
+    "task_type": "select_count",
+    "question_type": "count_rule",
+    "modality": "audio",
+    "sura": 4,
+    "verse": 4,
+    "subject": {
+      "text": "وَءَاتُوا۟ ٱلنِّسَآءَ صَدُقَٰتِهِنَّ نِحْلَةً ۚ فَإِن طِبْنَ لَكُمْ عَن شَىْءٍ مِّنْهُ نَفْسًا فَكُلُوهُ هَنِيٓـًٔا مَّرِيٓـًٔا ٤",
+      "spots": [
+        {
+          "start": 16,
+          "end": 20,
+          "text": "سَآ"
+        },
+        {
+          "start": 108,
+          "end": 115,
+          "text": "نِيٓـًٔ"
+        },
+        {
+          "start": 120,
+          "end": 127,
+          "text": "رِيٓـًٔ"
+        }
+      ],
+      "audio": "1899.wav"
+    },
+    "options": [
+      {
+        "id": 1,
+        "text": "1"
+      },
+      {
+        "id": 2,
+        "text": "2"
+      },
+      {
+        "id": 3,
+        "text": "3"
+      },
+      {
+        "id": 4,
+        "text": "4"
+      }
+    ],
+    "answer": [
+      3
+    ],
+    "pattern": "◌ُوٓ:◌ِيٓ:◌َآ"
+  },
+  {
+    "id": 1900,
+    "rule": "madd",
+    "lesson": 30,
+    "task_type": "select_count",
+    "question_type": "count_rule",
+    "modality": "audio",
+    "sura": 2,
+    "verse": 2,
+    "subject": {
+      "text": "ذَٰلِكَ ٱلْكِتَٰبُ لَا رَيْبَ ۛ فِيهِ ۛ هُدًى لِّّلْمُتَّقِينَ ٢",
+      "audio": "1900.wav"
+    },
+    "options": [
+      {
+        "id": 1,
+        "text": "0"
+      },
+      {
+        "id": 2,
+        "text": "1"
+      },
+      {
+        "id": 3,
+        "text": "2"
+      },
+      {
+        "id": 4,
+        "text": "3"
+      }
+    ],
+    "answer": [
+      1
+    ]
+  },
+  {
+    "id": 1901,
+    "rule": "madd",
+    "lesson": 30,
+    "task_type": "select_count",
+    "question_type": "count_rule",
+    "modality": "audio",
+    "sura": 1,
+    "verse": 2,
+    "subject": {
+      "text": "ٱلْحَمْدُ لِلَّهِ رَبِّ ٱلْعَٰلَمِينَ ٢",
+      "audio": "1901.wav"
+    },
+    "options": [
+      {
+        "id": 1,
+        "text": "0"
+      },
+      {
+        "id": 2,
+        "text": "1"
+      },
+      {
+        "id": 3,
+        "text": "2"
+      },
+      {
+        "id": 4,
+        "text": "3"
+      }
+    ],
+    "answer": [
+      1
+    ]
+  },
+  {
+    "id": 1902,
+    "rule": "madd",
+    "lesson": 30,
+    "task_type": "select_count",
+    "question_type": "count_rule",
+    "modality": "audio",
+    "sura": 112,
+    "verse": 1,
+    "subject": {
+      "text": "قُلْ هُوَ ٱللَّهُ أَحَدٌ ١",
+      "audio": "1902.wav"
+    },
+    "options": [
+      {
+        "id": 1,
+        "text": "0"
+      },
+      {
+        "id": 2,
+        "text": "1"
+      },
+      {
+        "id": 3,
+        "text": "2"
+      },
+      {
+        "id": 4,
+        "text": "3"
+      }
+    ],
+    "answer": [
+      1
+    ]
+  },
+  {
+    "id": 1903,
+    "rule": "madd",
+    "lesson": 30,
+    "task_type": "select_count",
+    "question_type": "count_rule",
+    "modality": "audio",
+    "sura": 108,
+    "verse": 2,
+    "subject": {
+      "text": "فَصَلِّ لِرَبِّكَ وَٱنْحَرْ ٢",
+      "audio": "1903.wav"
+    },
+    "options": [
+      {
+        "id": 1,
+        "text": "0"
+      },
+      {
+        "id": 2,
+        "text": "1"
+      },
+      {
+        "id": 3,
+        "text": "2"
+      },
+      {
+        "id": 4,
+        "text": "3"
+      }
+    ],
+    "answer": [
+      1
+    ]
+  },
+  {
+    "id": 1920,
+    "rule": "madd",
+    "lesson": 31,
+    "task_type": "yes_no",
+    "question_type": "has_rule",
+    "modality": "audio",
+    "sura": null,
+    "verse": null,
+    "subject": {
+      "text": "بِمَآ أُنزِلَ",
+      "spots": [
+        {
+          "start": 2,
+          "end": 5,
+          "text": "مَآ"
+        }
+      ],
+      "audio": "1920.wav"
+    },
+    "options": [
+      {
+        "id": 1,
+        "text": "yes"
+      },
+      {
+        "id": 2,
+        "text": "no"
+      }
+    ],
+    "answer": [
+      1
+    ],
+    "pattern": "◌َآ:◌ُوٓ:◌ِيٓ"
+  },
+  {
+    "id": 1921,
+    "rule": "madd",
+    "lesson": 31,
+    "task_type": "yes_no",
+    "question_type": "has_rule",
+    "modality": "audio",
+    "sura": null,
+    "verse": null,
+    "subject": {
+      "text": "عَلَىٰٓ أَنفُسِهِمْ",
+      "spots": [
+        {
+          "start": 4,
+          "end": 7,
+          "text": "ىٰٓ"
+        }
+      ],
+      "audio": "1921.wav"
+    },
+    "options": [
+      {
+        "id": 1,
+        "text": "yes"
+      },
+      {
+        "id": 2,
+        "text": "no"
+      }
+    ],
+    "answer": [
+      1
+    ],
+    "pattern": "◌َآ:◌ُوٓ:◌ِيٓ"
+  },
+  {
+    "id": 1922,
+    "rule": "madd",
+    "lesson": 31,
+    "task_type": "yes_no",
+    "question_type": "has_rule",
+    "modality": "audio",
+    "sura": null,
+    "verse": null,
+    "subject": {
+      "text": "رَبَّنَآ إِنَّنَا",
+      "spots": [
+        {
+          "start": 5,
+          "end": 8,
+          "text": "نَآ"
+        }
+      ],
+      "audio": "1922.wav"
+    },
+    "options": [
+      {
+        "id": 1,
+        "text": "yes"
+      },
+      {
+        "id": 2,
+        "text": "no"
+      }
+    ],
+    "answer": [
+      1
+    ],
+    "pattern": "◌َآ:◌ُوٓ:◌ِيٓ"
+  },
+  {
+    "id": 1923,
+    "rule": "madd",
+    "lesson": 31,
+    "task_type": "yes_no",
+    "question_type": "has_rule",
+    "modality": "audio",
+    "sura": null,
+    "verse": null,
+    "subject": {
+      "text": "فَلَمَّآ أَحَسُّوا۟",
+      "spots": [
+        {
+          "start": 4,
+          "end": 8,
+          "text": "مَّآ"
+        }
+      ],
+      "audio": "1923.wav"
+    },
+    "options": [
+      {
+        "id": 1,
+        "text": "yes"
+      },
+      {
+        "id": 2,
+        "text": "no"
+      }
+    ],
+    "answer": [
+      1
+    ],
+    "pattern": "◌َآ:◌ُوٓ:◌ِيٓ"
+  },
+  {
+    "id": 1924,
+    "rule": "madd",
+    "lesson": 31,
+    "task_type": "yes_no",
+    "question_type": "has_rule",
+    "modality": "audio",
+    "sura": null,
+    "verse": null,
+    "subject": {
+      "text": "كَفَرُوٓا۟ إِنَّ",
+      "spots": [
+        {
+          "start": 4,
+          "end": 8,
+          "text": "رُوٓ"
+        }
+      ],
+      "audio": "1924.wav"
+    },
+    "options": [
+      {
+        "id": 1,
+        "text": "yes"
+      },
+      {
+        "id": 2,
+        "text": "no"
+      }
+    ],
+    "answer": [
+      1
+    ],
+    "pattern": "◌َآ:◌ُوٓ:◌ِيٓ"
+  },
+  {
+    "id": 1925,
+    "rule": "madd",
+    "lesson": 31,
+    "task_type": "yes_no",
+    "question_type": "has_rule",
+    "modality": "audio",
+    "sura": null,
+    "verse": null,
+    "subject": {
+      "text": "ءَامَنُوٓا۟ إِنَّمَا",
+      "spots": [
+        {
+          "start": 5,
+          "end": 9,
+          "text": "نُوٓ"
+        }
+      ],
+      "audio": "1925.wav"
+    },
+    "options": [
+      {
+        "id": 1,
+        "text": "yes"
+      },
+      {
+        "id": 2,
+        "text": "no"
+      }
+    ],
+    "answer": [
+      1
+    ],
+    "pattern": "◌َآ:◌ُوٓ:◌ِيٓ"
+  },
+  {
+    "id": 1926,
+    "rule": "madd",
+    "lesson": 31,
+    "task_type": "yes_no",
+    "question_type": "has_rule",
+    "modality": "audio",
+    "sura": null,
+    "verse": null,
+    "subject": {
+      "text": "ظَلَمُوٓا۟ أَنفُسَهُمْ",
+      "spots": [
+        {
+          "start": 4,
+          "end": 8,
+          "text": "مُوٓ"
+        }
+      ],
+      "audio": "1926.wav"
+    },
+    "options": [
+      {
+        "id": 1,
+        "text": "yes"
+      },
+      {
+        "id": 2,
+        "text": "no"
+      }
+    ],
+    "answer": [
+      1
+    ],
+    "pattern": "◌َآ:◌ُوٓ:◌ِيٓ"
+  },
+  {
+    "id": 1927,
+    "rule": "madd",
+    "lesson": 31,
+    "task_type": "yes_no",
+    "question_type": "has_rule",
+    "modality": "audio",
+    "sura": null,
+    "verse": null,
+    "subject": {
+      "text": "قَالُوٓا۟ ءَامَنَّا",
+      "spots": [
+        {
+          "start": 3,
+          "end": 7,
+          "text": "لُوٓ"
+        }
+      ],
+      "audio": "1927.wav"
+    },
+    "options": [
+      {
+        "id": 1,
+        "text": "yes"
+      },
+      {
+        "id": 2,
+        "text": "no"
+      }
+    ],
+    "answer": [
+      1
+    ],
+    "pattern": "◌َآ:◌ُوٓ:◌ِيٓ"
+  },
+  {
+    "id": 1928,
+    "rule": "madd",
+    "lesson": 31,
+    "task_type": "yes_no",
+    "question_type": "has_rule",
+    "modality": "audio",
+    "sura": null,
+    "verse": null,
+    "subject": {
+      "text": "فِىٓ أَنفُسِهِمْ",
+      "spots": [
+        {
+          "start": 2,
+          "end": 4,
+          "text": "ىٓ"
+        }
+      ],
+      "audio": "1928.wav"
+    },
+    "options": [
+      {
+        "id": 1,
+        "text": "yes"
+      },
+      {
+        "id": 2,
+        "text": "no"
+      }
+    ],
+    "answer": [
+      1
+    ],
+    "pattern": "◌َآ:◌ُوٓ:◌ِيٓ"
+  },
+  {
+    "id": 1929,
+    "rule": "madd",
+    "lesson": 31,
+    "task_type": "yes_no",
+    "question_type": "has_rule",
+    "modality": "audio",
+    "sura": null,
+    "verse": null,
+    "subject": {
+      "text": "فِىٓ آذَانِهِمْ",
+      "spots": [
+        {
+          "start": 2,
+          "end": 6,
+          "text": "ىٓ آ"
+        }
+      ],
+      "audio": "1929.wav"
+    },
+    "options": [
+      {
+        "id": 1,
+        "text": "yes"
+      },
+      {
+        "id": 2,
+        "text": "no"
+      }
+    ],
+    "answer": [
+      1
+    ],
+    "pattern": "◌َآ:◌ُوٓ:◌ِيٓ"
+  },
+  {
+    "id": 1930,
+    "rule": "madd",
+    "lesson": 31,
+    "task_type": "yes_no",
+    "question_type": "has_rule",
+    "modality": "audio",
+    "sura": null,
+    "verse": null,
+    "subject": {
+      "text": "بَنِىٓ ءَادَمَ",
+      "spots": [
+        {
+          "start": 4,
+          "end": 6,
+          "text": "ىٓ"
+        }
+      ],
+      "audio": "1930.wav"
+    },
+    "options": [
+      {
+        "id": 1,
+        "text": "yes"
+      },
+      {
+        "id": 2,
+        "text": "no"
+      }
+    ],
+    "answer": [
+      1
+    ],
+    "pattern": "◌َآ:◌ُوٓ:◌ِيٓ"
+  },
+  {
+    "id": 1931,
+    "rule": "madd",
+    "lesson": 31,
+    "task_type": "yes_no",
+    "question_type": "has_rule",
+    "modality": "audio",
+    "sura": null,
+    "verse": null,
+    "subject": {
+      "text": "إِنِّىٓ أَنَا",
+      "spots": [
+        {
+          "start": 5,
+          "end": 7,
+          "text": "ىٓ"
+        }
+      ],
+      "audio": "1931.wav"
+    },
+    "options": [
+      {
+        "id": 1,
+        "text": "yes"
+      },
+      {
+        "id": 2,
+        "text": "no"
+      }
+    ],
+    "answer": [
+      1
+    ],
+    "pattern": "◌َآ:◌ُوٓ:◌ِيٓ"
+  },
+  {
+    "id": 1932,
+    "rule": "madd",
+    "lesson": 31,
+    "task_type": "yes_no",
+    "question_type": "has_rule",
+    "modality": "audio",
+    "sura": null,
+    "verse": null,
+    "subject": {
+      "text": "سَمِيعٌ",
+      "audio": "1932.wav"
+    },
+    "options": [
+      {
+        "id": 1,
+        "text": "yes"
+      },
+      {
+        "id": 2,
+        "text": "no"
+      }
+    ],
+    "answer": [
+      2
+    ]
+  },
+  {
+    "id": 1933,
+    "rule": "madd",
+    "lesson": 31,
+    "task_type": "yes_no",
+    "question_type": "has_rule",
+    "modality": "audio",
+    "sura": null,
+    "verse": null,
+    "subject": {
+      "text": "بَصِيرٌ",
+      "audio": "1933.wav"
+    },
+    "options": [
+      {
+        "id": 1,
+        "text": "yes"
+      },
+      {
+        "id": 2,
+        "text": "no"
+      }
+    ],
+    "answer": [
+      2
+    ]
+  },
+  {
+    "id": 1934,
+    "rule": "madd",
+    "lesson": 31,
+    "task_type": "yes_no",
+    "question_type": "has_rule",
+    "modality": "audio",
+    "sura": null,
+    "verse": null,
+    "subject": {
+      "text": "غَفُورٌ",
+      "audio": "1934.wav"
+    },
+    "options": [
+      {
+        "id": 1,
+        "text": "yes"
+      },
+      {
+        "id": 2,
+        "text": "no"
+      }
+    ],
+    "answer": [
+      2
+    ]
+  },
+  {
+    "id": 1935,
+    "rule": "madd",
+    "lesson": 31,
+    "task_type": "yes_no",
+    "question_type": "has_rule",
+    "modality": "audio",
+    "sura": null,
+    "verse": null,
+    "subject": {
+      "text": "شَكُورٌ",
+      "audio": "1935.wav"
+    },
+    "options": [
+      {
+        "id": 1,
+        "text": "yes"
+      },
+      {
+        "id": 2,
+        "text": "no"
+      }
+    ],
+    "answer": [
+      2
+    ]
+  },
+  {
+    "id": 1936,
+    "rule": "madd",
+    "lesson": 31,
+    "task_type": "yes_no",
+    "question_type": "has_rule",
+    "modality": "text",
+    "sura": null,
+    "verse": null,
+    "subject": {
+      "text": "لَا أَعْبُدُ",
+      "spots": [
+        {
+          "start": 0,
+          "end": 3,
+          "text": "لَا"
+        }
+      ],
+      "audio": null
+    },
+    "options": [
+      {
+        "id": 1,
+        "text": "yes"
+      },
+      {
+        "id": 2,
+        "text": "no"
+      }
+    ],
+    "answer": [
+      1
+    ],
+    "pattern": "◌َآ:◌ُوٓ:◌ِيٓ"
+  },
+  {
+    "id": 1937,
+    "rule": "madd",
+    "lesson": 31,
+    "task_type": "yes_no",
+    "question_type": "has_rule",
+    "modality": "text",
+    "sura": null,
+    "verse": null,
+    "subject": {
+      "text": "إِنَّا أَعْطَيْنَاكَ",
+      "spots": [
+        {
+          "start": 2,
+          "end": 6,
+          "text": "نَّا"
+        }
+      ],
+      "audio": null
+    },
+    "options": [
+      {
+        "id": 1,
+        "text": "yes"
+      },
+      {
+        "id": 2,
+        "text": "no"
+      }
+    ],
+    "answer": [
+      1
+    ],
+    "pattern": "◌َآ:◌ُوٓ:◌ِيٓ"
+  },
+  {
+    "id": 1938,
+    "rule": "madd",
+    "lesson": 31,
+    "task_type": "yes_no",
+    "question_type": "has_rule",
+    "modality": "text",
+    "sura": null,
+    "verse": null,
+    "subject": {
+      "text": "إِلَىٰ أَهْلِهِ",
+      "spots": [
+        {
+          "start": 2,
+          "end": 6,
+          "text": "لَىٰ"
+        }
+      ],
+      "audio": null
+    },
+    "options": [
+      {
+        "id": 1,
+        "text": "yes"
+      },
+      {
+        "id": 2,
+        "text": "no"
+      }
+    ],
+    "answer": [
+      1
+    ],
+    "pattern": "◌َآ:◌ُوٓ:◌ِيٓ"
+  },
+  {
+    "id": 1939,
+    "rule": "madd",
+    "lesson": 31,
+    "task_type": "yes_no",
+    "question_type": "has_rule",
+    "modality": "text",
+    "sura": null,
+    "verse": null,
+    "subject": {
+      "text": "حَتَّىٰ إِذَا",
+      "spots": [
+        {
+          "start": 2,
+          "end": 7,
+          "text": "تَّىٰ"
+        }
+      ],
+      "audio": null
+    },
+    "options": [
+      {
+        "id": 1,
+        "text": "yes"
+      },
+      {
+        "id": 2,
+        "text": "no"
+      }
+    ],
+    "answer": [
+      1
+    ],
+    "pattern": "◌َآ:◌ُوٓ:◌ِيٓ"
+  },
+  {
+    "id": 1940,
+    "rule": "madd",
+    "lesson": 31,
+    "task_type": "yes_no",
+    "question_type": "has_rule",
+    "modality": "text",
+    "sura": null,
+    "verse": null,
+    "subject": {
+      "text": "كَفَرُوا۟ أَوْ",
+      "spots": [
+        {
+          "start": 4,
+          "end": 7,
+          "text": "رُو"
+        }
+      ],
+      "audio": null
+    },
+    "options": [
+      {
+        "id": 1,
+        "text": "yes"
+      },
+      {
+        "id": 2,
+        "text": "no"
+      }
+    ],
+    "answer": [
+      1
+    ],
+    "pattern": "◌َآ:◌ُوٓ:◌ِيٓ"
+  },
+  {
+    "id": 1941,
+    "rule": "madd",
+    "lesson": 31,
+    "task_type": "yes_no",
+    "question_type": "has_rule",
+    "modality": "text",
+    "sura": null,
+    "verse": null,
+    "subject": {
+      "text": "كَانُوا۟ إِخْوَانًا",
+      "spots": [
+        {
+          "start": 3,
+          "end": 6,
+          "text": "نُو"
+        }
+      ],
+      "audio": null
+    },
+    "options": [
+      {
+        "id": 1,
+        "text": "yes"
+      },
+      {
+        "id": 2,
+        "text": "no"
+      }
+    ],
+    "answer": [
+      1
+    ],
+    "pattern": "◌َآ:◌ُوٓ:◌ِيٓ"
+  },
+  {
+    "id": 1942,
+    "rule": "madd",
+    "lesson": 31,
+    "task_type": "yes_no",
+    "question_type": "has_rule",
+    "modality": "text",
+    "sura": null,
+    "verse": null,
+    "subject": {
+      "text": "كَفَرُوا۟ إِلَىٰ",
+      "spots": [
+        {
+          "start": 4,
+          "end": 7,
+          "text": "رُو"
+        }
+      ],
+      "audio": null
+    },
+    "options": [
+      {
+        "id": 1,
+        "text": "yes"
+      },
+      {
+        "id": 2,
+        "text": "no"
+      }
+    ],
+    "answer": [
+      1
+    ],
+    "pattern": "◌َآ:◌ُوٓ:◌ِيٓ"
+  },
+  {
+    "id": 1943,
+    "rule": "madd",
+    "lesson": 31,
+    "task_type": "yes_no",
+    "question_type": "has_rule",
+    "modality": "text",
+    "sura": null,
+    "verse": null,
+    "subject": {
+      "text": "قَالُوا۟ إِنَّا",
+      "spots": [
+        {
+          "start": 3,
+          "end": 6,
+          "text": "لُو"
+        }
+      ],
+      "audio": null
+    },
+    "options": [
+      {
+        "id": 1,
+        "text": "yes"
+      },
+      {
+        "id": 2,
+        "text": "no"
+      }
+    ],
+    "answer": [
+      1
+    ],
+    "pattern": "◌َآ:◌ُوٓ:◌ِيٓ"
+  },
+  {
+    "id": 1944,
+    "rule": "madd",
+    "lesson": 31,
+    "task_type": "yes_no",
+    "question_type": "has_rule",
+    "modality": "text",
+    "sura": null,
+    "verse": null,
+    "subject": {
+      "text": "فِى أَرْضِ",
+      "spots": [
+        {
+          "start": 0,
+          "end": 3,
+          "text": "فِى"
+        }
+      ],
+      "audio": null
+    },
+    "options": [
+      {
+        "id": 1,
+        "text": "yes"
+      },
+      {
+        "id": 2,
+        "text": "no"
+      }
+    ],
+    "answer": [
+      1
+    ],
+    "pattern": "◌َآ:◌ُوٓ:◌ِيٓ"
+  },
+  {
+    "id": 1945,
+    "rule": "madd",
+    "lesson": 31,
+    "task_type": "yes_no",
+    "question_type": "has_rule",
+    "modality": "text",
+    "sura": null,
+    "verse": null,
+    "subject": {
+      "text": "فِى أُمِّهَا",
+      "spots": [
+        {
+          "start": 0,
+          "end": 3,
+          "text": "فِى"
+        }
+      ],
+      "audio": null
+    },
+    "options": [
+      {
+        "id": 1,
+        "text": "yes"
+      },
+      {
+        "id": 2,
+        "text": "no"
+      }
+    ],
+    "answer": [
+      1
+    ],
+    "pattern": "◌َآ:◌ُوٓ:◌ِيٓ"
+  },
+  {
+    "id": 1946,
+    "rule": "madd",
+    "lesson": 31,
+    "task_type": "yes_no",
+    "question_type": "has_rule",
+    "modality": "text",
+    "sura": null,
+    "verse": null,
+    "subject": {
+      "text": "فِى أَيِّ",
+      "spots": [
+        {
+          "start": 0,
+          "end": 3,
+          "text": "فِى"
+        }
+      ],
+      "audio": null
+    },
+    "options": [
+      {
+        "id": 1,
+        "text": "yes"
+      },
+      {
+        "id": 2,
+        "text": "no"
+      }
+    ],
+    "answer": [
+      1
+    ],
+    "pattern": "◌َآ:◌ُوٓ:◌ِيٓ"
+  },
+  {
+    "id": 1947,
+    "rule": "madd",
+    "lesson": 31,
+    "task_type": "yes_no",
+    "question_type": "has_rule",
+    "modality": "text",
+    "sura": null,
+    "verse": null,
+    "subject": {
+      "text": "نُودِى أَن",
+      "spots": [
+        {
+          "start": 3,
+          "end": 6,
+          "text": "دِى"
+        }
+      ],
+      "audio": null
+    },
+    "options": [
+      {
+        "id": 1,
+        "text": "yes"
+      },
+      {
+        "id": 2,
+        "text": "no"
+      }
+    ],
+    "answer": [
+      1
+    ],
+    "pattern": "◌َآ:◌ُوٓ:◌ِيٓ"
+  },
+  {
+    "id": 1948,
+    "rule": "madd",
+    "lesson": 31,
+    "task_type": "yes_no",
+    "question_type": "has_rule",
+    "modality": "text",
+    "sura": null,
+    "verse": null,
+    "subject": {
+      "text": "حَلِيمٌ",
+      "audio": null
+    },
+    "options": [
+      {
+        "id": 1,
+        "text": "yes"
+      },
+      {
+        "id": 2,
+        "text": "no"
+      }
+    ],
+    "answer": [
+      2
+    ]
+  },
+  {
+    "id": 1949,
+    "rule": "madd",
+    "lesson": 31,
+    "task_type": "yes_no",
+    "question_type": "has_rule",
+    "modality": "text",
+    "sura": null,
+    "verse": null,
+    "subject": {
+      "text": "خَبِيرٌ",
+      "audio": null
+    },
+    "options": [
+      {
+        "id": 1,
+        "text": "yes"
+      },
+      {
+        "id": 2,
+        "text": "no"
+      }
+    ],
+    "answer": [
+      2
+    ]
+  },
+  {
+    "id": 1950,
+    "rule": "madd",
+    "lesson": 31,
+    "task_type": "yes_no",
+    "question_type": "has_rule",
+    "modality": "text",
+    "sura": null,
+    "verse": null,
+    "subject": {
+      "text": "سَلَامٌ",
+      "audio": null
+    },
+    "options": [
+      {
+        "id": 1,
+        "text": "yes"
+      },
+      {
+        "id": 2,
+        "text": "no"
+      }
+    ],
+    "answer": [
+      2
+    ]
+  },
+  {
+    "id": 1951,
+    "rule": "madd",
+    "lesson": 31,
+    "task_type": "yes_no",
+    "question_type": "has_rule",
+    "modality": "text",
+    "sura": null,
+    "verse": null,
+    "subject": {
+      "text": "مَقَامٌ",
+      "audio": null
+    },
+    "options": [
+      {
+        "id": 1,
+        "text": "yes"
+      },
+      {
+        "id": 2,
+        "text": "no"
+      }
+    ],
+    "answer": [
+      2
+    ]
+  },
+  {
+    "id": 1952,
+    "rule": "madd",
+    "lesson": 31,
+    "task_type": "select_count",
+    "question_type": "count_rule",
+    "modality": "audio",
+    "sura": 73,
+    "verse": 15,
+    "subject": {
+      "text": "إِنَّآ أَرْسَلْنَآ إِلَيْكُمْ رَسُولًا شَٰهِدًا عَلَيْكُمْ كَمَآ أَرْسَلْنَآ إِلَىٰ فِرْعَوْنَ رَسُولًا ١٥",
+      "spots": [
+        {
+          "start": 2,
+          "end": 7,
+          "text": "نَّآ"
+        },
+        {
+          "start": 16,
+          "end": 20,
+          "text": "نَآ"
+        },
+        {
+          "start": 63,
+          "end": 67,
+          "text": "مَآ"
+        },
+        {
+          "start": 76,
+          "end": 80,
+          "text": "نَآ"
+        }
+      ],
+      "audio": "1952.wav"
+    },
+    "options": [
+      {
+        "id": 1,
+        "text": "1"
+      },
+      {
+        "id": 2,
+        "text": "2"
+      },
+      {
+        "id": 3,
+        "text": "3"
+      },
+      {
+        "id": 4,
+        "text": "4"
+      }
+    ],
+    "answer": [
+      4
+    ],
+    "pattern": "◌َآ:◌ُوٓ:◌ِيٓ"
+  },
+  {
+    "id": 1953,
+    "rule": "madd",
+    "lesson": 31,
+    "task_type": "select_count",
+    "question_type": "count_rule",
+    "modality": "audio",
+    "sura": 12,
+    "verse": 16,
+    "subject": {
+      "text": "وَجَآءُوٓ أَبَاهُمْ عِشَآءً يَبْكُونَ ١٦",
+      "spots": [
+        {
+          "start": 2,
+          "end": 10,
+          "text": "جَآءُوٓ"
+        },
+        {
+          "start": 23,
+          "end": 27,
+          "text": "شَآ"
+        }
+      ],
+      "audio": "1953.wav"
+    },
+    "options": [
+      {
+        "id": 1,
+        "text": "1"
+      },
+      {
+        "id": 2,
+        "text": "2"
+      },
+      {
+        "id": 3,
+        "text": "3"
+      },
+      {
+        "id": 4,
+        "text": "4"
+      }
+    ],
+    "answer": [
+      3
+    ],
+    "pattern": "◌َآ:◌ُوٓ:◌ِيٓ"
+  },
+  {
+    "id": 1954,
+    "rule": "madd",
+    "lesson": 31,
+    "task_type": "select_count",
+    "question_type": "count_rule",
+    "modality": "audio",
+    "sura": 54,
+    "verse": 11,
+    "subject": {
+      "text": "فَفَتَحْنَآ أَبْوَٰبَ ٱلسَّمَآءِ بِمَآءٍ مُّنْهَمِرٍ ١١",
+      "spots": [
+        {
+          "start": 8,
+          "end": 12,
+          "text": "نَآ"
+        },
+        {
+          "start": 28,
+          "end": 32,
+          "text": "مَآ"
+        },
+        {
+          "start": 37,
+          "end": 41,
+          "text": "مَآ"
+        }
+      ],
+      "audio": "1954.wav"
+    },
+    "options": [
+      {
+        "id": 1,
+        "text": "1"
+      },
+      {
+        "id": 2,
+        "text": "2"
+      },
+      {
+        "id": 3,
+        "text": "3"
+      },
+      {
+        "id": 4,
+        "text": "4"
+      }
+    ],
+    "answer": [
+      3
+    ],
+    "pattern": "◌َآ:◌ُوٓ:◌ِيٓ"
+  },
+  {
+    "id": 1955,
+    "rule": "madd",
+    "lesson": 31,
+    "task_type": "select_count",
+    "question_type": "count_rule",
+    "modality": "audio",
+    "sura": 81,
+    "verse": 29,
+    "subject": {
+      "text": "وَمَا تَشَآءُونَ إِلَّآ أَن يَشَآءَ ٱللَّهُ رَبُّ ٱلْعَٰلَمِينَ ٢٩",
+      "spots": [
+        {
+          "start": 8,
+          "end": 12,
+          "text": "شَآ"
+        },
+        {
+          "start": 20,
+          "end": 25,
+          "text": "لَّآ"
+        },
+        {
+          "start": 32,
+          "end": 36,
+          "text": "شَآ"
+        }
+      ],
+      "audio": "1955.wav"
+    },
+    "options": [
+      {
+        "id": 1,
+        "text": "1"
+      },
+      {
+        "id": 2,
+        "text": "2"
+      },
+      {
+        "id": 3,
+        "text": "3"
+      },
+      {
+        "id": 4,
+        "text": "4"
+      }
+    ],
+    "answer": [
+      3
+    ],
+    "pattern": "◌َآ:◌ُوٓ:◌ِيٓ"
+  },
+  {
+    "id": 1956,
+    "rule": "madd",
+    "lesson": 31,
+    "task_type": "select_count",
+    "question_type": "count_rule",
+    "modality": "audio",
+    "sura": 18,
+    "verse": 69,
+    "subject": {
+      "text": "قَالَ سَتَجِدُنِىٓ إِن شَآءَ ٱللَّهُ صَابِرًا وَلَآ أَعْصِى لَكَ أَمْرًا ٦٩",
+      "spots": [
+        {
+          "start": 16,
+          "end": 18,
+          "text": "ىٓ"
+        },
+        {
+          "start": 25,
+          "end": 27,
+          "text": "آ"
+        },
+        {
+          "start": 51,
+          "end": 53,
+          "text": "آ"
+        }
+      ],
+      "audio": "1956.wav"
+    },
+    "options": [
+      {
+        "id": 1,
+        "text": "1"
+      },
+      {
+        "id": 2,
+        "text": "2"
+      },
+      {
+        "id": 3,
+        "text": "3"
+      },
+      {
+        "id": 4,
+        "text": "4"
+      }
+    ],
+    "answer": [
+      3
+    ],
+    "pattern": "◌َآ:◌ُوٓ:◌ِيٓ"
+  },
+  {
+    "id": 1957,
+    "rule": "madd",
+    "lesson": 31,
+    "task_type": "select_count",
+    "question_type": "count_rule",
+    "modality": "audio",
+    "sura": 68,
+    "verse": 32,
+    "subject": {
+      "text": "عَسَىٰ رَبُّنَآ أَن يُبْدِلَنَا خَيْرًا مِّنْهَآ إِنَّآ إِلَىٰ رَبِّنَا رَٰغِبُونَ ٣٢",
+      "spots": [
+        {
+          "start": 12,
+          "end": 16,
+          "text": "نَآ"
+        },
+        {
+          "start": 46,
+          "end": 50,
+          "text": "هَآ"
+        },
+        {
+          "start": 53,
+          "end": 58,
+          "text": "نَّآ"
+        }
+      ],
+      "audio": "1957.wav"
+    },
+    "options": [
+      {
+        "id": 1,
+        "text": "1"
+      },
+      {
+        "id": 2,
+        "text": "2"
+      },
+      {
+        "id": 3,
+        "text": "3"
+      },
+      {
+        "id": 4,
+        "text": "4"
+      }
+    ],
+    "answer": [
+      3
+    ],
+    "pattern": "◌َآ:◌ُوٓ:◌ِيٓ"
+  },
+  {
+    "id": 1958,
+    "rule": "madd",
+    "lesson": 31,
+    "task_type": "select_count",
+    "question_type": "count_rule",
+    "modality": "audio",
+    "sura": 6,
+    "verse": 42,
+    "subject": {
+      "text": "وَلَقَدْ أَرْسَلْنَآ إِلَىٰٓ أُمَمٍ مِّن قَبْلِكَ فَأَخَذْنَٰهُم بِٱلْبَأْسَآءِ وَٱلضَّرَّآءِ لَعَلَّهُمْ يَتَضَرَّعُونَ ٤٢",
+      "spots": [
+        {
+          "start": 19,
+          "end": 21,
+          "text": "آ"
+        },
+        {
+          "start": 26,
+          "end": 29,
+          "text": "ىٰٓ"
+        },
+        {
+          "start": 77,
+          "end": 79,
+          "text": "آ"
+        },
+        {
+          "start": 92,
+          "end": 94,
+          "text": "آ"
+        }
+      ],
+      "audio": "1958.wav"
+    },
+    "options": [
+      {
+        "id": 1,
+        "text": "1"
+      },
+      {
+        "id": 2,
+        "text": "2"
+      },
+      {
+        "id": 3,
+        "text": "3"
+      },
+      {
+        "id": 4,
+        "text": "4"
+      }
+    ],
+    "answer": [
+      4
+    ],
+    "pattern": "◌َآ:◌ُوٓ:◌ِيٓ"
+  },
+  {
+    "id": 1959,
+    "rule": "madd",
+    "lesson": 31,
+    "task_type": "select_count",
+    "question_type": "count_rule",
+    "modality": "audio",
+    "sura": 28,
+    "verse": 22,
+    "subject": {
+      "text": "وَلَمَّا تَوَجَّهَ تِلْقَآءَ مَدْيَنَ قَالَ عَسَىٰ رَبِّىٓ أَن يَهْدِيَنِى سَوَآءَ ٱلسَّبِيلِ ٢٢",
+      "spots": [
+        {
+          "start": 25,
+          "end": 27,
+          "text": "آ"
+        },
+        {
+          "start": 57,
+          "end": 59,
+          "text": "ىٓ"
+        },
+        {
+          "start": 80,
+          "end": 82,
+          "text": "آ"
+        }
+      ],
+      "audio": "1959.wav"
+    },
+    "options": [
+      {
+        "id": 1,
+        "text": "1"
+      },
+      {
+        "id": 2,
+        "text": "2"
+      },
+      {
+        "id": 3,
+        "text": "3"
+      },
+      {
+        "id": 4,
+        "text": "4"
+      }
+    ],
+    "answer": [
+      3
+    ],
+    "pattern": "◌َآ:◌ُوٓ:◌ِيٓ"
+  },
+  {
+    "id": 1960,
+    "rule": "madd",
+    "lesson": 31,
+    "task_type": "select_count",
+    "question_type": "count_rule",
+    "modality": "audio",
+    "sura": 7,
+    "verse": 5,
+    "subject": {
+      "text": "فَمَا كَانَ دَعْوَىٰهُمْ إِذْ جَآءَهُم بَأْسُنَآ إِلَّآ أَن قَالُوٓا۟ إِنَّا كُنَّا ظَٰلِمِينَ ٥",
+      "spots": [
+        {
+          "start": 30,
+          "end": 34,
+          "text": "جَآ"
+        },
+        {
+          "start": 46,
+          "end": 50,
+          "text": "نَآ"
+        },
+        {
+          "start": 53,
+          "end": 58,
+          "text": "لَّآ"
+        },
+        {
+          "start": 66,
+          "end": 70,
+          "text": "لُوٓ"
+        }
+      ],
+      "audio": "1960.wav"
+    },
+    "options": [
+      {
+        "id": 1,
+        "text": "1"
+      },
+      {
+        "id": 2,
+        "text": "2"
+      },
+      {
+        "id": 3,
+        "text": "3"
+      },
+      {
+        "id": 4,
+        "text": "4"
+      }
+    ],
+    "answer": [
+      4
+    ],
+    "pattern": "◌َآ:◌ُوٓ:◌ِيٓ"
+  },
+  {
+    "id": 1961,
+    "rule": "madd",
+    "lesson": 31,
+    "task_type": "select_count",
+    "question_type": "count_rule",
+    "modality": "audio",
+    "sura": 15,
+    "verse": 22,
+    "subject": {
+      "text": "وَأَرْسَلْنَا ٱلرِّيَٰحَ لَوَٰقِحَ فَأَنزَلْنَا مِنَ ٱلسَّمَآءِ مَآءً فَأَسْقَيْنَٰكُمُوهُ وَمَآ أَنتُمْ لَهُ بِخَٰزِنِينَ ٢٢",
+      "spots": [
+        {
+          "start": 58,
+          "end": 62,
+          "text": "مَآ"
+        },
+        {
+          "start": 65,
+          "end": 69,
+          "text": "مَآ"
+        },
+        {
+          "start": 95,
+          "end": 99,
+          "text": "مَآ"
+        }
+      ],
+      "audio": "1961.wav"
+    },
+    "options": [
+      {
+        "id": 1,
+        "text": "1"
+      },
+      {
+        "id": 2,
+        "text": "2"
+      },
+      {
+        "id": 3,
+        "text": "3"
+      },
+      {
+        "id": 4,
+        "text": "4"
+      }
+    ],
+    "answer": [
+      3
+    ],
+    "pattern": "◌َآ:◌ُوٓ:◌ِيٓ"
+  },
+  {
+    "id": 1962,
+    "rule": "madd",
+    "lesson": 31,
+    "task_type": "select_count",
+    "question_type": "count_rule",
+    "modality": "audio",
+    "sura": 23,
+    "verse": 83,
+    "subject": {
+      "text": "لَقَدْ وُعِدْنَا نَحْنُ وَءَابَآؤُنَا هَٰذَا مِن قَبْلُ إِنْ هَٰذَآ إِلَّآ أَسَٰطِيرُ ٱلْأَوَّلِينَ ٨٣",
+      "spots": [
+        {
+          "start": 29,
+          "end": 33,
+          "text": "بَآ"
+        },
+        {
+          "start": 65,
+          "end": 69,
+          "text": "ذَآ"
+        },
+        {
+          "start": 72,
+          "end": 77,
+          "text": "لَّآ"
+        }
+      ],
+      "audio": "1962.wav"
+    },
+    "options": [
+      {
+        "id": 1,
+        "text": "1"
+      },
+      {
+        "id": 2,
+        "text": "2"
+      },
+      {
+        "id": 3,
+        "text": "3"
+      },
+      {
+        "id": 4,
+        "text": "4"
+      }
+    ],
+    "answer": [
+      3
+    ],
+    "pattern": "◌َآ:◌ُوٓ:◌ِيٓ"
+  },
+  {
+    "id": 1963,
+    "rule": "madd",
+    "lesson": 31,
+    "task_type": "select_count",
+    "question_type": "count_rule",
+    "modality": "audio",
+    "sura": 56,
+    "verse": 35,
+    "subject": {
+      "text": "إِنَّآ أَنشَأْنَٰهُنَّ إِنشَآءً ٣٥",
+      "spots": [
+        {
+          "start": 2,
+          "end": 7,
+          "text": "نَّآ"
+        },
+        {
+          "start": 27,
+          "end": 31,
+          "text": "شَآ"
+        }
+      ],
+      "audio": "1963.wav"
+    },
+    "options": [
+      {
+        "id": 1,
+        "text": "0"
+      },
+      {
+        "id": 2,
+        "text": "1"
+      },
+      {
+        "id": 3,
+        "text": "2"
+      },
+      {
+        "id": 4,
+        "text": "3"
+      }
+    ],
+    "answer": [
+      3
+    ],
+    "pattern": "◌َآ:◌ُوٓ:◌ِيٓ"
+  },
+  {
+    "id": 1964,
+    "rule": "madd",
+    "lesson": 31,
+    "task_type": "select_count",
+    "question_type": "count_rule",
+    "modality": "audio",
+    "sura": 2,
+    "verse": 18,
+    "subject": {
+      "text": "صُمٌّ بُكْمٌ عُمْىٌ فَهُمْ لَا يَرْجِعُونَ ١٨",
+      "audio": "1964.wav"
+    },
+    "options": [
+      {
+        "id": 1,
+        "text": "0"
+      },
+      {
+        "id": 2,
+        "text": "1"
+      },
+      {
+        "id": 3,
+        "text": "2"
+      },
+      {
+        "id": 4,
+        "text": "3"
+      }
+    ],
+    "answer": [
+      1
+    ]
+  },
+  {
+    "id": 1965,
+    "rule": "madd",
+    "lesson": 31,
+    "task_type": "select_count",
+    "question_type": "count_rule",
+    "modality": "audio",
+    "sura": 2,
+    "verse": 53,
+    "subject": {
+      "text": "وَإِذْ آتَيْنَا مُوسَى ٱلْكِتَٰبَ وَٱلْفُرْقَانَ لَعَلَّكُمْ تَهْتَدُونَ ٥٣",
+      "audio": "1965.wav"
+    },
+    "options": [
+      {
+        "id": 1,
+        "text": "0"
+      },
+      {
+        "id": 2,
+        "text": "1"
+      },
+      {
+        "id": 3,
+        "text": "2"
+      },
+      {
+        "id": 4,
+        "text": "3"
+      }
+    ],
+    "answer": [
+      1
+    ]
+  },
+  {
+    "id": 1966,
+    "rule": "madd",
+    "lesson": 31,
+    "task_type": "select_count",
+    "question_type": "count_rule",
+    "modality": "audio",
+    "sura": 2,
+    "verse": 241,
+    "subject": {
+      "text": "وَلِلْمُطَلَّقَٰتِ مَتَٰعٌ بِٱلْمَعْرُوفِ ۖ حَقًّا عَلَى ٱلْمُتَّقِينَ ٢٤١",
+      "audio": "1966.wav"
+    },
+    "options": [
+      {
+        "id": 1,
+        "text": "0"
+      },
+      {
+        "id": 2,
+        "text": "1"
+      },
+      {
+        "id": 3,
+        "text": "2"
+      },
+      {
+        "id": 4,
+        "text": "3"
+      }
+    ],
+    "answer": [
+      1
+    ]
+  },
+  {
+    "id": 1967,
+    "rule": "madd",
+    "lesson": 31,
+    "task_type": "select_count",
+    "question_type": "count_rule",
+    "modality": "audio",
+    "sura": 2,
+    "verse": 242,
+    "subject": {
+      "text": "كَذَٰلِكَ يُبَيِّنُ ٱللَّهُ لَكُمْ آيَٰتِهِۦ لَعَلَّكُمْ تَعْقِلُونَ ٢٤٢",
+      "audio": "1967.wav"
+    },
+    "options": [
+      {
+        "id": 1,
+        "text": "0"
+      },
+      {
+        "id": 2,
+        "text": "1"
+      },
+      {
+        "id": 3,
+        "text": "2"
+      },
+      {
+        "id": 4,
+        "text": "3"
+      }
+    ],
+    "answer": [
+      1
+    ]
+  },
+  {
+    "id": 1984,
+    "rule": "madd",
+    "lesson": 32,
+    "task_type": "yes_no",
+    "question_type": "has_rule",
+    "modality": "audio",
+    "sura": null,
+    "verse": null,
+    "subject": {
+      "text": "لَهُۥٓ أَخٌ",
+      "spots": [
+        {
+          "start": 2,
+          "end": 6,
+          "text": "هُۥٓ"
+        }
+      ],
+      "audio": "1984.wav"
+    },
+    "options": [
+      {
+        "id": 1,
+        "text": "yes"
+      },
+      {
+        "id": 2,
+        "text": "no"
+      }
+    ],
+    "answer": [
+      1
+    ],
+    "pattern": "◌ُۥ:◌ِۦ:◌ُٓ:◌ِۦٓ"
+  },
+  {
+    "id": 1985,
+    "rule": "madd",
+    "lesson": 32,
+    "task_type": "yes_no",
+    "question_type": "has_rule",
+    "modality": "audio",
+    "sura": null,
+    "verse": null,
+    "subject": {
+      "text": "عِندَهُۥٓ إِلَّا",
+      "spots": [
+        {
+          "start": 5,
+          "end": 9,
+          "text": "هُۥٓ"
+        }
+      ],
+      "audio": "1985.wav"
+    },
+    "options": [
+      {
+        "id": 1,
+        "text": "yes"
+      },
+      {
+        "id": 2,
+        "text": "no"
+      }
+    ],
+    "answer": [
+      1
+    ],
+    "pattern": "◌ُۥ:◌ِۦ:◌ُٓ:◌ِۦٓ"
+  },
+  {
+    "id": 1986,
+    "rule": "madd",
+    "lesson": 32,
+    "task_type": "yes_no",
+    "question_type": "has_rule",
+    "modality": "audio",
+    "sura": null,
+    "verse": null,
+    "subject": {
+      "text": "مَالَهُۥٓ أَخْلَدَهُ",
+      "spots": [
+        {
+          "start": 5,
+          "end": 9,
+          "text": "هُۥٓ"
+        }
+      ],
+      "audio": "1986.wav"
+    },
+    "options": [
+      {
+        "id": 1,
+        "text": "yes"
+      },
+      {
+        "id": 2,
+        "text": "no"
+      }
+    ],
+    "answer": [
+      1
+    ],
+    "pattern": "◌ُۥ:◌ِۦ:◌ُٓ:◌ِۦٓ"
+  },
+  {
+    "id": 1987,
+    "rule": "madd",
+    "lesson": 32,
+    "task_type": "yes_no",
+    "question_type": "has_rule",
+    "modality": "audio",
+    "sura": null,
+    "verse": null,
+    "subject": {
+      "text": "أَمْرُهُۥٓ إِلَى",
+      "spots": [
+        {
+          "start": 6,
+          "end": 10,
+          "text": "هُۥٓ"
+        }
+      ],
+      "audio": "1987.wav"
+    },
+    "options": [
+      {
+        "id": 1,
+        "text": "yes"
+      },
+      {
+        "id": 2,
+        "text": "no"
+      }
+    ],
+    "answer": [
+      1
+    ],
+    "pattern": "◌ُۥ:◌ِۦ:◌ُٓ:◌ِۦٓ"
+  },
+  {
+    "id": 1988,
+    "rule": "madd",
+    "lesson": 32,
+    "task_type": "yes_no",
+    "question_type": "has_rule",
+    "modality": "audio",
+    "sura": null,
+    "verse": null,
+    "subject": {
+      "text": "اسْمُهُۥٓ أَحْمَدُ",
+      "spots": [
+        {
+          "start": 5,
+          "end": 9,
+          "text": "هُۥٓ"
+        }
+      ],
+      "audio": "1988.wav"
+    },
+    "options": [
+      {
+        "id": 1,
+        "text": "yes"
+      },
+      {
+        "id": 2,
+        "text": "no"
+      }
+    ],
+    "answer": [
+      1
+    ],
+    "pattern": "◌ُۥ:◌ِۦ:◌ُٓ:◌ِۦٓ"
+  },
+  {
+    "id": 1989,
+    "rule": "madd",
+    "lesson": 32,
+    "task_type": "yes_no",
+    "question_type": "has_rule",
+    "modality": "audio",
+    "sura": null,
+    "verse": null,
+    "subject": {
+      "text": "رَبَّهُۥٓ أَنِّى",
+      "spots": [
+        {
+          "start": 5,
+          "end": 9,
+          "text": "هُۥٓ"
+        }
+      ],
+      "audio": "1989.wav"
+    },
+    "options": [
+      {
+        "id": 1,
+        "text": "yes"
+      },
+      {
+        "id": 2,
+        "text": "no"
+      }
+    ],
+    "answer": [
+      1
+    ],
+    "pattern": "◌ُۥ:◌ِۦ:◌ُٓ:◌ِۦٓ"
+  },
+  {
+    "id": 1990,
+    "rule": "madd",
+    "lesson": 32,
+    "task_type": "yes_no",
+    "question_type": "has_rule",
+    "modality": "audio",
+    "sura": null,
+    "verse": null,
+    "subject": {
+      "text": "بِهِۦٓ إِلَّا",
+      "spots": [
+        {
+          "start": 2,
+          "end": 6,
+          "text": "هِۦٓ"
+        }
+      ],
+      "audio": "1990.wav"
+    },
+    "options": [
+      {
+        "id": 1,
+        "text": "yes"
+      },
+      {
+        "id": 2,
+        "text": "no"
+      }
+    ],
+    "answer": [
+      1
+    ],
+    "pattern": "◌ُۥ:◌ِۦ:◌ُٓ:◌ِۦٓ"
+  },
+  {
+    "id": 1991,
+    "rule": "madd",
+    "lesson": 32,
+    "task_type": "yes_no",
+    "question_type": "has_rule",
+    "modality": "audio",
+    "sura": null,
+    "verse": null,
+    "subject": {
+      "text": "قَوْمِهِۦٓ أَلَا",
+      "spots": [
+        {
+          "start": 6,
+          "end": 10,
+          "text": "هِۦٓ"
+        }
+      ],
+      "audio": "1991.wav"
+    },
+    "options": [
+      {
+        "id": 1,
+        "text": "yes"
+      },
+      {
+        "id": 2,
+        "text": "no"
+      }
+    ],
+    "answer": [
+      1
+    ],
+    "pattern": "◌ُۥ:◌ِۦ:◌ُٓ:◌ِۦٓ"
+  },
+  {
+    "id": 1992,
+    "rule": "madd",
+    "lesson": 32,
+    "task_type": "yes_no",
+    "question_type": "has_rule",
+    "modality": "audio",
+    "sura": null,
+    "verse": null,
+    "subject": {
+      "text": "رَبِّهِۦٓ أَحَدًا",
+      "spots": [
+        {
+          "start": 5,
+          "end": 9,
+          "text": "هِۦٓ"
+        }
+      ],
+      "audio": "1992.wav"
+    },
+    "options": [
+      {
+        "id": 1,
+        "text": "yes"
+      },
+      {
+        "id": 2,
+        "text": "no"
+      }
+    ],
+    "answer": [
+      1
+    ],
+    "pattern": "◌ُۥ:◌ِۦ:◌ُٓ:◌ِۦٓ"
+  },
+  {
+    "id": 1993,
+    "rule": "madd",
+    "lesson": 32,
+    "task_type": "yes_no",
+    "question_type": "has_rule",
+    "modality": "audio",
+    "sura": null,
+    "verse": null,
+    "subject": {
+      "text": "أَهْلِهِۦٓ إِلَّا",
+      "spots": [
+        {
+          "start": 6,
+          "end": 10,
+          "text": "هِۦٓ"
+        }
+      ],
+      "audio": "1993.wav"
+    },
+    "options": [
+      {
+        "id": 1,
+        "text": "yes"
+      },
+      {
+        "id": 2,
+        "text": "no"
+      }
+    ],
+    "answer": [
+      1
+    ],
+    "pattern": "◌ُۥ:◌ِۦ:◌ُٓ:◌ِۦٓ"
+  },
+  {
+    "id": 1994,
+    "rule": "madd",
+    "lesson": 32,
+    "task_type": "yes_no",
+    "question_type": "has_rule",
+    "modality": "audio",
+    "sura": null,
+    "verse": null,
+    "subject": {
+      "text": "دُونِهِۦٓ أَوْلِيَاءَ",
+      "spots": [
+        {
+          "start": 5,
+          "end": 9,
+          "text": "هِۦٓ"
+        }
+      ],
+      "audio": "1994.wav"
+    },
+    "options": [
+      {
+        "id": 1,
+        "text": "yes"
+      },
+      {
+        "id": 2,
+        "text": "no"
+      }
+    ],
+    "answer": [
+      1
+    ],
+    "pattern": "◌ُۥ:◌ِۦ:◌ُٓ:◌ِۦٓ"
+  },
+  {
+    "id": 1995,
+    "rule": "madd",
+    "lesson": 32,
+    "task_type": "yes_no",
+    "question_type": "has_rule",
+    "modality": "audio",
+    "sura": null,
+    "verse": null,
+    "subject": {
+      "text": "آيَاتِهِۦٓ أَن",
+      "spots": [
+        {
+          "start": 6,
+          "end": 10,
+          "text": "هِۦٓ"
+        }
+      ],
+      "audio": "1995.wav"
+    },
+    "options": [
+      {
+        "id": 1,
+        "text": "yes"
+      },
+      {
+        "id": 2,
+        "text": "no"
+      }
+    ],
+    "answer": [
+      1
+    ],
+    "pattern": "◌ُۥ:◌ِۦ:◌ُٓ:◌ِۦٓ"
+  },
+  {
+    "id": 1996,
+    "rule": "madd",
+    "lesson": 32,
+    "task_type": "yes_no",
+    "question_type": "has_rule",
+    "modality": "audio",
+    "sura": null,
+    "verse": null,
+    "subject": {
+      "text": "عَنْهُ شَيْئًا",
+      "audio": "1996.wav"
+    },
+    "options": [
+      {
+        "id": 1,
+        "text": "yes"
+      },
+      {
+        "id": 2,
+        "text": "no"
+      }
+    ],
+    "answer": [
+      2
+    ]
+  },
+  {
+    "id": 1997,
+    "rule": "madd",
+    "lesson": 32,
+    "task_type": "yes_no",
+    "question_type": "has_rule",
+    "modality": "audio",
+    "sura": null,
+    "verse": null,
+    "subject": {
+      "text": "فِيهِ هُدًى",
+      "audio": "1997.wav"
+    },
+    "options": [
+      {
+        "id": 1,
+        "text": "yes"
+      },
+      {
+        "id": 2,
+        "text": "no"
+      }
+    ],
+    "answer": [
+      2
+    ]
+  },
+  {
+    "id": 1998,
+    "rule": "madd",
+    "lesson": 32,
+    "task_type": "yes_no",
+    "question_type": "has_rule",
+    "modality": "audio",
+    "sura": null,
+    "verse": null,
+    "subject": {
+      "text": "عَلَيْهِ وَكِيلٌ",
+      "audio": "1998.wav"
+    },
+    "options": [
+      {
+        "id": 1,
+        "text": "yes"
+      },
+      {
+        "id": 2,
+        "text": "no"
+      }
+    ],
+    "answer": [
+      2
+    ]
+  },
+  {
+    "id": 1999,
+    "rule": "madd",
+    "lesson": 32,
+    "task_type": "yes_no",
+    "question_type": "has_rule",
+    "modality": "audio",
+    "sura": null,
+    "verse": null,
+    "subject": {
+      "text": "مِنْهُ شَيْئًا",
+      "audio": "1999.wav"
+    },
+    "options": [
+      {
+        "id": 1,
+        "text": "yes"
+      },
+      {
+        "id": 2,
+        "text": "no"
+      }
+    ],
+    "answer": [
+      2
+    ]
+  },
+  {
+    "id": 2000,
+    "rule": "madd",
+    "lesson": 32,
+    "task_type": "yes_no",
+    "question_type": "has_rule",
+    "modality": "text",
+    "sura": null,
+    "verse": null,
+    "subject": {
+      "text": "عَذَابَهُ أَحَدٌ",
+      "spots": [
+        {
+          "start": 7,
+          "end": 9,
+          "text": "هُ"
+        }
+      ],
+      "audio": null
+    },
+    "options": [
+      {
+        "id": 1,
+        "text": "yes"
+      },
+      {
+        "id": 2,
+        "text": "no"
+      }
+    ],
+    "answer": [
+      1
+    ],
+    "pattern": "◌ُۥ:◌ِۦ:◌ُٓ:◌ِۦٓ"
+  },
+  {
+    "id": 2001,
+    "rule": "madd",
+    "lesson": 32,
+    "task_type": "yes_no",
+    "question_type": "has_rule",
+    "modality": "text",
+    "sura": null,
+    "verse": null,
+    "subject": {
+      "text": "كِتَابَهُ إِنِّى",
+      "spots": [
+        {
+          "start": 7,
+          "end": 9,
+          "text": "هُ"
+        }
+      ],
+      "audio": null
+    },
+    "options": [
+      {
+        "id": 1,
+        "text": "yes"
+      },
+      {
+        "id": 2,
+        "text": "no"
+      }
+    ],
+    "answer": [
+      1
+    ],
+    "pattern": "◌ُۥ:◌ِۦ:◌ُٓ:◌ِۦٓ"
+  },
+  {
+    "id": 2002,
+    "rule": "madd",
+    "lesson": 32,
+    "task_type": "yes_no",
+    "question_type": "has_rule",
+    "modality": "text",
+    "sura": null,
+    "verse": null,
+    "subject": {
+      "text": "عِلْمُهُ إِلَّا",
+      "spots": [
+        {
+          "start": 6,
+          "end": 8,
+          "text": "هُ"
+        }
+      ],
+      "audio": null
+    },
+    "options": [
+      {
+        "id": 1,
+        "text": "yes"
+      },
+      {
+        "id": 2,
+        "text": "no"
+      }
+    ],
+    "answer": [
+      1
+    ],
+    "pattern": "◌ُۥ:◌ِۦ:◌ُٓ:◌ِۦٓ"
+  },
+  {
+    "id": 2003,
+    "rule": "madd",
+    "lesson": 32,
+    "task_type": "yes_no",
+    "question_type": "has_rule",
+    "modality": "text",
+    "sura": null,
+    "verse": null,
+    "subject": {
+      "text": "لَهُ أَسْلَمَ",
+      "spots": [
+        {
+          "start": 2,
+          "end": 4,
+          "text": "هُ"
+        }
+      ],
+      "audio": null
+    },
+    "options": [
+      {
+        "id": 1,
+        "text": "yes"
+      },
+      {
+        "id": 2,
+        "text": "no"
+      }
+    ],
+    "answer": [
+      1
+    ],
+    "pattern": "◌ُۥ:◌ِۦ:◌ُٓ:◌ِۦٓ"
+  },
+  {
+    "id": 2004,
+    "rule": "madd",
+    "lesson": 32,
+    "task_type": "yes_no",
+    "question_type": "has_rule",
+    "modality": "text",
+    "sura": null,
+    "verse": null,
+    "subject": {
+      "text": "عِندَهُ أَجْرٌ",
+      "spots": [
+        {
+          "start": 5,
+          "end": 7,
+          "text": "هُ"
+        }
+      ],
+      "audio": null
+    },
+    "options": [
+      {
+        "id": 1,
+        "text": "yes"
+      },
+      {
+        "id": 2,
+        "text": "no"
+      }
+    ],
+    "answer": [
+      1
+    ],
+    "pattern": "◌ُۥ:◌ِۦ:◌ُٓ:◌ِۦٓ"
+  },
+  {
+    "id": 2005,
+    "rule": "madd",
+    "lesson": 32,
+    "task_type": "yes_no",
+    "question_type": "has_rule",
+    "modality": "text",
+    "sura": null,
+    "verse": null,
+    "subject": {
+      "text": "مَالَهُ إِذَا",
+      "spots": [
+        {
+          "start": 5,
+          "end": 7,
+          "text": "هُ"
+        }
+      ],
+      "audio": null
+    },
+    "options": [
+      {
+        "id": 1,
+        "text": "yes"
+      },
+      {
+        "id": 2,
+        "text": "no"
+      }
+    ],
+    "answer": [
+      1
+    ],
+    "pattern": "◌ُۥ:◌ِۦ:◌ُٓ:◌ِۦٓ"
+  },
+  {
+    "id": 2006,
+    "rule": "madd",
+    "lesson": 32,
+    "task_type": "yes_no",
+    "question_type": "has_rule",
+    "modality": "text",
+    "sura": null,
+    "verse": null,
+    "subject": {
+      "text": "رُسُلِهِ أُولَٰئِكَ",
+      "spots": [
+        {
+          "start": 6,
+          "end": 8,
+          "text": "هِ"
+        }
+      ],
+      "audio": null
+    },
+    "options": [
+      {
+        "id": 1,
+        "text": "yes"
+      },
+      {
+        "id": 2,
+        "text": "no"
+      }
+    ],
+    "answer": [
+      1
+    ],
+    "pattern": "◌ُۥ:◌ِۦ:◌ُٓ:◌ِۦٓ"
+  },
+  {
+    "id": 2007,
+    "rule": "madd",
+    "lesson": 32,
+    "task_type": "yes_no",
+    "question_type": "has_rule",
+    "modality": "text",
+    "sura": null,
+    "verse": null,
+    "subject": {
+      "text": "بَعْدِهِ إِلَّا",
+      "spots": [
+        {
+          "start": 6,
+          "end": 8,
+          "text": "هِ"
+        }
+      ],
+      "audio": null
+    },
+    "options": [
+      {
+        "id": 1,
+        "text": "yes"
+      },
+      {
+        "id": 2,
+        "text": "no"
+      }
+    ],
+    "answer": [
+      1
+    ],
+    "pattern": "◌ُۥ:◌ِۦ:◌ُٓ:◌ِۦٓ"
+  },
+  {
+    "id": 2008,
+    "rule": "madd",
+    "lesson": 32,
+    "task_type": "yes_no",
+    "question_type": "has_rule",
+    "modality": "text",
+    "sura": null,
+    "verse": null,
+    "subject": {
+      "text": "مِثْلِهِ أَبَدًا",
+      "spots": [
+        {
+          "start": 6,
+          "end": 8,
+          "text": "هِ"
+        }
+      ],
+      "audio": null
+    },
+    "options": [
+      {
+        "id": 1,
+        "text": "yes"
+      },
+      {
+        "id": 2,
+        "text": "no"
+      }
+    ],
+    "answer": [
+      1
+    ],
+    "pattern": "◌ُۥ:◌ِۦ:◌ُٓ:◌ِۦٓ"
+  },
+  {
+    "id": 2009,
+    "rule": "madd",
+    "lesson": 32,
+    "task_type": "yes_no",
+    "question_type": "has_rule",
+    "modality": "text",
+    "sura": null,
+    "verse": null,
+    "subject": {
+      "text": "بِهِ إِيمَانًا",
+      "spots": [
+        {
+          "start": 2,
+          "end": 4,
+          "text": "هِ"
+        }
+      ],
+      "audio": null
+    },
+    "options": [
+      {
+        "id": 1,
+        "text": "yes"
+      },
+      {
+        "id": 2,
+        "text": "no"
+      }
+    ],
+    "answer": [
+      1
+    ],
+    "pattern": "◌ُۥ:◌ِۦ:◌ُٓ:◌ِۦٓ"
+  },
+  {
+    "id": 2010,
+    "rule": "madd",
+    "lesson": 32,
+    "task_type": "yes_no",
+    "question_type": "has_rule",
+    "modality": "text",
+    "sura": null,
+    "verse": null,
+    "subject": {
+      "text": "قَوْمِهِ إِنِّى",
+      "spots": [
+        {
+          "start": 6,
+          "end": 8,
+          "text": "هِ"
+        }
+      ],
+      "audio": null
+    },
+    "options": [
+      {
+        "id": 1,
+        "text": "yes"
+      },
+      {
+        "id": 2,
+        "text": "no"
+      }
+    ],
+    "answer": [
+      1
+    ],
+    "pattern": "◌ُۥ:◌ِۦ:◌ُٓ:◌ِۦٓ"
+  },
+  {
+    "id": 2011,
+    "rule": "madd",
+    "lesson": 32,
+    "task_type": "yes_no",
+    "question_type": "has_rule",
+    "modality": "text",
+    "sura": null,
+    "verse": null,
+    "subject": {
+      "text": "رَبِّهِ إِلَىٰ",
+      "spots": [
+        {
+          "start": 5,
+          "end": 7,
+          "text": "هِ"
+        }
+      ],
+      "audio": null
+    },
+    "options": [
+      {
+        "id": 1,
+        "text": "yes"
+      },
+      {
+        "id": 2,
+        "text": "no"
+      }
+    ],
+    "answer": [
+      1
+    ],
+    "pattern": "◌ُۥ:◌ِۦ:◌ُٓ:◌ِۦٓ"
+  },
+  {
+    "id": 2012,
+    "rule": "madd",
+    "lesson": 32,
+    "task_type": "yes_no",
+    "question_type": "has_rule",
+    "modality": "text",
+    "sura": null,
+    "verse": null,
+    "subject": {
+      "text": "إِلَيْهِ تُرْجَعُونَ",
+      "audio": null
+    },
+    "options": [
+      {
+        "id": 1,
+        "text": "yes"
+      },
+      {
+        "id": 2,
+        "text": "no"
+      }
+    ],
+    "answer": [
+      2
+    ]
+  },
+  {
+    "id": 2013,
+    "rule": "madd",
+    "lesson": 32,
+    "task_type": "yes_no",
+    "question_type": "has_rule",
+    "modality": "text",
+    "sura": null,
+    "verse": null,
+    "subject": {
+      "text": "لَدَيْهِ عِلْمٌ",
+      "audio": null
+    },
+    "options": [
+      {
+        "id": 1,
+        "text": "yes"
+      },
+      {
+        "id": 2,
+        "text": "no"
+      }
+    ],
+    "answer": [
+      2
+    ]
+  },
+  {
+    "id": 2014,
+    "rule": "madd",
+    "lesson": 32,
+    "task_type": "yes_no",
+    "question_type": "has_rule",
+    "modality": "text",
+    "sura": null,
+    "verse": null,
+    "subject": {
+      "text": "عَنْهُ مَالُهُ",
+      "audio": null
+    },
+    "options": [
+      {
+        "id": 1,
+        "text": "yes"
+      },
+      {
+        "id": 2,
+        "text": "no"
+      }
+    ],
+    "answer": [
+      2
+    ]
+  },
+  {
+    "id": 2015,
+    "rule": "madd",
+    "lesson": 32,
+    "task_type": "yes_no",
+    "question_type": "has_rule",
+    "modality": "text",
+    "sura": null,
+    "verse": null,
+    "subject": {
+      "text": "فِيهِ آيَاتٌ",
+      "audio": null
+    },
+    "options": [
+      {
+        "id": 1,
+        "text": "yes"
+      },
+      {
+        "id": 2,
+        "text": "no"
+      }
+    ],
+    "answer": [
+      2
+    ]
+  },
+  {
+    "id": 2016,
+    "rule": "madd",
+    "lesson": 32,
+    "task_type": "select_count",
+    "question_type": "count_rule",
+    "modality": "audio",
+    "sura": 12,
+    "verse": 79,
+    "subject": {
+      "text": "قَالَ مَعَاذَ ٱللَّهِ أَن نَّأْخُذَ إِلَّا مَن وَجَدْنَا مَتَٰعَنَا عِندَهُٓ إِنَّآ إِذًا لَّّظَٰلِمُونَ ٧٩",
+      "spots": [
+        {
+          "start": 73,
+          "end": 76,
+          "text": "هُٓ"
+        },
+        {
+          "start": 79,
+          "end": 84,
+          "text": "نَّآ"
+        }
+      ],
+      "audio": "2016.wav"
+    },
+    "options": [
+      {
+        "id": 1,
+        "text": "1"
+      },
+      {
+        "id": 2,
+        "text": "2"
+      },
+      {
+        "id": 3,
+        "text": "3"
+      },
+      {
+        "id": 4,
+        "text": "4"
+      }
+    ],
+    "answer": [
+      2
+    ],
+    "pattern": "◌ُۥ:◌ِۦ:◌ُٓ:◌ِۦٓ:◌َآ:◌ُوٓ:◌ِيٓ"
+  },
+  {
+    "id": 2017,
+    "rule": "madd",
+    "lesson": 32,
+    "task_type": "select_count",
+    "question_type": "count_rule",
+    "modality": "audio",
+    "sura": 38,
+    "verse": 41,
+    "subject": {
+      "text": "وَٱذْكُرْ عَبْدَنَآ أَيُّوبَ إِذْ نَادَىٰ رَبَّهُٓ أَنِّى مَسَّنِىَ ٱلشَّيْطَٰنُ بِنُصْبٍ وَعَذَابٍ ٤١",
+      "spots": [
+        {
+          "start": 16,
+          "end": 20,
+          "text": "نَآ"
+        },
+        {
+          "start": 48,
+          "end": 51,
+          "text": "هُٓ"
+        }
+      ],
+      "audio": "2017.wav"
+    },
+    "options": [
+      {
+        "id": 1,
+        "text": "1"
+      },
+      {
+        "id": 2,
+        "text": "2"
+      },
+      {
+        "id": 3,
+        "text": "3"
+      },
+      {
+        "id": 4,
+        "text": "4"
+      }
+    ],
+    "answer": [
+      2
+    ],
+    "pattern": "◌ُۥ:◌ِۦ:◌ُٓ:◌ِۦٓ:◌َآ:◌ُوٓ:◌ِيٓ"
+  },
+  {
+    "id": 2018,
+    "rule": "madd",
+    "lesson": 32,
+    "task_type": "select_count",
+    "question_type": "count_rule",
+    "modality": "audio",
+    "sura": 26,
+    "verse": 170,
+    "subject": {
+      "text": "فَنَجَّيْنَٰهُ وَأَهْلَهُٓ أَجْمَعِينَ ١٧٠",
+      "spots": [
+        {
+          "start": 23,
+          "end": 26,
+          "text": "هُٓ"
+        }
+      ],
+      "audio": "2018.wav"
+    },
+    "options": [
+      {
+        "id": 1,
+        "text": "0"
+      },
+      {
+        "id": 2,
+        "text": "1"
+      },
+      {
+        "id": 3,
+        "text": "2"
+      },
+      {
+        "id": 4,
+        "text": "3"
+      }
+    ],
+    "answer": [
+      2
+    ],
+    "pattern": "◌ُۥ:◌ِۦ:◌ُٓ:◌ِۦٓ:◌َآ:◌ُوٓ:◌ِيٓ"
+  },
+  {
+    "id": 2019,
+    "rule": "madd",
+    "lesson": 32,
+    "task_type": "select_count",
+    "question_type": "count_rule",
+    "modality": "audio",
+    "sura": 104,
+    "verse": 3,
+    "subject": {
+      "text": "يَحْسَبُ أَنَّ مَالَهُٓ أَخْلَدَهُ ٣",
+      "spots": [
+        {
+          "start": 20,
+          "end": 23,
+          "text": "هُٓ"
+        }
+      ],
+      "audio": "2019.wav"
+    },
+    "options": [
+      {
+        "id": 1,
+        "text": "0"
+      },
+      {
+        "id": 2,
+        "text": "1"
+      },
+      {
+        "id": 3,
+        "text": "2"
+      },
+      {
+        "id": 4,
+        "text": "3"
+      }
+    ],
+    "answer": [
+      2
+    ],
+    "pattern": "◌ُۥ:◌ِۦ:◌ُٓ:◌ِۦٓ:◌َآ:◌ُوٓ:◌ِيٓ"
+  },
+  {
+    "id": 2020,
+    "rule": "madd",
+    "lesson": 32,
+    "task_type": "select_count",
+    "question_type": "count_rule",
+    "modality": "audio",
+    "sura": 36,
+    "verse": 82,
+    "subject": {
+      "text": "إِنَّمَآ أَمْرُهُٓ إِذَآ أَرَادَ شَيْـًٔا أَن يَقُولَ لَهُ كُن فَيَكُونُ ٨٢",
+      "spots": [
+        {
+          "start": 5,
+          "end": 9,
+          "text": "مَآ"
+        },
+        {
+          "start": 16,
+          "end": 19,
+          "text": "هُٓ"
+        },
+        {
+          "start": 22,
+          "end": 26,
+          "text": "ذَآ"
+        }
+      ],
+      "audio": "2020.wav"
+    },
+    "options": [
+      {
+        "id": 1,
+        "text": "1"
+      },
+      {
+        "id": 2,
+        "text": "2"
+      },
+      {
+        "id": 3,
+        "text": "3"
+      },
+      {
+        "id": 4,
+        "text": "4"
+      }
+    ],
+    "answer": [
+      3
+    ],
+    "pattern": "◌ُۥ:◌ِۦ:◌ُٓ:◌ِۦٓ:◌َآ:◌ُوٓ:◌ِيٓ"
+  },
+  {
+    "id": 2021,
+    "rule": "madd",
+    "lesson": 32,
+    "task_type": "select_count",
+    "question_type": "count_rule",
+    "modality": "audio",
+    "sura": 56,
+    "verse": 79,
+    "subject": {
+      "text": "لَّا يَمَسُّهُٓ إِلَّا ٱلْمُطَهَّرُونَ ٧٩",
+      "spots": [
+        {
+          "start": 12,
+          "end": 15,
+          "text": "هُٓ"
+        }
+      ],
+      "audio": "2021.wav"
+    },
+    "options": [
+      {
+        "id": 1,
+        "text": "0"
+      },
+      {
+        "id": 2,
+        "text": "1"
+      },
+      {
+        "id": 3,
+        "text": "2"
+      },
+      {
+        "id": 4,
+        "text": "3"
+      }
+    ],
+    "answer": [
+      2
+    ],
+    "pattern": "◌ُۥ:◌ِۦ:◌ُٓ:◌ِۦٓ:◌َآ:◌ُوٓ:◌ِيٓ"
+  },
+  {
+    "id": 2022,
+    "rule": "madd",
+    "lesson": 32,
+    "task_type": "select_count",
+    "question_type": "count_rule",
+    "modality": "audio",
+    "sura": 69,
+    "verse": 37,
+    "subject": {
+      "text": "لَّا يَأْكُلُهُٓ إِلَّا ٱلْخَٰطِـُٔونَ ٣٧",
+      "spots": [
+        {
+          "start": 13,
+          "end": 16,
+          "text": "هُٓ"
+        }
+      ],
+      "audio": "2022.wav"
+    },
+    "options": [
+      {
+        "id": 1,
+        "text": "0"
+      },
+      {
+        "id": 2,
+        "text": "1"
+      },
+      {
+        "id": 3,
+        "text": "2"
+      },
+      {
+        "id": 4,
+        "text": "3"
+      }
+    ],
+    "answer": [
+      2
+    ],
+    "pattern": "◌ُۥ:◌ِۦ:◌ُٓ:◌ِۦٓ:◌َآ:◌ُوٓ:◌ِيٓ"
+  },
+  {
+    "id": 2023,
+    "rule": "madd",
+    "lesson": 32,
+    "task_type": "select_count",
+    "question_type": "count_rule",
+    "modality": "audio",
+    "sura": 11,
+    "verse": 104,
+    "subject": {
+      "text": "وَمَا نُؤَخِّرُهُٓ إِلَّا لِأَجَلٍ مَّعْدُودٍ ١٠٤",
+      "spots": [
+        {
+          "start": 15,
+          "end": 18,
+          "text": "هُٓ"
+        }
+      ],
+      "audio": "2023.wav"
+    },
+    "options": [
+      {
+        "id": 1,
+        "text": "0"
+      },
+      {
+        "id": 2,
+        "text": "1"
+      },
+      {
+        "id": 3,
+        "text": "2"
+      },
+      {
+        "id": 4,
+        "text": "3"
+      }
+    ],
+    "answer": [
+      2
+    ],
+    "pattern": "◌ُۥ:◌ِۦ:◌ُٓ:◌ِۦٓ:◌َآ:◌ُوٓ:◌ِيٓ"
+  },
+  {
+    "id": 2024,
+    "rule": "madd",
+    "lesson": 32,
+    "task_type": "select_count",
+    "question_type": "count_rule",
+    "modality": "audio",
+    "sura": 72,
+    "verse": 20,
+    "subject": {
+      "text": "قُلْ إِنَّمَآ أَدْعُوا۟ رَبِّى وَلَآ أُشْرِكُ بِهِۦٓ أَحَدًا ٢٠",
+      "spots": [
+        {
+          "start": 10,
+          "end": 14,
+          "text": "مَآ"
+        },
+        {
+          "start": 34,
+          "end": 38,
+          "text": "لَآ"
+        },
+        {
+          "start": 50,
+          "end": 54,
+          "text": "هِۦٓ"
+        }
+      ],
+      "audio": "2024.wav"
+    },
+    "options": [
+      {
+        "id": 1,
+        "text": "1"
+      },
+      {
+        "id": 2,
+        "text": "2"
+      },
+      {
+        "id": 3,
+        "text": "3"
+      },
+      {
+        "id": 4,
+        "text": "4"
+      }
+    ],
+    "answer": [
+      3
+    ],
+    "pattern": "◌ُۥ:◌ِۦ:◌ُٓ:◌ِۦٓ:◌َآ:◌ُوٓ:◌ِيٓ"
+  },
+  {
+    "id": 2025,
+    "rule": "madd",
+    "lesson": 32,
+    "task_type": "select_count",
+    "question_type": "count_rule",
+    "modality": "audio",
+    "sura": 42,
+    "verse": 6,
+    "subject": {
+      "text": "وَٱلَّذِينَ ٱتَّخَذُوا۟ مِن دُونِهِۦٓ أَوْلِيَآءَ ٱللَّهُ حَفِيظٌ عَلَيْهِمْ وَمَآ أَنتَ عَلَيْهِم بِوَكِيلٍ ٦",
+      "spots": [
+        {
+          "start": 33,
+          "end": 37,
+          "text": "هِۦٓ"
+        },
+        {
+          "start": 44,
+          "end": 48,
+          "text": "يَآ"
+        },
+        {
+          "start": 80,
+          "end": 84,
+          "text": "مَآ"
+        }
+      ],
+      "audio": "2025.wav"
+    },
+    "options": [
+      {
+        "id": 1,
+        "text": "1"
+      },
+      {
+        "id": 2,
+        "text": "2"
+      },
+      {
+        "id": 3,
+        "text": "3"
+      },
+      {
+        "id": 4,
+        "text": "4"
+      }
+    ],
+    "answer": [
+      3
+    ],
+    "pattern": "◌ُۥ:◌ِۦ:◌ُٓ:◌ِۦٓ:◌َآ:◌ُوٓ:◌ِيٓ"
+  },
+  {
+    "id": 2026,
+    "rule": "madd",
+    "lesson": 32,
+    "task_type": "select_count",
+    "question_type": "count_rule",
+    "modality": "audio",
+    "sura": 30,
+    "verse": 25,
+    "subject": {
+      "text": "وَمِنْ آيَٰتِهِۦٓ أَن تَقُومَ ٱلسَّمَآءُ وَٱلْأَرْضُ بِأَمْرِهِۦ ۚ ثُمَّ إِذَا دَعَاكُمْ دَعْوَةً مِّنَ ٱلْأَرْضِ إِذَآ أَنتُمْ تَخْرُجُونَ ٢٥",
+      "spots": [
+        {
+          "start": 13,
+          "end": 17,
+          "text": "هِۦٓ"
+        },
+        {
+          "start": 35,
+          "end": 39,
+          "text": "مَآ"
+        },
+        {
+          "start": 62,
+          "end": 65,
+          "text": "هِۦ"
+        },
+        {
+          "start": 117,
+          "end": 121,
+          "text": "ذَآ"
+        }
+      ],
+      "audio": "2026.wav"
+    },
+    "options": [
+      {
+        "id": 1,
+        "text": "1"
+      },
+      {
+        "id": 2,
+        "text": "2"
+      },
+      {
+        "id": 3,
+        "text": "3"
+      },
+      {
+        "id": 4,
+        "text": "4"
+      }
+    ],
+    "answer": [
+      4
+    ],
+    "pattern": "◌ُۥ:◌ِۦ:◌ُٓ:◌ِۦٓ:◌َآ:◌ُوٓ:◌ِيٓ"
+  },
+  {
+    "id": 2027,
+    "rule": "madd",
+    "lesson": 32,
+    "task_type": "select_count",
+    "question_type": "count_rule",
+    "modality": "audio",
+    "sura": 13,
+    "verse": 25,
+    "subject": {
+      "text": "وَٱلَّذِينَ يَنقُضُونَ عَهْدَ ٱللَّهِ مِن بَعْدِ مِيثَٰقِهِۦ وَيَقْطَعُونَ مَآ أَمَرَ ٱللَّهُ بِهِۦٓ أَن يُوصَلَ وَيُفْسِدُونَ فِى ٱلْأَرْضِ ۙ أُو۟لَٰٓئِكَ لَهُمُ ٱللَّعْنَةُ وَلَهُمْ سُوٓءُ ٱلدَّارِ ٢٥",
+      "spots": [
+        {
+          "start": 57,
+          "end": 60,
+          "text": "هِۦ"
+        },
+        {
+          "start": 75,
+          "end": 79,
+          "text": "مَآ"
+        },
+        {
+          "start": 97,
+          "end": 101,
+          "text": "هِۦٓ"
+        },
+        {
+          "start": 185,
+          "end": 189,
+          "text": "سُوٓ"
+        }
+      ],
+      "audio": "2027.wav"
+    },
+    "options": [
+      {
+        "id": 1,
+        "text": "1"
+      },
+      {
+        "id": 2,
+        "text": "2"
+      },
+      {
+        "id": 3,
+        "text": "3"
+      },
+      {
+        "id": 4,
+        "text": "4"
+      }
+    ],
+    "answer": [
+      4
+    ],
+    "pattern": "◌ُۥ:◌ِۦ:◌ُٓ:◌ِۦٓ:◌َآ:◌ُوٓ:◌ِيٓ"
+  },
+  {
+    "id": 2028,
+    "rule": "madd",
+    "lesson": 32,
+    "task_type": "select_count",
+    "question_type": "count_rule",
+    "modality": "audio",
+    "sura": 1,
+    "verse": 2,
+    "subject": {
+      "text": "ٱلْحَمْدُ لِلَّهِ رَبِّ ٱلْعَٰلَمِينَ ٢",
+      "audio": "2028.wav"
+    },
+    "options": [
+      {
+        "id": 1,
+        "text": "0"
+      },
+      {
+        "id": 2,
+        "text": "1"
+      },
+      {
+        "id": 3,
+        "text": "2"
+      },
+      {
+        "id": 4,
+        "text": "3"
+      }
+    ],
+    "answer": [
+      1
+    ]
+  },
+  {
+    "id": 2029,
+    "rule": "madd",
+    "lesson": 32,
+    "task_type": "select_count",
+    "question_type": "count_rule",
+    "modality": "audio",
+    "sura": 12,
+    "verse": 61,
+    "subject": {
+      "text": "قَالُوا۟ سَنُرَٰوِدُ عَنْهُ أَبَاهُ وَإِنَّا لَفَٰعِلُونَ ٦١",
+      "audio": "2029.wav"
+    },
+    "options": [
+      {
+        "id": 1,
+        "text": "0"
+      },
+      {
+        "id": 2,
+        "text": "1"
+      },
+      {
+        "id": 3,
+        "text": "2"
+      },
+      {
+        "id": 4,
+        "text": "3"
+      }
+    ],
+    "answer": [
+      1
+    ]
+  },
+  {
+    "id": 2030,
+    "rule": "madd",
+    "lesson": 32,
+    "task_type": "select_count",
+    "question_type": "count_rule",
+    "modality": "audio",
+    "sura": 12,
+    "verse": 95,
+    "subject": {
+      "text": "قَالُوا۟ تَٱللَّهِ إِنَّكَ لَفِى ضَلَٰلِكَ ٱلْقَدِيمِ ٩٥",
+      "audio": "2030.wav"
+    },
+    "options": [
+      {
+        "id": 1,
+        "text": "0"
+      },
+      {
+        "id": 2,
+        "text": "1"
+      },
+      {
+        "id": 3,
+        "text": "2"
+      },
+      {
+        "id": 4,
+        "text": "3"
+      }
+    ],
+    "answer": [
+      1
+    ]
+  },
+  {
+    "id": 2031,
+    "rule": "madd",
+    "lesson": 32,
+    "task_type": "select_count",
+    "question_type": "count_rule",
+    "modality": "audio",
+    "sura": 12,
+    "verse": 106,
+    "subject": {
+      "text": "وَمَا يُؤْمِنُ أَكْثَرُهُم بِٱللَّهِ إِلَّا وَهُم مُّشْرِكُونَ ١٠٦",
+      "audio": "2031.wav"
+    },
+    "options": [
+      {
+        "id": 1,
+        "text": "0"
+      },
+      {
+        "id": 2,
+        "text": "1"
+      },
+      {
+        "id": 3,
+        "text": "2"
+      },
+      {
+        "id": 4,
+        "text": "3"
+      }
+    ],
+    "answer": [
+      1
+    ]
+  },
+  {
+    "id": 2048,
+    "rule": "madd",
+    "lesson": 33,
+    "task_type": "yes_no",
+    "question_type": "has_rule",
+    "modality": "audio",
+    "sura": null,
+    "verse": null,
+    "subject": {
+      "text": "الضَّآلِّينَ",
+      "spots": [
+        {
+          "start": 2,
+          "end": 6,
+          "text": "ضَّآ"
+        }
+      ],
+      "audio": "2048.wav"
+    },
+    "options": [
+      {
+        "id": 1,
+        "text": "yes"
+      },
+      {
+        "id": 2,
+        "text": "no"
+      }
+    ],
+    "answer": [
+      1
+    ],
+    "pattern": "◌َآ"
+  },
+  {
+    "id": 2049,
+    "rule": "madd",
+    "lesson": 33,
+    "task_type": "yes_no",
+    "question_type": "has_rule",
+    "modality": "audio",
+    "sura": null,
+    "verse": null,
+    "subject": {
+      "text": "ضَآلًّا",
+      "spots": [
+        {
+          "start": 0,
+          "end": 3,
+          "text": "ضَآ"
+        }
+      ],
+      "audio": "2049.wav"
+    },
+    "options": [
+      {
+        "id": 1,
+        "text": "yes"
+      },
+      {
+        "id": 2,
+        "text": "no"
+      }
+    ],
+    "answer": [
+      1
+    ],
+    "pattern": "◌َآ"
+  },
+  {
+    "id": 2050,
+    "rule": "madd",
+    "lesson": 33,
+    "task_type": "yes_no",
+    "question_type": "has_rule",
+    "modality": "audio",
+    "sura": null,
+    "verse": null,
+    "subject": {
+      "text": "يُحَآجُّونَ",
+      "spots": [
+        {
+          "start": 2,
+          "end": 5,
+          "text": "حَآ"
+        }
+      ],
+      "audio": "2050.wav"
+    },
+    "options": [
+      {
+        "id": 1,
+        "text": "yes"
+      },
+      {
+        "id": 2,
+        "text": "no"
+      }
+    ],
+    "answer": [
+      1
+    ],
+    "pattern": "◌َآ"
+  },
+  {
+    "id": 2051,
+    "rule": "madd",
+    "lesson": 33,
+    "task_type": "yes_no",
+    "question_type": "has_rule",
+    "modality": "audio",
+    "sura": null,
+    "verse": null,
+    "subject": {
+      "text": "دَآبَّةٍ",
+      "spots": [
+        {
+          "start": 0,
+          "end": 3,
+          "text": "دَآ"
+        }
+      ],
+      "audio": "2051.wav"
+    },
+    "options": [
+      {
+        "id": 1,
+        "text": "yes"
+      },
+      {
+        "id": 2,
+        "text": "no"
+      }
+    ],
+    "answer": [
+      1
+    ],
+    "pattern": "◌َآ"
+  },
+  {
+    "id": 2052,
+    "rule": "madd",
+    "lesson": 33,
+    "task_type": "yes_no",
+    "question_type": "has_rule",
+    "modality": "audio",
+    "sura": null,
+    "verse": null,
+    "subject": {
+      "text": "الدَّوَآبِّ",
+      "spots": [
+        {
+          "start": 5,
+          "end": 8,
+          "text": "وَآ"
+        }
+      ],
+      "audio": "2052.wav"
+    },
+    "options": [
+      {
+        "id": 1,
+        "text": "yes"
+      },
+      {
+        "id": 2,
+        "text": "no"
+      }
+    ],
+    "answer": [
+      1
+    ],
+    "pattern": "◌َآ"
+  },
+  {
+    "id": 2053,
+    "rule": "madd",
+    "lesson": 33,
+    "task_type": "yes_no",
+    "question_type": "has_rule",
+    "modality": "audio",
+    "sura": null,
+    "verse": null,
+    "subject": {
+      "text": "الصَّآخَّةُ",
+      "spots": [
+        {
+          "start": 2,
+          "end": 6,
+          "text": "صَّآ"
+        }
+      ],
+      "audio": "2053.wav"
+    },
+    "options": [
+      {
+        "id": 1,
+        "text": "yes"
+      },
+      {
+        "id": 2,
+        "text": "no"
+      }
+    ],
+    "answer": [
+      1
+    ],
+    "pattern": "◌َآ"
+  },
+  {
+    "id": 2054,
+    "rule": "madd",
+    "lesson": 33,
+    "task_type": "yes_no",
+    "question_type": "has_rule",
+    "modality": "audio",
+    "sura": null,
+    "verse": null,
+    "subject": {
+      "text": "جَآنٌّ",
+      "spots": [
+        {
+          "start": 0,
+          "end": 3,
+          "text": "جَآ"
+        }
+      ],
+      "audio": "2054.wav"
+    },
+    "options": [
+      {
+        "id": 1,
+        "text": "yes"
+      },
+      {
+        "id": 2,
+        "text": "no"
+      }
+    ],
+    "answer": [
+      1
+    ],
+    "pattern": "◌َآ"
+  },
+  {
+    "id": 2055,
+    "rule": "madd",
+    "lesson": 33,
+    "task_type": "yes_no",
+    "question_type": "has_rule",
+    "modality": "audio",
+    "sura": null,
+    "verse": null,
+    "subject": {
+      "text": "حَآدَّ",
+      "spots": [
+        {
+          "start": 0,
+          "end": 3,
+          "text": "حَآ"
+        }
+      ],
+      "audio": "2055.wav"
+    },
+    "options": [
+      {
+        "id": 1,
+        "text": "yes"
+      },
+      {
+        "id": 2,
+        "text": "no"
+      }
+    ],
+    "answer": [
+      1
+    ],
+    "pattern": "◌َآ"
+  },
+  {
+    "id": 2056,
+    "rule": "madd",
+    "lesson": 33,
+    "task_type": "yes_no",
+    "question_type": "has_rule",
+    "modality": "audio",
+    "sura": null,
+    "verse": null,
+    "subject": {
+      "text": "شَآقُّوا۟",
+      "spots": [
+        {
+          "start": 0,
+          "end": 3,
+          "text": "شَآ"
+        }
+      ],
+      "audio": "2056.wav"
+    },
+    "options": [
+      {
+        "id": 1,
+        "text": "yes"
+      },
+      {
+        "id": 2,
+        "text": "no"
+      }
+    ],
+    "answer": [
+      1
+    ],
+    "pattern": "◌َآ"
+  },
+  {
+    "id": 2057,
+    "rule": "madd",
+    "lesson": 33,
+    "task_type": "yes_no",
+    "question_type": "has_rule",
+    "modality": "audio",
+    "sura": null,
+    "verse": null,
+    "subject": {
+      "text": "كَآفَّةً",
+      "spots": [
+        {
+          "start": 0,
+          "end": 3,
+          "text": "كَآ"
+        }
+      ],
+      "audio": "2057.wav"
+    },
+    "options": [
+      {
+        "id": 1,
+        "text": "yes"
+      },
+      {
+        "id": 2,
+        "text": "no"
+      }
+    ],
+    "answer": [
+      1
+    ],
+    "pattern": "◌َآ"
+  },
+  {
+    "id": 2058,
+    "rule": "madd",
+    "lesson": 33,
+    "task_type": "yes_no",
+    "question_type": "has_rule",
+    "modality": "audio",
+    "sura": null,
+    "verse": null,
+    "subject": {
+      "text": "صَوَآفَّ",
+      "spots": [
+        {
+          "start": 2,
+          "end": 5,
+          "text": "وَآ"
+        }
+      ],
+      "audio": "2058.wav"
+    },
+    "options": [
+      {
+        "id": 1,
+        "text": "yes"
+      },
+      {
+        "id": 2,
+        "text": "no"
+      }
+    ],
+    "answer": [
+      1
+    ],
+    "pattern": "◌َآ"
+  },
+  {
+    "id": 2059,
+    "rule": "madd",
+    "lesson": 33,
+    "task_type": "yes_no",
+    "question_type": "has_rule",
+    "modality": "audio",
+    "sura": null,
+    "verse": null,
+    "subject": {
+      "text": "آلْآنَ",
+      "spots": [
+        {
+          "start": 0,
+          "end": 4,
+          "text": "آلْآ"
+        }
+      ],
+      "audio": "2059.wav"
+    },
+    "options": [
+      {
+        "id": 1,
+        "text": "yes"
+      },
+      {
+        "id": 2,
+        "text": "no"
+      }
+    ],
+    "answer": [
+      1
+    ],
+    "pattern": "◌َآ"
+  },
+  {
+    "id": 2060,
+    "rule": "madd",
+    "lesson": 33,
+    "task_type": "yes_no",
+    "question_type": "has_rule",
+    "modality": "audio",
+    "sura": null,
+    "verse": null,
+    "subject": {
+      "text": "قُلُوبٌ",
+      "audio": "2060.wav"
+    },
+    "options": [
+      {
+        "id": 1,
+        "text": "yes"
+      },
+      {
+        "id": 2,
+        "text": "no"
+      }
+    ],
+    "answer": [
+      2
+    ]
+  },
+  {
+    "id": 2061,
+    "rule": "madd",
+    "lesson": 33,
+    "task_type": "yes_no",
+    "question_type": "has_rule",
+    "modality": "audio",
+    "sura": null,
+    "verse": null,
+    "subject": {
+      "text": "عُيُونٌ",
+      "audio": "2061.wav"
+    },
+    "options": [
+      {
+        "id": 1,
+        "text": "yes"
+      },
+      {
+        "id": 2,
+        "text": "no"
+      }
+    ],
+    "answer": [
+      2
+    ]
+  },
+  {
+    "id": 2062,
+    "rule": "madd",
+    "lesson": 33,
+    "task_type": "yes_no",
+    "question_type": "has_rule",
+    "modality": "audio",
+    "sura": null,
+    "verse": null,
+    "subject": {
+      "text": "أَنْهَارٌ",
+      "audio": "2062.wav"
+    },
+    "options": [
+      {
+        "id": 1,
+        "text": "yes"
+      },
+      {
+        "id": 2,
+        "text": "no"
+      }
+    ],
+    "answer": [
+      2
+    ]
+  },
+  {
+    "id": 2063,
+    "rule": "madd",
+    "lesson": 33,
+    "task_type": "yes_no",
+    "question_type": "has_rule",
+    "modality": "audio",
+    "sura": null,
+    "verse": null,
+    "subject": {
+      "text": "أَشْجَارٌ",
+      "audio": "2063.wav"
+    },
+    "options": [
+      {
+        "id": 1,
+        "text": "yes"
+      },
+      {
+        "id": 2,
+        "text": "no"
+      }
+    ],
+    "answer": [
+      2
+    ]
+  },
+  {
+    "id": 2064,
+    "rule": "madd",
+    "lesson": 33,
+    "task_type": "yes_no",
+    "question_type": "has_rule",
+    "modality": "text",
+    "sura": null,
+    "verse": null,
+    "subject": {
+      "text": "الضَّالُّونَ",
+      "spots": [
+        {
+          "start": 2,
+          "end": 6,
+          "text": "ضَّا"
+        }
+      ],
+      "audio": null
+    },
+    "options": [
+      {
+        "id": 1,
+        "text": "yes"
+      },
+      {
+        "id": 2,
+        "text": "no"
+      }
+    ],
+    "answer": [
+      1
+    ],
+    "pattern": "◌َآ"
+  },
+  {
+    "id": 2065,
+    "rule": "madd",
+    "lesson": 33,
+    "task_type": "yes_no",
+    "question_type": "has_rule",
+    "modality": "text",
+    "sura": null,
+    "verse": null,
+    "subject": {
+      "text": "حَاجَّ",
+      "spots": [
+        {
+          "start": 0,
+          "end": 3,
+          "text": "حَا"
+        }
+      ],
+      "audio": null
+    },
+    "options": [
+      {
+        "id": 1,
+        "text": "yes"
+      },
+      {
+        "id": 2,
+        "text": "no"
+      }
+    ],
+    "answer": [
+      1
+    ],
+    "pattern": "◌َآ"
+  },
+  {
+    "id": 2066,
+    "rule": "madd",
+    "lesson": 33,
+    "task_type": "yes_no",
+    "question_type": "has_rule",
+    "modality": "text",
+    "sura": null,
+    "verse": null,
+    "subject": {
+      "text": "أَتُحَاجُّونِّى",
+      "spots": [
+        {
+          "start": 4,
+          "end": 11,
+          "text": "حَاجُّو"
+        }
+      ],
+      "audio": null
+    },
+    "options": [
+      {
+        "id": 1,
+        "text": "yes"
+      },
+      {
+        "id": 2,
+        "text": "no"
+      }
+    ],
+    "answer": [
+      1
+    ],
+    "pattern": "◌َآ"
+  },
+  {
+    "id": 2067,
+    "rule": "madd",
+    "lesson": 33,
+    "task_type": "yes_no",
+    "question_type": "has_rule",
+    "modality": "text",
+    "sura": null,
+    "verse": null,
+    "subject": {
+      "text": "دَابَّةً",
+      "spots": [
+        {
+          "start": 0,
+          "end": 3,
+          "text": "دَا"
+        }
+      ],
+      "audio": null
+    },
+    "options": [
+      {
+        "id": 1,
+        "text": "yes"
+      },
+      {
+        "id": 2,
+        "text": "no"
+      }
+    ],
+    "answer": [
+      1
+    ],
+    "pattern": "◌َآ"
+  },
+  {
+    "id": 2068,
+    "rule": "madd",
+    "lesson": 33,
+    "task_type": "yes_no",
+    "question_type": "has_rule",
+    "modality": "text",
+    "sura": null,
+    "verse": null,
+    "subject": {
+      "text": "الدَّوَابُّ",
+      "spots": [
+        {
+          "start": 5,
+          "end": 8,
+          "text": "وَا"
+        }
+      ],
+      "audio": null
+    },
+    "options": [
+      {
+        "id": 1,
+        "text": "yes"
+      },
+      {
+        "id": 2,
+        "text": "no"
+      }
+    ],
+    "answer": [
+      1
+    ],
+    "pattern": "◌َآ"
+  },
+  {
+    "id": 2069,
+    "rule": "madd",
+    "lesson": 33,
+    "task_type": "yes_no",
+    "question_type": "has_rule",
+    "modality": "text",
+    "sura": null,
+    "verse": null,
+    "subject": {
+      "text": "الطَّامَّةُ",
+      "spots": [
+        {
+          "start": 2,
+          "end": 6,
+          "text": "طَّا"
+        }
+      ],
+      "audio": null
+    },
+    "options": [
+      {
+        "id": 1,
+        "text": "yes"
+      },
+      {
+        "id": 2,
+        "text": "no"
+      }
+    ],
+    "answer": [
+      1
+    ],
+    "pattern": "◌َآ"
+  },
+  {
+    "id": 2070,
+    "rule": "madd",
+    "lesson": 33,
+    "task_type": "yes_no",
+    "question_type": "has_rule",
+    "modality": "text",
+    "sura": null,
+    "verse": null,
+    "subject": {
+      "text": "الْجَانَّ",
+      "spots": [
+        {
+          "start": 3,
+          "end": 6,
+          "text": "جَا"
+        }
+      ],
+      "audio": null
+    },
+    "options": [
+      {
+        "id": 1,
+        "text": "yes"
+      },
+      {
+        "id": 2,
+        "text": "no"
+      }
+    ],
+    "answer": [
+      1
+    ],
+    "pattern": "◌َآ"
+  },
+  {
+    "id": 2071,
+    "rule": "madd",
+    "lesson": 33,
+    "task_type": "yes_no",
+    "question_type": "has_rule",
+    "modality": "text",
+    "sura": null,
+    "verse": null,
+    "subject": {
+      "text": "يُحَادُّونَ",
+      "spots": [
+        {
+          "start": 2,
+          "end": 5,
+          "text": "حَا"
+        }
+      ],
+      "audio": null
+    },
+    "options": [
+      {
+        "id": 1,
+        "text": "yes"
+      },
+      {
+        "id": 2,
+        "text": "no"
+      }
+    ],
+    "answer": [
+      1
+    ],
+    "pattern": "◌َآ"
+  },
+  {
+    "id": 2072,
+    "rule": "madd",
+    "lesson": 33,
+    "task_type": "yes_no",
+    "question_type": "has_rule",
+    "modality": "text",
+    "sura": null,
+    "verse": null,
+    "subject": {
+      "text": "يُشَاقِّ",
+      "spots": [
+        {
+          "start": 2,
+          "end": 5,
+          "text": "شَا"
+        }
+      ],
+      "audio": null
+    },
+    "options": [
+      {
+        "id": 1,
+        "text": "yes"
+      },
+      {
+        "id": 2,
+        "text": "no"
+      }
+    ],
+    "answer": [
+      1
+    ],
+    "pattern": "◌َآ"
+  },
+  {
+    "id": 2073,
+    "rule": "madd",
+    "lesson": 33,
+    "task_type": "yes_no",
+    "question_type": "has_rule",
+    "modality": "text",
+    "sura": null,
+    "verse": null,
+    "subject": {
+      "text": "الصَّافَّاتِ",
+      "spots": [
+        {
+          "start": 2,
+          "end": 6,
+          "text": "صَّا"
+        }
+      ],
+      "audio": null
+    },
+    "options": [
+      {
+        "id": 1,
+        "text": "yes"
+      },
+      {
+        "id": 2,
+        "text": "no"
+      }
+    ],
+    "answer": [
+      1
+    ],
+    "pattern": "◌َآ"
+  },
+  {
+    "id": 2074,
+    "rule": "madd",
+    "lesson": 33,
+    "task_type": "yes_no",
+    "question_type": "has_rule",
+    "modality": "text",
+    "sura": null,
+    "verse": null,
+    "subject": {
+      "text": "يُوَادُّونَ",
+      "spots": [
+        {
+          "start": 2,
+          "end": 5,
+          "text": "وَا"
+        }
+      ],
+      "audio": null
+    },
+    "options": [
+      {
+        "id": 1,
+        "text": "yes"
+      },
+      {
+        "id": 2,
+        "text": "no"
+      }
+    ],
+    "answer": [
+      1
+    ],
+    "pattern": "◌َآ"
+  },
+  {
+    "id": 2075,
+    "rule": "madd",
+    "lesson": 33,
+    "task_type": "yes_no",
+    "question_type": "has_rule",
+    "modality": "text",
+    "sura": null,
+    "verse": null,
+    "subject": {
+      "text": "الْحَاقَّةُ",
+      "spots": [
+        {
+          "start": 3,
+          "end": 6,
+          "text": "حَا"
+        }
+      ],
+      "audio": null
+    },
+    "options": [
+      {
+        "id": 1,
+        "text": "yes"
+      },
+      {
+        "id": 2,
+        "text": "no"
+      }
+    ],
+    "answer": [
+      1
+    ],
+    "pattern": "◌َآ"
+  },
+  {
+    "id": 2076,
+    "rule": "madd",
+    "lesson": 33,
+    "task_type": "yes_no",
+    "question_type": "has_rule",
+    "modality": "text",
+    "sura": null,
+    "verse": null,
+    "subject": {
+      "text": "ثِمَارٌ",
+      "audio": null
+    },
+    "options": [
+      {
+        "id": 1,
+        "text": "yes"
+      },
+      {
+        "id": 2,
+        "text": "no"
+      }
+    ],
+    "answer": [
+      2
+    ]
+  },
+  {
+    "id": 2077,
+    "rule": "madd",
+    "lesson": 33,
+    "task_type": "yes_no",
+    "question_type": "has_rule",
+    "modality": "text",
+    "sura": null,
+    "verse": null,
+    "subject": {
+      "text": "طَعَامٌ",
+      "audio": null
+    },
+    "options": [
+      {
+        "id": 1,
+        "text": "yes"
+      },
+      {
+        "id": 2,
+        "text": "no"
+      }
+    ],
+    "answer": [
+      2
+    ]
+  },
+  {
+    "id": 2078,
+    "rule": "madd",
+    "lesson": 33,
+    "task_type": "yes_no",
+    "question_type": "has_rule",
+    "modality": "text",
+    "sura": null,
+    "verse": null,
+    "subject": {
+      "text": "شَرَابٌ",
+      "audio": null
+    },
+    "options": [
+      {
+        "id": 1,
+        "text": "yes"
+      },
+      {
+        "id": 2,
+        "text": "no"
+      }
+    ],
+    "answer": [
+      2
+    ]
+  },
+  {
+    "id": 2079,
+    "rule": "madd",
+    "lesson": 33,
+    "task_type": "yes_no",
+    "question_type": "has_rule",
+    "modality": "text",
+    "sura": null,
+    "verse": null,
+    "subject": {
+      "text": "لِبَاسٌ",
+      "audio": null
+    },
+    "options": [
+      {
+        "id": 1,
+        "text": "yes"
+      },
+      {
+        "id": 2,
+        "text": "no"
+      }
+    ],
+    "answer": [
+      2
+    ]
+  },
+  {
+    "id": 2080,
+    "rule": "madd",
+    "lesson": 33,
+    "task_type": "select_count",
+    "question_type": "count_rule",
+    "modality": "audio",
+    "sura": 48,
+    "verse": 6,
+    "subject": {
+      "text": "وَيُعَذِّبَ ٱلْمُنَٰفِقِينَ وَٱلْمُنَٰفِقَٰتِ وَٱلْمُشْرِكِينَ وَٱلْمُشْرِكَٰتِ ٱلظَّآنِّينَ بِٱللَّهِ ظَنَّ ٱلسَّوْءِ ۚ عَلَيْهِمْ دَآئِرَةُ ٱلسَّوْءِ ۖ وَغَضِبَ ٱللَّهُ عَلَيْهِمْ وَلَعَنَهُمْ وَأَعَدَّ لَهُمْ جَهَنَّمَ ۖ وَسَآءَتْ مَصِيرًا ٦",
+      "spots": [
+        {
+          "start": 82,
+          "end": 87,
+          "text": "ظَّآ"
+        },
+        {
+          "start": 133,
+          "end": 137,
+          "text": "دَآ"
+        },
+        {
+          "start": 228,
+          "end": 232,
+          "text": "سَآ"
+        }
+      ],
+      "audio": "2080.wav"
+    },
+    "options": [
+      {
+        "id": 1,
+        "text": "0"
+      },
+      {
+        "id": 2,
+        "text": "1"
+      },
+      {
+        "id": 3,
+        "text": "2"
+      },
+      {
+        "id": 4,
+        "text": "3"
+      }
+    ],
+    "answer": [
+      4
+    ],
+    "pattern": "◌َآ:◌ُوٓ:◌ِيٓ:◌ُٓ:◌ِۦٓ:◌َآ"
+  },
+  {
+    "id": 2081,
+    "rule": "madd",
+    "lesson": 33,
+    "task_type": "select_count",
+    "question_type": "count_rule",
+    "modality": "audio",
+    "sura": 37,
+    "verse": 69,
+    "subject": {
+      "text": "إِنَّهُمْ أَلْفَوْا۟ آبَآءَهُمْ ضَآلِّينَ ٦٩",
+      "spots": [
+        {
+          "start": 22,
+          "end": 26,
+          "text": "بَآ"
+        },
+        {
+          "start": 33,
+          "end": 37,
+          "text": "ضَآ"
+        }
+      ],
+      "audio": "2081.wav"
+    },
+    "options": [
+      {
+        "id": 1,
+        "text": "0"
+      },
+      {
+        "id": 2,
+        "text": "1"
+      },
+      {
+        "id": 3,
+        "text": "2"
+      },
+      {
+        "id": 4,
+        "text": "3"
+      }
+    ],
+    "answer": [
+      3
+    ],
+    "pattern": "◌َآ:◌ُوٓ:◌ِيٓ:◌ُٓ:◌ِۦٓ:◌َآ"
+  },
+  {
+    "id": 2082,
+    "rule": "madd",
+    "lesson": 33,
+    "task_type": "select_count",
+    "question_type": "count_rule",
+    "modality": "audio",
+    "sura": 69,
+    "verse": 3,
+    "subject": {
+      "text": "وَمَآ أَدْرَىٰكَ مَا ٱلْحَآقَّةُ ٣",
+      "spots": [
+        {
+          "start": 2,
+          "end": 6,
+          "text": "مَآ"
+        },
+        {
+          "start": 25,
+          "end": 29,
+          "text": "حَآ"
+        }
+      ],
+      "audio": "2082.wav"
+    },
+    "options": [
+      {
+        "id": 1,
+        "text": "0"
+      },
+      {
+        "id": 2,
+        "text": "1"
+      },
+      {
+        "id": 3,
+        "text": "2"
+      },
+      {
+        "id": 4,
+        "text": "3"
+      }
+    ],
+    "answer": [
+      3
+    ],
+    "pattern": "◌َآ:◌ُوٓ:◌ِيٓ:◌ُٓ:◌ِۦٓ:◌َآ"
+  },
+  {
+    "id": 2083,
+    "rule": "madd",
+    "lesson": 33,
+    "task_type": "select_count",
+    "question_type": "count_rule",
+    "modality": "audio",
+    "sura": 79,
+    "verse": 34,
+    "subject": {
+      "text": "فَإِذَا جَآءَتِ ٱلطَّآمَّةُ ٱلْكُبْرَىٰ ٣٤",
+      "spots": [
+        {
+          "start": 8,
+          "end": 12,
+          "text": "جَآ"
+        },
+        {
+          "start": 19,
+          "end": 24,
+          "text": "طَّآ"
+        }
+      ],
+      "audio": "2083.wav"
+    },
+    "options": [
+      {
+        "id": 1,
+        "text": "0"
+      },
+      {
+        "id": 2,
+        "text": "1"
+      },
+      {
+        "id": 3,
+        "text": "2"
+      },
+      {
+        "id": 4,
+        "text": "3"
+      }
+    ],
+    "answer": [
+      3
+    ],
+    "pattern": "◌َآ:◌ُوٓ:◌ِيٓ:◌ُٓ:◌ِۦٓ:◌َآ"
+  },
+  {
+    "id": 2084,
+    "rule": "madd",
+    "lesson": 33,
+    "task_type": "select_count",
+    "question_type": "count_rule",
+    "modality": "audio",
+    "sura": 26,
+    "verse": 86,
+    "subject": {
+      "text": "وَٱغْفِرْ لِأَبِىٓ إِنَّهُ كَانَ مِنَ ٱلضَّآلِّينَ ٨٦",
+      "spots": [
+        {
+          "start": 16,
+          "end": 18,
+          "text": "ىٓ"
+        },
+        {
+          "start": 43,
+          "end": 45,
+          "text": "آ"
+        }
+      ],
+      "audio": "2084.wav"
+    },
+    "options": [
+      {
+        "id": 1,
+        "text": "0"
+      },
+      {
+        "id": 2,
+        "text": "1"
+      },
+      {
+        "id": 3,
+        "text": "2"
+      },
+      {
+        "id": 4,
+        "text": "3"
+      }
+    ],
+    "answer": [
+      3
+    ],
+    "pattern": "◌َآ:◌ُوٓ:◌ِيٓ:◌ُٓ:◌ِۦٓ:◌َآ"
+  },
+  {
+    "id": 2085,
+    "rule": "madd",
+    "lesson": 33,
+    "task_type": "select_count",
+    "question_type": "count_rule",
+    "modality": "audio",
+    "sura": 56,
+    "verse": 92,
+    "subject": {
+      "text": "وَأَمَّآ إِن كَانَ مِنَ ٱلْمُكَذِّبِينَ ٱلضَّآلِّينَ ٩٢",
+      "spots": [
+        {
+          "start": 4,
+          "end": 9,
+          "text": "مَّآ"
+        },
+        {
+          "start": 43,
+          "end": 48,
+          "text": "ضَّآ"
+        }
+      ],
+      "audio": "2085.wav"
+    },
+    "options": [
+      {
+        "id": 1,
+        "text": "0"
+      },
+      {
+        "id": 2,
+        "text": "1"
+      },
+      {
+        "id": 3,
+        "text": "2"
+      },
+      {
+        "id": 4,
+        "text": "3"
+      }
+    ],
+    "answer": [
+      3
+    ],
+    "pattern": "◌َآ:◌ُوٓ:◌ِيٓ:◌ُٓ:◌ِۦٓ:◌َآ"
+  },
+  {
+    "id": 2086,
+    "rule": "madd",
+    "lesson": 33,
+    "task_type": "select_count",
+    "question_type": "count_rule",
+    "modality": "audio",
+    "sura": 34,
+    "verse": 28,
+    "subject": {
+      "text": "وَمَآ أَرْسَلْنَٰكَ إِلَّا كَآفَّةً لِّّلنَّاسِ بَشِيرًا وَنَذِيرًا وَلَٰكِنَّ أَكْثَرَ ٱلنَّاسِ لَا يَعْلَمُونَ ٢٨",
+      "spots": [
+        {
+          "start": 2,
+          "end": 6,
+          "text": "مَآ"
+        },
+        {
+          "start": 28,
+          "end": 32,
+          "text": "كَآ"
+        }
+      ],
+      "audio": "2086.wav"
+    },
+    "options": [
+      {
+        "id": 1,
+        "text": "0"
+      },
+      {
+        "id": 2,
+        "text": "1"
+      },
+      {
+        "id": 3,
+        "text": "2"
+      },
+      {
+        "id": 4,
+        "text": "3"
+      }
+    ],
+    "answer": [
+      3
+    ],
+    "pattern": "◌َآ:◌ُوٓ:◌ِيٓ:◌ُٓ:◌ِۦٓ:◌َآ"
+  },
+  {
+    "id": 2087,
+    "rule": "madd",
+    "lesson": 33,
+    "task_type": "select_count",
+    "question_type": "count_rule",
+    "modality": "audio",
+    "sura": 59,
+    "verse": 4,
+    "subject": {
+      "text": "ذَٰلِكَ بِأَنَّهُمْ شَآقُّوا۟ ٱللَّهَ وَرَسُولَهُ ۖ وَمَن يُشَآقِّ ٱللَّهَ فَإِنَّ ٱللَّهَ شَدِيدُ ٱلْعِقَابِ ٤",
+      "spots": [
+        {
+          "start": 20,
+          "end": 24,
+          "text": "شَآ"
+        },
+        {
+          "start": 61,
+          "end": 65,
+          "text": "شَآ"
+        }
+      ],
+      "audio": "2087.wav"
+    },
+    "options": [
+      {
+        "id": 1,
+        "text": "0"
+      },
+      {
+        "id": 2,
+        "text": "1"
+      },
+      {
+        "id": 3,
+        "text": "2"
+      },
+      {
+        "id": 4,
+        "text": "3"
+      }
+    ],
+    "answer": [
+      3
+    ],
+    "pattern": "◌َآ:◌ُوٓ:◌ِيٓ:◌ُٓ:◌ِۦٓ:◌َآ"
+  },
+  {
+    "id": 2088,
+    "rule": "madd",
+    "lesson": 33,
+    "task_type": "select_count",
+    "question_type": "count_rule",
+    "modality": "audio",
+    "sura": 55,
+    "verse": 64,
+    "subject": {
+      "text": "مُدْهَآمَّتَانِ ٦٤",
+      "spots": [
+        {
+          "start": 4,
+          "end": 8,
+          "text": "هَآ"
+        }
+      ],
+      "audio": "2088.wav"
+    },
+    "options": [
+      {
+        "id": 1,
+        "text": "0"
+      },
+      {
+        "id": 2,
+        "text": "1"
+      },
+      {
+        "id": 3,
+        "text": "2"
+      },
+      {
+        "id": 4,
+        "text": "3"
+      }
+    ],
+    "answer": [
+      2
+    ],
+    "pattern": "◌َآ:◌ُوٓ:◌ِيٓ:◌ُٓ:◌ِۦٓ:◌َآ"
+  },
+  {
+    "id": 2089,
+    "rule": "madd",
+    "lesson": 33,
+    "task_type": "select_count",
+    "question_type": "count_rule",
+    "modality": "audio",
+    "sura": 69,
+    "verse": 2,
+    "subject": {
+      "text": "مَا ٱلْحَآقَّةُ ٢",
+      "spots": [
+        {
+          "start": 7,
+          "end": 11,
+          "text": "حَآ"
+        }
+      ],
+      "audio": "2089.wav"
+    },
+    "options": [
+      {
+        "id": 1,
+        "text": "0"
+      },
+      {
+        "id": 2,
+        "text": "1"
+      },
+      {
+        "id": 3,
+        "text": "2"
+      },
+      {
+        "id": 4,
+        "text": "3"
+      }
+    ],
+    "answer": [
+      2
+    ],
+    "pattern": "◌َآ:◌ُوٓ:◌ِيٓ:◌ُٓ:◌ِۦٓ:◌َآ"
+  },
+  {
+    "id": 2090,
+    "rule": "madd",
+    "lesson": 33,
+    "task_type": "select_count",
+    "question_type": "count_rule",
+    "modality": "audio",
+    "sura": 37,
+    "verse": 165,
+    "subject": {
+      "text": "وَإِنَّا لَنَحْنُ ٱلصَّآفُّونَ ١٦٥",
+      "spots": [
+        {
+          "start": 20,
+          "end": 25,
+          "text": "صَّآ"
+        }
+      ],
+      "audio": "2090.wav"
+    },
+    "options": [
+      {
+        "id": 1,
+        "text": "0"
+      },
+      {
+        "id": 2,
+        "text": "1"
+      },
+      {
+        "id": 3,
+        "text": "2"
+      },
+      {
+        "id": 4,
+        "text": "3"
+      }
+    ],
+    "answer": [
+      2
+    ],
+    "pattern": "◌َآ:◌ُوٓ:◌ِيٓ:◌ُٓ:◌ِۦٓ:◌َآ"
+  },
+  {
+    "id": 2091,
+    "rule": "madd",
+    "lesson": 33,
+    "task_type": "select_count",
+    "question_type": "count_rule",
+    "modality": "audio",
+    "sura": 93,
+    "verse": 7,
+    "subject": {
+      "text": "وَوَجَدَكَ ضَآلًّا فَهَدَىٰ ٧",
+      "spots": [
+        {
+          "start": 11,
+          "end": 15,
+          "text": "ضَآ"
+        }
+      ],
+      "audio": "2091.wav"
+    },
+    "options": [
+      {
+        "id": 1,
+        "text": "0"
+      },
+      {
+        "id": 2,
+        "text": "1"
+      },
+      {
+        "id": 3,
+        "text": "2"
+      },
+      {
+        "id": 4,
+        "text": "3"
+      }
+    ],
+    "answer": [
+      2
+    ],
+    "pattern": "◌َآ:◌ُوٓ:◌ِيٓ:◌ُٓ:◌ِۦٓ:◌َآ"
+  },
+  {
+    "id": 2092,
+    "rule": "madd",
+    "lesson": 33,
+    "task_type": "select_count",
+    "question_type": "count_rule",
+    "modality": "audio",
+    "sura": 2,
+    "verse": 18,
+    "subject": {
+      "text": "صُمٌّ بُكْمٌ عُمْىٌ فَهُمْ لَا يَرْجِعُونَ ١٨",
+      "audio": "2092.wav"
+    },
+    "options": [
+      {
+        "id": 1,
+        "text": "0"
+      },
+      {
+        "id": 2,
+        "text": "1"
+      },
+      {
+        "id": 3,
+        "text": "2"
+      },
+      {
+        "id": 4,
+        "text": "3"
+      }
+    ],
+    "answer": [
+      1
+    ]
+  },
+  {
+    "id": 2093,
+    "rule": "madd",
+    "lesson": 33,
+    "task_type": "select_count",
+    "question_type": "count_rule",
+    "modality": "audio",
+    "sura": 112,
+    "verse": 1,
+    "subject": {
+      "text": "قُلْ هُوَ ٱللَّهُ أَحَدٌ ١",
+      "audio": "2093.wav"
+    },
+    "options": [
+      {
+        "id": 1,
+        "text": "0"
+      },
+      {
+        "id": 2,
+        "text": "1"
+      },
+      {
+        "id": 3,
+        "text": "2"
+      },
+      {
+        "id": 4,
+        "text": "3"
+      }
+    ],
+    "answer": [
+      1
+    ]
+  },
+  {
+    "id": 2094,
+    "rule": "madd",
+    "lesson": 33,
+    "task_type": "select_count",
+    "question_type": "count_rule",
+    "modality": "audio",
+    "sura": 112,
+    "verse": 2,
+    "subject": {
+      "text": "ٱللَّهُ ٱلصَّمَدُ ٢",
+      "audio": "2094.wav"
+    },
+    "options": [
+      {
+        "id": 1,
+        "text": "0"
+      },
+      {
+        "id": 2,
+        "text": "1"
+      },
+      {
+        "id": 3,
+        "text": "2"
+      },
+      {
+        "id": 4,
+        "text": "3"
+      }
+    ],
+    "answer": [
+      1
+    ]
+  },
+  {
+    "id": 2095,
+    "rule": "madd",
+    "lesson": 33,
+    "task_type": "select_count",
+    "question_type": "count_rule",
+    "modality": "audio",
+    "sura": 112,
+    "verse": 3,
+    "subject": {
+      "text": "لَمْ يَلِدْ وَلَمْ يُولَدْ ٣",
+      "audio": "2095.wav"
+    },
+    "options": [
+      {
+        "id": 1,
+        "text": "0"
+      },
+      {
+        "id": 2,
+        "text": "1"
+      },
+      {
+        "id": 3,
+        "text": "2"
+      },
+      {
+        "id": 4,
+        "text": "3"
+      }
+    ],
+    "answer": [
+      1
+    ]
+  },
+  {
+    "id": 2112,
+    "rule": "madd",
+    "lesson": 34,
+    "task_type": "select_count",
+    "question_type": "count_rule",
+    "modality": "audio",
+    "sura": 7,
+    "verse": 1,
+    "subject": {
+      "text": "الٓمٓصٓ ١",
+      "spots": [
+        {
+          "start": 1,
+          "end": 7,
+          "text": "لٓمٓصٓ"
+        }
+      ],
+      "audio": "2112.wav"
+    },
+    "options": [
+      {
+        "id": 1,
+        "text": "0"
+      },
+      {
+        "id": 2,
+        "text": "1"
+      },
+      {
+        "id": 3,
+        "text": "2"
+      },
+      {
+        "id": 4,
+        "text": "3"
+      }
+    ],
+    "answer": [
+      4
+    ],
+    "pattern": "◌ٓ"
+  },
+  {
+    "id": 2113,
+    "rule": "madd",
+    "lesson": 34,
+    "task_type": "select_count",
+    "question_type": "count_rule",
+    "modality": "audio",
+    "sura": 19,
+    "verse": 1,
+    "subject": {
+      "text": "كٓهيعٓصٓ ١",
+      "spots": [
+        {
+          "start": 0,
+          "end": 2,
+          "text": "كٓ"
+        },
+        {
+          "start": 4,
+          "end": 8,
+          "text": "عٓصٓ"
+        }
+      ],
+      "audio": "2113.wav"
+    },
+    "options": [
+      {
+        "id": 1,
+        "text": "0"
+      },
+      {
+        "id": 2,
+        "text": "1"
+      },
+      {
+        "id": 3,
+        "text": "2"
+      },
+      {
+        "id": 4,
+        "text": "3"
+      }
+    ],
+    "answer": [
+      4
+    ],
+    "pattern": "◌ٓ"
+  },
+  {
+    "id": 2114,
+    "rule": "madd",
+    "lesson": 34,
+    "task_type": "select_count",
+    "question_type": "count_rule",
+    "modality": "audio",
+    "sura": 42,
+    "verse": 2,
+    "subject": {
+      "text": "عٓسٓقٓ ٢",
+      "spots": [
+        {
+          "start": 0,
+          "end": 6,
+          "text": "عٓسٓقٓ"
+        }
+      ],
+      "audio": "2114.wav"
+    },
+    "options": [
+      {
+        "id": 1,
+        "text": "0"
+      },
+      {
+        "id": 2,
+        "text": "1"
+      },
+      {
+        "id": 3,
+        "text": "2"
+      },
+      {
+        "id": 4,
+        "text": "3"
+      }
+    ],
+    "answer": [
+      4
+    ],
+    "pattern": "◌ٓ"
+  },
+  {
+    "id": 2115,
+    "rule": "madd",
+    "lesson": 34,
+    "task_type": "select_count",
+    "question_type": "count_rule",
+    "modality": "audio",
+    "sura": 2,
+    "verse": 1,
+    "subject": {
+      "text": "الٓمٓ ١",
+      "spots": [
+        {
+          "start": 1,
+          "end": 5,
+          "text": "لٓمٓ"
+        }
+      ],
+      "audio": "2115.wav"
+    },
+    "options": [
+      {
+        "id": 1,
+        "text": "0"
+      },
+      {
+        "id": 2,
+        "text": "1"
+      },
+      {
+        "id": 3,
+        "text": "2"
+      },
+      {
+        "id": 4,
+        "text": "3"
+      }
+    ],
+    "answer": [
+      3
+    ],
+    "pattern": "◌ٓ"
+  },
+  {
+    "id": 2116,
+    "rule": "madd",
+    "lesson": 34,
+    "task_type": "select_count",
+    "question_type": "count_rule",
+    "modality": "audio",
+    "sura": 13,
+    "verse": 1,
+    "subject": {
+      "text": "الٓمٓر",
+      "spots": [
+        {
+          "start": 1,
+          "end": 5,
+          "text": "لٓمٓ"
+        }
+      ],
+      "audio": "2116.wav"
+    },
+    "options": [
+      {
+        "id": 1,
+        "text": "0"
+      },
+      {
+        "id": 2,
+        "text": "1"
+      },
+      {
+        "id": 3,
+        "text": "2"
+      },
+      {
+        "id": 4,
+        "text": "3"
+      }
+    ],
+    "answer": [
+      3
+    ],
+    "pattern": "◌ٓ"
+  },
+  {
+    "id": 2117,
+    "rule": "madd",
+    "lesson": 34,
+    "task_type": "select_count",
+    "question_type": "count_rule",
+    "modality": "audio",
+    "sura": 26,
+    "verse": 1,
+    "subject": {
+      "text": "طسٓمٓ ١",
+      "spots": [
+        {
+          "start": 1,
+          "end": 5,
+          "text": "سٓمٓ"
+        }
+      ],
+      "audio": "2117.wav"
+    },
+    "options": [
+      {
+        "id": 1,
+        "text": "0"
+      },
+      {
+        "id": 2,
+        "text": "1"
+      },
+      {
+        "id": 3,
+        "text": "2"
+      },
+      {
+        "id": 4,
+        "text": "3"
+      }
+    ],
+    "answer": [
+      3
+    ],
+    "pattern": "◌ٓ"
+  },
+  {
+    "id": 2118,
+    "rule": "madd",
+    "lesson": 34,
+    "task_type": "select_count",
+    "question_type": "count_rule",
+    "modality": "audio",
+    "sura": 10,
+    "verse": 1,
+    "subject": {
+      "text": "الٓر",
+      "spots": [
+        {
+          "start": 1,
+          "end": 3,
+          "text": "لٓ"
+        }
+      ],
+      "audio": "2118.wav"
+    },
+    "options": [
+      {
+        "id": 1,
+        "text": "0"
+      },
+      {
+        "id": 2,
+        "text": "1"
+      },
+      {
+        "id": 3,
+        "text": "2"
+      },
+      {
+        "id": 4,
+        "text": "3"
+      }
+    ],
+    "answer": [
+      2
+    ],
+    "pattern": "◌ٓ"
+  },
+  {
+    "id": 2119,
+    "rule": "madd",
+    "lesson": 34,
+    "task_type": "select_count",
+    "question_type": "count_rule",
+    "modality": "audio",
+    "sura": 27,
+    "verse": 1,
+    "subject": {
+      "text": "طسٓ",
+      "spots": [
+        {
+          "start": 1,
+          "end": 3,
+          "text": "سٓ"
+        }
+      ],
+      "audio": "2119.wav"
+    },
+    "options": [
+      {
+        "id": 1,
+        "text": "0"
+      },
+      {
+        "id": 2,
+        "text": "1"
+      },
+      {
+        "id": 3,
+        "text": "2"
+      },
+      {
+        "id": 4,
+        "text": "3"
+      }
+    ],
+    "answer": [
+      2
+    ],
+    "pattern": "◌ٓ"
+  },
+  {
+    "id": 2120,
+    "rule": "madd",
+    "lesson": 34,
+    "task_type": "select_count",
+    "question_type": "count_rule",
+    "modality": "audio",
+    "sura": 36,
+    "verse": 1,
+    "subject": {
+      "text": "يسٓ ١",
+      "spots": [
+        {
+          "start": 1,
+          "end": 3,
+          "text": "سٓ"
+        }
+      ],
+      "audio": "2120.wav"
+    },
+    "options": [
+      {
+        "id": 1,
+        "text": "0"
+      },
+      {
+        "id": 2,
+        "text": "1"
+      },
+      {
+        "id": 3,
+        "text": "2"
+      },
+      {
+        "id": 4,
+        "text": "3"
+      }
+    ],
+    "answer": [
+      2
+    ],
+    "pattern": "◌ٓ"
+  },
+  {
+    "id": 2121,
+    "rule": "madd",
+    "lesson": 34,
+    "task_type": "select_count",
+    "question_type": "count_rule",
+    "modality": "audio",
+    "sura": 38,
+    "verse": 1,
+    "subject": {
+      "text": "صٓ",
+      "spots": [
+        {
+          "start": 0,
+          "end": 2,
+          "text": "صٓ"
+        }
+      ],
+      "audio": "2121.wav"
+    },
+    "options": [
+      {
+        "id": 1,
+        "text": "0"
+      },
+      {
+        "id": 2,
+        "text": "1"
+      },
+      {
+        "id": 3,
+        "text": "2"
+      },
+      {
+        "id": 4,
+        "text": "3"
+      }
+    ],
+    "answer": [
+      2
+    ],
+    "pattern": "◌ٓ"
+  },
+  {
+    "id": 2122,
+    "rule": "madd",
+    "lesson": 34,
+    "task_type": "select_count",
+    "question_type": "count_rule",
+    "modality": "audio",
+    "sura": 40,
+    "verse": 1,
+    "subject": {
+      "text": "حمٓ ١",
+      "spots": [
+        {
+          "start": 1,
+          "end": 3,
+          "text": "مٓ"
+        }
+      ],
+      "audio": "2122.wav"
+    },
+    "options": [
+      {
+        "id": 1,
+        "text": "0"
+      },
+      {
+        "id": 2,
+        "text": "1"
+      },
+      {
+        "id": 3,
+        "text": "2"
+      },
+      {
+        "id": 4,
+        "text": "3"
+      }
+    ],
+    "answer": [
+      2
+    ],
+    "pattern": "◌ٓ"
+  },
+  {
+    "id": 2123,
+    "rule": "madd",
+    "lesson": 34,
+    "task_type": "select_count",
+    "question_type": "count_rule",
+    "modality": "audio",
+    "sura": 50,
+    "verse": 1,
+    "subject": {
+      "text": "قٓ",
+      "spots": [
+        {
+          "start": 0,
+          "end": 2,
+          "text": "قٓ"
+        }
+      ],
+      "audio": "2123.wav"
+    },
+    "options": [
+      {
+        "id": 1,
+        "text": "0"
+      },
+      {
+        "id": 2,
+        "text": "1"
+      },
+      {
+        "id": 3,
+        "text": "2"
+      },
+      {
+        "id": 4,
+        "text": "3"
+      }
+    ],
+    "answer": [
+      2
+    ],
+    "pattern": "◌ٓ"
+  },
+  {
+    "id": 2124,
+    "rule": "madd",
+    "lesson": 34,
+    "task_type": "select_count",
+    "question_type": "count_rule",
+    "modality": "audio",
+    "sura": 68,
+    "verse": 1,
+    "subject": {
+      "text": "نٓ",
+      "spots": [
+        {
+          "start": 0,
+          "end": 2,
+          "text": "نٓ"
+        }
+      ],
+      "audio": "2124.wav"
+    },
+    "options": [
+      {
+        "id": 1,
+        "text": "0"
+      },
+      {
+        "id": 2,
+        "text": "1"
+      },
+      {
+        "id": 3,
+        "text": "2"
+      },
+      {
+        "id": 4,
+        "text": "3"
+      }
+    ],
+    "answer": [
+      2
+    ],
+    "pattern": "◌ٓ"
+  },
+  {
+    "id": 2125,
+    "rule": "madd",
+    "lesson": 34,
+    "task_type": "select_count",
+    "question_type": "count_rule",
+    "modality": "audio",
+    "sura": 20,
+    "verse": 1,
+    "subject": {
+      "text": "طه ١",
+      "audio": "2125.wav"
+    },
+    "options": [
+      {
+        "id": 1,
+        "text": "0"
+      },
+      {
+        "id": 2,
+        "text": "1"
+      },
+      {
+        "id": 3,
+        "text": "2"
+      },
+      {
+        "id": 4,
+        "text": "3"
+      }
+    ],
+    "answer": [
+      1
+    ]
+  },
+  {
+    "id": 2126,
+    "rule": "madd",
+    "lesson": 34,
+    "task_type": "select_count",
+    "question_type": "count_rule",
+    "modality": "audio",
+    "sura": 3,
+    "verse": 1,
+    "subject": {
+      "text": "الٓمٓ ١",
+      "spots": [
+        {
+          "start": 1,
+          "end": 5,
+          "text": "لٓمٓ"
+        }
+      ],
+      "audio": "2126.wav"
+    },
+    "options": [
+      {
+        "id": 1,
+        "text": "0"
+      },
+      {
+        "id": 2,
+        "text": "1"
+      },
+      {
+        "id": 3,
+        "text": "2"
+      },
+      {
+        "id": 4,
+        "text": "3"
+      }
+    ],
+    "answer": [
+      3
+    ],
+    "pattern": "◌ٓ"
+  },
+  {
+    "id": 2127,
+    "rule": "madd",
+    "lesson": 34,
+    "task_type": "select_count",
+    "question_type": "count_rule",
+    "modality": "audio",
+    "sura": 41,
+    "verse": 1,
+    "subject": {
+      "text": "حمٓ ١",
+      "spots": [
+        {
+          "start": 1,
+          "end": 3,
+          "text": "مٓ"
+        }
+      ],
+      "audio": "2127.wav"
+    },
+    "options": [
+      {
+        "id": 1,
+        "text": "0"
+      },
+      {
+        "id": 2,
+        "text": "1"
+      },
+      {
+        "id": 3,
+        "text": "2"
+      },
+      {
+        "id": 4,
+        "text": "3"
+      }
+    ],
+    "answer": [
+      2
+    ],
+    "pattern": "◌ٓ"
+  },
+  {
+    "id": 2131,
+    "rule": "madd",
+    "lesson": 34,
+    "task_type": "mark_verse",
+    "question_type": "mark_rule_in_verse",
+    "modality": "audio",
+    "sura": 2,
+    "verse": 1,
+    "subject": {
+      "text": "الٓمٓ ١",
+      "spots": [
+        {
+          "start": 1,
+          "end": 5,
+          "text": "لٓمٓ"
+        }
+      ],
+      "audio": "2131.wav"
+    },
+    "options": [],
+    "answer": [
+      "لٓ",
+      "مٓ"
+    ],
+    "pattern": "◌ٓ"
+  }
+]

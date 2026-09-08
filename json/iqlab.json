@@ -1,0 +1,5058 @@
+[
+  {
+    "id": 1664,
+    "rule": "iqlab",
+    "lesson": 27,
+    "task_type": "yes_no",
+    "question_type": "has_rule",
+    "modality": "audio",
+    "sura": null,
+    "verse": null,
+    "subject": {
+      "text": "يُنۢبِتُ",
+      "spots": [
+        {
+          "start": 2,
+          "end": 6,
+          "text": "نۢبِ"
+        }
+      ],
+      "audio": "1664.wav"
+    },
+    "options": [
+      {
+        "id": 1,
+        "text": "yes"
+      },
+      {
+        "id": 2,
+        "text": "no"
+      }
+    ],
+    "answer": [
+      1
+    ],
+    "pattern": "نب"
+  },
+  {
+    "id": 1665,
+    "rule": "iqlab",
+    "lesson": 27,
+    "task_type": "select",
+    "question_type": "vowel_before_letter",
+    "multiple": false,
+    "modality": "audio",
+    "sura": null,
+    "verse": null,
+    "subject": {
+      "text": "أَنۢبِئْهُم",
+      "spots": [
+        {
+          "start": 2,
+          "end": 6,
+          "text": "نۢبِ"
+        }
+      ],
+      "audio": "1665.wav"
+    },
+    "options": [
+      {
+        "id": 1,
+        "text": "َ"
+      },
+      {
+        "id": 2,
+        "text": "ُ"
+      },
+      {
+        "id": 3,
+        "text": "ِ"
+      },
+      {
+        "id": 4,
+        "text": "none"
+      }
+    ],
+    "answer": [
+      1
+    ],
+    "pattern": "نب"
+  },
+  {
+    "id": 1666,
+    "rule": "iqlab",
+    "lesson": 27,
+    "task_type": "match",
+    "question_type": "match_rule",
+    "modality": "audio",
+    "sura": null,
+    "verse": null,
+    "subject": {
+      "text": "اختر",
+      "audio": null
+    },
+    "options": [
+      {
+        "id": 1,
+        "text": "سُنۢبُلَةٍ",
+        "spots": [
+          {
+            "start": 2,
+            "end": 6,
+            "text": "نۢبُ"
+          }
+        ],
+        "audio": "1666_1.wav"
+      },
+      {
+        "id": 2,
+        "text": "ذَنۢبِهِ",
+        "spots": [
+          {
+            "start": 2,
+            "end": 6,
+            "text": "نۢبِ"
+          }
+        ],
+        "audio": "1666_2.wav"
+      },
+      {
+        "id": 3,
+        "text": "أَنۢبَتْنَٰهَا",
+        "spots": [
+          {
+            "start": 2,
+            "end": 6,
+            "text": "نۢبَ"
+          }
+        ],
+        "audio": "1666_3.wav"
+      },
+      {
+        "id": 4,
+        "text": "يَنْهَوْنَ",
+        "audio": "1666_4.wav"
+      },
+      {
+        "id": 5,
+        "text": "none",
+        "audio": null
+      }
+    ],
+    "answer": [
+      1,
+      2,
+      3
+    ],
+    "pattern": "نب:نب:نب"
+  },
+  {
+    "id": 1667,
+    "rule": "iqlab",
+    "lesson": 27,
+    "task_type": "matching",
+    "question_type": "match_pattern",
+    "modality": "audio",
+    "sura": null,
+    "verse": null,
+    "subject": null,
+    "items": [
+      {
+        "id": 1,
+        "text": "لَيُنۢبَذَنَّ",
+        "spots": [
+          {
+            "start": 4,
+            "end": 8,
+            "text": "نۢبَ"
+          }
+        ],
+        "audio": "1667_1.wav"
+      },
+      {
+        "id": 2,
+        "text": "فَٱنۢبَجَسَتْ",
+        "spots": [
+          {
+            "start": 3,
+            "end": 7,
+            "text": "نۢبَ"
+          }
+        ],
+        "audio": "1667_2.wav"
+      },
+      {
+        "id": 3,
+        "text": "ٱنۢبَعَثَ",
+        "spots": [
+          {
+            "start": 1,
+            "end": 5,
+            "text": "نۢبَ"
+          }
+        ],
+        "audio": "1667_3.wav"
+      },
+      {
+        "id": 4,
+        "text": "مُنۢبَثًّا",
+        "spots": [
+          {
+            "start": 2,
+            "end": 6,
+            "text": "نۢبَ"
+          }
+        ],
+        "audio": "1667_4.wav"
+      }
+    ],
+    "options": [
+      {
+        "id": 1,
+        "text": "نب",
+        "spots": [
+          {
+            "start": 0,
+            "end": 2,
+            "text": "نب"
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "text": "نب",
+        "spots": [
+          {
+            "start": 0,
+            "end": 2,
+            "text": "نب"
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "text": "نب",
+        "spots": [
+          {
+            "start": 0,
+            "end": 2,
+            "text": "نب"
+          }
+        ]
+      },
+      {
+        "id": 4,
+        "text": "نب",
+        "spots": [
+          {
+            "start": 0,
+            "end": 2,
+            "text": "نب"
+          }
+        ]
+      }
+    ],
+    "answer": [
+      {
+        "item": 1,
+        "option": 1
+      },
+      {
+        "item": 2,
+        "option": 2
+      },
+      {
+        "item": 3,
+        "option": 3
+      },
+      {
+        "item": 4,
+        "option": 4
+      }
+    ]
+  },
+  {
+    "id": 1668,
+    "rule": "iqlab",
+    "lesson": 27,
+    "task_type": "select_count",
+    "question_type": "count_rule",
+    "modality": "audio",
+    "sura": 80,
+    "verse": 27,
+    "subject": {
+      "text": "فَأَنبَتْنَا فِيهَا حَبًّا ٢٧",
+      "spots": [
+        {
+          "start": 4,
+          "end": 7,
+          "text": "نبَ"
+        }
+      ],
+      "audio": "1668.wav"
+    },
+    "options": [
+      {
+        "id": 1,
+        "text": "0"
+      },
+      {
+        "id": 2,
+        "text": "1"
+      },
+      {
+        "id": 3,
+        "text": "2"
+      },
+      {
+        "id": 4,
+        "text": "3"
+      }
+    ],
+    "answer": [
+      2
+    ],
+    "pattern": "نب"
+  },
+  {
+    "id": 1669,
+    "rule": "iqlab",
+    "lesson": 27,
+    "task_type": "select_count",
+    "question_type": "count_rule",
+    "modality": "audio",
+    "sura": 81,
+    "verse": 9,
+    "subject": {
+      "text": "بِأَىِّ ذَنبٍ قُتِلَتْ ٩",
+      "spots": [
+        {
+          "start": 10,
+          "end": 13,
+          "text": "نبٍ"
+        }
+      ],
+      "audio": "1669.wav"
+    },
+    "options": [
+      {
+        "id": 1,
+        "text": "0"
+      },
+      {
+        "id": 2,
+        "text": "1"
+      },
+      {
+        "id": 3,
+        "text": "2"
+      },
+      {
+        "id": 4,
+        "text": "3"
+      }
+    ],
+    "answer": [
+      2
+    ],
+    "pattern": "نب"
+  },
+  {
+    "id": 1670,
+    "rule": "iqlab",
+    "lesson": 27,
+    "task_type": "select_count",
+    "question_type": "count_rule",
+    "modality": "audio",
+    "sura": 6,
+    "verse": 131,
+    "subject": {
+      "text": "ذَٰلِكَ أَن لَّمْ يَكُن رَّبُّكَ مُهْلِكَ ٱلْقُرَىٰ بِظُلْمٍ وَأَهْلُهَا غَٰفِلُونَ ١٣١",
+      "audio": "1670.wav"
+    },
+    "options": [
+      {
+        "id": 1,
+        "text": "0"
+      },
+      {
+        "id": 2,
+        "text": "1"
+      },
+      {
+        "id": 3,
+        "text": "2"
+      },
+      {
+        "id": 4,
+        "text": "3"
+      }
+    ],
+    "answer": [
+      1
+    ]
+  },
+  {
+    "id": 1671,
+    "rule": "iqlab",
+    "lesson": 27,
+    "task_type": "mark_verse",
+    "question_type": "mark_rule_in_verse",
+    "modality": "audio",
+    "sura": 91,
+    "verse": 12,
+    "subject": {
+      "text": "إِذِ ٱنبَعَثَ أَشْقَىٰهَا ١٢",
+      "spots": [
+        {
+          "start": 5,
+          "end": 13,
+          "text": "ٱنبَعَثَ"
+        }
+      ],
+      "audio": "1671.wav"
+    },
+    "options": [],
+    "answer": [
+      "ٱنبَعَثَ"
+    ],
+    "pattern": "نب"
+  },
+  {
+    "id": 1672,
+    "rule": "iqlab",
+    "lesson": 27,
+    "task_type": "yes_no",
+    "question_type": "has_rule",
+    "modality": "audio",
+    "sura": null,
+    "verse": null,
+    "subject": {
+      "text": "مِنۢ بَعْدِ",
+      "spots": [
+        {
+          "start": 2,
+          "end": 7,
+          "text": "نۢ بَ"
+        }
+      ],
+      "audio": "1672.wav"
+    },
+    "options": [
+      {
+        "id": 1,
+        "text": "yes"
+      },
+      {
+        "id": 2,
+        "text": "no"
+      }
+    ],
+    "answer": [
+      1
+    ],
+    "pattern": "ن ب"
+  },
+  {
+    "id": 1673,
+    "rule": "iqlab",
+    "lesson": 27,
+    "task_type": "select",
+    "question_type": "vowel_before_letter",
+    "multiple": false,
+    "modality": "audio",
+    "sura": null,
+    "verse": null,
+    "subject": {
+      "text": "مَنۢ بَخِلَ",
+      "spots": [
+        {
+          "start": 2,
+          "end": 7,
+          "text": "نۢ بَ"
+        }
+      ],
+      "audio": "1673.wav"
+    },
+    "options": [
+      {
+        "id": 1,
+        "text": "َ"
+      },
+      {
+        "id": 2,
+        "text": "ُ"
+      },
+      {
+        "id": 3,
+        "text": "ِ"
+      },
+      {
+        "id": 4,
+        "text": "none"
+      }
+    ],
+    "answer": [
+      1
+    ],
+    "pattern": "ن ب"
+  },
+  {
+    "id": 1674,
+    "rule": "iqlab",
+    "lesson": 27,
+    "task_type": "match",
+    "question_type": "match_rule",
+    "modality": "audio",
+    "sura": null,
+    "verse": null,
+    "subject": {
+      "text": "مِن",
+      "spots": [
+        {
+          "start": 2,
+          "end": 3,
+          "text": "ن"
+        }
+      ],
+      "audio": "1674_prompt.wav"
+    },
+    "options": [
+      {
+        "id": 1,
+        "text": "بَيْنِ",
+        "spots": [
+          {
+            "start": 0,
+            "end": 2,
+            "text": "بَ"
+          }
+        ],
+        "audio": "1674_1.wav"
+      },
+      {
+        "id": 2,
+        "text": "بَقْلِهَا",
+        "spots": [
+          {
+            "start": 0,
+            "end": 2,
+            "text": "بَ"
+          }
+        ],
+        "audio": "1674_2.wav"
+      },
+      {
+        "id": 3,
+        "text": "بَشَرٍ",
+        "spots": [
+          {
+            "start": 0,
+            "end": 2,
+            "text": "بَ"
+          }
+        ],
+        "audio": "1674_3.wav"
+      },
+      {
+        "id": 4,
+        "text": "خَيْرٍ",
+        "audio": "1674_4.wav"
+      },
+      {
+        "id": 5,
+        "text": "none",
+        "audio": null
+      }
+    ],
+    "answer": [
+      1,
+      2,
+      3
+    ],
+    "pattern": "ن ب:ن ب:ن ب"
+  },
+  {
+    "id": 1675,
+    "rule": "iqlab",
+    "lesson": 27,
+    "task_type": "match",
+    "question_type": "match_rule",
+    "modality": "audio",
+    "sura": null,
+    "verse": null,
+    "subject": {
+      "text": "مَن",
+      "spots": [
+        {
+          "start": 2,
+          "end": 3,
+          "text": "ن"
+        }
+      ],
+      "audio": "1675_prompt.wav"
+    },
+    "options": [
+      {
+        "id": 1,
+        "text": "بَعَثَنَا",
+        "spots": [
+          {
+            "start": 0,
+            "end": 2,
+            "text": "بَ"
+          }
+        ],
+        "audio": "1675_1.wav"
+      },
+      {
+        "id": 2,
+        "text": "بَدَّلَهُۥ",
+        "spots": [
+          {
+            "start": 0,
+            "end": 2,
+            "text": "بَ"
+          }
+        ],
+        "audio": "1675_2.wav"
+      },
+      {
+        "id": 3,
+        "text": "عَمِلَ",
+        "audio": "1675_3.wav"
+      },
+      {
+        "id": 4,
+        "text": "ءَامَنَ",
+        "audio": "1675_4.wav"
+      },
+      {
+        "id": 5,
+        "text": "none",
+        "audio": null
+      }
+    ],
+    "answer": [
+      1,
+      2
+    ],
+    "pattern": "ن ب:ن ب"
+  },
+  {
+    "id": 1676,
+    "rule": "iqlab",
+    "lesson": 27,
+    "task_type": "select_count",
+    "question_type": "count_rule",
+    "modality": "audio",
+    "sura": 92,
+    "verse": 8,
+    "subject": {
+      "text": "وَأَمَّا مَن بَخِلَ وَٱسْتَغْنَىٰ ٨",
+      "spots": [
+        {
+          "start": 11,
+          "end": 15,
+          "text": "ن بَ"
+        }
+      ],
+      "audio": "1676.wav"
+    },
+    "options": [
+      {
+        "id": 1,
+        "text": "0"
+      },
+      {
+        "id": 2,
+        "text": "1"
+      },
+      {
+        "id": 3,
+        "text": "2"
+      },
+      {
+        "id": 4,
+        "text": "3"
+      }
+    ],
+    "answer": [
+      2
+    ],
+    "pattern": "ن ب"
+  },
+  {
+    "id": 1677,
+    "rule": "iqlab",
+    "lesson": 27,
+    "task_type": "select_count",
+    "question_type": "count_rule",
+    "modality": "audio",
+    "sura": 26,
+    "verse": 211,
+    "subject": {
+      "text": "وَمَا يَنبَغِى لَهُمْ وَمَا يَسْتَطِيعُونَ ٢١١",
+      "spots": [
+        {
+          "start": 8,
+          "end": 11,
+          "text": "نبَ"
+        }
+      ],
+      "audio": "1677.wav"
+    },
+    "options": [
+      {
+        "id": 1,
+        "text": "0"
+      },
+      {
+        "id": 2,
+        "text": "1"
+      },
+      {
+        "id": 3,
+        "text": "2"
+      },
+      {
+        "id": 4,
+        "text": "3"
+      }
+    ],
+    "answer": [
+      2
+    ],
+    "pattern": "نب"
+  },
+  {
+    "id": 1678,
+    "rule": "iqlab",
+    "lesson": 27,
+    "task_type": "select_count",
+    "question_type": "count_rule",
+    "modality": "audio",
+    "sura": 20,
+    "verse": 27,
+    "subject": {
+      "text": "وَٱحْلُلْ عُقْدَةً مِّن لِّسَانِى ٢٧",
+      "audio": "1678.wav"
+    },
+    "options": [
+      {
+        "id": 1,
+        "text": "0"
+      },
+      {
+        "id": 2,
+        "text": "1"
+      },
+      {
+        "id": 3,
+        "text": "2"
+      },
+      {
+        "id": 4,
+        "text": "3"
+      }
+    ],
+    "answer": [
+      1
+    ]
+  },
+  {
+    "id": 1679,
+    "rule": "iqlab",
+    "lesson": 27,
+    "task_type": "mark_verse",
+    "question_type": "mark_rule_in_verse",
+    "modality": "audio",
+    "sura": 37,
+    "verse": 146,
+    "subject": {
+      "text": "وَأَنبَتْنَا عَلَيْهِ شَجَرَةً مِّن يَقْطِينٍ ١٤٦",
+      "spots": [
+        {
+          "start": 0,
+          "end": 12,
+          "text": "وَأَنبَتْنَا"
+        }
+      ],
+      "audio": "1679.wav"
+    },
+    "options": [],
+    "answer": [
+      "وَأَنبَتْنَا"
+    ],
+    "pattern": "نب"
+  },
+  {
+    "id": 1680,
+    "rule": "iqlab",
+    "lesson": 27,
+    "task_type": "yes_no",
+    "question_type": "has_rule",
+    "modality": "text",
+    "sura": null,
+    "verse": null,
+    "subject": {
+      "text": "أَنۢبَتَ",
+      "spots": [
+        {
+          "start": 2,
+          "end": 6,
+          "text": "نۢبَ"
+        }
+      ],
+      "audio": null
+    },
+    "options": [
+      {
+        "id": 1,
+        "text": "yes"
+      },
+      {
+        "id": 2,
+        "text": "no"
+      }
+    ],
+    "answer": [
+      1
+    ],
+    "pattern": "نب"
+  },
+  {
+    "id": 1681,
+    "rule": "iqlab",
+    "lesson": 27,
+    "task_type": "yes_no",
+    "question_type": "has_rule",
+    "modality": "text",
+    "sura": null,
+    "verse": null,
+    "subject": {
+      "text": "أَنْعَمْتَ",
+      "audio": null
+    },
+    "options": [
+      {
+        "id": 1,
+        "text": "yes"
+      },
+      {
+        "id": 2,
+        "text": "no"
+      }
+    ],
+    "answer": [
+      2
+    ]
+  },
+  {
+    "id": 1682,
+    "rule": "iqlab",
+    "lesson": 27,
+    "task_type": "select",
+    "question_type": "vowel_before_letter",
+    "multiple": false,
+    "modality": "audio",
+    "sura": null,
+    "verse": null,
+    "subject": {
+      "text": "يَنۢبَغِى",
+      "spots": [
+        {
+          "start": 2,
+          "end": 6,
+          "text": "نۢبَ"
+        }
+      ],
+      "audio": "1682.wav"
+    },
+    "options": [
+      {
+        "id": 1,
+        "text": "َ"
+      },
+      {
+        "id": 2,
+        "text": "ُ"
+      },
+      {
+        "id": 3,
+        "text": "ِ"
+      },
+      {
+        "id": 4,
+        "text": "none"
+      }
+    ],
+    "answer": [
+      1
+    ],
+    "pattern": "نب"
+  },
+  {
+    "id": 1683,
+    "rule": "iqlab",
+    "lesson": 27,
+    "task_type": "match",
+    "question_type": "match_rule",
+    "modality": "audio",
+    "sura": null,
+    "verse": null,
+    "subject": {
+      "text": "يَن",
+      "audio": "1683_prompt.wav"
+    },
+    "options": [
+      {
+        "id": 1,
+        "text": "صُرُكُمْ",
+        "audio": "1683_1.wav"
+      },
+      {
+        "id": 2,
+        "text": "طِقُونَ",
+        "audio": "1683_2.wav"
+      },
+      {
+        "id": 3,
+        "text": "هَوْنَ",
+        "audio": "1683_3.wav"
+      },
+      {
+        "id": 4,
+        "text": "none",
+        "audio": "1683_4.wav"
+      }
+    ],
+    "answer": [
+      4
+    ]
+  },
+  {
+    "id": 1684,
+    "rule": "iqlab",
+    "lesson": 27,
+    "task_type": "select_count",
+    "question_type": "count_rule",
+    "modality": "audio",
+    "sura": 67,
+    "verse": 11,
+    "subject": {
+      "text": "فَٱعْتَرَفُوا۟ بِذَنبِهِمْ فَسُحْقًا لِّّأَصْحَٰبِ ٱلسَّعِيرِ ١١",
+      "spots": [
+        {
+          "start": 19,
+          "end": 22,
+          "text": "نبِ"
+        }
+      ],
+      "audio": "1684.wav"
+    },
+    "options": [
+      {
+        "id": 1,
+        "text": "0"
+      },
+      {
+        "id": 2,
+        "text": "1"
+      },
+      {
+        "id": 3,
+        "text": "2"
+      },
+      {
+        "id": 4,
+        "text": "3"
+      }
+    ],
+    "answer": [
+      2
+    ],
+    "pattern": "نب"
+  },
+  {
+    "id": 1685,
+    "rule": "iqlab",
+    "lesson": 27,
+    "task_type": "select_count",
+    "question_type": "count_rule",
+    "modality": "audio",
+    "sura": 69,
+    "verse": 8,
+    "subject": {
+      "text": "فَهَلْ تَرَىٰ لَهُم مِّن بَاقِيَةٍ ٨",
+      "spots": [
+        {
+          "start": 23,
+          "end": 27,
+          "text": "ن بَ"
+        }
+      ],
+      "audio": "1685.wav"
+    },
+    "options": [
+      {
+        "id": 1,
+        "text": "0"
+      },
+      {
+        "id": 2,
+        "text": "1"
+      },
+      {
+        "id": 3,
+        "text": "2"
+      },
+      {
+        "id": 4,
+        "text": "3"
+      }
+    ],
+    "answer": [
+      2
+    ],
+    "pattern": "ن ب"
+  },
+  {
+    "id": 1686,
+    "rule": "iqlab",
+    "lesson": 27,
+    "task_type": "mark_verse",
+    "question_type": "mark_rule_in_verse",
+    "modality": "audio",
+    "sura": 20,
+    "verse": 49,
+    "subject": {
+      "text": "قَالَ فَمَن رَّبُّكُمَا يَٰمُوسَىٰ ٤٩",
+      "audio": "1686.wav"
+    },
+    "options": [],
+    "answer": []
+  },
+  {
+    "id": 1687,
+    "rule": "iqlab",
+    "lesson": 27,
+    "task_type": "mark_verse",
+    "question_type": "mark_rule_in_verse",
+    "modality": "audio",
+    "sura": 71,
+    "verse": 17,
+    "subject": {
+      "text": "وَٱللَّهُ أَنبَتَكُم مِّنَ ٱلْأَرْضِ نَبَاتًا ١٧",
+      "spots": [
+        {
+          "start": 10,
+          "end": 20,
+          "text": "أَنبَتَكُم"
+        }
+      ],
+      "audio": "1687.wav"
+    },
+    "options": [],
+    "answer": [
+      "أَنبَتَكُم"
+    ],
+    "pattern": "نب"
+  },
+  {
+    "id": 1688,
+    "rule": "iqlab",
+    "lesson": 27,
+    "task_type": "yes_no",
+    "question_type": "has_rule",
+    "modality": "text",
+    "sura": null,
+    "verse": null,
+    "subject": {
+      "text": "أَنۢ بُورِكَ",
+      "spots": [
+        {
+          "start": 2,
+          "end": 7,
+          "text": "نۢ بُ"
+        }
+      ],
+      "audio": null
+    },
+    "options": [
+      {
+        "id": 1,
+        "text": "yes"
+      },
+      {
+        "id": 2,
+        "text": "no"
+      }
+    ],
+    "answer": [
+      1
+    ],
+    "pattern": "ن ب"
+  },
+  {
+    "id": 1689,
+    "rule": "iqlab",
+    "lesson": 27,
+    "task_type": "yes_no",
+    "question_type": "has_rule",
+    "modality": "text",
+    "sura": null,
+    "verse": null,
+    "subject": {
+      "text": "إِن كُنتُمْ",
+      "audio": null
+    },
+    "options": [
+      {
+        "id": 1,
+        "text": "yes"
+      },
+      {
+        "id": 2,
+        "text": "no"
+      }
+    ],
+    "answer": [
+      2
+    ]
+  },
+  {
+    "id": 1690,
+    "rule": "iqlab",
+    "lesson": 27,
+    "task_type": "select",
+    "question_type": "vowel_before_letter",
+    "multiple": false,
+    "modality": "audio",
+    "sura": null,
+    "verse": null,
+    "subject": {
+      "text": "فَإِنۢ بَغَتْ",
+      "spots": [
+        {
+          "start": 4,
+          "end": 9,
+          "text": "نۢ بَ"
+        }
+      ],
+      "audio": "1690.wav"
+    },
+    "options": [
+      {
+        "id": 1,
+        "text": "َ"
+      },
+      {
+        "id": 2,
+        "text": "ُ"
+      },
+      {
+        "id": 3,
+        "text": "ِ"
+      },
+      {
+        "id": 4,
+        "text": "none"
+      }
+    ],
+    "answer": [
+      3
+    ],
+    "pattern": "ن ب"
+  },
+  {
+    "id": 1691,
+    "rule": "iqlab",
+    "lesson": 27,
+    "task_type": "match",
+    "question_type": "match_rule",
+    "modality": "audio",
+    "sura": null,
+    "verse": null,
+    "subject": {
+      "text": "مِن",
+      "spots": [
+        {
+          "start": 2,
+          "end": 3,
+          "text": "ن"
+        }
+      ],
+      "audio": "1691_prompt.wav"
+    },
+    "options": [
+      {
+        "id": 1,
+        "text": "بُطُونِ",
+        "spots": [
+          {
+            "start": 0,
+            "end": 2,
+            "text": "بُ"
+          }
+        ],
+        "audio": "1691_1.wav"
+      },
+      {
+        "id": 2,
+        "text": "بَاقِيَةٍ",
+        "spots": [
+          {
+            "start": 0,
+            "end": 2,
+            "text": "بَ"
+          }
+        ],
+        "audio": "1691_2.wav"
+      },
+      {
+        "id": 3,
+        "text": "بَلَدٍ",
+        "spots": [
+          {
+            "start": 0,
+            "end": 2,
+            "text": "بَ"
+          }
+        ],
+        "audio": "1691_3.wav"
+      },
+      {
+        "id": 4,
+        "text": "خَيْرٍ",
+        "audio": "1691_4.wav"
+      },
+      {
+        "id": 5,
+        "text": "none",
+        "audio": null
+      }
+    ],
+    "answer": [
+      1,
+      2,
+      3
+    ],
+    "pattern": "ن ب:ن ب:ن ب"
+  },
+  {
+    "id": 1692,
+    "rule": "iqlab",
+    "lesson": 27,
+    "task_type": "select_count",
+    "question_type": "count_rule",
+    "modality": "audio",
+    "sura": 104,
+    "verse": 4,
+    "subject": {
+      "text": "كَلَّا ۖ لَيُنبَذَنَّ فِى ٱلْحُطَمَةِ ٤",
+      "spots": [
+        {
+          "start": 13,
+          "end": 16,
+          "text": "نبَ"
+        }
+      ],
+      "audio": "1692.wav"
+    },
+    "options": [
+      {
+        "id": 1,
+        "text": "0"
+      },
+      {
+        "id": 2,
+        "text": "1"
+      },
+      {
+        "id": 3,
+        "text": "2"
+      },
+      {
+        "id": 4,
+        "text": "3"
+      }
+    ],
+    "answer": [
+      2
+    ],
+    "pattern": "نب"
+  },
+  {
+    "id": 1693,
+    "rule": "iqlab",
+    "lesson": 27,
+    "task_type": "select_count",
+    "question_type": "count_rule",
+    "modality": "audio",
+    "sura": 19,
+    "verse": 92,
+    "subject": {
+      "text": "وَمَا يَنبَغِى لِلرَّحْمَٰنِ أَن يَتَّخِذَ وَلَدًا ٩٢",
+      "spots": [
+        {
+          "start": 8,
+          "end": 11,
+          "text": "نبَ"
+        }
+      ],
+      "audio": "1693.wav"
+    },
+    "options": [
+      {
+        "id": 1,
+        "text": "0"
+      },
+      {
+        "id": 2,
+        "text": "1"
+      },
+      {
+        "id": 3,
+        "text": "2"
+      },
+      {
+        "id": 4,
+        "text": "3"
+      }
+    ],
+    "answer": [
+      2
+    ],
+    "pattern": "نب"
+  },
+  {
+    "id": 1694,
+    "rule": "iqlab",
+    "lesson": 27,
+    "task_type": "mark_verse",
+    "question_type": "mark_rule_in_verse",
+    "modality": "audio",
+    "sura": 56,
+    "verse": 80,
+    "subject": {
+      "text": "تَنزِيلٌ مِّن رَّبِّ ٱلْعَٰلَمِينَ ٨٠",
+      "audio": "1694.wav"
+    },
+    "options": [],
+    "answer": []
+  },
+  {
+    "id": 1695,
+    "rule": "iqlab",
+    "lesson": 27,
+    "task_type": "mark_verse",
+    "question_type": "mark_rule_in_verse",
+    "modality": "audio",
+    "sura": 23,
+    "verse": 31,
+    "subject": {
+      "text": "ثُمَّ أَنشَأْنَا مِن بَعْدِهِمْ قَرْنًا آخَرِينَ ٣١",
+      "spots": [
+        {
+          "start": 17,
+          "end": 31,
+          "text": "مِن بَعْدِهِمْ"
+        }
+      ],
+      "audio": "1695.wav"
+    },
+    "options": [],
+    "answer": [
+      "مِن بَعْدِهِمْ"
+    ],
+    "pattern": "ن ب"
+  },
+  {
+    "id": 1696,
+    "rule": "iqlab",
+    "lesson": 27,
+    "task_type": "yes_no",
+    "question_type": "has_rule",
+    "modality": "audio",
+    "sura": null,
+    "verse": null,
+    "subject": {
+      "text": "أَنۢبِئُونِى",
+      "spots": [
+        {
+          "start": 2,
+          "end": 6,
+          "text": "نۢبِ"
+        }
+      ],
+      "audio": "1696.wav"
+    },
+    "options": [
+      {
+        "id": 1,
+        "text": "yes"
+      },
+      {
+        "id": 2,
+        "text": "no"
+      }
+    ],
+    "answer": [
+      1
+    ],
+    "pattern": "نب"
+  },
+  {
+    "id": 1697,
+    "rule": "iqlab",
+    "lesson": 27,
+    "task_type": "select",
+    "question_type": "vowel_before_letter",
+    "multiple": false,
+    "modality": "audio",
+    "sura": null,
+    "verse": null,
+    "subject": {
+      "text": "يُنۢبِتُ",
+      "spots": [
+        {
+          "start": 2,
+          "end": 6,
+          "text": "نۢبِ"
+        }
+      ],
+      "audio": "1697.wav"
+    },
+    "options": [
+      {
+        "id": 1,
+        "text": "َ"
+      },
+      {
+        "id": 2,
+        "text": "ُ"
+      },
+      {
+        "id": 3,
+        "text": "ِ"
+      },
+      {
+        "id": 4,
+        "text": "none"
+      }
+    ],
+    "answer": [
+      2
+    ],
+    "pattern": "نب"
+  },
+  {
+    "id": 1698,
+    "rule": "iqlab",
+    "lesson": 27,
+    "task_type": "match",
+    "question_type": "match_rule",
+    "modality": "audio",
+    "sura": null,
+    "verse": null,
+    "subject": {
+      "text": "اختر",
+      "audio": null
+    },
+    "options": [
+      {
+        "id": 1,
+        "text": "أَنۢبِئْهُم",
+        "spots": [
+          {
+            "start": 2,
+            "end": 6,
+            "text": "نۢبِ"
+          }
+        ],
+        "audio": "1698_1.wav"
+      },
+      {
+        "id": 2,
+        "text": "سُنۢبُلَةٍ",
+        "spots": [
+          {
+            "start": 2,
+            "end": 6,
+            "text": "نۢبُ"
+          }
+        ],
+        "audio": "1698_2.wav"
+      },
+      {
+        "id": 3,
+        "text": "يَنصُرُكُمْ",
+        "audio": "1698_3.wav"
+      },
+      {
+        "id": 4,
+        "text": "يَنطِقُونَ",
+        "audio": "1698_4.wav"
+      },
+      {
+        "id": 5,
+        "text": "none",
+        "audio": null
+      }
+    ],
+    "answer": [
+      1,
+      2
+    ],
+    "pattern": "نب:نب"
+  },
+  {
+    "id": 1699,
+    "rule": "iqlab",
+    "lesson": 27,
+    "task_type": "matching",
+    "question_type": "match_pattern",
+    "modality": "audio",
+    "sura": null,
+    "verse": null,
+    "subject": null,
+    "items": [
+      {
+        "id": 1,
+        "text": "ذَنۢبِهِ",
+        "spots": [
+          {
+            "start": 2,
+            "end": 6,
+            "text": "نۢبِ"
+          }
+        ],
+        "audio": "1699_1.wav"
+      },
+      {
+        "id": 2,
+        "text": "أَنۢبَتْنَٰهَا",
+        "spots": [
+          {
+            "start": 2,
+            "end": 6,
+            "text": "نۢبَ"
+          }
+        ],
+        "audio": "1699_2.wav"
+      },
+      {
+        "id": 3,
+        "text": "لَيُنۢبَذَنَّ",
+        "spots": [
+          {
+            "start": 4,
+            "end": 8,
+            "text": "نۢبَ"
+          }
+        ],
+        "audio": "1699_3.wav"
+      },
+      {
+        "id": 4,
+        "text": "فَٱنۢبَجَسَتْ",
+        "spots": [
+          {
+            "start": 3,
+            "end": 7,
+            "text": "نۢبَ"
+          }
+        ],
+        "audio": "1699_4.wav"
+      }
+    ],
+    "options": [
+      {
+        "id": 1,
+        "text": "نب",
+        "spots": [
+          {
+            "start": 0,
+            "end": 2,
+            "text": "نب"
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "text": "نب",
+        "spots": [
+          {
+            "start": 0,
+            "end": 2,
+            "text": "نب"
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "text": "نب",
+        "spots": [
+          {
+            "start": 0,
+            "end": 2,
+            "text": "نب"
+          }
+        ]
+      },
+      {
+        "id": 4,
+        "text": "نب",
+        "spots": [
+          {
+            "start": 0,
+            "end": 2,
+            "text": "نب"
+          }
+        ]
+      }
+    ],
+    "answer": [
+      {
+        "item": 1,
+        "option": 1
+      },
+      {
+        "item": 2,
+        "option": 2
+      },
+      {
+        "item": 3,
+        "option": 3
+      },
+      {
+        "item": 4,
+        "option": 4
+      }
+    ]
+  },
+  {
+    "id": 1700,
+    "rule": "iqlab",
+    "lesson": 27,
+    "task_type": "select_count",
+    "question_type": "count_rule",
+    "modality": "audio",
+    "sura": 23,
+    "verse": 42,
+    "subject": {
+      "text": "ثُمَّ أَنشَأْنَا مِن بَعْدِهِمْ قُرُونًا آخَرِينَ ٤٢",
+      "spots": [
+        {
+          "start": 19,
+          "end": 23,
+          "text": "ن بَ"
+        }
+      ],
+      "audio": "1700.wav"
+    },
+    "options": [
+      {
+        "id": 1,
+        "text": "0"
+      },
+      {
+        "id": 2,
+        "text": "1"
+      },
+      {
+        "id": 3,
+        "text": "2"
+      },
+      {
+        "id": 4,
+        "text": "3"
+      }
+    ],
+    "answer": [
+      2
+    ],
+    "pattern": "ن ب"
+  },
+  {
+    "id": 1701,
+    "rule": "iqlab",
+    "lesson": 27,
+    "task_type": "select_count",
+    "question_type": "count_rule",
+    "modality": "audio",
+    "sura": 26,
+    "verse": 14,
+    "subject": {
+      "text": "وَلَهُمْ عَلَىَّ ذَنبٌ فَأَخَافُ أَن يَقْتُلُونِ ١٤",
+      "spots": [
+        {
+          "start": 19,
+          "end": 22,
+          "text": "نبٌ"
+        }
+      ],
+      "audio": "1701.wav"
+    },
+    "options": [
+      {
+        "id": 1,
+        "text": "0"
+      },
+      {
+        "id": 2,
+        "text": "1"
+      },
+      {
+        "id": 3,
+        "text": "2"
+      },
+      {
+        "id": 4,
+        "text": "3"
+      }
+    ],
+    "answer": [
+      2
+    ],
+    "pattern": "نب"
+  },
+  {
+    "id": 1702,
+    "rule": "iqlab",
+    "lesson": 27,
+    "task_type": "mark_verse",
+    "question_type": "mark_rule_in_verse",
+    "modality": "audio",
+    "sura": 83,
+    "verse": 25,
+    "subject": {
+      "text": "يُسْقَوْنَ مِن رَّحِيقٍ مَّخْتُومٍ ٢٥",
+      "audio": "1702.wav"
+    },
+    "options": [],
+    "answer": []
+  },
+  {
+    "id": 1703,
+    "rule": "iqlab",
+    "lesson": 27,
+    "task_type": "mark_verse",
+    "question_type": "mark_rule_in_verse",
+    "modality": "audio",
+    "sura": 2,
+    "verse": 56,
+    "subject": {
+      "text": "ثُمَّ بَعَثْنَٰكُم مِّن بَعْدِ مَوْتِكُمْ لَعَلَّكُمْ تَشْكُرُونَ ٥٦",
+      "spots": [
+        {
+          "start": 19,
+          "end": 30,
+          "text": "مِّن بَعْدِ"
+        }
+      ],
+      "audio": "1703.wav"
+    },
+    "options": [],
+    "answer": [
+      "مِّن بَعْدِ"
+    ],
+    "pattern": "ن ب"
+  },
+  {
+    "id": 1704,
+    "rule": "iqlab",
+    "lesson": 27,
+    "task_type": "yes_no",
+    "question_type": "has_rule",
+    "modality": "audio",
+    "sura": null,
+    "verse": null,
+    "subject": {
+      "text": "مِنۢ بَعْدِ",
+      "spots": [
+        {
+          "start": 2,
+          "end": 7,
+          "text": "نۢ بَ"
+        }
+      ],
+      "audio": "1704.wav"
+    },
+    "options": [
+      {
+        "id": 1,
+        "text": "yes"
+      },
+      {
+        "id": 2,
+        "text": "no"
+      }
+    ],
+    "answer": [
+      1
+    ],
+    "pattern": "ن ب"
+  },
+  {
+    "id": 1705,
+    "rule": "iqlab",
+    "lesson": 27,
+    "task_type": "select",
+    "question_type": "vowel_before_letter",
+    "multiple": false,
+    "modality": "audio",
+    "sura": null,
+    "verse": null,
+    "subject": {
+      "text": "مِنۢ بَيْنِ",
+      "spots": [
+        {
+          "start": 2,
+          "end": 7,
+          "text": "نۢ بَ"
+        }
+      ],
+      "audio": "1705.wav"
+    },
+    "options": [
+      {
+        "id": 1,
+        "text": "َ"
+      },
+      {
+        "id": 2,
+        "text": "ُ"
+      },
+      {
+        "id": 3,
+        "text": "ِ"
+      },
+      {
+        "id": 4,
+        "text": "none"
+      }
+    ],
+    "answer": [
+      3
+    ],
+    "pattern": "ن ب"
+  },
+  {
+    "id": 1706,
+    "rule": "iqlab",
+    "lesson": 27,
+    "task_type": "match",
+    "question_type": "match_rule",
+    "modality": "audio",
+    "sura": null,
+    "verse": null,
+    "subject": {
+      "text": "عَن",
+      "audio": "1706_prompt.wav"
+    },
+    "options": [
+      {
+        "id": 1,
+        "text": "صَلَاتِهِمْ",
+        "audio": "1706_1.wav"
+      },
+      {
+        "id": 2,
+        "text": "سَيِّئَاتِنَا",
+        "audio": "1706_2.wav"
+      },
+      {
+        "id": 3,
+        "text": "طَبَقٍ",
+        "audio": "1706_3.wav"
+      },
+      {
+        "id": 4,
+        "text": "none",
+        "audio": "1706_4.wav"
+      }
+    ],
+    "answer": [
+      4
+    ]
+  },
+  {
+    "id": 1707,
+    "rule": "iqlab",
+    "lesson": 27,
+    "task_type": "match",
+    "question_type": "match_rule",
+    "modality": "audio",
+    "sura": null,
+    "verse": null,
+    "subject": {
+      "text": "مِن",
+      "spots": [
+        {
+          "start": 2,
+          "end": 3,
+          "text": "ن"
+        }
+      ],
+      "audio": "1707_prompt.wav"
+    },
+    "options": [
+      {
+        "id": 1,
+        "text": "بَعْدِ",
+        "spots": [
+          {
+            "start": 0,
+            "end": 2,
+            "text": "بَ"
+          }
+        ],
+        "audio": "1707_1.wav"
+      },
+      {
+        "id": 2,
+        "text": "بَيْنِ",
+        "spots": [
+          {
+            "start": 0,
+            "end": 2,
+            "text": "بَ"
+          }
+        ],
+        "audio": "1707_2.wav"
+      },
+      {
+        "id": 3,
+        "text": "خَيْرٍ",
+        "audio": "1707_3.wav"
+      },
+      {
+        "id": 4,
+        "text": "حَسَنَةٍ",
+        "audio": "1707_4.wav"
+      },
+      {
+        "id": 5,
+        "text": "none",
+        "audio": null
+      }
+    ],
+    "answer": [
+      1,
+      2
+    ],
+    "pattern": "ن ب:ن ب"
+  },
+  {
+    "id": 1708,
+    "rule": "iqlab",
+    "lesson": 27,
+    "task_type": "select_count",
+    "question_type": "count_rule",
+    "modality": "audio",
+    "sura": 91,
+    "verse": 14,
+    "subject": {
+      "text": "فَكَذَّبُوهُ فَعَقَرُوهَا فَدَمْدَمَ عَلَيْهِمْ رَبُّهُم بِذَنبِهِمْ فَسَوَّىٰهَا ١٤",
+      "spots": [
+        {
+          "start": 61,
+          "end": 64,
+          "text": "نبِ"
+        }
+      ],
+      "audio": "1708.wav"
+    },
+    "options": [
+      {
+        "id": 1,
+        "text": "0"
+      },
+      {
+        "id": 2,
+        "text": "1"
+      },
+      {
+        "id": 3,
+        "text": "2"
+      },
+      {
+        "id": 4,
+        "text": "3"
+      }
+    ],
+    "answer": [
+      2
+    ],
+    "pattern": "نب"
+  },
+  {
+    "id": 1709,
+    "rule": "iqlab",
+    "lesson": 27,
+    "task_type": "select_count",
+    "question_type": "count_rule",
+    "modality": "audio",
+    "sura": 2,
+    "verse": 52,
+    "subject": {
+      "text": "ثُمَّ عَفَوْنَا عَنكُم مِّن بَعْدِ ذَٰلِكَ لَعَلَّكُمْ تَشْكُرُونَ ٥٢",
+      "spots": [
+        {
+          "start": 26,
+          "end": 30,
+          "text": "ن بَ"
+        }
+      ],
+      "audio": "1709.wav"
+    },
+    "options": [
+      {
+        "id": 1,
+        "text": "0"
+      },
+      {
+        "id": 2,
+        "text": "1"
+      },
+      {
+        "id": 3,
+        "text": "2"
+      },
+      {
+        "id": 4,
+        "text": "3"
+      }
+    ],
+    "answer": [
+      2
+    ],
+    "pattern": "ن ب"
+  },
+  {
+    "id": 1710,
+    "rule": "iqlab",
+    "lesson": 27,
+    "task_type": "mark_verse",
+    "question_type": "mark_rule_in_verse",
+    "modality": "audio",
+    "sura": 36,
+    "verse": 58,
+    "subject": {
+      "text": "سَلَٰمٌ قَوْلًا مِّن رَّبٍّ رَّّحِيمٍ ٥٨",
+      "audio": "1710.wav"
+    },
+    "options": [],
+    "answer": []
+  },
+  {
+    "id": 1711,
+    "rule": "iqlab",
+    "lesson": 27,
+    "task_type": "mark_verse",
+    "question_type": "mark_rule_in_verse",
+    "modality": "audio",
+    "sura": 20,
+    "verse": 85,
+    "subject": {
+      "text": "قَالَ فَإِنَّا قَدْ فَتَنَّا قَوْمَكَ مِن بَعْدِكَ وَأَضَلَّهُمُ ٱلسَّامِرِىُّ ٨٥",
+      "spots": [
+        {
+          "start": 38,
+          "end": 50,
+          "text": "مِن بَعْدِكَ"
+        }
+      ],
+      "audio": "1711.wav"
+    },
+    "options": [],
+    "answer": [
+      "مِن بَعْدِكَ"
+    ],
+    "pattern": "ن ب"
+  },
+  {
+    "id": 1712,
+    "rule": "iqlab",
+    "lesson": 27,
+    "task_type": "yes_no",
+    "question_type": "has_rule",
+    "modality": "text",
+    "sura": null,
+    "verse": null,
+    "subject": {
+      "text": "ٱنۢبَعَثَ",
+      "spots": [
+        {
+          "start": 1,
+          "end": 5,
+          "text": "نۢبَ"
+        }
+      ],
+      "audio": null
+    },
+    "options": [
+      {
+        "id": 1,
+        "text": "yes"
+      },
+      {
+        "id": 2,
+        "text": "no"
+      }
+    ],
+    "answer": [
+      1
+    ],
+    "pattern": "نب"
+  },
+  {
+    "id": 1713,
+    "rule": "iqlab",
+    "lesson": 27,
+    "task_type": "yes_no",
+    "question_type": "has_rule",
+    "modality": "text",
+    "sura": null,
+    "verse": null,
+    "subject": {
+      "text": "يَنْهَوْنَ",
+      "audio": null
+    },
+    "options": [
+      {
+        "id": 1,
+        "text": "yes"
+      },
+      {
+        "id": 2,
+        "text": "no"
+      }
+    ],
+    "answer": [
+      2
+    ]
+  },
+  {
+    "id": 1714,
+    "rule": "iqlab",
+    "lesson": 27,
+    "task_type": "select",
+    "question_type": "vowel_before_letter",
+    "multiple": false,
+    "modality": "audio",
+    "sura": null,
+    "verse": null,
+    "subject": {
+      "text": "مُنۢبَثًّا",
+      "spots": [
+        {
+          "start": 2,
+          "end": 6,
+          "text": "نۢبَ"
+        }
+      ],
+      "audio": "1714.wav"
+    },
+    "options": [
+      {
+        "id": 1,
+        "text": "َ"
+      },
+      {
+        "id": 2,
+        "text": "ُ"
+      },
+      {
+        "id": 3,
+        "text": "ِ"
+      },
+      {
+        "id": 4,
+        "text": "none"
+      }
+    ],
+    "answer": [
+      2
+    ],
+    "pattern": "نب"
+  },
+  {
+    "id": 1715,
+    "rule": "iqlab",
+    "lesson": 27,
+    "task_type": "match",
+    "question_type": "match_rule",
+    "modality": "audio",
+    "sura": null,
+    "verse": null,
+    "subject": {
+      "text": "اختر",
+      "audio": null
+    },
+    "options": [
+      {
+        "id": 1,
+        "text": "أَنۢبَتَ",
+        "spots": [
+          {
+            "start": 2,
+            "end": 6,
+            "text": "نۢبَ"
+          }
+        ],
+        "audio": "1715_1.wav"
+      },
+      {
+        "id": 2,
+        "text": "يَنۢبَغِى",
+        "spots": [
+          {
+            "start": 2,
+            "end": 6,
+            "text": "نۢبَ"
+          }
+        ],
+        "audio": "1715_2.wav"
+      },
+      {
+        "id": 3,
+        "text": "أَنْعَمْتَ",
+        "audio": "1715_3.wav"
+      },
+      {
+        "id": 4,
+        "text": "يَنصُرُكُمْ",
+        "audio": "1715_4.wav"
+      },
+      {
+        "id": 5,
+        "text": "none",
+        "audio": null
+      }
+    ],
+    "answer": [
+      1,
+      2
+    ],
+    "pattern": "نب:نب"
+  },
+  {
+    "id": 1716,
+    "rule": "iqlab",
+    "lesson": 27,
+    "task_type": "select_count",
+    "question_type": "count_rule",
+    "modality": "audio",
+    "sura": 30,
+    "verse": 51,
+    "subject": {
+      "text": "وَلَئِنْ أَرْسَلْنَا رِيحًا فَرَأَوْهُ مُصْفَرًّا لَّّظَلُّوا۟ مِن بَعْدِهِۦ يَكْفُرُونَ ٥١",
+      "spots": [
+        {
+          "start": 65,
+          "end": 69,
+          "text": "ن بَ"
+        }
+      ],
+      "audio": "1716.wav"
+    },
+    "options": [
+      {
+        "id": 1,
+        "text": "0"
+      },
+      {
+        "id": 2,
+        "text": "1"
+      },
+      {
+        "id": 3,
+        "text": "2"
+      },
+      {
+        "id": 4,
+        "text": "3"
+      }
+    ],
+    "answer": [
+      2
+    ],
+    "pattern": "ن ب"
+  },
+  {
+    "id": 1717,
+    "rule": "iqlab",
+    "lesson": 27,
+    "task_type": "select_count",
+    "question_type": "count_rule",
+    "modality": "audio",
+    "sura": 54,
+    "verse": 25,
+    "subject": {
+      "text": "أَءُلْقِىَ ٱلذِّكْرُ عَلَيْهِ مِن بَيْنِنَا بَلْ هُوَ كَذَّابٌ أَشِرٌ ٢٥",
+      "spots": [
+        {
+          "start": 32,
+          "end": 36,
+          "text": "ن بَ"
+        }
+      ],
+      "audio": "1717.wav"
+    },
+    "options": [
+      {
+        "id": 1,
+        "text": "0"
+      },
+      {
+        "id": 2,
+        "text": "1"
+      },
+      {
+        "id": 3,
+        "text": "2"
+      },
+      {
+        "id": 4,
+        "text": "3"
+      }
+    ],
+    "answer": [
+      2
+    ],
+    "pattern": "ن ب"
+  },
+  {
+    "id": 1718,
+    "rule": "iqlab",
+    "lesson": 27,
+    "task_type": "mark_verse",
+    "question_type": "mark_rule_in_verse",
+    "modality": "audio",
+    "sura": 44,
+    "verse": 21,
+    "subject": {
+      "text": "وَإِن لَّمْ تُؤْمِنُوا۟ لِى فَٱعْتَزِلُونِ ٢١",
+      "audio": "1718.wav"
+    },
+    "options": [],
+    "answer": []
+  },
+  {
+    "id": 1719,
+    "rule": "iqlab",
+    "lesson": 27,
+    "task_type": "mark_verse",
+    "question_type": "mark_rule_in_verse",
+    "modality": "audio",
+    "sura": 17,
+    "verse": 90,
+    "subject": {
+      "text": "وَقَالُوا۟ لَن نُّؤْمِنَ لَكَ حَتَّىٰ تَفْجُرَ لَنَا مِنَ ٱلْأَرْضِ يَنبُوعًا ٩٠",
+      "spots": [
+        {
+          "start": 68,
+          "end": 77,
+          "text": "يَنبُوعًا"
+        }
+      ],
+      "audio": "1719.wav"
+    },
+    "options": [],
+    "answer": [
+      "يَنبُوعًا"
+    ],
+    "pattern": "نب"
+  },
+  {
+    "id": 1720,
+    "rule": "iqlab",
+    "lesson": 27,
+    "task_type": "yes_no",
+    "question_type": "has_rule",
+    "modality": "text",
+    "sura": null,
+    "verse": null,
+    "subject": {
+      "text": "مَنۢ بَعَثَنَا",
+      "spots": [
+        {
+          "start": 2,
+          "end": 7,
+          "text": "نۢ بَ"
+        }
+      ],
+      "audio": null
+    },
+    "options": [
+      {
+        "id": 1,
+        "text": "yes"
+      },
+      {
+        "id": 2,
+        "text": "no"
+      }
+    ],
+    "answer": [
+      1
+    ],
+    "pattern": "ن ب"
+  },
+  {
+    "id": 1721,
+    "rule": "iqlab",
+    "lesson": 27,
+    "task_type": "yes_no",
+    "question_type": "has_rule",
+    "modality": "text",
+    "sura": null,
+    "verse": null,
+    "subject": {
+      "text": "إِن كُنتُمْ",
+      "audio": null
+    },
+    "options": [
+      {
+        "id": 1,
+        "text": "yes"
+      },
+      {
+        "id": 2,
+        "text": "no"
+      }
+    ],
+    "answer": [
+      2
+    ]
+  },
+  {
+    "id": 1722,
+    "rule": "iqlab",
+    "lesson": 27,
+    "task_type": "select",
+    "question_type": "vowel_before_letter",
+    "multiple": false,
+    "modality": "audio",
+    "sura": null,
+    "verse": null,
+    "subject": {
+      "text": "مِنۢ بَقْلِهَا",
+      "spots": [
+        {
+          "start": 2,
+          "end": 7,
+          "text": "نۢ بَ"
+        }
+      ],
+      "audio": "1722.wav"
+    },
+    "options": [
+      {
+        "id": 1,
+        "text": "َ"
+      },
+      {
+        "id": 2,
+        "text": "ُ"
+      },
+      {
+        "id": 3,
+        "text": "ِ"
+      },
+      {
+        "id": 4,
+        "text": "none"
+      }
+    ],
+    "answer": [
+      3
+    ],
+    "pattern": "ن ب"
+  },
+  {
+    "id": 1723,
+    "rule": "iqlab",
+    "lesson": 27,
+    "task_type": "match",
+    "question_type": "match_rule",
+    "modality": "audio",
+    "sura": null,
+    "verse": null,
+    "subject": {
+      "text": "مِن",
+      "spots": [
+        {
+          "start": 2,
+          "end": 3,
+          "text": "ن"
+        }
+      ],
+      "audio": "1723_prompt.wav"
+    },
+    "options": [
+      {
+        "id": 1,
+        "text": "بَشَرٍ",
+        "spots": [
+          {
+            "start": 0,
+            "end": 2,
+            "text": "بَ"
+          }
+        ],
+        "audio": "1723_1.wav"
+      },
+      {
+        "id": 2,
+        "text": "بُطُونِ",
+        "spots": [
+          {
+            "start": 0,
+            "end": 2,
+            "text": "بُ"
+          }
+        ],
+        "audio": "1723_2.wav"
+      },
+      {
+        "id": 3,
+        "text": "بَاقِيَةٍ",
+        "spots": [
+          {
+            "start": 0,
+            "end": 2,
+            "text": "بَ"
+          }
+        ],
+        "audio": "1723_3.wav"
+      },
+      {
+        "id": 4,
+        "text": "خَيْرٍ",
+        "audio": "1723_4.wav"
+      },
+      {
+        "id": 5,
+        "text": "none",
+        "audio": null
+      }
+    ],
+    "answer": [
+      1,
+      2,
+      3
+    ],
+    "pattern": "ن ب:ن ب:ن ب"
+  },
+  {
+    "id": 1724,
+    "rule": "iqlab",
+    "lesson": 27,
+    "task_type": "select_count",
+    "question_type": "count_rule",
+    "modality": "audio",
+    "sura": 2,
+    "verse": 261,
+    "subject": {
+      "text": "مَّثَلُ ٱلَّذِينَ يُنفِقُونَ أَمْوَٰلَهُمْ فِى سَبِيلِ ٱللَّهِ كَمَثَلِ حَبَّةٍ أَنبَتَتْ سَبْعَ سَنَابِلَ فِى كُلِّ سُنبُلَةٍ مِّا۟ئَةُ حَبَّةٍ ۗ",
+      "spots": [
+        {
+          "start": 82,
+          "end": 85,
+          "text": "نبَ"
+        },
+        {
+          "start": 119,
+          "end": 122,
+          "text": "نبُ"
+        }
+      ],
+      "audio": "1724.wav"
+    },
+    "options": [
+      {
+        "id": 1,
+        "text": "0"
+      },
+      {
+        "id": 2,
+        "text": "1"
+      },
+      {
+        "id": 3,
+        "text": "2"
+      },
+      {
+        "id": 4,
+        "text": "3"
+      }
+    ],
+    "answer": [
+      3
+    ],
+    "pattern": "نب:نب"
+  },
+  {
+    "id": 1725,
+    "rule": "iqlab",
+    "lesson": 27,
+    "task_type": "select_count",
+    "question_type": "count_rule",
+    "modality": "audio",
+    "sura": 80,
+    "verse": 27,
+    "subject": {
+      "text": "فَأَنبَتْنَا فِيهَا حَبًّا ٢٧",
+      "spots": [
+        {
+          "start": 4,
+          "end": 7,
+          "text": "نبَ"
+        }
+      ],
+      "audio": "1725.wav"
+    },
+    "options": [
+      {
+        "id": 1,
+        "text": "0"
+      },
+      {
+        "id": 2,
+        "text": "1"
+      },
+      {
+        "id": 3,
+        "text": "2"
+      },
+      {
+        "id": 4,
+        "text": "3"
+      }
+    ],
+    "answer": [
+      2
+    ],
+    "pattern": "نب"
+  },
+  {
+    "id": 1726,
+    "rule": "iqlab",
+    "lesson": 27,
+    "task_type": "mark_verse",
+    "question_type": "mark_rule_in_verse",
+    "modality": "audio",
+    "sura": 84,
+    "verse": 14,
+    "subject": {
+      "text": "إِنَّهُ ظَنَّ أَن لَّن يَحُورَ ١٤",
+      "audio": "1726.wav"
+    },
+    "options": [],
+    "answer": []
+  },
+  {
+    "id": 1727,
+    "rule": "iqlab",
+    "lesson": 27,
+    "task_type": "mark_verse",
+    "question_type": "mark_rule_in_verse",
+    "modality": "audio",
+    "sura": 81,
+    "verse": 9,
+    "subject": {
+      "text": "بِأَىِّ ذَنبٍ قُتِلَتْ ٩",
+      "spots": [
+        {
+          "start": 8,
+          "end": 13,
+          "text": "ذَنبٍ"
+        }
+      ],
+      "audio": "1727.wav"
+    },
+    "options": [],
+    "answer": [
+      "ذَنبٍ"
+    ],
+    "pattern": "نب"
+  },
+  {
+    "id": 1728,
+    "rule": "iqlab",
+    "lesson": 28,
+    "task_type": "yes_no",
+    "question_type": "has_rule",
+    "modality": "audio",
+    "sura": null,
+    "verse": null,
+    "subject": {
+      "text": "سَمِيعًۢا بَصِيرًا",
+      "spots": [
+        {
+          "start": 5,
+          "end": 12,
+          "text": "عًۢا بَ"
+        }
+      ],
+      "audio": "1728.wav"
+    },
+    "options": [
+      {
+        "id": 1,
+        "text": "yes"
+      },
+      {
+        "id": 2,
+        "text": "no"
+      }
+    ],
+    "answer": [
+      1
+    ],
+    "pattern": "ً ب"
+  },
+  {
+    "id": 1729,
+    "rule": "iqlab",
+    "lesson": 28,
+    "task_type": "yes_no",
+    "question_type": "has_rule",
+    "modality": "audio",
+    "sura": null,
+    "verse": null,
+    "subject": {
+      "text": "خَبِيرًۢا بَصِيرًا",
+      "spots": [
+        {
+          "start": 5,
+          "end": 12,
+          "text": "رًۢا بَ"
+        }
+      ],
+      "audio": "1729.wav"
+    },
+    "options": [
+      {
+        "id": 1,
+        "text": "yes"
+      },
+      {
+        "id": 2,
+        "text": "no"
+      }
+    ],
+    "answer": [
+      1
+    ],
+    "pattern": "ً ب"
+  },
+  {
+    "id": 1730,
+    "rule": "iqlab",
+    "lesson": 28,
+    "task_type": "yes_no",
+    "question_type": "has_rule",
+    "modality": "audio",
+    "sura": null,
+    "verse": null,
+    "subject": {
+      "text": "كِرَامًۢا بَرَرَةٍ",
+      "spots": [
+        {
+          "start": 5,
+          "end": 12,
+          "text": "مًۢا بَ"
+        }
+      ],
+      "audio": "1730.wav"
+    },
+    "options": [
+      {
+        "id": 1,
+        "text": "yes"
+      },
+      {
+        "id": 2,
+        "text": "no"
+      }
+    ],
+    "answer": [
+      1
+    ],
+    "pattern": "ً ب"
+  },
+  {
+    "id": 1731,
+    "rule": "iqlab",
+    "lesson": 28,
+    "task_type": "yes_no",
+    "question_type": "has_rule",
+    "modality": "audio",
+    "sura": null,
+    "verse": null,
+    "subject": {
+      "text": "عَذَابٌ أَلِيمٌ",
+      "audio": "1731.wav"
+    },
+    "options": [
+      {
+        "id": 1,
+        "text": "yes"
+      },
+      {
+        "id": 2,
+        "text": "no"
+      }
+    ],
+    "answer": [
+      2
+    ]
+  },
+  {
+    "id": 1732,
+    "rule": "iqlab",
+    "lesson": 28,
+    "task_type": "select_count",
+    "question_type": "count_rule",
+    "modality": "audio",
+    "sura": 2,
+    "verse": 95,
+    "subject": {
+      "text": "وَلَن يَتَمَنَّوْهُ أَبَدًا بِمَا قَدَّمَتْ أَيْدِيهِمْ ۗ وَٱللَّهُ عَلِيمٌ بِٱلظَّٰلِمِينَ ٩٥",
+      "spots": [
+        {
+          "start": 24,
+          "end": 30,
+          "text": "دًا بِ"
+        },
+        {
+          "start": 73,
+          "end": 78,
+          "text": "مٌ بِ"
+        }
+      ],
+      "audio": "1732.wav"
+    },
+    "options": [
+      {
+        "id": 1,
+        "text": "0"
+      },
+      {
+        "id": 2,
+        "text": "1"
+      },
+      {
+        "id": 3,
+        "text": "2"
+      },
+      {
+        "id": 4,
+        "text": "3"
+      }
+    ],
+    "answer": [
+      3
+    ],
+    "pattern": "ًا ب:ٌ ب"
+  },
+  {
+    "id": 1733,
+    "rule": "iqlab",
+    "lesson": 28,
+    "task_type": "select_count",
+    "question_type": "count_rule",
+    "modality": "audio",
+    "sura": 17,
+    "verse": 96,
+    "subject": {
+      "text": "قُلْ كَفَىٰ بِٱللَّهِ شَهِيدًا بَيْنِى وَبَيْنَكُمْ ۚ إِنَّهُ كَانَ بِعِبَادِهِۦ خَبِيرًا بَصِيرًا ٩٦",
+      "spots": [
+        {
+          "start": 27,
+          "end": 33,
+          "text": "دًا بَ"
+        },
+        {
+          "start": 86,
+          "end": 92,
+          "text": "رًا بَ"
+        }
+      ],
+      "audio": "1733.wav"
+    },
+    "options": [
+      {
+        "id": 1,
+        "text": "0"
+      },
+      {
+        "id": 2,
+        "text": "1"
+      },
+      {
+        "id": 3,
+        "text": "2"
+      },
+      {
+        "id": 4,
+        "text": "3"
+      }
+    ],
+    "answer": [
+      3
+    ],
+    "pattern": "ًا ب:ًا ب"
+  },
+  {
+    "id": 1734,
+    "rule": "iqlab",
+    "lesson": 28,
+    "task_type": "select_count",
+    "question_type": "count_rule",
+    "modality": "audio",
+    "sura": 104,
+    "verse": 1,
+    "subject": {
+      "text": "وَيْلٌ لِّّكُلِّ هُمَزَةٍ لُّّمَزَةٍ ١",
+      "audio": "1734.wav"
+    },
+    "options": [
+      {
+        "id": 1,
+        "text": "0"
+      },
+      {
+        "id": 2,
+        "text": "1"
+      },
+      {
+        "id": 3,
+        "text": "2"
+      },
+      {
+        "id": 4,
+        "text": "3"
+      }
+    ],
+    "answer": [
+      1
+    ]
+  },
+  {
+    "id": 1735,
+    "rule": "iqlab",
+    "lesson": 28,
+    "task_type": "select_count",
+    "question_type": "count_rule",
+    "modality": "audio",
+    "sura": 3,
+    "verse": 138,
+    "subject": {
+      "text": "هَٰذَا بَيَانٌ لِّّلنَّاسِ وَهُدًى وَمَوْعِظَةٌ لِّّلْمُتَّقِينَ ١٣٨",
+      "audio": "1735.wav"
+    },
+    "options": [
+      {
+        "id": 1,
+        "text": "0"
+      },
+      {
+        "id": 2,
+        "text": "1"
+      },
+      {
+        "id": 3,
+        "text": "2"
+      },
+      {
+        "id": 4,
+        "text": "3"
+      }
+    ],
+    "answer": [
+      1
+    ]
+  },
+  {
+    "id": 1736,
+    "rule": "iqlab",
+    "lesson": 28,
+    "task_type": "yes_no",
+    "question_type": "has_rule",
+    "modality": "text",
+    "sura": null,
+    "verse": null,
+    "subject": {
+      "text": "مَكَانًۢا بَعِيدًا",
+      "spots": [
+        {
+          "start": 5,
+          "end": 12,
+          "text": "نًۢا بَ"
+        }
+      ],
+      "audio": null
+    },
+    "options": [
+      {
+        "id": 1,
+        "text": "yes"
+      },
+      {
+        "id": 2,
+        "text": "no"
+      }
+    ],
+    "answer": [
+      1
+    ],
+    "pattern": "ً ب"
+  },
+  {
+    "id": 1737,
+    "rule": "iqlab",
+    "lesson": 28,
+    "task_type": "yes_no",
+    "question_type": "has_rule",
+    "modality": "text",
+    "sura": null,
+    "verse": null,
+    "subject": {
+      "text": "بَغْيًۢا بَيْنَهُمْ",
+      "spots": [
+        {
+          "start": 4,
+          "end": 11,
+          "text": "يًۢا بَ"
+        }
+      ],
+      "audio": null
+    },
+    "options": [
+      {
+        "id": 1,
+        "text": "yes"
+      },
+      {
+        "id": 2,
+        "text": "no"
+      }
+    ],
+    "answer": [
+      1
+    ],
+    "pattern": "ً ب"
+  },
+  {
+    "id": 1738,
+    "rule": "iqlab",
+    "lesson": 28,
+    "task_type": "yes_no",
+    "question_type": "has_rule",
+    "modality": "text",
+    "sura": null,
+    "verse": null,
+    "subject": {
+      "text": "حِلًّۢا بِهَٰذَا",
+      "spots": [
+        {
+          "start": 2,
+          "end": 10,
+          "text": "لًّۢا بِ"
+        }
+      ],
+      "audio": null
+    },
+    "options": [
+      {
+        "id": 1,
+        "text": "yes"
+      },
+      {
+        "id": 2,
+        "text": "no"
+      }
+    ],
+    "answer": [
+      1
+    ],
+    "pattern": "ً ب"
+  },
+  {
+    "id": 1739,
+    "rule": "iqlab",
+    "lesson": 28,
+    "task_type": "yes_no",
+    "question_type": "has_rule",
+    "modality": "text",
+    "sura": null,
+    "verse": null,
+    "subject": {
+      "text": "غَفُورٌ حَلِيمٌ",
+      "audio": null
+    },
+    "options": [
+      {
+        "id": 1,
+        "text": "yes"
+      },
+      {
+        "id": 2,
+        "text": "no"
+      }
+    ],
+    "answer": [
+      2
+    ]
+  },
+  {
+    "id": 1740,
+    "rule": "iqlab",
+    "lesson": 28,
+    "task_type": "mark_verse",
+    "question_type": "mark_rule_in_verse",
+    "modality": "audio",
+    "sura": 80,
+    "verse": 16,
+    "subject": {
+      "text": "كِرَامٍ بَرَرَةٍ ١٦",
+      "spots": [
+        {
+          "start": 0,
+          "end": 16,
+          "text": "كِرَامٍ بَرَرَةٍ"
+        }
+      ],
+      "audio": "1740.wav"
+    },
+    "options": [],
+    "answer": [
+      "كِرَامٍ بَرَرَةٍ"
+    ],
+    "pattern": "ٍ ب"
+  },
+  {
+    "id": 1741,
+    "rule": "iqlab",
+    "lesson": 28,
+    "task_type": "mark_verse",
+    "question_type": "mark_rule_in_verse",
+    "modality": "audio",
+    "sura": 75,
+    "verse": 24,
+    "subject": {
+      "text": "وَوُجُوهٌ يَوْمَئِذٍ بَاسِرَةٌ ٢٤",
+      "spots": [
+        {
+          "start": 10,
+          "end": 30,
+          "text": "يَوْمَئِذٍ بَاسِرَةٌ"
+        }
+      ],
+      "audio": "1741.wav"
+    },
+    "options": [],
+    "answer": [
+      "يَوْمَئِذٍ بَاسِرَةٌ"
+    ],
+    "pattern": "ٍ ب"
+  },
+  {
+    "id": 1742,
+    "rule": "iqlab",
+    "lesson": 28,
+    "task_type": "mark_verse",
+    "question_type": "mark_rule_in_verse",
+    "modality": "audio",
+    "sura": 36,
+    "verse": 32,
+    "subject": {
+      "text": "وَإِن كُلٌّ لَّّمَّا جَمِيعٌ لَّّدَيْنَا مُحْضَرُونَ ٣٢",
+      "audio": "1742.wav"
+    },
+    "options": [],
+    "answer": []
+  },
+  {
+    "id": 1743,
+    "rule": "iqlab",
+    "lesson": 28,
+    "task_type": "mark_verse",
+    "question_type": "mark_rule_in_verse",
+    "modality": "audio",
+    "sura": 20,
+    "verse": 44,
+    "subject": {
+      "text": "فَقُولَا لَهُ قَوْلًا لَّّيِّنًا لَّّعَلَّهُ يَتَذَكَّرُ أَوْ يَخْشَىٰ ٤٤",
+      "audio": "1743.wav"
+    },
+    "options": [],
+    "answer": []
+  },
+  {
+    "id": 1744,
+    "rule": "iqlab",
+    "lesson": 28,
+    "task_type": "select",
+    "question_type": "vowel_before_letter",
+    "multiple": false,
+    "modality": "audio",
+    "sura": null,
+    "verse": null,
+    "subject": {
+      "text": "أَبَدًۢا بِمَا",
+      "spots": [
+        {
+          "start": 4,
+          "end": 11,
+          "text": "دًۢا بِ"
+        }
+      ],
+      "audio": "1744.wav"
+    },
+    "options": [
+      {
+        "id": 1,
+        "text": "ً"
+      },
+      {
+        "id": 2,
+        "text": "ٌ"
+      },
+      {
+        "id": 3,
+        "text": "ٍ"
+      },
+      {
+        "id": 4,
+        "text": "none"
+      }
+    ],
+    "answer": [
+      1
+    ],
+    "pattern": "ً ب"
+  },
+  {
+    "id": 1745,
+    "rule": "iqlab",
+    "lesson": 28,
+    "task_type": "select",
+    "question_type": "vowel_before_letter",
+    "multiple": false,
+    "modality": "audio",
+    "sura": null,
+    "verse": null,
+    "subject": {
+      "text": "مُصَدِّقًۢا بِمَا",
+      "spots": [
+        {
+          "start": 7,
+          "end": 14,
+          "text": "قًۢا بِ"
+        }
+      ],
+      "audio": "1745.wav"
+    },
+    "options": [
+      {
+        "id": 1,
+        "text": "ً"
+      },
+      {
+        "id": 2,
+        "text": "ٌ"
+      },
+      {
+        "id": 3,
+        "text": "ٍ"
+      },
+      {
+        "id": 4,
+        "text": "none"
+      }
+    ],
+    "answer": [
+      1
+    ],
+    "pattern": "ً ب"
+  },
+  {
+    "id": 1746,
+    "rule": "iqlab",
+    "lesson": 28,
+    "task_type": "select",
+    "question_type": "vowel_before_letter",
+    "multiple": false,
+    "modality": "audio",
+    "sura": null,
+    "verse": null,
+    "subject": {
+      "text": "سَمِيعٌۢ بَصِيرٌ",
+      "spots": [
+        {
+          "start": 5,
+          "end": 11,
+          "text": "عٌۢ بَ"
+        }
+      ],
+      "audio": "1746.wav"
+    },
+    "options": [
+      {
+        "id": 1,
+        "text": "ً"
+      },
+      {
+        "id": 2,
+        "text": "ٌ"
+      },
+      {
+        "id": 3,
+        "text": "ٍ"
+      },
+      {
+        "id": 4,
+        "text": "none"
+      }
+    ],
+    "answer": [
+      2
+    ],
+    "pattern": "ٌ ب"
+  },
+  {
+    "id": 1747,
+    "rule": "iqlab",
+    "lesson": 28,
+    "task_type": "select",
+    "question_type": "vowel_before_letter",
+    "multiple": false,
+    "modality": "audio",
+    "sura": null,
+    "verse": null,
+    "subject": {
+      "text": "أَجْرٌ عَظِيمٌ",
+      "audio": "1747.wav"
+    },
+    "options": [
+      {
+        "id": 1,
+        "text": "ً"
+      },
+      {
+        "id": 2,
+        "text": "ٌ"
+      },
+      {
+        "id": 3,
+        "text": "ٍ"
+      },
+      {
+        "id": 4,
+        "text": "none"
+      }
+    ],
+    "answer": [
+      4
+    ]
+  },
+  {
+    "id": 1748,
+    "rule": "iqlab",
+    "lesson": 28,
+    "task_type": "select_count",
+    "question_type": "count_rule",
+    "modality": "audio",
+    "sura": 37,
+    "verse": 93,
+    "subject": {
+      "text": "فَرَاغَ عَلَيْهِمْ ضَرْبًا بِٱلْيَمِينِ ٩٣",
+      "spots": [
+        {
+          "start": 23,
+          "end": 29,
+          "text": "بًا بِ"
+        }
+      ],
+      "audio": "1748.wav"
+    },
+    "options": [
+      {
+        "id": 1,
+        "text": "0"
+      },
+      {
+        "id": 2,
+        "text": "1"
+      },
+      {
+        "id": 3,
+        "text": "2"
+      },
+      {
+        "id": 4,
+        "text": "3"
+      }
+    ],
+    "answer": [
+      2
+    ],
+    "pattern": "ًا ب"
+  },
+  {
+    "id": 1749,
+    "rule": "iqlab",
+    "lesson": 28,
+    "task_type": "select_count",
+    "question_type": "count_rule",
+    "modality": "audio",
+    "sura": 54,
+    "verse": 33,
+    "subject": {
+      "text": "كَذَّبَتْ قَوْمُ لُوطٍ بِٱلنُّذُرِ ٣٣",
+      "spots": [
+        {
+          "start": 20,
+          "end": 25,
+          "text": "طٍ بِ"
+        }
+      ],
+      "audio": "1749.wav"
+    },
+    "options": [
+      {
+        "id": 1,
+        "text": "0"
+      },
+      {
+        "id": 2,
+        "text": "1"
+      },
+      {
+        "id": 3,
+        "text": "2"
+      },
+      {
+        "id": 4,
+        "text": "3"
+      }
+    ],
+    "answer": [
+      2
+    ],
+    "pattern": "ٍ ب"
+  },
+  {
+    "id": 1750,
+    "rule": "iqlab",
+    "lesson": 28,
+    "task_type": "select_count",
+    "question_type": "count_rule",
+    "modality": "audio",
+    "sura": 2,
+    "verse": 66,
+    "subject": {
+      "text": "فَجَعَلْنَٰهَا نَكَٰلًا لِّّمَا بَيْنَ يَدَيْهَا وَمَا خَلْفَهَا وَمَوْعِظَةً لِّّلْمُتَّقِينَ ٦٦",
+      "audio": "1750.wav"
+    },
+    "options": [
+      {
+        "id": 1,
+        "text": "0"
+      },
+      {
+        "id": 2,
+        "text": "1"
+      },
+      {
+        "id": 3,
+        "text": "2"
+      },
+      {
+        "id": 4,
+        "text": "3"
+      }
+    ],
+    "answer": [
+      1
+    ]
+  },
+  {
+    "id": 1751,
+    "rule": "iqlab",
+    "lesson": 28,
+    "task_type": "select_count",
+    "question_type": "count_rule",
+    "modality": "audio",
+    "sura": 82,
+    "verse": 19,
+    "subject": {
+      "text": "يَوْمَ لَا تَمْلِكُ نَفْسٌ لِّّنَفْسٍ شَيْـًٔا ۖ وَٱلْأَمْرُ يَوْمَئِذٍ لِّّلَّهِ ١٩",
+      "audio": "1751.wav"
+    },
+    "options": [
+      {
+        "id": 1,
+        "text": "0"
+      },
+      {
+        "id": 2,
+        "text": "1"
+      },
+      {
+        "id": 3,
+        "text": "2"
+      },
+      {
+        "id": 4,
+        "text": "3"
+      }
+    ],
+    "answer": [
+      1
+    ]
+  },
+  {
+    "id": 1752,
+    "rule": "iqlab",
+    "lesson": 28,
+    "task_type": "match",
+    "question_type": "match_rule",
+    "modality": "audio",
+    "sura": null,
+    "verse": null,
+    "subject": {
+      "text": "عَلِيمٌ",
+      "spots": [
+        {
+          "start": 5,
+          "end": 7,
+          "text": "مٌ"
+        }
+      ],
+      "audio": "1752_prompt.wav"
+    },
+    "options": [
+      {
+        "id": 1,
+        "text": "بِذَاتِ",
+        "spots": [
+          {
+            "start": 0,
+            "end": 2,
+            "text": "بِ"
+          }
+        ],
+        "audio": "1752_1.wav"
+      },
+      {
+        "id": 2,
+        "text": "حَلِيمٌ",
+        "audio": "1752_2.wav"
+      },
+      {
+        "id": 3,
+        "text": "خَبِيرٌ",
+        "audio": "1752_3.wav"
+      },
+      {
+        "id": 4,
+        "text": "عَظِيمٌ",
+        "audio": "1752_4.wav"
+      },
+      {
+        "id": 5,
+        "text": "none",
+        "audio": null
+      }
+    ],
+    "answer": [
+      1
+    ],
+    "pattern": "ٌ ب"
+  },
+  {
+    "id": 1753,
+    "rule": "iqlab",
+    "lesson": 28,
+    "task_type": "match",
+    "question_type": "match_rule",
+    "modality": "audio",
+    "sura": null,
+    "verse": null,
+    "subject": {
+      "text": "خَبِيرٌ",
+      "spots": [
+        {
+          "start": 5,
+          "end": 7,
+          "text": "رٌ"
+        }
+      ],
+      "audio": "1753_prompt.wav"
+    },
+    "options": [
+      {
+        "id": 1,
+        "text": "بِمَا",
+        "spots": [
+          {
+            "start": 0,
+            "end": 2,
+            "text": "بِ"
+          }
+        ],
+        "audio": "1753_1.wav"
+      },
+      {
+        "id": 2,
+        "text": "حَلِيمٌ",
+        "audio": "1753_2.wav"
+      },
+      {
+        "id": 3,
+        "text": "عَلِيمٌ",
+        "audio": "1753_3.wav"
+      },
+      {
+        "id": 4,
+        "text": "عَظِيمٌ",
+        "audio": "1753_4.wav"
+      },
+      {
+        "id": 5,
+        "text": "none",
+        "audio": null
+      }
+    ],
+    "answer": [
+      1
+    ],
+    "pattern": "ٌ ب"
+  },
+  {
+    "id": 1754,
+    "rule": "iqlab",
+    "lesson": 28,
+    "task_type": "match",
+    "question_type": "match_rule",
+    "modality": "audio",
+    "sura": null,
+    "verse": null,
+    "subject": {
+      "text": "رَءُوفٌ",
+      "spots": [
+        {
+          "start": 5,
+          "end": 7,
+          "text": "فٌ"
+        }
+      ],
+      "audio": "1754_prompt.wav"
+    },
+    "options": [
+      {
+        "id": 1,
+        "text": "بِٱلْعِبَادِ",
+        "spots": [
+          {
+            "start": 0,
+            "end": 2,
+            "text": "بِ"
+          }
+        ],
+        "audio": "1754_1.wav"
+      },
+      {
+        "id": 2,
+        "text": "بِٱلنَّاسِ",
+        "spots": [
+          {
+            "start": 0,
+            "end": 2,
+            "text": "بِ"
+          }
+        ],
+        "audio": "1754_2.wav"
+      },
+      {
+        "id": 3,
+        "text": "رَحِيمٌ",
+        "audio": "1754_3.wav"
+      },
+      {
+        "id": 4,
+        "text": "عَلِيمٌ",
+        "audio": "1754_4.wav"
+      },
+      {
+        "id": 5,
+        "text": "none",
+        "audio": null
+      }
+    ],
+    "answer": [
+      1,
+      2
+    ],
+    "pattern": "ٌ ب:ٌ ب"
+  },
+  {
+    "id": 1755,
+    "rule": "iqlab",
+    "lesson": 28,
+    "task_type": "match",
+    "question_type": "match_rule",
+    "modality": "audio",
+    "sura": null,
+    "verse": null,
+    "subject": {
+      "text": "قَوْمًا",
+      "audio": "1755_prompt.wav"
+    },
+    "options": [
+      {
+        "id": 1,
+        "text": "هَادِينَ",
+        "audio": "1755_1.wav"
+      },
+      {
+        "id": 2,
+        "text": "عَادُونَ",
+        "audio": "1755_2.wav"
+      },
+      {
+        "id": 3,
+        "text": "ظَالِمِينَ",
+        "audio": "1755_3.wav"
+      },
+      {
+        "id": 4,
+        "text": "none",
+        "audio": "1755_4.wav"
+      }
+    ],
+    "answer": [
+      4
+    ]
+  },
+  {
+    "id": 1756,
+    "rule": "iqlab",
+    "lesson": 28,
+    "task_type": "mark_verse",
+    "question_type": "mark_rule_in_verse",
+    "modality": "audio",
+    "sura": 68,
+    "verse": 13,
+    "subject": {
+      "text": "عُتُلٍّ بَعْدَ ذَٰلِكَ زَنِيمٍ ١٣",
+      "spots": [
+        {
+          "start": 0,
+          "end": 14,
+          "text": "عُتُلٍّ بَعْدَ"
+        }
+      ],
+      "audio": "1756.wav"
+    },
+    "options": [],
+    "answer": [
+      "عُتُلٍّ بَعْدَ"
+    ],
+    "pattern": "ٍ ب"
+  },
+  {
+    "id": 1757,
+    "rule": "iqlab",
+    "lesson": 28,
+    "task_type": "mark_verse",
+    "question_type": "mark_rule_in_verse",
+    "modality": "audio",
+    "sura": 69,
+    "verse": 4,
+    "subject": {
+      "text": "كَذَّبَتْ ثَمُودُ وَعَادٌ بِٱلْقَارِعَةِ ٤",
+      "spots": [
+        {
+          "start": 18,
+          "end": 40,
+          "text": "وَعَادٌ بِٱلْقَارِعَةِ"
+        }
+      ],
+      "audio": "1757.wav"
+    },
+    "options": [],
+    "answer": [
+      "وَعَادٌ بِٱلْقَارِعَةِ"
+    ],
+    "pattern": "ٌ ب"
+  },
+  {
+    "id": 1758,
+    "rule": "iqlab",
+    "lesson": 28,
+    "task_type": "mark_verse",
+    "question_type": "mark_rule_in_verse",
+    "modality": "audio",
+    "sura": 56,
+    "verse": 3,
+    "subject": {
+      "text": "خَافِضَةٌ رَّّافِعَةٌ ٣",
+      "audio": "1758.wav"
+    },
+    "options": [],
+    "answer": []
+  },
+  {
+    "id": 1759,
+    "rule": "iqlab",
+    "lesson": 28,
+    "task_type": "mark_verse",
+    "question_type": "mark_rule_in_verse",
+    "modality": "audio",
+    "sura": 70,
+    "verse": 16,
+    "subject": {
+      "text": "نَزَّاعَةً لِّّلشَّوَىٰ ١٦",
+      "audio": "1759.wav"
+    },
+    "options": [],
+    "answer": []
+  },
+  {
+    "id": 1760,
+    "rule": "iqlab",
+    "lesson": 28,
+    "task_type": "match",
+    "question_type": "match_rule",
+    "modality": "audio",
+    "sura": null,
+    "verse": null,
+    "subject": {
+      "text": "بَصِيرٌ",
+      "spots": [
+        {
+          "start": 5,
+          "end": 7,
+          "text": "رٌ"
+        }
+      ],
+      "audio": "1760_prompt.wav"
+    },
+    "options": [
+      {
+        "id": 1,
+        "text": "بِمَا",
+        "spots": [
+          {
+            "start": 0,
+            "end": 2,
+            "text": "بِ"
+          }
+        ],
+        "audio": "1760_1.wav"
+      },
+      {
+        "id": 2,
+        "text": "عَلِيمٌ",
+        "audio": "1760_2.wav"
+      },
+      {
+        "id": 3,
+        "text": "خَبِيرٌ",
+        "audio": "1760_3.wav"
+      },
+      {
+        "id": 4,
+        "text": "حَلِيمٌ",
+        "audio": "1760_4.wav"
+      },
+      {
+        "id": 5,
+        "text": "none",
+        "audio": null
+      }
+    ],
+    "answer": [
+      1
+    ],
+    "pattern": "ٌ ب"
+  },
+  {
+    "id": 1761,
+    "rule": "iqlab",
+    "lesson": 28,
+    "task_type": "match",
+    "question_type": "match_rule",
+    "modality": "audio",
+    "sura": null,
+    "verse": null,
+    "subject": {
+      "text": "شَهِيدٌ",
+      "spots": [
+        {
+          "start": 5,
+          "end": 7,
+          "text": "دٌ"
+        }
+      ],
+      "audio": "1761_prompt.wav"
+    },
+    "options": [
+      {
+        "id": 1,
+        "text": "بَيْنِى",
+        "spots": [
+          {
+            "start": 0,
+            "end": 2,
+            "text": "بَ"
+          }
+        ],
+        "audio": "1761_1.wav"
+      },
+      {
+        "id": 2,
+        "text": "عَلِيمٌ",
+        "audio": "1761_2.wav"
+      },
+      {
+        "id": 3,
+        "text": "خَبِيرٌ",
+        "audio": "1761_3.wav"
+      },
+      {
+        "id": 4,
+        "text": "حَلِيمٌ",
+        "audio": "1761_4.wav"
+      },
+      {
+        "id": 5,
+        "text": "none",
+        "audio": null
+      }
+    ],
+    "answer": [
+      1
+    ],
+    "pattern": "ٌ ب"
+  },
+  {
+    "id": 1762,
+    "rule": "iqlab",
+    "lesson": 28,
+    "task_type": "match",
+    "question_type": "match_rule",
+    "modality": "audio",
+    "sura": null,
+    "verse": null,
+    "subject": {
+      "text": "وَكِيلٌ",
+      "spots": [
+        {
+          "start": 5,
+          "end": 7,
+          "text": "لٌ"
+        }
+      ],
+      "audio": "1762_prompt.wav"
+    },
+    "options": [
+      {
+        "id": 1,
+        "text": "بَيْنَنَا",
+        "spots": [
+          {
+            "start": 0,
+            "end": 2,
+            "text": "بَ"
+          }
+        ],
+        "audio": "1762_1.wav"
+      },
+      {
+        "id": 2,
+        "text": "بِهِ",
+        "spots": [
+          {
+            "start": 0,
+            "end": 2,
+            "text": "بِ"
+          }
+        ],
+        "audio": "1762_2.wav"
+      },
+      {
+        "id": 3,
+        "text": "عَلِيمٌ",
+        "audio": "1762_3.wav"
+      },
+      {
+        "id": 4,
+        "text": "خَبِيرٌ",
+        "audio": "1762_4.wav"
+      },
+      {
+        "id": 5,
+        "text": "none",
+        "audio": null
+      }
+    ],
+    "answer": [
+      1,
+      2
+    ],
+    "pattern": "ٌ ب:ٌ ب"
+  },
+  {
+    "id": 1763,
+    "rule": "iqlab",
+    "lesson": 28,
+    "task_type": "match",
+    "question_type": "match_rule",
+    "modality": "audio",
+    "sura": null,
+    "verse": null,
+    "subject": {
+      "text": "عَذَابًا",
+      "audio": "1763_prompt.wav"
+    },
+    "options": [
+      {
+        "id": 1,
+        "text": "أَلِيمًا",
+        "audio": "1763_1.wav"
+      },
+      {
+        "id": 2,
+        "text": "عَظِيمًا",
+        "audio": "1763_2.wav"
+      },
+      {
+        "id": 3,
+        "text": "مُّهِينًا",
+        "audio": "1763_3.wav"
+      },
+      {
+        "id": 4,
+        "text": "none",
+        "audio": "1763_4.wav"
+      }
+    ],
+    "answer": [
+      4
+    ]
+  },
+  {
+    "id": 1764,
+    "rule": "iqlab",
+    "lesson": 28,
+    "task_type": "select_count",
+    "question_type": "count_rule",
+    "modality": "audio",
+    "sura": 77,
+    "verse": 50,
+    "subject": {
+      "text": "فَبِأَىِّ حَدِيثٍ بَعْدَهُ يُؤْمِنُونَ ٥٠",
+      "spots": [
+        {
+          "start": 15,
+          "end": 20,
+          "text": "ثٍ بَ"
+        }
+      ],
+      "audio": "1764.wav"
+    },
+    "options": [
+      {
+        "id": 1,
+        "text": "0"
+      },
+      {
+        "id": 2,
+        "text": "1"
+      },
+      {
+        "id": 3,
+        "text": "2"
+      },
+      {
+        "id": 4,
+        "text": "3"
+      }
+    ],
+    "answer": [
+      2
+    ],
+    "pattern": "ٍ ب"
+  },
+  {
+    "id": 1765,
+    "rule": "iqlab",
+    "lesson": 28,
+    "task_type": "select_count",
+    "question_type": "count_rule",
+    "modality": "audio",
+    "sura": 90,
+    "verse": 2,
+    "subject": {
+      "text": "وَأَنتَ حِلٌّ بِهَٰذَا ٱلْبَلَدِ ٢",
+      "spots": [
+        {
+          "start": 10,
+          "end": 16,
+          "text": "لٌّ بِ"
+        }
+      ],
+      "audio": "1765.wav"
+    },
+    "options": [
+      {
+        "id": 1,
+        "text": "0"
+      },
+      {
+        "id": 2,
+        "text": "1"
+      },
+      {
+        "id": 3,
+        "text": "2"
+      },
+      {
+        "id": 4,
+        "text": "3"
+      }
+    ],
+    "answer": [
+      2
+    ],
+    "pattern": "ٌ ب"
+  },
+  {
+    "id": 1766,
+    "rule": "iqlab",
+    "lesson": 28,
+    "task_type": "select_count",
+    "question_type": "count_rule",
+    "modality": "audio",
+    "sura": 104,
+    "verse": 1,
+    "subject": {
+      "text": "وَيْلٌ لِّّكُلِّ هُمَزَةٍ لُّّمَزَةٍ ١",
+      "audio": "1766.wav"
+    },
+    "options": [
+      {
+        "id": 1,
+        "text": "0"
+      },
+      {
+        "id": 2,
+        "text": "1"
+      },
+      {
+        "id": 3,
+        "text": "2"
+      },
+      {
+        "id": 4,
+        "text": "3"
+      }
+    ],
+    "answer": [
+      1
+    ]
+  },
+  {
+    "id": 1767,
+    "rule": "iqlab",
+    "lesson": 28,
+    "task_type": "select_count",
+    "question_type": "count_rule",
+    "modality": "audio",
+    "sura": 3,
+    "verse": 138,
+    "subject": {
+      "text": "هَٰذَا بَيَانٌ لِّّلنَّاسِ وَهُدًى وَمَوْعِظَةٌ لِّّلْمُتَّقِينَ ١٣٨",
+      "audio": "1767.wav"
+    },
+    "options": [
+      {
+        "id": 1,
+        "text": "0"
+      },
+      {
+        "id": 2,
+        "text": "1"
+      },
+      {
+        "id": 3,
+        "text": "2"
+      },
+      {
+        "id": 4,
+        "text": "3"
+      }
+    ],
+    "answer": [
+      1
+    ]
+  },
+  {
+    "id": 1768,
+    "rule": "iqlab",
+    "lesson": 28,
+    "task_type": "yes_no",
+    "question_type": "has_rule",
+    "modality": "audio",
+    "sura": null,
+    "verse": null,
+    "subject": {
+      "text": "عَوَانٌۢ بَيْنَ",
+      "spots": [
+        {
+          "start": 5,
+          "end": 11,
+          "text": "نٌۢ بَ"
+        }
+      ],
+      "audio": "1768.wav"
+    },
+    "options": [
+      {
+        "id": 1,
+        "text": "yes"
+      },
+      {
+        "id": 2,
+        "text": "no"
+      }
+    ],
+    "answer": [
+      1
+    ],
+    "pattern": "ٌ ب"
+  },
+  {
+    "id": 1769,
+    "rule": "iqlab",
+    "lesson": 28,
+    "task_type": "yes_no",
+    "question_type": "has_rule",
+    "modality": "audio",
+    "sura": null,
+    "verse": null,
+    "subject": {
+      "text": "يَوْمَئِذٍۭ بِجَهَنَّمَ",
+      "spots": [
+        {
+          "start": 8,
+          "end": 11,
+          "text": "ذٍۭ"
+        }
+      ],
+      "audio": "1769.wav"
+    },
+    "options": [
+      {
+        "id": 1,
+        "text": "yes"
+      },
+      {
+        "id": 2,
+        "text": "no"
+      }
+    ],
+    "answer": [
+      1
+    ],
+    "pattern": "ٍ ب"
+  },
+  {
+    "id": 1770,
+    "rule": "iqlab",
+    "lesson": 28,
+    "task_type": "yes_no",
+    "question_type": "has_rule",
+    "modality": "audio",
+    "sura": null,
+    "verse": null,
+    "subject": {
+      "text": "شَىْءٍۭ بَصِيرٌ",
+      "spots": [
+        {
+          "start": 4,
+          "end": 7,
+          "text": "ءٍۭ"
+        }
+      ],
+      "audio": "1770.wav"
+    },
+    "options": [
+      {
+        "id": 1,
+        "text": "yes"
+      },
+      {
+        "id": 2,
+        "text": "no"
+      }
+    ],
+    "answer": [
+      1
+    ],
+    "pattern": "ٍ ب"
+  },
+  {
+    "id": 1771,
+    "rule": "iqlab",
+    "lesson": 28,
+    "task_type": "yes_no",
+    "question_type": "has_rule",
+    "modality": "audio",
+    "sura": null,
+    "verse": null,
+    "subject": {
+      "text": "شَىْءٍ عَلِيمٌ",
+      "audio": "1771.wav"
+    },
+    "options": [
+      {
+        "id": 1,
+        "text": "yes"
+      },
+      {
+        "id": 2,
+        "text": "no"
+      }
+    ],
+    "answer": [
+      2
+    ]
+  },
+  {
+    "id": 1772,
+    "rule": "iqlab",
+    "lesson": 28,
+    "task_type": "mark_verse",
+    "question_type": "mark_rule_in_verse",
+    "modality": "audio",
+    "sura": 74,
+    "verse": 38,
+    "subject": {
+      "text": "كُلُّ نَفْسٍ بِمَا كَسَبَتْ رَهِينَةٌ ٣٨",
+      "spots": [
+        {
+          "start": 6,
+          "end": 18,
+          "text": "نَفْسٍ بِمَا"
+        }
+      ],
+      "audio": "1772.wav"
+    },
+    "options": [],
+    "answer": [
+      "نَفْسٍ بِمَا"
+    ],
+    "pattern": "ٍ ب"
+  },
+  {
+    "id": 1773,
+    "rule": "iqlab",
+    "lesson": 28,
+    "task_type": "mark_verse",
+    "question_type": "mark_rule_in_verse",
+    "modality": "audio",
+    "sura": 2,
+    "verse": 18,
+    "subject": {
+      "text": "صُمٌّ بُكْمٌ عُمْىٌ فَهُمْ لَا يَرْجِعُونَ ١٨",
+      "spots": [
+        {
+          "start": 0,
+          "end": 12,
+          "text": "صُمٌّ بُكْمٌ"
+        }
+      ],
+      "audio": "1773.wav"
+    },
+    "options": [],
+    "answer": [
+      "صُمٌّ بُكْمٌ"
+    ],
+    "pattern": "ٌ ب"
+  },
+  {
+    "id": 1774,
+    "rule": "iqlab",
+    "lesson": 28,
+    "task_type": "mark_verse",
+    "question_type": "mark_rule_in_verse",
+    "modality": "audio",
+    "sura": 36,
+    "verse": 32,
+    "subject": {
+      "text": "وَإِن كُلٌّ لَّّمَّا جَمِيعٌ لَّّدَيْنَا مُحْضَرُونَ ٣٢",
+      "audio": "1774.wav"
+    },
+    "options": [],
+    "answer": []
+  },
+  {
+    "id": 1775,
+    "rule": "iqlab",
+    "lesson": 28,
+    "task_type": "mark_verse",
+    "question_type": "mark_rule_in_verse",
+    "modality": "audio",
+    "sura": 20,
+    "verse": 44,
+    "subject": {
+      "text": "فَقُولَا لَهُ قَوْلًا لَّّيِّنًا لَّّعَلَّهُ يَتَذَكَّرُ أَوْ يَخْشَىٰ ٤٤",
+      "audio": "1775.wav"
+    },
+    "options": [],
+    "answer": []
+  },
+  {
+    "id": 1776,
+    "rule": "iqlab",
+    "lesson": 28,
+    "task_type": "select",
+    "question_type": "vowel_before_letter",
+    "multiple": false,
+    "modality": "audio",
+    "sura": null,
+    "verse": null,
+    "subject": {
+      "text": "نَفْسٍۭ بِمَا",
+      "spots": [
+        {
+          "start": 4,
+          "end": 7,
+          "text": "سٍۭ"
+        }
+      ],
+      "audio": "1776.wav"
+    },
+    "options": [
+      {
+        "id": 1,
+        "text": "ً"
+      },
+      {
+        "id": 2,
+        "text": "ٌ"
+      },
+      {
+        "id": 3,
+        "text": "ٍ"
+      },
+      {
+        "id": 4,
+        "text": "none"
+      }
+    ],
+    "answer": [
+      3
+    ],
+    "pattern": "ٍ ب"
+  },
+  {
+    "id": 1777,
+    "rule": "iqlab",
+    "lesson": 28,
+    "task_type": "select",
+    "question_type": "vowel_before_letter",
+    "multiple": false,
+    "modality": "audio",
+    "sura": null,
+    "verse": null,
+    "subject": {
+      "text": "قَوْمٍۭ بُورًا",
+      "spots": [
+        {
+          "start": 4,
+          "end": 7,
+          "text": "مٍۭ"
+        }
+      ],
+      "audio": "1777.wav"
+    },
+    "options": [
+      {
+        "id": 1,
+        "text": "ً"
+      },
+      {
+        "id": 2,
+        "text": "ٌ"
+      },
+      {
+        "id": 3,
+        "text": "ٍ"
+      },
+      {
+        "id": 4,
+        "text": "none"
+      }
+    ],
+    "answer": [
+      3
+    ],
+    "pattern": "ٍ ب"
+  },
+  {
+    "id": 1778,
+    "rule": "iqlab",
+    "lesson": 28,
+    "task_type": "select",
+    "question_type": "vowel_before_letter",
+    "multiple": false,
+    "modality": "audio",
+    "sura": null,
+    "verse": null,
+    "subject": {
+      "text": "عَذَابٍۭ بَئِيسٍ",
+      "spots": [
+        {
+          "start": 5,
+          "end": 8,
+          "text": "بٍۭ"
+        }
+      ],
+      "audio": "1778.wav"
+    },
+    "options": [
+      {
+        "id": 1,
+        "text": "ً"
+      },
+      {
+        "id": 2,
+        "text": "ٌ"
+      },
+      {
+        "id": 3,
+        "text": "ٍ"
+      },
+      {
+        "id": 4,
+        "text": "none"
+      }
+    ],
+    "answer": [
+      3
+    ],
+    "pattern": "ٍ ب"
+  },
+  {
+    "id": 1779,
+    "rule": "iqlab",
+    "lesson": 28,
+    "task_type": "select",
+    "question_type": "vowel_before_letter",
+    "multiple": false,
+    "modality": "audio",
+    "sura": null,
+    "verse": null,
+    "subject": {
+      "text": "يَوْمَئِذٍ خَٰشِعَةٌ",
+      "audio": "1779.wav"
+    },
+    "options": [
+      {
+        "id": 1,
+        "text": "ً"
+      },
+      {
+        "id": 2,
+        "text": "ٌ"
+      },
+      {
+        "id": 3,
+        "text": "ٍ"
+      },
+      {
+        "id": 4,
+        "text": "none"
+      }
+    ],
+    "answer": [
+      4
+    ]
+  },
+  {
+    "id": 1780,
+    "rule": "iqlab",
+    "lesson": 28,
+    "task_type": "select_count",
+    "question_type": "count_rule",
+    "modality": "audio",
+    "sura": 3,
+    "verse": 63,
+    "subject": {
+      "text": "فَإِن تَوَلَّوْا۟ فَإِنَّ ٱللَّهَ عَلِيمٌ بِٱلْمُفْسِدِينَ ٦٣",
+      "spots": [
+        {
+          "start": 39,
+          "end": 44,
+          "text": "مٌ بِ"
+        }
+      ],
+      "audio": "1780.wav"
+    },
+    "options": [
+      {
+        "id": 1,
+        "text": "0"
+      },
+      {
+        "id": 2,
+        "text": "1"
+      },
+      {
+        "id": 3,
+        "text": "2"
+      },
+      {
+        "id": 4,
+        "text": "3"
+      }
+    ],
+    "answer": [
+      2
+    ],
+    "pattern": "ٌ ب"
+  },
+  {
+    "id": 1781,
+    "rule": "iqlab",
+    "lesson": 28,
+    "task_type": "select_count",
+    "question_type": "count_rule",
+    "modality": "audio",
+    "sura": 19,
+    "verse": 14,
+    "subject": {
+      "text": "وَبَرًّا بِوَٰلِدَيْهِ وَلَمْ يَكُن جَبَّارًا عَصِيًّا ١٤",
+      "spots": [
+        {
+          "start": 4,
+          "end": 11,
+          "text": "رًّا بِ"
+        }
+      ],
+      "audio": "1781.wav"
+    },
+    "options": [
+      {
+        "id": 1,
+        "text": "0"
+      },
+      {
+        "id": 2,
+        "text": "1"
+      },
+      {
+        "id": 3,
+        "text": "2"
+      },
+      {
+        "id": 4,
+        "text": "3"
+      }
+    ],
+    "answer": [
+      2
+    ],
+    "pattern": "ًا ب"
+  },
+  {
+    "id": 1782,
+    "rule": "iqlab",
+    "lesson": 28,
+    "task_type": "select_count",
+    "question_type": "count_rule",
+    "modality": "audio",
+    "sura": 2,
+    "verse": 66,
+    "subject": {
+      "text": "فَجَعَلْنَٰهَا نَكَٰلًا لِّّمَا بَيْنَ يَدَيْهَا وَمَا خَلْفَهَا وَمَوْعِظَةً لِّّلْمُتَّقِينَ ٦٦",
+      "audio": "1782.wav"
+    },
+    "options": [
+      {
+        "id": 1,
+        "text": "0"
+      },
+      {
+        "id": 2,
+        "text": "1"
+      },
+      {
+        "id": 3,
+        "text": "2"
+      },
+      {
+        "id": 4,
+        "text": "3"
+      }
+    ],
+    "answer": [
+      1
+    ]
+  },
+  {
+    "id": 1783,
+    "rule": "iqlab",
+    "lesson": 28,
+    "task_type": "select_count",
+    "question_type": "count_rule",
+    "modality": "audio",
+    "sura": 82,
+    "verse": 19,
+    "subject": {
+      "text": "يَوْمَ لَا تَمْلِكُ نَفْسٌ لِّّنَفْسٍ شَيْـًٔا ۖ وَٱلْأَمْرُ يَوْمَئِذٍ لِّّلَّهِ ١٩",
+      "audio": "1783.wav"
+    },
+    "options": [
+      {
+        "id": 1,
+        "text": "0"
+      },
+      {
+        "id": 2,
+        "text": "1"
+      },
+      {
+        "id": 3,
+        "text": "2"
+      },
+      {
+        "id": 4,
+        "text": "3"
+      }
+    ],
+    "answer": [
+      1
+    ]
+  },
+  {
+    "id": 1784,
+    "rule": "iqlab",
+    "lesson": 28,
+    "task_type": "match",
+    "question_type": "match_rule",
+    "modality": "audio",
+    "sura": null,
+    "verse": null,
+    "subject": {
+      "text": "كِتَٰبٍ",
+      "spots": [
+        {
+          "start": 5,
+          "end": 7,
+          "text": "بٍ"
+        }
+      ],
+      "audio": "1784_prompt.wav"
+    },
+    "options": [
+      {
+        "id": 1,
+        "text": "بَيِّنٍ",
+        "spots": [
+          {
+            "start": 0,
+            "end": 2,
+            "text": "بَ"
+          }
+        ],
+        "audio": "1784_1.wav"
+      },
+      {
+        "id": 2,
+        "text": "مُّبِينٍ",
+        "audio": "1784_2.wav"
+      },
+      {
+        "id": 3,
+        "text": "عَظِيمٍ",
+        "audio": "1784_3.wav"
+      },
+      {
+        "id": 4,
+        "text": "كَرِيمٍ",
+        "audio": "1784_4.wav"
+      },
+      {
+        "id": 5,
+        "text": "none",
+        "audio": null
+      }
+    ],
+    "answer": [
+      1
+    ],
+    "pattern": "ٍ ب"
+  },
+  {
+    "id": 1785,
+    "rule": "iqlab",
+    "lesson": 28,
+    "task_type": "match",
+    "question_type": "match_rule",
+    "modality": "audio",
+    "sura": null,
+    "verse": null,
+    "subject": {
+      "text": "ضَلَٰلٍ",
+      "spots": [
+        {
+          "start": 5,
+          "end": 7,
+          "text": "لٍ"
+        }
+      ],
+      "audio": "1785_prompt.wav"
+    },
+    "options": [
+      {
+        "id": 1,
+        "text": "بَعِيدٍ",
+        "spots": [
+          {
+            "start": 0,
+            "end": 2,
+            "text": "بَ"
+          }
+        ],
+        "audio": "1785_1.wav"
+      },
+      {
+        "id": 2,
+        "text": "مُّبِينٍ",
+        "audio": "1785_2.wav"
+      },
+      {
+        "id": 3,
+        "text": "عَظِيمٍ",
+        "audio": "1785_3.wav"
+      },
+      {
+        "id": 4,
+        "text": "كَبِيرٍ",
+        "audio": "1785_4.wav"
+      },
+      {
+        "id": 5,
+        "text": "none",
+        "audio": null
+      }
+    ],
+    "answer": [
+      1
+    ],
+    "pattern": "ٍ ب"
+  },
+  {
+    "id": 1786,
+    "rule": "iqlab",
+    "lesson": 28,
+    "task_type": "match",
+    "question_type": "match_rule",
+    "modality": "audio",
+    "sura": null,
+    "verse": null,
+    "subject": {
+      "text": "مَكَانٍ",
+      "spots": [
+        {
+          "start": 5,
+          "end": 7,
+          "text": "نٍ"
+        }
+      ],
+      "audio": "1786_prompt.wav"
+    },
+    "options": [
+      {
+        "id": 1,
+        "text": "بَعِيدٍ",
+        "spots": [
+          {
+            "start": 0,
+            "end": 2,
+            "text": "بَ"
+          }
+        ],
+        "audio": "1786_1.wav"
+      },
+      {
+        "id": 2,
+        "text": "بَيِّنٍ",
+        "spots": [
+          {
+            "start": 0,
+            "end": 2,
+            "text": "بَ"
+          }
+        ],
+        "audio": "1786_2.wav"
+      },
+      {
+        "id": 3,
+        "text": "مُّبِينٍ",
+        "audio": "1786_3.wav"
+      },
+      {
+        "id": 4,
+        "text": "عَظِيمٍ",
+        "audio": "1786_4.wav"
+      },
+      {
+        "id": 5,
+        "text": "none",
+        "audio": null
+      }
+    ],
+    "answer": [
+      1,
+      2
+    ],
+    "pattern": "ٍ ب:ٍ ب"
+  },
+  {
+    "id": 1787,
+    "rule": "iqlab",
+    "lesson": 28,
+    "task_type": "match",
+    "question_type": "match_rule",
+    "modality": "audio",
+    "sura": null,
+    "verse": null,
+    "subject": {
+      "text": "حَاسِدٍ",
+      "audio": "1787_prompt.wav"
+    },
+    "options": [
+      {
+        "id": 1,
+        "text": "إِذَا",
+        "audio": "1787_1.wav"
+      },
+      {
+        "id": 2,
+        "text": "مُّبِينٍ",
+        "audio": "1787_2.wav"
+      },
+      {
+        "id": 3,
+        "text": "عَظِيمٍ",
+        "audio": "1787_3.wav"
+      },
+      {
+        "id": 4,
+        "text": "none",
+        "audio": "1787_4.wav"
+      }
+    ],
+    "answer": [
+      4
+    ]
+  },
+  {
+    "id": 1788,
+    "rule": "iqlab",
+    "lesson": 28,
+    "task_type": "mark_verse",
+    "question_type": "mark_rule_in_verse",
+    "modality": "audio",
+    "sura": 19,
+    "verse": 32,
+    "subject": {
+      "text": "وَبَرًّا بِوَٰلِدَتِى وَلَمْ يَجْعَلْنِى جَبَّارًا شَقِيًّا ٣٢",
+      "spots": [
+        {
+          "start": 0,
+          "end": 21,
+          "text": "وَبَرًّا بِوَٰلِدَتِى"
+        }
+      ],
+      "audio": "1788.wav"
+    },
+    "options": [],
+    "answer": [
+      "وَبَرًّا بِوَٰلِدَتِى"
+    ],
+    "pattern": "ًا ب"
+  },
+  {
+    "id": 1789,
+    "rule": "iqlab",
+    "lesson": 28,
+    "task_type": "mark_verse",
+    "question_type": "mark_rule_in_verse",
+    "modality": "audio",
+    "sura": 29,
+    "verse": 54,
+    "subject": {
+      "text": "يَسْتَعْجِلُونَكَ بِٱلْعَذَابِ وَإِنَّ جَهَنَّمَ لَمُحِيطَةٌ بِٱلْكَٰفِرِينَ ٥٤",
+      "spots": [
+        {
+          "start": 49,
+          "end": 76,
+          "text": "لَمُحِيطَةٌ بِٱلْكَٰفِرِينَ"
+        }
+      ],
+      "audio": "1789.wav"
+    },
+    "options": [],
+    "answer": [
+      "لَمُحِيطَةٌ بِٱلْكَٰفِرِينَ"
+    ],
+    "pattern": "ٌ ب"
+  },
+  {
+    "id": 1790,
+    "rule": "iqlab",
+    "lesson": 28,
+    "task_type": "mark_verse",
+    "question_type": "mark_rule_in_verse",
+    "modality": "audio",
+    "sura": 56,
+    "verse": 3,
+    "subject": {
+      "text": "خَافِضَةٌ رَّّافِعَةٌ ٣",
+      "audio": "1790.wav"
+    },
+    "options": [],
+    "answer": []
+  },
+  {
+    "id": 1791,
+    "rule": "iqlab",
+    "lesson": 28,
+    "task_type": "mark_verse",
+    "question_type": "mark_rule_in_verse",
+    "modality": "audio",
+    "sura": 70,
+    "verse": 16,
+    "subject": {
+      "text": "نَزَّاعَةً لِّّلشَّوَىٰ ١٦",
+      "audio": "1791.wav"
+    },
+    "options": [],
+    "answer": []
+  }
+]
