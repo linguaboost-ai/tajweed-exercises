@@ -72,7 +72,12 @@ Deployment über Vercel, direkt aus diesem Repository.
     der Lektion — 40 Aufgaben führen jetzt alle auf, die vorkommen. Bei
     Muʿānaqa sind beide Wörter richtig (16 Aufgaben), und die Frage sagt, dass
     nur an einer der Stellen angehalten wird. 2152 und 2158 markierten das
-    falsche Vorkommen eines doppelt vorkommenden Wortes.
+    falsche Vorkommen eines doppelt vorkommenden Wortes — das entscheidet
+    jetzt die Anzeige: `markVerse()` wählt das Vorkommen, hinter dem das
+    gesuchte Zeichen steht. Das Muster im Titel nennt alle Zeichen des Verses.
+    Lektion 39 fasst Mīm und Sakta zusammen („An welchen Stellen darf man nicht
+    ohne Anhalten weiterlesen?"); 2286 zeigte statt eines Halts die Lesehilfe
+    ص/س und hat einen Vers mit Mīm-Zeichen bekommen (3:181).
 
 ## Aufbau
 
