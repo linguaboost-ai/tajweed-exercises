@@ -92,6 +92,14 @@ Deployment über Vercel, direkt aus diesem Repository.
     vor"; bei einer Markieraufgabe ist die leere Liste ein Antwortschlüssel.
     Damit ist der ganze Datensatz ohne Auffälligkeit.
 
+13. **Lektionsreihenfolge bei den Halt-Zeichen.** Seit der Schlüssel alle
+    Zeichen des Verses nennt, verlangten 19 Aufgaben ein Zeichen aus einer
+    späteren Lektion. Sie haben einen anderen Vers bekommen — das Zeichen der
+    Lektion darin, sonst nur bereits behandelte. Siehe
+    `docs/waqf-lektionsreihenfolge.md`; **die Tonaufnahmen dieser 19 Aufgaben
+    gehören zum alten Vers.** Dazu acht Qalqala-Aufgaben, deren Muster im Titel
+    eine „1" zeigte, obwohl es keine Fundstelle gibt — dort steht jetzt „0".
+
 ## Aufbau
 
     index.html   die Seite selbst (Daten und Hausschrift eingebettet)
