@@ -43,7 +43,7 @@ import nun_rules as nr                                            # noqa: E402
 
 ARGS = [a for a in sys.argv[1:] if not a.startswith("--")]
 DRY = "--dry" in sys.argv
-HTML = Path(ARGS[0] if ARGS else "index.html")
+HTML = Path(ARGS[0] if ARGS else "browser/index.html")
 
 HAR = "ًٌٍَُِّْٰٓٔۡ۟۠ـٕٖٜٗ٘ٙٚٛٝٞۢۥۦ"
 VOKAL = "ًٌٍَُِْ"

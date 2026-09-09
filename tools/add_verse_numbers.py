@@ -37,7 +37,7 @@ import unicodedata
 from difflib import SequenceMatcher
 from pathlib import Path
 
-HTML = Path(sys.argv[1] if len(sys.argv) > 1 else "index.html")
+HTML = Path(sys.argv[1] if len(sys.argv) > 1 else "browser/index.html")
 CORPUS = Path(sys.argv[2] if len(sys.argv) > 2
               else os.environ.get("QURAN_JSON", "/tmp/quran/package/dist/quran.json"))
 REPORT = Path("docs/versnummern.md")

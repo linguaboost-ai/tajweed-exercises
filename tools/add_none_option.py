@@ -20,7 +20,7 @@ import re
 import sys
 from pathlib import Path
 
-HTML = Path(sys.argv[1] if len(sys.argv) > 1 else "index.html")
+HTML = Path(sys.argv[1] if len(sys.argv) > 1 else "browser/index.html")
 
 QTYPES = ("vowel_before_letter", "vowel_on_letter", "vowels_before_letter",
           "vowels_on_letter", "position_in_word", "which_letter")

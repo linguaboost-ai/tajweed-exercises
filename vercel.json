@@ -2,8 +2,8 @@
   "$schema": "https://openapi.vercel.sh/vercel.json",
   "cleanUrls": true,
   "rewrites": [
-    { "source": "/tajweed/tajweed-exercises.html", "destination": "/index.html" },
-    { "source": "/tajweed", "destination": "/index.html" }
+    { "source": "/tajweed/tajweed-exercises.html", "destination": "/browser/index.html" },
+    { "source": "/tajweed", "destination": "/browser/index.html" }
   ],
   "headers": [
     {

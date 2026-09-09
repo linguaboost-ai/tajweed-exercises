@@ -30,7 +30,7 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).parent))
 from quran_text import to_dataset                                 # noqa: E402
 
-HTML = Path(sys.argv[1] if len(sys.argv) > 1 else "index.html")
+HTML = Path(sys.argv[1] if len(sys.argv) > 1 else "browser/index.html")
 CORPUS = Path(os.environ.get("QURAN_JSON", "/tmp/quran/package/dist/quran.json"))
 REPORT = Path("docs/waqf-lektionsreihenfolge.md")
 

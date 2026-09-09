@@ -1,7 +1,15 @@
-# Tajwīd Aufgabenbrowser
+# Tajwīd
 
-Statische Seite (eine `index.html`) zum Durchsehen der Tajwīd-Übungsaufgaben.
-Deployment über Vercel, direkt aus diesem Repository.
+Zwei statische Seiten aus einem Repository, Deployment über Vercel:
+
+* **`/`** — Vorschau darauf, wie die Aufgaben in der App aussehen könnten:
+  ein Handybildschirm in der Mitte, links die Lektionsauswahl, ein Schalter
+  „Lösungen anzeigen" und die Umschaltung Deutsch/Englisch. Sprache und
+  Schalterstellung merkt sich der Browser. Die Aufgaben lädt die Seite aus
+  `json/`; sie hält keine eigene Kopie.
+* **`/browser/`** — der Aufgabenbrowser zum Prüfen und Durchsuchen aller 2037
+  Aufgaben mit Filtern, Suche und Auffälligkeitsanzeige. Er trägt den
+  Datensatz eingebettet; `json/` wird daraus erzeugt.
 
 ## Korrekturen gegenüber der Fassung auf übung.qsk-methode.de
 
@@ -103,17 +111,22 @@ Deployment über Vercel, direkt aus diesem Repository.
 
 ## Aufbau
 
-    index.html   die Seite selbst (Daten und Hausschrift eingebettet)
-    fonts/       Amiri Quran, nur für das Versnummern-Ornament
-    tools/       Korrekturskripte, die auf index.html angewandt wurden
-    docs/        Begründung der inhaltlichen Korrekturen
+    index.html          App-Vorschau (lädt die Aufgaben aus json/)
+    browser/index.html  Aufgabenbrowser, mit dem Datensatz darin
+    json/               die 2037 Aufgaben nach dem Authoring Guide, 7 Dateien
+    fonts/              Hausschrift (Hafs) und Amiri Quran für die Versnummer
+    tools/              Korrekturskripte, angewandt auf browser/index.html
+    docs/               Begründung der inhaltlichen Korrekturen
 
 Alle Skripte in `tools/` sind idempotent und dokumentieren im Kopfkommentar,
 was genau sie ändern. `tools/add_verse_numbers.py` gleicht die Aufgabentexte
 mit dem Korantext ab (`quran-json`, Tanzil/Uthmani).
+`tools/export_json.py` schreibt `json/` neu und prüft vorher die Prüfliste des
+Authoring Guide.
 
 ## Deployment
 
 Vercel-Projekt `tajweed-exercises` (Team „Linguaboost AI's projects"), verknüpft
 mit diesem Repository. Jeder Push auf den Produktionszweig veröffentlicht die
-Seite neu; der alte Pfad `/tajweed/tajweed-exercises.html` wird auf `/` geleitet.
+Seite neu; die alten Pfade `/tajweed` und `/tajweed/tajweed-exercises.html`
+zeigen auf `/browser/`.

@@ -24,7 +24,7 @@ import sys
 from pathlib import Path
 
 ARGS = [a for a in sys.argv[1:] if not a.startswith("--")]
-HTML = Path(ARGS[0] if ARGS else "index.html")
+HTML = Path(ARGS[0] if ARGS else "browser/index.html")
 OUT = Path(ARGS[1] if len(ARGS) > 1 else "json")
 
 BLOECKE = [("tafkheem", 1, 9), ("qalqala", 10, 14), ("idgham", 15, 21),

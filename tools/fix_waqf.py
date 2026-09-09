@@ -24,7 +24,7 @@ import re
 import sys
 from pathlib import Path
 
-HTML = Path(sys.argv[1] if len(sys.argv) > 1 else "index.html")
+HTML = Path(sys.argv[1] if len(sys.argv) > 1 else "browser/index.html")
 
 # Zeichen -> Beschriftung der Antwortmöglichkeit
 SIGN = {"ۖ": "صلى", "ۗ": "قلى", "ۘ": "م", "ۙ": "لا", "ۚ": "ج", "ۛ": "∴", "ۜ": "س"}

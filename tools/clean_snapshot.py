@@ -18,7 +18,7 @@ import re
 import sys
 from pathlib import Path
 
-HTML = Path(sys.argv[1] if len(sys.argv) > 1 else "index.html")
+HTML = Path(sys.argv[1] if len(sys.argv) > 1 else "browser/index.html")
 
 # Container, die das Skript zur Laufzeit füllt -> müssen leer ausgeliefert werden
 EMPTY_IDS = ["bank-rule", "bank-task", "list", "sheet", "summary", "flag-n"]
