@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="German Method">
+  <title>German Method</title>
+  <rect width="512" height="512" fill="#1B2560"/>
+  <path d="M 350.6 226.1 A 120.0 120.0 0 1 0 375.9 304.2 L 252.0 304.2" fill="none" stroke="#FFFFFF" stroke-width="48" stroke-linecap="butt"/>
+  <path d="M 220 75 L 245 100 L 220 125 L 195 100 Z" fill="#FFFFFF" stroke="#FFFFFF" stroke-width="5" stroke-linejoin="round"/>
+  <path d="M 292 75 L 317 100 L 292 125 L 267 100 Z" fill="#FFFFFF" stroke="#FFFFFF" stroke-width="5" stroke-linejoin="round"/>
+</svg>
