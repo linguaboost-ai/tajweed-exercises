@@ -12,7 +12,7 @@ darin, sonst nur Zeichen aus behandelten Lektionen.
 
 ## Muster im Titel
 
-8 Qalqala-Aufgaben zeigten die Ziffer 1, obwohl keine
+8 Qalqalah-Aufgaben zeigten die Ziffer 1, obwohl keine
 Fundstelle vorliegt. Der Hinweis fällt weg, wie bei allen anderen
 Aufgaben mit der Antwort 0: 583, 591, 599, 607, 615, 623, 631, 639
 

@@ -1,4 +1,4 @@
-# Tajwīd
+# Tajweed
 
 Zwei statische Seiten aus einem Repository, Deployment über Vercel:
 
@@ -20,9 +20,9 @@ Zwei statische Seiten aus einem Repository, Deployment über Vercel:
    Die Kartusche kommt aus *Amiri Quran* (`fonts/`, SIL OFL), der übrige
    arabische Text bleibt in der eingebetteten Hausschrift.
 
-2. **Qalqala: unvollständige Antwortschlüssel.** Gefragt ist der Vokal *vor*
-   dem Qalqala-Buchstaben. Bei Versen mit mehreren Fundstellen war nur die
-   erste als richtig markiert; die Stelle am Versende (Qalqala beim Anhalten)
+2. **Qalqalah: unvollständige Antwortschlüssel.** Gefragt ist der Vokal *vor*
+   dem Qalqalah-Buchstaben. Bei Versen mit mehreren Fundstellen war nur die
+   erste als richtig markiert; die Stelle am Versende (Qalqalah beim Anhalten)
    fehlte. 11 Aufgaben korrigiert, hergeleitet aus dem Verstext —
    siehe `docs/qalqala-korrektur.md`.
 
@@ -31,26 +31,26 @@ Zwei statische Seiten aus einem Repository, Deployment über Vercel:
    einen Ausschnitt zeigen, bekommen keine — dort endet der Text nicht am
    Versende. Siehe `docs/versnummern.md`.
 
-4. **Qalqala am Versende.** Beim Anhalten verliert der Endbuchstabe seinen
-   Vokal — dort entsteht Qalqala kubrā. Angehalten wird am Versende, und das
+4. **Qalqalah am Versende.** Beim Anhalten verliert der Endbuchstabe seinen
+   Vokal — dort entsteht Qalqalah Kubra. Angehalten wird am Versende, und das
    ist an der Versnummer zu erkennen; steht der Text nicht am Versende, wird
    mit allen Harakat gelesen und die Stelle zählt nicht. Zwei Aufgaben ließen
    die Stelle aus (735, 831), siehe `docs/qalqala-versende.md`. Nach dieser
-   Regel decken sich alle 279 auswertbaren Qalqala-Antwortschlüssel mit dem
+   Regel decken sich alle 279 auswertbaren Qalqalah-Antwortschlüssel mit dem
    Text — geprüft über `tools/fix_qalqala_answers.py` und
    `tools/fix_qalqala_counts.py`.
 
-5. **Falsch beschriftete Regel bei Idgham / Ikhfāʾ / Iqlāb.** Die Frage im
+5. **Falsch beschriftete Regel bei Idgham / Ikhfa / Iqlab.** Die Frage im
    Titel entsteht aus dem Feld `rule`. In Lektion 24/25 stand dort „ikhfa",
    obwohl die Fundstellen (م مّ, ن مّ, ٌ مّ …) ein Idgham sind, in Lektion 27/28
-   ebenso, obwohl ن ب ein Iqlāb ist. 63 Aufgaben umbeschriftet; dazu 29
+   ebenso, obwohl ن ب ein Iqlab ist. 63 Aufgaben umbeschriftet; dazu 29
    Antworten und 14 Muster berichtigt, weil Fundstellen fehlten.
    Ausgewertet mit `tools/nun_rules.py`, siehe `docs/idgham-ikhfa-iqlab.md`.
 
 6. **Antwortmöglichkeit „kommt nicht vor".** Aufgaben nach Vokal, Stelle oder
    auslösendem Buchstaben setzten voraus, dass die Regel überhaupt vorkommt.
    Alle 485 Aufgaben dieser Fragetypen haben die Option jetzt; bei 1611 und
-   1643 (Izhār, kein Ichfāʾ) ist sie die richtige Antwort. 20 Behelfsoptionen
+   1643 (Izhar, kein Ikhfa) ist sie die richtige Antwort. 20 Behelfsoptionen
    („Keine", bei 1377 sogar Ja/Nein) sind darin aufgegangen.
 
 7. **Getauschte Verse in den Idgham-Lektionen.** Der Generator zählte in
@@ -62,7 +62,7 @@ Zwei statische Seiten aus einem Repository, Deployment über Vercel:
    müssen neu eingesprochen werden.**
 
 8. **Fragestellung beim Madd.** Der Kurs behandelt den natürlichen Langvokal
-   nicht als eigenes Thema — streng genommen ist قَالَ ein Madd ṭabīʿī, im Kurs
+   nicht als eigenes Thema — streng genommen ist قَالَ ein Madd Tabee'ee, im Kurs
    zählt es nicht als Madd. Die Frage „Enthält dieses Wort ein Madd?" stand
    damit im Widerspruch zur hinterlegten Antwort „nein". Alle 257 Aufgaben der
    Lektionen 29–34 fragen jetzt nach der Dehnung über zwei Einheiten hinaus.
@@ -78,17 +78,17 @@ Zwei statische Seiten aus einem Repository, Deployment über Vercel:
 10. **Halt-Zeichen (Lektion 35–40).** „Welches Waqf-Zeichen steht in diesem
     Vers?" ist eine Mehrfachauswahl, im Schlüssel stand aber nur das Zeichen
     der Lektion — 40 Aufgaben führen jetzt alle auf, die vorkommen. Bei
-    Muʿānaqa sind beide Wörter richtig (16 Aufgaben), und die Frage sagt, dass
+    Muanaqah sind beide Wörter richtig (16 Aufgaben), und die Frage sagt, dass
     nur an einer der Stellen angehalten wird. 2152 und 2158 markierten das
     falsche Vorkommen eines doppelt vorkommenden Wortes — das entscheidet
     jetzt die Anzeige: `markVerse()` wählt das Vorkommen, hinter dem das
     gesuchte Zeichen steht. Das Muster im Titel nennt alle Zeichen des Verses.
-    Lektion 39 fasst Mīm und Sakta zusammen („An welchen Stellen darf man nicht
+    Lektion 39 fasst Meem und Sakta zusammen („An welchen Stellen darf man nicht
     ohne Anhalten weiterlesen?"); 2286 zeigte statt eines Halts die Lesehilfe
-    ص/س und hat einen Vers mit Mīm-Zeichen bekommen (3:181).
+    ص/س und hat einen Vers mit Meem-Zeichen bekommen (3:181).
 
 11. **Doppelte Aufgabennummer 896.** Beim Zusammenführen der Quelldateien sind
-    die Nummern an der Nahtstelle kollidiert: Der Qalqala-Block reicht
+    die Nummern an der Nahtstelle kollidiert: Der Qalqalah-Block reicht
     lückenlos bis 896, der Idgham-Block begann ebenfalls bei 896. Die
     Idgham-Aufgabe `يَجْعَل لَّكُمْ` hat die Nummer 2339 bekommen — mitsamt
     Tonaufnahme, denn beide teilten sich auch `896.wav`.
@@ -105,7 +105,7 @@ Zwei statische Seiten aus einem Repository, Deployment über Vercel:
     späteren Lektion. Sie haben einen anderen Vers bekommen — das Zeichen der
     Lektion darin, sonst nur bereits behandelte. Siehe
     `docs/waqf-lektionsreihenfolge.md`; **die Tonaufnahmen dieser 19 Aufgaben
-    gehören zum alten Vers.** Dazu acht Qalqala-Aufgaben, deren Muster im Titel
+    gehören zum alten Vers.** Dazu acht Qalqalah-Aufgaben, deren Muster im Titel
     eine „1" zeigte, obwohl es keine Fundstelle gibt — der Hinweis fällt weg,
     wie bei allen anderen Aufgaben mit der Antwort 0.
 

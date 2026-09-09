@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Tajwīd — App-Vorschau</title>
+<title>Tajweed — App-Vorschau</title>
 <style>
 /* ==========================================================================
    Vorschau auf die App. Die Aufgaben kommen aus den JSON-Dateien unter json/,
@@ -289,7 +289,7 @@ button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
   <aside class="rail">
     <div class="brand">
       <span class="glyph">تجويد</span>
-      <h1>Tajwīd<span class="sub" id="brandSub">App-Vorschau</span></h1>
+      <h1>Tajweed<span class="sub" id="brandSub">App-Vorschau</span></h1>
     </div>
 
     <div class="ctl">
@@ -345,65 +345,67 @@ button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
    Lehrplan
    ========================================================================== */
 const BLOCKS = [
-  {file:"tafkheem",     von: 1, bis: 9, de:"Tafchīm",         en:"Tafkhīm"},
-  {file:"qalqala",      von:10, bis:14, de:"Qalqala",         en:"Qalqalah"},
-  {file:"idgham",       von:15, bis:21, de:"Idghām",          en:"Idghām"},
-  {file:"ikhfa-idgham", von:22, bis:26, de:"Ichfāʾ & Idghām", en:"Ikhfāʾ & Idghām"},
-  {file:"iqlab",        von:27, bis:28, de:"Iqlāb",           en:"Iqlāb"},
-  {file:"madd",         von:29, bis:34, de:"Madd",            en:"Madd"},
-  {file:"waqf",         von:35, bis:40, de:"Waqf",            en:"Waqf"}
+  {file:"tafkheem",     von: 1, bis: 9, name:"Tafkheem"},
+  {file:"qalqala",      von:10, bis:14, name:"Qalqalah"},
+  {file:"idgham",       von:15, bis:21, name:"Idgham"},
+  {file:"ikhfa-idgham", von:22, bis:26, name:"Ikhfa & Idgham"},
+  {file:"iqlab",        von:27, bis:28, name:"Iqlab"},
+  {file:"madd",         von:29, bis:34, name:"Madd"},
+  {file:"waqf",         von:35, bis:40, name:"Waqf"}
 ];
 
 const LESSONS = {
-   1:{de:"Qāf und Kāf",                  en:"Qāf and Kāf"},
-   2:{de:"Ṭāʾ und Tāʾ",                  en:"Ṭāʾ and Tāʾ"},
-   3:{de:"Chāʾ und Ḥāʾ",                 en:"Khāʾ and Ḥāʾ"},
-   4:{de:"Ghain und Hāʾ",                en:"Ghayn and Hāʾ"},
-   5:{de:"Ḍād und Dāl",                  en:"Ḍād and Dāl"},
-   6:{de:"Ẓāʾ und Dhāl",                 en:"Ẓāʾ and Dhāl"},
-   7:{de:"Ṣād und Sīn",                  en:"Ṣād and Sīn"},
-   8:{de:"Regeln des Rāʾ",               en:"Rules of the Rāʾ"},
-   9:{de:"Der Name Allāh",               en:"The name Allāh"},
-  10:{de:"Dāl und Ḍād",                  en:"Dāl and Ḍād"},
-  11:{de:"Bāʾ",                          en:"Bāʾ"},
-  12:{de:"Jīm",                          en:"Jīm"},
-  13:{de:"Qāf und Kāf",                  en:"Qāf and Kāf"},
-  14:{de:"Ṭāʾ und Tāʾ",                  en:"Ṭāʾ and Tāʾ"},
-  15:{de:"Gleiche Buchstaben",           en:"Identical letters"},
-  16:{de:"Ähnliche Buchstaben",          en:"Similar letters"},
-  17:{de:"Nūn vor Lām und Rāʾ",          en:"Nūn before Lām and Rāʾ"},
-  18:{de:"Tanwīn vor Lām und Rāʾ",       en:"Tanwīn before Lām and Rāʾ"},
-  19:{de:"Nūn und Tanwīn vor Nūn",       en:"Nūn and Tanwīn before Nūn"},
-  20:{de:"Nūn und Tanwīn vor Wāw",       en:"Nūn and Tanwīn before Wāw"},
-  21:{de:"Nūn und Tanwīn vor Yāʾ",       en:"Nūn and Tanwīn before Yāʾ"},
-  22:{de:"Nūn sākin vor 15 Buchstaben",  en:"Nūn sākin before 15 letters"},
-  23:{de:"Tanwīn vor 15 Buchstaben",     en:"Tanwīn before 15 letters"},
-  24:{de:"Mīm vor Mīm",                  en:"Mīm before Mīm"},
-  25:{de:"Nūn und Tanwīn vor Mīm",       en:"Nūn and Tanwīn before Mīm"},
-  26:{de:"Mīm vor Bāʾ, Bāʾ vor Mīm",     en:"Mīm before Bāʾ, Bāʾ before Mīm"},
-  27:{de:"Nūn sākin vor Bāʾ",            en:"Nūn sākin before Bāʾ"},
-  28:{de:"Tanwīn vor Bāʾ",               en:"Tanwīn before Bāʾ"},
-  29:{de:"Madd Muttaṣil",                en:"Madd Muttaṣil"},
-  30:{de:"Madd Muttaṣil mit Wāw und Yāʾ",en:"Madd Muttaṣil with Wāw and Yāʾ"},
-  31:{de:"Madd Munfaṣil",                en:"Madd Munfaṣil"},
-  32:{de:"Madd Ṣila",                    en:"Madd Ṣila"},
-  33:{de:"Madd Lāzim im Wort",           en:"Madd Lāzim in the word"},
-  34:{de:"Madd Lāzim in Sureneröffnungen",en:"Madd Lāzim in sura openings"},
-  35:{de:"Waqf Jāʾiz ج",                 en:"Waqf Jāʾiz ج"},
-  36:{de:"Waqf Ḥasan صلى",               en:"Waqf Ḥasan صلى"},
-  37:{de:"Waqf Kāfī قلى",                en:"Waqf Kāfī قلى"},
-  38:{de:"Waqf Mamnūʿ لا",               en:"Waqf Mamnūʿ لا"},
-  39:{de:"Waqf Lāzim م und Sakta س",     en:"Waqf Lāzim م and Sakta س"},
-  40:{de:"Muʿānaqa ۛ",                   en:"Muʿānaqa ۛ"}
+   1:{de:"Qaf ق und Kaf ك",            en:"Qaf ق and Kaf ك"},
+   2:{de:"Ta ط und Ta ت",              en:"Ta ط and Ta ت"},
+   3:{de:"Kha خ und Ha ح",             en:"Kha خ and Ha ح"},
+   4:{de:"Ghayn غ und Ha ه",           en:"Ghayn غ and Ha ه"},
+   5:{de:"Dad ض und Dal د",            en:"Dad ض and Dal د"},
+   6:{de:"Dha ظ und Dhal ذ",           en:"Dha ظ and Dhal ذ"},
+   7:{de:"Sad ص und Seen س",           en:"Sad ص and Seen س"},
+   8:{de:"Regeln des Ra ر",            en:"Rules of the Ra ر"},
+   9:{de:"Der Name Allah",             en:"The name Allah"},
+  10:{de:"Dal د und Dad ض",            en:"Dal د and Dad ض"},
+  11:{de:"Ba ب",                       en:"Ba ب"},
+  12:{de:"Jeem ج",                     en:"Jeem ج"},
+  13:{de:"Qaf ق und Kaf ك",            en:"Qaf ق and Kaf ك"},
+  14:{de:"Ta ط und Ta ت",              en:"Ta ط and Ta ت"},
+  15:{de:"Gleiche Buchstaben",         en:"Identical letters"},
+  16:{de:"Ähnliche Buchstaben",        en:"Similar letters"},
+  17:{de:"Noon vor Lam und Ra",        en:"Noon before Lam and Ra"},
+  18:{de:"Tanween vor Lam und Ra",     en:"Tanween before Lam and Ra"},
+  19:{de:"Noon und Tanween vor Noon",  en:"Noon and Tanween before Noon"},
+  20:{de:"Noon und Tanween vor Waw",   en:"Noon and Tanween before Waw"},
+  21:{de:"Noon und Tanween vor Ya",    en:"Noon and Tanween before Ya"},
+  22:{de:"Noon sakin vor 15 Buchstaben", en:"Noon sakin before 15 letters"},
+  23:{de:"Tanween vor 15 Buchstaben",  en:"Tanween before 15 letters"},
+  24:{de:"Meem vor Meem",              en:"Meem before Meem"},
+  25:{de:"Noon und Tanween vor Meem",  en:"Noon and Tanween before Meem"},
+  26:{de:"Meem vor Ba, Ba vor Meem",   en:"Meem before Ba, Ba before Meem"},
+  27:{de:"Noon sakin vor Ba",          en:"Noon sakin before Ba"},
+  28:{de:"Tanween vor Ba",             en:"Tanween before Ba"},
+  29:{de:"Madd Muttasil",              en:"Madd Muttasil"},
+  30:{de:"Madd Muttasil mit Waw und Ya", en:"Madd Muttasil with Waw and Ya"},
+  31:{de:"Madd Munfasil",              en:"Madd Munfasil"},
+  32:{de:"Madd Silah",                 en:"Madd Silah"},
+  33:{de:"Madd Lazim im Wort",         en:"Madd Lazim in the word"},
+  34:{de:"Madd Lazim in Sureneröffnungen", en:"Madd Lazim in sura openings"},
+  35:{de:"Waqf Jaiz ج",                en:"Waqf Jaiz ج"},
+  36:{de:"Waqf Hasan صلى",             en:"Waqf Hasan صلى"},
+  37:{de:"Waqf Kafee قلى",             en:"Waqf Kafee قلى"},
+  38:{de:"Waqf Mamnoo لا",             en:"Waqf Mamnoo لا"},
+  39:{de:"Waqf Lazim م und Saktah س",  en:"Waqf Lazim م and Saktah س"},
+  40:{de:"Muanaqah ۛ",                 en:"Muanaqah ۛ"}
 };
+
 
 /* ==========================================================================
    Sprache
    ========================================================================== */
-const RULE = {
-  de:{tafkheem:"Tafchīm",qalqala:"Qalqala",idgham:"Idghām",ikhfa:"Ichfāʾ",iqlab:"Iqlāb",madd:"Madd",waqf:"Waqf"},
-  en:{tafkheem:"Tafkhīm",qalqala:"Qalqalah",idgham:"Idghām",ikhfa:"Ikhfāʾ",iqlab:"Iqlāb",madd:"Madd",waqf:"Waqf"}
-};
+/* Die arabischen Begriffe werden in beiden Sprachen gleich geschrieben, an
+   der englischen Umschrift entlang: langes ī als „ee", خ als „kh", ohne
+   diakritische Zeichen. */
+const RULE = {tafkheem:"Tafkheem", qalqala:"Qalqalah", idgham:"Idgham",
+              ikhfa:"Ikhfa", iqlab:"Iqlab", madd:"Madd", waqf:"Waqf"};
 
 const T = {
   de:{
@@ -460,60 +462,62 @@ function maddQuestion(x, l){
 }
 
 function questionText(x, l){
-  const R = RULE[l][x.rule], p = x.pattern;
-  const mitMuster = s => p ? `${s} <span class="sep">(</span>${patternHTML(p)}<span class="sep">)</span>` : s;
+  /* Das Muster steht nicht hinter der Frage — es verriete einen Teil der
+     Antwort. Wo ein Halt-Zeichen die Frage überhaupt erst bestimmt, steht es
+     im Satz selbst. */
+  const R = RULE[x.rule], p = x.pattern;
   if (x.rule === "madd"){
     const q = maddQuestion(x, l);
-    if (q) return mitMuster(esc(q));
+    if (q) return esc(q);
   }
   const vorgabe = (x.subject && x.subject.text) || "";
   const mitVorgabe = vorgabe && vorgabe !== "اختر";
   if (l === "de") switch (x.question_type){
-    case "has_rule":             return mitMuster(`Enthält dieses Wort ein ${R}?`);
-    case "count_rule":           return mitMuster(`Wie oft kommt ${R} vor?`);
+    case "has_rule":             return `Enthält dieses Wort ein ${R}?`;
+    case "count_rule":           return `Wie oft kommt ${R} vor?`;
     case "match_rule":           return mitVorgabe
-      ? mitMuster(`Welche der folgenden Wörter bilden mit diesem ein ${R}?`)
-      : mitMuster(`Markiere alle Wörter mit ${R}.`);
+      ? `Welche der folgenden Wörter bilden mit diesem ein ${R}?`
+      : `Markiere alle Wörter mit ${R}.`;
     case "match_pattern":        return `Ordne jedes Wort seinem ${R}-Muster zu.`;
-    case "which_letter":         return mitMuster(`Welcher Buchstabe löst das ${R} aus?`);
-    case "vowel_before_letter":  return mitMuster(`Welcher Vokal steht vor dem ${R}-Buchstaben?`);
-    case "vowels_before_letter": return mitMuster(`Welche Vokale stehen vor den ${R}-Buchstaben?`);
-    case "vowel_on_letter":      return mitMuster(`Welcher Vokal steht auf dem ${R}-Buchstaben?`);
-    case "vowels_on_letter":     return mitMuster(`Welche Vokale stehen auf den ${R}-Buchstaben?`);
-    case "position_in_word":     return mitMuster(`An welcher Stelle im Wort steht das ${R}?`);
-    case "mark_rule_in_verse":   return mitMuster(`Markiere jede Stelle im Vers, an der ${R} vorkommt.`);
+    case "which_letter":         return `Welcher Buchstabe löst das ${R} aus?`;
+    case "vowel_before_letter":  return `Welcher Vokal steht vor dem ${R}-Buchstaben?`;
+    case "vowels_before_letter": return `Welche Vokale stehen vor den ${R}-Buchstaben?`;
+    case "vowel_on_letter":      return `Welcher Vokal steht auf dem ${R}-Buchstaben?`;
+    case "vowels_on_letter":     return `Welche Vokale stehen auf den ${R}-Buchstaben?`;
+    case "position_in_word":     return `An welcher Stelle im Wort steht das ${R}?`;
+    case "mark_rule_in_verse":   return `Markiere jede Stelle im Vers, an der ${R} vorkommt.`;
     case "identify_waqf_sign":   return p === "ۛ"
-      ? `Muʿānaqa ${patternHTML("ۛ")} — an welchem der beiden Wörter darf angehalten werden? <span class="sep">(nur an einer der beiden Stellen, nicht an beiden)</span>`
-      : mitMuster(`Welches Waqf-Zeichen steht in diesem Vers?`);
+      ? `Muanaqah ${patternHTML("ۛ")} — an welchem der beiden Wörter darf angehalten werden? <span class="sep">(nur an einer der beiden Stellen, nicht an beiden)</span>`
+      : `Welches Waqf-Zeichen steht in diesem Vers?`;
     case "mark_waqf_optional":        return `Markiere jedes Wort vor einem freiwilligen Halt ${patternHTML(p)}.`;
     case "mark_waqf_better_continue": return `Markiere jedes Wort, an dem besser weitergelesen wird ${patternHTML(p)}.`;
     case "mark_waqf_better_pause":    return `Markiere jedes Wort, an dem besser angehalten wird ${patternHTML(p)}.`;
     case "mark_waqf_forbidden":       return `Markiere jedes Wort, an dem der Halt verboten ist ${patternHTML(p)}.`;
-    case "mark_waqf_mandatory":       return `An welchen Stellen darf man nicht ohne Anhalten weiterlesen? ${patternHTML(p)}`;
+    case "mark_waqf_mandatory":       return `An welchen Stellen darf man nicht ohne Anhalten weiterlesen?`;
     default: return esc(x.question_type);
   }
   switch (x.question_type){
-    case "has_rule":             return mitMuster(`Does this word contain ${R}?`);
-    case "count_rule":           return mitMuster(`How often does ${R} occur?`);
+    case "has_rule":             return `Does this word contain ${R}?`;
+    case "count_rule":           return `How often does ${R} occur?`;
     case "match_rule":           return mitVorgabe
-      ? mitMuster(`Which of these words form ${R} with it?`)
-      : mitMuster(`Mark every word with ${R}.`);
+      ? `Which of these words form ${R} with it?`
+      : `Mark every word with ${R}.`;
     case "match_pattern":        return `Match each word to its ${R} pattern.`;
-    case "which_letter":         return mitMuster(`Which letter triggers the ${R}?`);
-    case "vowel_before_letter":  return mitMuster(`Which vowel comes before the ${R} letter?`);
-    case "vowels_before_letter": return mitMuster(`Which vowels come before the ${R} letters?`);
-    case "vowel_on_letter":      return mitMuster(`Which vowel is on the ${R} letter?`);
-    case "vowels_on_letter":     return mitMuster(`Which vowels are on the ${R} letters?`);
-    case "position_in_word":     return mitMuster(`Where in the word is the ${R}?`);
-    case "mark_rule_in_verse":   return mitMuster(`Mark every place in the verse where ${R} occurs.`);
+    case "which_letter":         return `Which letter triggers the ${R}?`;
+    case "vowel_before_letter":  return `Which vowel comes before the ${R} letter?`;
+    case "vowels_before_letter": return `Which vowels come before the ${R} letters?`;
+    case "vowel_on_letter":      return `Which vowel is on the ${R} letter?`;
+    case "vowels_on_letter":     return `Which vowels are on the ${R} letters?`;
+    case "position_in_word":     return `Where in the word is the ${R}?`;
+    case "mark_rule_in_verse":   return `Mark every place in the verse where ${R} occurs.`;
     case "identify_waqf_sign":   return p === "ۛ"
-      ? `Muʿānaqa ${patternHTML("ۛ")} — at which of the two words may you pause? <span class="sep">(at one of them, not at both)</span>`
-      : mitMuster(`Which waqf sign is in this verse?`);
+      ? `Muanaqah ${patternHTML("ۛ")} — at which of the two words may you pause? <span class="sep">(at one of them, not at both)</span>`
+      : `Which waqf sign is in this verse?`;
     case "mark_waqf_optional":        return `Mark every word before an optional pause ${patternHTML(p)}.`;
     case "mark_waqf_better_continue": return `Mark every word where it is better to read on ${patternHTML(p)}.`;
     case "mark_waqf_better_pause":    return `Mark every word where it is better to pause ${patternHTML(p)}.`;
     case "mark_waqf_forbidden":       return `Mark every word where pausing is forbidden ${patternHTML(p)}.`;
-    case "mark_waqf_mandatory":       return `Where may you not read on without pausing? ${patternHTML(p)}`;
+    case "mark_waqf_mandatory":       return `Where may you not read on without pausing?`;
     default: return esc(x.question_type);
   }
 }
@@ -598,7 +602,7 @@ function blockOf(n){ return BLOCKS.find(b => n >= b.von && n <= b.bis); }
 function drawRail(){
   const l = S.lang, t = T[l];
   document.documentElement.lang = t.htmlLang;
-  document.title = l === "de" ? "Tajwīd — App-Vorschau" : "Tajwīd — app preview";
+  document.title = l === "de" ? "Tajweed — App-Vorschau" : "Tajweed — app preview";
   $("brandSub").textContent = t.sub;
   $("capView").textContent = t.view;
   $("solveLabel").textContent = t.solve;
@@ -613,7 +617,7 @@ function drawRail(){
   let aktiv = null;
   BLOCKS.forEach(b => {
     const box = el("div", "block");
-    box.append(el("div", "cap", `<span>${esc(b[l])}</span><b>${b.von}–${b.bis}</b>`));
+    box.append(el("div", "cap", `<span>${esc(b.name)}</span><b>${b.von}–${b.bis}</b>`));
     for (let n = b.von; n <= b.bis; n++){
       const btn = el("button", "lesson",
         `<span class="no">${n}</span><span class="tt">${esc(LESSONS[n][l])}</span>`);
@@ -690,7 +694,7 @@ function draw(){
 
   const x = S.aufgaben[S.i];
   const zeigen = S.solve;
-  $("barRule").textContent = RULE[l][x.rule];
+  $("barRule").textContent = RULE[x.rule];
   scr.innerHTML = "";
   scr.append(el("h2", "q", questionText(x, l)));
 

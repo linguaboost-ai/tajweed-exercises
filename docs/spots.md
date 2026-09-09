@@ -2,7 +2,7 @@
 
 Der Authoring Guide beschreibt, **was** die richtige Antwort ist — eine Zahl,
 ein Vokal, ein Ja, eine Options-ID. Er beschreibt nicht, **wo** im Wort oder im
-Vers die Regel greift. Für die Zählaufgaben („Wie oft kommt Tafchīm vor?") und
+Vers die Regel greift. Für die Zählaufgaben („Wie oft kommt Tafkheem vor?") und
 die Ja/Nein-Aufgaben ließe sich die Antwort im Frontend deshalb bisher nicht
 zeigen; nur die Markieraufgaben nennen die Stellen selbst, weil ihr Schlüssel
 aus Textstücken besteht.
@@ -70,15 +70,15 @@ auslösenden Buchstaben, jede richtige Option die Stelle in sich selbst.
 Nicht aus dem `pattern` — das ist eine Anzeigehilfe für den Titel und an
 einigen Stellen ungenau —, sondern aus der Regel selbst:
 
-* **Qalqala** aus dem Sukūn im Wort bzw. dem Wortende vor der Versnummer.
-* **Idghām, Ichfāʾ, Iqlāb** aus `tools/nun_rules.py`.
+* **Qalqalah** aus dem Sukoon im Wort bzw. dem Wortende vor der Versnummer.
+* **Idgham, Ikhfa, Iqlab** aus `tools/nun_rules.py`.
 * **Waqf** aus den Halt-Zeichen; bei den Markieraufgaben aus dem Schlüssel.
-* **Tafchīm** aus den Buchstaben der bis dahin unterrichteten Lektionen
-  (1 ق, 2 ط, 3 خ, 4 غ, 5 ض, 6 ظ, 7 ص, 8 ر, 9 das Lām in „Allāh"), das Rā nach
+* **Tafkheem** aus den Buchstaben der bis dahin unterrichteten Lektionen
+  (1 ق, 2 ط, 3 خ, 4 غ, 5 ض, 6 ظ, 7 ص, 8 ر, 9 das Lam in „Allah"), das Ra nach
   seinem Vokal.
 * **Madd** aus dem Schriftbild: Dehnungsbuchstabe mit Hamza im Wort
-  (muttaṣil), am Wortende vor einem Hamza (munfaṣil), vor Shadda oder Sukūn
-  (lāzim), und das Hāʾ der Ṣila vor einem Hamza.
+  (Muttasil), am Wortende vor einem Hamza (Munfasil), vor Shadda oder Sukoon
+  (Lazim), und das Ha der Silah vor einem Hamza.
 
 Anschließend wird jede Herleitung gegen den Antwortschlüssel geprüft: die
 Anzahl bei den Zählaufgaben, Ja/Nein, die Lage im Wort, die Vokale, die

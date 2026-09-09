@@ -1,8 +1,8 @@
-# Qalqala: korrigierte Antwortschlüssel
+# Qalqalah: korrigierte Antwortschlüssel
 
-Gefragt ist der Vokal **vor** dem Qalqala-Buchstaben. Bei Versen mit mehreren
-Qalqala-Stellen war nur die erste Stelle im Schlüssel; die Stelle am Versende
-(Qalqala beim Anhalten) fehlte. Hergeleitet aus dem Verstext, nicht aus dem
+Gefragt ist der Vokal **vor** dem Qalqalah-Buchstaben. Bei Versen mit mehreren
+Qalqalah-Stellen war nur die erste Stelle im Schlüssel; die Stelle am Versende
+(Qalqalah beim Anhalten) fehlte. Hergeleitet aus dem Verstext, nicht aus dem
 Muster im Aufgabentitel — das Muster zeigt die Fundstellen, nicht die Antwort.
 
 ## Aufgabe 582 (Lektion 10, Muster `َدْ:دِ`)

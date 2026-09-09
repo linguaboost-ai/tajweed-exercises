@@ -1,8 +1,8 @@
-# Qalqala: fehlende Fundstellen in Zähl- und Ja/Nein-Aufgaben
+# Qalqalah: fehlende Fundstellen in Zähl- und Ja/Nein-Aufgaben
 
-Qalqala entsteht am Sukūn im Wortinneren (ṣughrā) und beim Anhalten am
-Ende (kubrā) — dort verliert der Endbuchstabe seinen Vokal. Beide Fälle
-zählen. Geprüft wurden alle Qalqala-Aufgaben mit Zähl- oder Ja/Nein-Frage;
+Qalqalah entsteht am Sukoon im Wortinneren (Sughra) und beim Anhalten am
+Ende (Kubra) — dort verliert der Endbuchstabe seinen Vokal. Beide Fälle
+zählen. Geprüft wurden alle Qalqalah-Aufgaben mit Zähl- oder Ja/Nein-Frage;
 geändert wurden nur die folgenden.
 
 ## Aufgabe 735 (Lektion 12, count_rule)
@@ -13,7 +13,7 @@ geändert wurden nur die folgenden.
 
 | Fundstelle | Buchstabe | Art | Begründung |
 |---|---|---|---|
-| ٱلسِّدْرَةَ | د | Sukūn im Wort | س mit Kasra |
+| ٱلسِّدْرَةَ | د | Sukoon im Wort | س mit Kasra |
 
 ## Aufgabe 831 (Lektion 13, count_rule)
 
