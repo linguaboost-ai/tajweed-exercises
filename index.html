@@ -442,89 +442,19 @@ const T = {
 };
 
 /* ==========================================================================
-   Fragetext — die Formulierung entsteht hier, nicht im Datensatz
-   ========================================================================== */
-function maddQuestion(x, l){
-  const mehr = (((x.subject && x.subject.text) || "").trim().split(/\s+/) || []).length > 1;
-  if (l === "de") switch (x.question_type){
-    case "has_rule": return mehr
-      ? "Enthalten diese Wörter eine Dehnung, die länger als zwei Einheiten ist?"
-      : "Enthält dieses Wort eine Dehnung, die länger als zwei Einheiten ist?";
-    case "count_rule": return "Wie oft kommt eine Dehnung vor, die länger als zwei Einheiten ist?";
-    case "match_rule": return "Welche Wörter enthalten eine Dehnung, die länger als zwei Einheiten ist?";
-    case "mark_rule_in_verse": return "Markiere jede Stelle im Vers, an der länger als zwei Einheiten gedehnt wird.";
-    default: return null;
-  }
-  switch (x.question_type){
-    case "has_rule": return mehr
-      ? "Do these words contain a prolongation longer than two counts?"
-      : "Does this word contain a prolongation longer than two counts?";
-    case "count_rule": return "How often does a prolongation longer than two counts occur?";
-    case "match_rule": return "Which words contain a prolongation longer than two counts?";
-    case "mark_rule_in_verse": return "Mark every place in the verse prolonged longer than two counts.";
-    default: return null;
-  }
-}
+   Fragetext — die Formulierungen stehen in questions.json, nicht hier
+   ==========================================================================
+   Jede Aufgabe nennt nur ihre question_id; den Text dazu bearbeitet der
+   Lehrer über fragen/. {rule} wird zum Namen der Regel, {sign} zum
+   Halt-Zeichen der Aufgabe. */
+let FRAGEN = null;
 
 function questionText(x, l){
-  /* Das Muster steht nicht hinter der Frage — es verriete einen Teil der
-     Antwort. Wo ein Halt-Zeichen die Frage überhaupt erst bestimmt, steht es
-     im Satz selbst. */
-  const R = RULE[x.rule], p = x.pattern;
-  if (x.rule === "madd"){
-    const q = maddQuestion(x, l);
-    if (q) return esc(q);
-  }
-  const vorgabe = (x.subject && x.subject.text) || "";
-  const mitVorgabe = vorgabe && vorgabe !== "اختر";
-  if (l === "de") switch (x.question_type){
-    case "has_rule":             return `Enthält dieses Wort ein ${R}?`;
-    case "count_rule":           return `Wie oft kommt ${R} vor?`;
-    case "match_rule":           return mitVorgabe
-      ? `Welche der folgenden Wörter bilden mit diesem ein ${R}?`
-      : `Markiere alle Wörter mit ${R}.`;
-    case "match_pattern":        return `Ordne jedes Wort seinem ${R}-Muster zu.`;
-    case "which_letter":         return `Welcher Buchstabe löst das ${R} aus?`;
-    case "vowel_before_letter":  return `Welcher Vokal steht vor dem ${R}-Buchstaben?`;
-    case "vowels_before_letter": return `Welche Vokale stehen vor den ${R}-Buchstaben?`;
-    case "vowel_on_letter":      return `Welcher Vokal steht auf dem ${R}-Buchstaben?`;
-    case "vowels_on_letter":     return `Welche Vokale stehen auf den ${R}-Buchstaben?`;
-    case "position_in_word":     return `An welcher Stelle im Wort steht das ${R}?`;
-    case "mark_rule_in_verse":   return `Markiere jede Stelle im Vers, an der ${R} vorkommt.`;
-    case "identify_waqf_sign":   return p === "ۛ"
-      ? `Muanaqah ${patternHTML("ۛ")} — an welchem der beiden Wörter darf angehalten werden? <span class="sep">(nur an einer der beiden Stellen, nicht an beiden)</span>`
-      : `Welches Waqf-Zeichen steht in diesem Vers?`;
-    case "mark_waqf_optional":        return `Markiere jedes Wort vor einem freiwilligen Halt ${patternHTML(p)}.`;
-    case "mark_waqf_better_continue": return `Markiere jedes Wort, an dem besser weitergelesen wird ${patternHTML(p)}.`;
-    case "mark_waqf_better_pause":    return `Markiere jedes Wort, an dem besser angehalten wird ${patternHTML(p)}.`;
-    case "mark_waqf_forbidden":       return `Markiere jedes Wort, an dem der Halt verboten ist ${patternHTML(p)}.`;
-    case "mark_waqf_mandatory":       return `An welchen Stellen darf man nicht ohne Anhalten weiterlesen?`;
-    default: return esc(x.question_type);
-  }
-  switch (x.question_type){
-    case "has_rule":             return `Does this word contain ${R}?`;
-    case "count_rule":           return `How often does ${R} occur?`;
-    case "match_rule":           return mitVorgabe
-      ? `Which of these words form ${R} with it?`
-      : `Mark every word with ${R}.`;
-    case "match_pattern":        return `Match each word to its ${R} pattern.`;
-    case "which_letter":         return `Which letter triggers the ${R}?`;
-    case "vowel_before_letter":  return `Which vowel comes before the ${R} letter?`;
-    case "vowels_before_letter": return `Which vowels come before the ${R} letters?`;
-    case "vowel_on_letter":      return `Which vowel is on the ${R} letter?`;
-    case "vowels_on_letter":     return `Which vowels are on the ${R} letters?`;
-    case "position_in_word":     return `Where in the word is the ${R}?`;
-    case "mark_rule_in_verse":   return `Mark every place in the verse where ${R} occurs.`;
-    case "identify_waqf_sign":   return p === "ۛ"
-      ? `Muanaqah ${patternHTML("ۛ")} — at which of the two words may you pause? <span class="sep">(at one of them, not at both)</span>`
-      : `Which waqf sign is in this verse?`;
-    case "mark_waqf_optional":        return `Mark every word before an optional pause ${patternHTML(p)}.`;
-    case "mark_waqf_better_continue": return `Mark every word where it is better to read on ${patternHTML(p)}.`;
-    case "mark_waqf_better_pause":    return `Mark every word where it is better to pause ${patternHTML(p)}.`;
-    case "mark_waqf_forbidden":       return `Mark every word where pausing is forbidden ${patternHTML(p)}.`;
-    case "mark_waqf_mandatory":       return `Where may you not read on without pausing?`;
-    default: return esc(x.question_type);
-  }
+  const e = FRAGEN && FRAGEN[x.question_id];
+  if (!e) return esc(x.question_id || x.question_type || "");
+  return esc(e[l] || e.de)
+    .split("{rule}").join(esc(RULE[x.rule]))
+    .split("{sign}").join(patternHTML(x.pattern));
 }
 
 /* ==========================================================================
@@ -640,6 +570,14 @@ function drawRail(){
 /* ==========================================================================
    Aufgaben laden
    ========================================================================== */
+async function ladeFragen(){
+  try {
+    const r = await fetch("questions.json");
+    const d = await r.json();
+    FRAGEN = Object.fromEntries(d.questions.map(q => [q.id, q]));
+  } catch (e){ FRAGEN = {}; }
+}
+
 async function loadBlock(file){
   if (cache.has(file)) return cache.get(file);
   const p = fetch(`json/${file}.json`).then(r => {
@@ -651,6 +589,7 @@ async function loadBlock(file){
 }
 
 async function openLesson(n){
+  if (!FRAGEN) await ladeFragen();
   S.lesson = n;
   store.set("tajwid.lesson", String(n));
   drawRail();

@@ -10,6 +10,13 @@ Zwei statische Seiten aus einem Repository, Deployment über Vercel:
 * **`/browser/`** — der Aufgabenbrowser zum Prüfen und Durchsuchen aller 2037
   Aufgaben mit Filtern, Suche und Auffälligkeitsanzeige. Er trägt den
   Datensatz eingebettet; `json/` wird daraus erzeugt.
+* **`/fragen/`** — die 24 Fragestellungen zum Bearbeiten, jede mit einem
+  einfachen Beispiel. Wer dort Texte ändert, bekommt über „JSON kopieren" ein
+  fertiges `questions.json` zurück.
+
+Eine Aufgabe trägt keinen Fragetext, sondern nur ihre `question_id`; die
+Formulierung steht in `questions.json` und wird von beiden Seiten gelesen.
+`{rule}` wird darin zum Namen der Regel, `{sign}` zum Halt-Zeichen.
 
 ## Korrekturen gegenüber der Fassung auf übung.qsk-methode.de
 
@@ -113,7 +120,10 @@ Zwei statische Seiten aus einem Repository, Deployment über Vercel:
 
     index.html          App-Vorschau (lädt die Aufgaben aus json/)
     browser/index.html  Aufgabenbrowser, mit dem Datensatz darin
+    fragen/index.html   die Fragestellungen zum Bearbeiten
+    questions.json      die Fragetexte, deutsch und englisch
     json/               die 2037 Aufgaben nach dem Authoring Guide, 7 Dateien
+    icons/              Logo und Favicon
     fonts/              Hausschrift (Hafs) und Amiri Quran für die Versnummer
     tools/              Korrekturskripte, angewandt auf browser/index.html
     docs/               Begründung der inhaltlichen Korrekturen
@@ -122,7 +132,11 @@ Alle Skripte in `tools/` sind idempotent und dokumentieren im Kopfkommentar,
 was genau sie ändern. `tools/add_verse_numbers.py` gleicht die Aufgabentexte
 mit dem Korantext ab (`quran-json`, Tanzil/Uthmani).
 `tools/export_json.py` schreibt `json/` neu und prüft vorher die Prüfliste des
-Authoring Guide.
+Authoring Guide. `tools/questions.py` entscheidet an einer einzigen Stelle,
+welche Aufgabe welche Formulierung bekommt; `tools/add_question_ids.py` trägt
+das Ergebnis in den Datensatz ein und `tools/make_questions.py` schreibt daraus
+`questions.json` und `fragen/index.html` — vorhandene Texte bleiben dabei
+erhalten. `tools/make_icons.py` zeichnet das Logo.
 
 ## Deployment
 

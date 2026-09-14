@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="../icons/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="../icons/favicon-32.png" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="../icons/apple-touch-icon.png">
+<meta name="theme-color" content="#1B2560">
+<title>Fragestellungen bearbeiten</title>
+<style>
+@font-face{font-family:'Hafs';src:url('../fonts/hafs-uthmanic.woff2') format('woff2');font-display:swap}
+:root{--ground:#F4F0EB;--surface:#FFFFFF;--surface-2:#E9E8F1;--surface-3:#F3E9DD;
+ --ink:#363636;--ink-2:#6D6D6D;--ink-3:#9B9B9F;--line:#D5D4DF;--line-strong:#C1C0C9;
+ --accent:#26247B;--accent-soft:#D0CCF0;--ok:#4E8A56;--ok-line:#63C36F;--ok-bg:#E9F1EE;
+ --gold-soft:#E4DCC9;--radius:1rem;--pill:9999px;color-scheme:light}
+*{box-sizing:border-box}
+body{margin:0;background:var(--ground);color:var(--ink);
+ font:14px/1.55 -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+ -webkit-font-smoothing:antialiased}
+.ar{font-family:'Hafs','Amiri',serif;direction:rtl;unicode-bidi:isolate}
+.wrap{max-width:940px;margin:0 auto;padding:28px 22px 80px}
+header.top{display:flex;gap:16px;align-items:flex-start;flex-wrap:wrap;margin-bottom:8px}
+h1{margin:0;font-size:20px}
+.lead{color:var(--ink-2);max-width:62ch;margin:8px 0 0}
+.lead code{background:var(--surface-2);border-radius:5px;padding:1px 5px;font-size:12.5px}
+.werkzeug{position:sticky;top:0;z-index:5;display:flex;gap:9px;flex-wrap:wrap;align-items:center;
+ margin:20px 0 26px;padding:11px 0;background:var(--ground);border-bottom:1px solid var(--line)}
+button{font:inherit;cursor:pointer;border:1.5px solid var(--line);background:var(--surface);
+ color:var(--ink);border-radius:var(--pill);padding:8px 16px;font-weight:600;font-size:13px}
+button.primary{background:var(--accent);border-color:var(--accent);color:#fff}
+button:hover{border-color:var(--line-strong)}
+.stand{color:var(--ink-3);font-size:12.5px;margin-left:auto}
+h2{margin:34px 0 12px;font-size:12px;letter-spacing:.13em;text-transform:uppercase;color:var(--ink-3)}
+.karte{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);
+ padding:16px 18px;margin-bottom:14px}
+.karte header{display:flex;gap:12px;align-items:baseline}
+.kid{font-family:ui-monospace,Menlo,Consolas,monospace;font-size:13px;font-weight:600;
+ color:var(--accent);background:var(--accent-soft);border-radius:7px;padding:2px 9px}
+.zahl{margin-left:auto;color:var(--ink-3);font-size:12px;font-variant-numeric:tabular-nums}
+.wann{margin:10px 0 2px;color:var(--ink-2)}
+.gilt{margin:0 0 12px;color:var(--ink-3);font-size:12.5px}
+.gilt b{color:var(--ink-2);font-weight:600}
+label{display:block;margin-bottom:9px;font-size:11px;font-weight:700;letter-spacing:.09em;
+ text-transform:uppercase;color:var(--ink-3)}
+textarea{display:block;width:100%;margin-top:5px;padding:9px 11px;border:1.5px solid var(--line);
+ border-radius:10px;font-family:inherit;font-size:15px;line-height:1.45;
+ color:var(--ink);background:var(--surface);resize:vertical}
+textarea:focus{outline:2px solid var(--accent);outline-offset:-1px;border-color:var(--accent)}
+.karte.geaendert{border-color:var(--accent)}
+.karte.geaendert .kid::after{content:" · geändert";font-weight:400}
+.bsp{margin-top:14px;padding:14px 16px;background:var(--surface-3);
+ border:1px solid var(--gold-soft);border-radius:12px}
+.frage{margin:0 0 10px;font-weight:600}
+.subj{margin:6px 0 12px;font-size:25px;line-height:2;text-align:center}
+.opts{list-style:none;display:flex;flex-wrap:wrap;gap:7px;margin:0;padding:0}
+.opts li{border:1.5px solid var(--line);background:var(--surface);border-radius:10px;
+ padding:6px 13px;font-size:14px}
+.opts li .ar{font-size:19px}
+.opts li.r{border-color:var(--ok-line);background:var(--ok-bg);color:var(--ok);font-weight:600}
+.opts li.r::after{content:" ✓"}
+.paare{list-style:none;margin:0;padding:0;display:grid;gap:6px}
+.paare li{display:flex;align-items:center;gap:10px;background:var(--surface);
+ border:1px solid var(--line);border-radius:10px;padding:6px 12px}
+.paare .ar{font-size:19px}
+.pfeil{color:var(--ink-3)}
+.loesung{margin:0;color:var(--ok);font-weight:600}
+.loesung .ar{font-size:19px}
+.quelle{margin:10px 0 0;color:var(--ink-3);font-size:11.5px}
+dialog{border:1px solid var(--line);border-radius:var(--radius);padding:0;max-width:min(92vw,820px);width:100%}
+dialog::backdrop{background:rgba(30,28,60,.34)}
+dialog .inner{padding:18px 20px}
+dialog textarea{height:56vh;font-family:ui-monospace,Menlo,Consolas,monospace;font-size:12px;line-height:1.5}
+</style>
+<script>const KATALOG = {"note": "Die Fragetexte der App. Eine Aufgabe trägt keinen Text, sondern nur ihre question_id; die Formulierung steht hier. Bearbeitet werden die Felder de und en, alles andere ist aus den Aufgaben abgeleitet und wird überschrieben.", "placeholders": {"rule": "Name der Regel (Tafkheem, Qalqalah, Idgham, Ikhfa, Iqlab, Madd, Waqf)", "sign": "das Halt-Zeichen der Aufgabe, z. B. ◌ۚ"}, "rules": {"tafkheem": "Tafkheem", "qalqala": "Qalqalah", "idgham": "Idgham", "ikhfa": "Ikhfa", "iqlab": "Iqlab", "madd": "Madd", "waqf": "Waqf"}, "questions": [{"id": "has_rule.word", "de": "Enthält dieses Wort ein {rule}?", "en": "Does this word contain {rule}?", "question_type": "has_rule", "task_type": ["yes_no"], "note": "Ja/Nein zu einem einzelnen Wort.", "rules": ["tafkheem", "qalqala", "idgham", "ikhfa", "iqlab"], "lessons": [1, 27], "count": 116, "example": 185}, {"id": "has_rule.phrase", "de": "Enthalten diese Wörter ein {rule}?", "en": "Do these words contain {rule}?", "question_type": "has_rule", "task_type": ["yes_no"], "note": "Ja/Nein zu zwei oder drei Wörtern — die Regel entsteht erst über die Wortgrenze hinweg.", "rules": ["tafkheem", "idgham", "ikhfa", "iqlab"], "lessons": [9, 28], "count": 195, "example": 912}, {"id": "has_rule.madd.word", "de": "Enthält dieses Wort eine Dehnung, die länger als zwei Einheiten ist?", "en": "Does this word contain a prolongation longer than two counts?", "question_type": "has_rule", "task_type": ["yes_no"], "note": "Ja/Nein beim Madd. Der Kurs fragt nicht nach dem natürlichen Langvokal, sondern nach der Dehnung darüber hinaus.", "rules": ["madd"], "lessons": [29, 33], "count": 104, "example": 1792}, {"id": "has_rule.madd.phrase", "de": "Enthalten diese Wörter eine Dehnung, die länger als zwei Einheiten ist?", "en": "Do these words contain a prolongation longer than two counts?", "question_type": "has_rule", "task_type": ["yes_no"], "note": "Dasselbe beim Madd über die Wortgrenze (Madd Munfasil).", "rules": ["madd"], "lessons": [31, 32], "count": 56, "example": 1946}, {"id": "count_rule", "de": "Wie oft kommt {rule} vor?", "en": "How often does {rule} occur?", "question_type": "count_rule", "task_type": ["select_count"], "note": "Anzahl der Fundstellen im Vers.", "rules": ["tafkheem", "qalqala", "idgham", "ikhfa", "iqlab"], "lessons": [1, 28], "count": 457, "example": 533}, {"id": "count_rule.madd", "de": "Wie oft kommt eine Dehnung vor, die länger als zwei Einheiten ist?", "en": "How often does a prolongation longer than two counts occur?", "question_type": "count_rule", "task_type": ["select_count"], "note": "Anzahl beim Madd.", "rules": ["madd"], "lessons": [29, 34], "count": 96, "example": 2121}, {"id": "vowel_on_letter", "de": "Welcher Vokal steht auf dem {rule}-Buchstaben?", "en": "Which vowel is on the {rule} letter?", "question_type": "vowel_on_letter", "task_type": ["select"], "note": "Ein Buchstabe im Wort.", "rules": ["tafkheem"], "lessons": [1, 9], "count": 61, "example": 18}, {"id": "vowels_on_letter", "de": "Welche Vokale stehen auf den {rule}-Buchstaben?", "en": "Which vowels are on the {rule} letters?", "question_type": "vowels_on_letter", "task_type": ["select"], "note": "Mehrere Buchstaben im Wort oder Vers.", "rules": ["tafkheem"], "lessons": [1, 9], "count": 155, "example": 74}, {"id": "vowel_before_letter", "de": "Welcher Vokal steht vor dem {rule}-Buchstaben?", "en": "Which vowel comes before the {rule} letter?", "question_type": "vowel_before_letter", "task_type": ["select"], "note": "Ein Buchstabe im Wort.", "rules": ["qalqala", "idgham", "ikhfa", "iqlab"], "lessons": [10, 28], "count": 70, "example": 594}, {"id": "vowels_before_letter", "de": "Welche Vokale stehen vor den {rule}-Buchstaben?", "en": "Which vowels come before the {rule} letters?", "question_type": "vowels_before_letter", "task_type": ["select"], "note": "Mehrere Buchstaben im Wort oder Vers.", "rules": ["qalqala"], "lessons": [10, 14], "count": 78, "example": 606}, {"id": "which_letter", "de": "Welcher Buchstabe löst das {rule} aus?", "en": "Which letter triggers the {rule}?", "question_type": "which_letter", "task_type": ["select"], "note": "Nach dem auslösenden Buchstaben.", "rules": ["ikhfa"], "lessons": [22, 23], "count": 9, "example": 1393}, {"id": "position_in_word", "de": "An welcher Stelle im Wort steht das {rule}?", "en": "Where in the word is the {rule}?", "question_type": "position_in_word", "task_type": ["select_position"], "note": "Anfang, Mitte oder Ende.", "rules": ["tafkheem", "qalqala"], "lessons": [1, 14], "count": 112, "example": 155}, {"id": "match_rule.prompt", "de": "Welche der folgenden Wörter bilden mit diesem ein {rule}?", "en": "Which of these words form {rule} with it?", "question_type": "match_rule", "task_type": ["match"], "note": "Mit Vorgabewort: gemeint ist die Verbindung aus Vorgabewort und Auswahlwort.", "rules": ["idgham", "ikhfa", "iqlab"], "lessons": [15, 28], "count": 150, "example": 1683}, {"id": "match_rule.list", "de": "Markiere alle Wörter mit {rule}. (Mehrfachauswahl möglich)", "en": "Mark every word with {rule}. (more than one may be correct)", "question_type": "match_rule", "task_type": ["match"], "note": "Ohne Vorgabewort: jedes Wort für sich.", "rules": ["ikhfa", "iqlab"], "lessons": [22, 27], "count": 11, "example": 1347}, {"id": "match_pattern", "de": "Ordne jedes Wort seinem {rule}-Muster zu.", "en": "Match each word to its {rule} pattern.", "question_type": "match_pattern", "task_type": ["matching"], "note": "Zuordnung Wort → Muster.", "rules": ["tafkheem", "qalqala", "ikhfa", "iqlab"], "lessons": [1, 27], "count": 116, "example": 4}, {"id": "mark_rule_in_verse", "de": "Markiere jede Stelle im Vers, an der {rule} vorkommt.", "en": "Mark every place in the verse where {rule} occurs.", "question_type": "mark_rule_in_verse", "task_type": ["mark_verse"], "note": "Der Lernende markiert im Vers selbst.", "rules": ["idgham", "ikhfa", "iqlab"], "lessons": [24, 28], "count": 74, "example": 1740}, {"id": "mark_rule_in_verse.madd", "de": "Markiere jede Stelle im Vers, an der länger als zwei Einheiten gedehnt wird.", "en": "Mark every place in the verse prolonged longer than two counts.", "question_type": "mark_rule_in_verse", "task_type": ["mark_verse"], "note": "Dasselbe beim Madd.", "rules": ["madd"], "lessons": [34, 34], "count": 1, "example": 2131}, {"id": "identify_waqf_sign", "de": "Welches Waqf-Zeichen steht in diesem Vers?", "en": "Which waqf sign is in this verse?", "question_type": "identify_waqf_sign", "task_type": ["select"], "note": "Mehrfachauswahl: genannt werden alle Zeichen, die im Vers stehen.", "rules": ["waqf"], "lessons": [35, 39], "count": 64, "example": 2289}, {"id": "identify_waqf_sign.muanaqah", "de": "Muanaqah {sign} — an welchem der beiden Wörter darf angehalten werden? (nur an einer der beiden Stellen, nicht an beiden)", "en": "Muanaqah {sign} — at which of the two words may you pause? (at one of them, not at both)", "question_type": "identify_waqf_sign", "task_type": ["select"], "note": "Das Zeichen steht doppelt; angehalten wird an einer der beiden Stellen.", "rules": ["waqf"], "lessons": [40, 40], "count": 16, "example": 2321}, {"id": "mark_waqf_optional", "de": "Markiere jedes Wort vor einem freiwilligen Halt {sign}.", "en": "Mark every word before an optional pause {sign}.", "question_type": "mark_waqf_optional", "task_type": ["mark_verse"], "note": "Lektion 35.", "rules": ["waqf"], "lessons": [35, 35], "count": 16, "example": 2151}, {"id": "mark_waqf_better_continue", "de": "Markiere jedes Wort, an dem besser weitergelesen wird {sign}.", "en": "Mark every word where it is better to read on {sign}.", "question_type": "mark_waqf_better_continue", "task_type": ["mark_verse"], "note": "Lektion 36.", "rules": ["waqf"], "lessons": [36, 36], "count": 16, "example": 2185}, {"id": "mark_waqf_better_pause", "de": "Markiere jedes Wort, an dem besser angehalten wird {sign}.", "en": "Mark every word where it is better to pause {sign}.", "question_type": "mark_waqf_better_pause", "task_type": ["mark_verse"], "note": "Lektion 37.", "rules": ["waqf"], "lessons": [37, 37], "count": 16, "example": 2217}, {"id": "mark_waqf_forbidden", "de": "Markiere jedes Wort, an dem der Halt verboten ist {sign}.", "en": "Mark every word where pausing is forbidden {sign}.", "question_type": "mark_waqf_forbidden", "task_type": ["mark_verse"], "note": "Lektion 38.", "rules": ["waqf"], "lessons": [38, 38], "count": 32, "example": 2242}, {"id": "mark_waqf_mandatory", "de": "An welchen Stellen darf man nicht ohne Anhalten weiterlesen?", "en": "Where may you not read on without pausing?", "question_type": "mark_waqf_mandatory", "task_type": ["mark_verse"], "note": "Lektion 39, Waqf Lazim und Saktah zusammen.", "rules": ["waqf"], "lessons": [39, 39], "count": 16, "example": 2273}]};</script>
+</head>
+<body>
+<div class="wrap">
+<header class="top">
+  <div>
+    <h1>Fragestellungen bearbeiten</h1>
+    <p class="lead">Jede Aufgabe trägt keinen Fragetext, sondern nur eine <code>question_id</code>.
+    Die Formulierung steht hier — eine je Zeile, für alle Regeln zugleich.
+    <code>{rule}</code> wird zur Regel der Aufgabe (Tafkheem, Qalqalah, Idgham, Ikhfa, Iqlab,
+    Madd, Waqf), <code>{sign}</code> zum Halt-Zeichen. Die Beispiele zeigen, wie die Frage
+    ankommt; die Vorschau ändert sich beim Tippen mit.</p>
+  </div>
+</header>
+<div class="werkzeug">
+  <button type="button" class="primary" id="kopieren">JSON kopieren</button>
+  <button type="button" id="laden">JSON herunterladen</button>
+  <button type="button" id="zeigen">JSON ansehen</button>
+  <button type="button" id="zuruecksetzen">Änderungen verwerfen</button>
+  <span class="stand" id="stand"></span>
+</div>
+<h2>Ja oder Nein</h2>
+
+<section class="karte" data-id="has_rule.word">
+  <header>
+    <code class="kid">has_rule.word</code>
+    <span class="zahl">116 Aufgaben</span>
+  </header>
+  <p class="wann">Ja/Nein zu einem einzelnen Wort.</p>
+  <p class="gilt"><b>Tafkheem · Qalqalah · Idgham · Ikhfa · Iqlab</b> · Lektion 1–27</p>
+  <label>Deutsch<textarea class="de" rows="2">Enthält dieses Wort ein {rule}?</textarea></label>
+  <label>English<textarea class="en" rows="2">Does this word contain {rule}?</textarea></label>
+  <div class="bsp">
+    <p class="frage" data-vorlage="Enthält dieses Wort ein {rule}?">Enthält dieses Wort ein Tafkheem?</p>
+    <p class="ar subj">هَدَى</p><ul class="opts"><li class=""><span class="">Ja</span></li><li class="r"><span class="">Nein</span></li></ul><p class="quelle">Aufgabe 185 · Einzelwort</p>
+  </div>
+</section>
+
+<section class="karte" data-id="has_rule.phrase">
+  <header>
+    <code class="kid">has_rule.phrase</code>
+    <span class="zahl">195 Aufgaben</span>
+  </header>
+  <p class="wann">Ja/Nein zu zwei oder drei Wörtern — die Regel entsteht erst über die Wortgrenze hinweg.</p>
+  <p class="gilt"><b>Tafkheem · Idgham · Ikhfa · Iqlab</b> · Lektion 9–28</p>
+  <label>Deutsch<textarea class="de" rows="2">Enthalten diese Wörter ein {rule}?</textarea></label>
+  <label>English<textarea class="en" rows="2">Do these words contain {rule}?</textarea></label>
+  <div class="bsp">
+    <p class="frage" data-vorlage="Enthalten diese Wörter ein {rule}?">Enthalten diese Wörter ein Idgham?</p>
+    <p class="ar subj">بَل لَّا</p><ul class="opts"><li class="r"><span class="">Ja</span></li><li class=""><span class="">Nein</span></li></ul><p class="quelle">Aufgabe 912 · Einzelwort</p>
+  </div>
+</section>
+
+<section class="karte" data-id="has_rule.madd.word">
+  <header>
+    <code class="kid">has_rule.madd.word</code>
+    <span class="zahl">104 Aufgaben</span>
+  </header>
+  <p class="wann">Ja/Nein beim Madd. Der Kurs fragt nicht nach dem natürlichen Langvokal, sondern nach der Dehnung darüber hinaus.</p>
+  <p class="gilt"><b>Madd</b> · Lektion 29–33</p>
+  <label>Deutsch<textarea class="de" rows="2">Enthält dieses Wort eine Dehnung, die länger als zwei Einheiten ist?</textarea></label>
+  <label>English<textarea class="en" rows="2">Does this word contain a prolongation longer than two counts?</textarea></label>
+  <div class="bsp">
+    <p class="frage" data-vorlage="Enthält dieses Wort eine Dehnung, die länger als zwei Einheiten ist?">Enthält dieses Wort eine Dehnung, die länger als zwei Einheiten ist?</p>
+    <p class="ar subj">جَآءَ</p><ul class="opts"><li class="r"><span class="">Ja</span></li><li class=""><span class="">Nein</span></li></ul><p class="quelle">Aufgabe 1792 · Einzelwort</p>
+  </div>
+</section>
+
+<section class="karte" data-id="has_rule.madd.phrase">
+  <header>
+    <code class="kid">has_rule.madd.phrase</code>
+    <span class="zahl">56 Aufgaben</span>
+  </header>
+  <p class="wann">Dasselbe beim Madd über die Wortgrenze (Madd Munfasil).</p>
+  <p class="gilt"><b>Madd</b> · Lektion 31–32</p>
+  <label>Deutsch<textarea class="de" rows="2">Enthalten diese Wörter eine Dehnung, die länger als zwei Einheiten ist?</textarea></label>
+  <label>English<textarea class="en" rows="2">Do these words contain a prolongation longer than two counts?</textarea></label>
+  <div class="bsp">
+    <p class="frage" data-vorlage="Enthalten diese Wörter eine Dehnung, die länger als zwei Einheiten ist?">Enthalten diese Wörter eine Dehnung, die länger als zwei Einheiten ist?</p>
+    <p class="ar subj">فِى أَيِّ</p><ul class="opts"><li class="r"><span class="">Ja</span></li><li class=""><span class="">Nein</span></li></ul><p class="quelle">Aufgabe 1946 · Einzelwort</p>
+  </div>
+</section>
+<h2>Anzahl</h2>
+
+<section class="karte" data-id="count_rule">
+  <header>
+    <code class="kid">count_rule</code>
+    <span class="zahl">457 Aufgaben</span>
+  </header>
+  <p class="wann">Anzahl der Fundstellen im Vers.</p>
+  <p class="gilt"><b>Tafkheem · Qalqalah · Idgham · Ikhfa · Iqlab</b> · Lektion 1–28</p>
+  <label>Deutsch<textarea class="de" rows="2">Wie oft kommt {rule} vor?</textarea></label>
+  <label>English<textarea class="en" rows="2">How often does {rule} occur?</textarea></label>
+  <div class="bsp">
+    <p class="frage" data-vorlage="Wie oft kommt {rule} vor?">Wie oft kommt Tafkheem vor?</p>
+    <p class="ar subj">فَسَيَقُولُونَ ٱللَّهُ</p><ul class="opts"><li class=""><span class="">0</span></li><li class=""><span class="">1</span></li><li class="r"><span class="">2</span></li><li class=""><span class="">3</span></li></ul><p class="quelle">Aufgabe 533 · Sure 10 : 31</p>
+  </div>
+</section>
+
+<section class="karte" data-id="count_rule.madd">
+  <header>
+    <code class="kid">count_rule.madd</code>
+    <span class="zahl">96 Aufgaben</span>
+  </header>
+  <p class="wann">Anzahl beim Madd.</p>
+  <p class="gilt"><b>Madd</b> · Lektion 29–34</p>
+  <label>Deutsch<textarea class="de" rows="2">Wie oft kommt eine Dehnung vor, die länger als zwei Einheiten ist?</textarea></label>
+  <label>English<textarea class="en" rows="2">How often does a prolongation longer than two counts occur?</textarea></label>
+  <div class="bsp">
+    <p class="frage" data-vorlage="Wie oft kommt eine Dehnung vor, die länger als zwei Einheiten ist?">Wie oft kommt eine Dehnung vor, die länger als zwei Einheiten ist?</p>
+    <p class="ar subj">صٓ</p><ul class="opts"><li class=""><span class="">0</span></li><li class="r"><span class="">1</span></li><li class=""><span class="">2</span></li><li class=""><span class="">3</span></li></ul><p class="quelle">Aufgabe 2121 · Sure 38 : 1</p>
+  </div>
+</section>
+<h2>Vokale und Stelle</h2>
+
+<section class="karte" data-id="vowel_on_letter">
+  <header>
+    <code class="kid">vowel_on_letter</code>
+    <span class="zahl">61 Aufgaben</span>
+  </header>
+  <p class="wann">Ein Buchstabe im Wort.</p>
+  <p class="gilt"><b>Tafkheem</b> · Lektion 1–9</p>
+  <label>Deutsch<textarea class="de" rows="2">Welcher Vokal steht auf dem {rule}-Buchstaben?</textarea></label>
+  <label>English<textarea class="en" rows="2">Which vowel is on the {rule} letter?</textarea></label>
+  <div class="bsp">
+    <p class="frage" data-vorlage="Welcher Vokal steht auf dem {rule}-Buchstaben?">Welcher Vokal steht auf dem Tafkheem-Buchstaben?</p>
+    <p class="ar subj">قَالَ</p><ul class="opts"><li class="r"><span class="ar">َ</span></li><li class=""><span class="ar">ُ</span></li><li class=""><span class="ar">ِ</span></li><li class=""><span class="ar">ْ</span></li><li class=""><span class="">kommt nicht vor</span></li></ul><p class="quelle">Aufgabe 18 · Einzelwort</p>
+  </div>
+</section>
+
+<section class="karte" data-id="vowels_on_letter">
+  <header>
+    <code class="kid">vowels_on_letter</code>
+    <span class="zahl">155 Aufgaben</span>
+  </header>
+  <p class="wann">Mehrere Buchstaben im Wort oder Vers.</p>
+  <p class="gilt"><b>Tafkheem</b> · Lektion 1–9</p>
+  <label>Deutsch<textarea class="de" rows="2">Welche Vokale stehen auf den {rule}-Buchstaben?</textarea></label>
+  <label>English<textarea class="en" rows="2">Which vowels are on the {rule} letters?</textarea></label>
+  <div class="bsp">
+    <p class="frage" data-vorlage="Welche Vokale stehen auf den {rule}-Buchstaben?">Welche Vokale stehen auf den Tafkheem-Buchstaben?</p>
+    <p class="ar subj">قُنُطَ</p><ul class="opts"><li class="r"><span class="ar">َ</span></li><li class="r"><span class="ar">ُ</span></li><li class=""><span class="ar">ِ</span></li><li class=""><span class="ar">ْ</span></li><li class=""><span class="">kommt nicht vor</span></li></ul><p class="quelle">Aufgabe 74 · Einzelwort</p>
+  </div>
+</section>
+
+<section class="karte" data-id="vowel_before_letter">
+  <header>
+    <code class="kid">vowel_before_letter</code>
+    <span class="zahl">70 Aufgaben</span>
+  </header>
+  <p class="wann">Ein Buchstabe im Wort.</p>
+  <p class="gilt"><b>Qalqalah · Idgham · Ikhfa · Iqlab</b> · Lektion 10–28</p>
+  <label>Deutsch<textarea class="de" rows="2">Welcher Vokal steht vor dem {rule}-Buchstaben?</textarea></label>
+  <label>English<textarea class="en" rows="2">Which vowel comes before the {rule} letter?</textarea></label>
+  <div class="bsp">
+    <p class="frage" data-vorlage="Welcher Vokal steht vor dem {rule}-Buchstaben?">Welcher Vokal steht vor dem Qalqalah-Buchstaben?</p>
+    <p class="ar subj">سِدْرٍ</p><ul class="opts"><li class=""><span class="ar">َ</span></li><li class=""><span class="ar">ُ</span></li><li class="r"><span class="ar">ِ</span></li><li class=""><span class="">kommt nicht vor</span></li></ul><p class="quelle">Aufgabe 594 · Einzelwort</p>
+  </div>
+</section>
+
+<section class="karte" data-id="vowels_before_letter">
+  <header>
+    <code class="kid">vowels_before_letter</code>
+    <span class="zahl">78 Aufgaben</span>
+  </header>
+  <p class="wann">Mehrere Buchstaben im Wort oder Vers.</p>
+  <p class="gilt"><b>Qalqalah</b> · Lektion 10–14</p>
+  <label>Deutsch<textarea class="de" rows="2">Welche Vokale stehen vor den {rule}-Buchstaben?</textarea></label>
+  <label>English<textarea class="en" rows="2">Which vowels come before the {rule} letters?</textarea></label>
+  <div class="bsp">
+    <p class="frage" data-vorlage="Welche Vokale stehen vor den {rule}-Buchstaben?">Welche Vokale stehen vor den Qalqalah-Buchstaben?</p>
+    <p class="ar subj">ٱللَّهُ ٱلصَّمَدُ ٢</p><ul class="opts"><li class="r"><span class="ar">َ</span></li><li class=""><span class="ar">ُ</span></li><li class=""><span class="ar">ِ</span></li><li class=""><span class="">kommt nicht vor</span></li></ul><p class="quelle">Aufgabe 606 · Sure 112 : 2</p>
+  </div>
+</section>
+
+<section class="karte" data-id="which_letter">
+  <header>
+    <code class="kid">which_letter</code>
+    <span class="zahl">9 Aufgaben</span>
+  </header>
+  <p class="wann">Nach dem auslösenden Buchstaben.</p>
+  <p class="gilt"><b>Ikhfa</b> · Lektion 22–23</p>
+  <label>Deutsch<textarea class="de" rows="2">Welcher Buchstabe löst das {rule} aus?</textarea></label>
+  <label>English<textarea class="en" rows="2">Which letter triggers the {rule}?</textarea></label>
+  <div class="bsp">
+    <p class="frage" data-vorlage="Welcher Buchstabe löst das {rule} aus?">Welcher Buchstabe löst das Ikhfa aus?</p>
+    <p class="ar subj">نَنسَخْ</p><ul class="opts"><li class=""><span class="ar">ز</span></li><li class="r"><span class="ar">س</span></li><li class=""><span class="ar">ش</span></li><li class=""><span class="ar">ص</span></li><li class=""><span class="">kommt nicht vor</span></li></ul><p class="quelle">Aufgabe 1393 · Einzelwort</p>
+  </div>
+</section>
+
+<section class="karte" data-id="position_in_word">
+  <header>
+    <code class="kid">position_in_word</code>
+    <span class="zahl">112 Aufgaben</span>
+  </header>
+  <p class="wann">Anfang, Mitte oder Ende.</p>
+  <p class="gilt"><b>Tafkheem · Qalqalah</b> · Lektion 1–14</p>
+  <label>Deutsch<textarea class="de" rows="2">An welcher Stelle im Wort steht das {rule}?</textarea></label>
+  <label>English<textarea class="en" rows="2">Where in the word is the {rule}?</textarea></label>
+  <div class="bsp">
+    <p class="frage" data-vorlage="An welcher Stelle im Wort steht das {rule}?">An welcher Stelle im Wort steht das Tafkheem?</p>
+    <p class="ar subj">خَافَ</p><ul class="opts"><li class="r"><span class="">Anfang</span></li><li class=""><span class="">Mitte</span></li><li class=""><span class="">Ende</span></li><li class=""><span class="">kommt nicht vor</span></li></ul><p class="quelle">Aufgabe 155 · Einzelwort</p>
+  </div>
+</section>
+<h2>Wörter auswählen</h2>
+
+<section class="karte" data-id="match_rule.prompt">
+  <header>
+    <code class="kid">match_rule.prompt</code>
+    <span class="zahl">150 Aufgaben</span>
+  </header>
+  <p class="wann">Mit Vorgabewort: gemeint ist die Verbindung aus Vorgabewort und Auswahlwort.</p>
+  <p class="gilt"><b>Idgham · Ikhfa · Iqlab</b> · Lektion 15–28</p>
+  <label>Deutsch<textarea class="de" rows="2">Welche der folgenden Wörter bilden mit diesem ein {rule}?</textarea></label>
+  <label>English<textarea class="en" rows="2">Which of these words form {rule} with it?</textarea></label>
+  <div class="bsp">
+    <p class="frage" data-vorlage="Welche der folgenden Wörter bilden mit diesem ein {rule}?">Welche der folgenden Wörter bilden mit diesem ein Iqlab?</p>
+    <p class="ar subj">يَن</p><ul class="opts"><li class=""><span class="ar">صُرُكُمْ</span></li><li class=""><span class="ar">طِقُونَ</span></li><li class=""><span class="ar">هَوْنَ</span></li><li class="r"><span class="">kommt nicht vor</span></li></ul><p class="quelle">Aufgabe 1683 · Einzelwort</p>
+  </div>
+</section>
+
+<section class="karte" data-id="match_rule.list">
+  <header>
+    <code class="kid">match_rule.list</code>
+    <span class="zahl">11 Aufgaben</span>
+  </header>
+  <p class="wann">Ohne Vorgabewort: jedes Wort für sich.</p>
+  <p class="gilt"><b>Ikhfa · Iqlab</b> · Lektion 22–27</p>
+  <label>Deutsch<textarea class="de" rows="2">Markiere alle Wörter mit {rule}. (Mehrfachauswahl möglich)</textarea></label>
+  <label>English<textarea class="en" rows="2">Mark every word with {rule}. (more than one may be correct)</textarea></label>
+  <div class="bsp">
+    <p class="frage" data-vorlage="Markiere alle Wörter mit {rule}. (Mehrfachauswahl möglich)">Markiere alle Wörter mit Ikhfa. (Mehrfachauswahl möglich)</p>
+    <ul class="opts"><li class="r"><span class="ar">يُنجِيكُم</span></li><li class="r"><span class="ar">أَندَادًا</span></li><li class="r"><span class="ar">تُنذِرْهُمْ</span></li><li class=""><span class="ar">أَنْهَارٌ</span></li><li class=""><span class="">kommt nicht vor</span></li></ul><p class="quelle">Aufgabe 1347 · Einzelwort</p>
+  </div>
+</section>
+<h2>Zuordnen</h2>
+
+<section class="karte" data-id="match_pattern">
+  <header>
+    <code class="kid">match_pattern</code>
+    <span class="zahl">116 Aufgaben</span>
+  </header>
+  <p class="wann">Zuordnung Wort → Muster.</p>
+  <p class="gilt"><b>Tafkheem · Qalqalah · Ikhfa · Iqlab</b> · Lektion 1–27</p>
+  <label>Deutsch<textarea class="de" rows="2">Ordne jedes Wort seinem {rule}-Muster zu.</textarea></label>
+  <label>English<textarea class="en" rows="2">Match each word to its {rule} pattern.</textarea></label>
+  <div class="bsp">
+    <p class="frage" data-vorlage="Ordne jedes Wort seinem {rule}-Muster zu.">Ordne jedes Wort seinem Tafkheem-Muster zu.</p>
+    <ul class="paare"><li><span class="ar">قَتَلَ</span><span class="pfeil">→</span><span class="ar">قَ</span></li><li><span class="ar">نَقِمَ</span><span class="pfeil">→</span><span class="ar">قِ</span></li><li><span class="ar">أُفُقَ</span><span class="pfeil">→</span><span class="ar">قُ</span></li><li><span class="ar">عَمِلَ</span><span class="pfeil">→</span><span class="ar">kein Muster</span></li></ul><p class="quelle">Aufgabe 4 · Einzelwort</p>
+  </div>
+</section>
+<h2>Im Vers markieren</h2>
+
+<section class="karte" data-id="mark_rule_in_verse">
+  <header>
+    <code class="kid">mark_rule_in_verse</code>
+    <span class="zahl">74 Aufgaben</span>
+  </header>
+  <p class="wann">Der Lernende markiert im Vers selbst.</p>
+  <p class="gilt"><b>Idgham · Ikhfa · Iqlab</b> · Lektion 24–28</p>
+  <label>Deutsch<textarea class="de" rows="2">Markiere jede Stelle im Vers, an der {rule} vorkommt.</textarea></label>
+  <label>English<textarea class="en" rows="2">Mark every place in the verse where {rule} occurs.</textarea></label>
+  <div class="bsp">
+    <p class="frage" data-vorlage="Markiere jede Stelle im Vers, an der {rule} vorkommt.">Markiere jede Stelle im Vers, an der Iqlab vorkommt.</p>
+    <p class="ar subj">كِرَامٍ بَرَرَةٍ ١٦</p><p class="loesung">Antwort: <span class="ar">كِرَامٍ بَرَرَةٍ</span></p><p class="quelle">Aufgabe 1740 · Sure 80 : 16</p>
+  </div>
+</section>
+
+<section class="karte" data-id="mark_rule_in_verse.madd">
+  <header>
+    <code class="kid">mark_rule_in_verse.madd</code>
+    <span class="zahl">1 Aufgaben</span>
+  </header>
+  <p class="wann">Dasselbe beim Madd.</p>
+  <p class="gilt"><b>Madd</b> · Lektion 34</p>
+  <label>Deutsch<textarea class="de" rows="2">Markiere jede Stelle im Vers, an der länger als zwei Einheiten gedehnt wird.</textarea></label>
+  <label>English<textarea class="en" rows="2">Mark every place in the verse prolonged longer than two counts.</textarea></label>
+  <div class="bsp">
+    <p class="frage" data-vorlage="Markiere jede Stelle im Vers, an der länger als zwei Einheiten gedehnt wird.">Markiere jede Stelle im Vers, an der länger als zwei Einheiten gedehnt wird.</p>
+    <p class="ar subj">الٓمٓ ١</p><p class="loesung">Antwort: <span class="ar">لٓ</span> · <span class="ar">مٓ</span></p><p class="quelle">Aufgabe 2131 · Sure 2 : 1</p>
+  </div>
+</section>
+<h2>Halt-Zeichen</h2>
+
+<section class="karte" data-id="identify_waqf_sign">
+  <header>
+    <code class="kid">identify_waqf_sign</code>
+    <span class="zahl">64 Aufgaben</span>
+  </header>
+  <p class="wann">Mehrfachauswahl: genannt werden alle Zeichen, die im Vers stehen.</p>
+  <p class="gilt"><b>Waqf</b> · Lektion 35–39</p>
+  <label>Deutsch<textarea class="de" rows="2">Welches Waqf-Zeichen steht in diesem Vers?</textarea></label>
+  <label>English<textarea class="en" rows="2">Which waqf sign is in this verse?</textarea></label>
+  <div class="bsp">
+    <p class="frage" data-vorlage="Welches Waqf-Zeichen steht in diesem Vers?">Welches Waqf-Zeichen steht in diesem Vers?</p>
+    <p class="ar subj">وَلَا يَحْزُنكَ قَوْلُهُمْ ۘ إِنَّ ٱلْعِزَّةَ لِلَّهِ جَمِيعًا ۚ هُوَ ٱلسَّمِيعُ ٱلْعَلِيمُ ٦٥</p><ul class="opts"><li class="r"><span class="ar">ج</span></li><li class=""><span class="ar">صلى</span></li><li class=""><span class="ar">قلى</span></li><li class="r"><span class="ar">م</span></li><li class=""><span class="ar">لا</span></li><li class=""><span class="ar">س</span></li><li class=""><span class="ar">∴</span></li></ul><p class="quelle">Aufgabe 2289 · Sure 10 : 65</p>
+  </div>
+</section>
+
+<section class="karte" data-id="identify_waqf_sign.muanaqah">
+  <header>
+    <code class="kid">identify_waqf_sign.muanaqah</code>
+    <span class="zahl">16 Aufgaben</span>
+  </header>
+  <p class="wann">Das Zeichen steht doppelt; angehalten wird an einer der beiden Stellen.</p>
+  <p class="gilt"><b>Waqf</b> · Lektion 40</p>
+  <label>Deutsch<textarea class="de" rows="2">Muanaqah {sign} — an welchem der beiden Wörter darf angehalten werden? (nur an einer der beiden Stellen, nicht an beiden)</textarea></label>
+  <label>English<textarea class="en" rows="2">Muanaqah {sign} — at which of the two words may you pause? (at one of them, not at both)</textarea></label>
+  <div class="bsp">
+    <p class="frage" data-vorlage="Muanaqah {sign} — an welchem der beiden Wörter darf angehalten werden? (nur an einer der beiden Stellen, nicht an beiden)">Muanaqah ۛ — an welchem der beiden Wörter darf angehalten werden? (nur an einer der beiden Stellen, nicht an beiden)</p>
+    <p class="ar subj">ذَٰلِكَ ٱلْكِتَٰبُ لَا رَيْبَ ۛ فِيهِ ۛ هُدًى لِّلْمُتَّقِينَ ٢</p><ul class="opts"><li class="r"><span class="ar">رَيْبَ</span></li><li class="r"><span class="ar">فِيهِ</span></li><li class=""><span class="">kommt nicht vor</span></li></ul><p class="quelle">Aufgabe 2321 · Sure 2 : 2</p>
+  </div>
+</section>
+
+<section class="karte" data-id="mark_waqf_optional">
+  <header>
+    <code class="kid">mark_waqf_optional</code>
+    <span class="zahl">16 Aufgaben</span>
+  </header>
+  <p class="wann">Lektion 35.</p>
+  <p class="gilt"><b>Waqf</b> · Lektion 35</p>
+  <label>Deutsch<textarea class="de" rows="2">Markiere jedes Wort vor einem freiwilligen Halt {sign}.</textarea></label>
+  <label>English<textarea class="en" rows="2">Mark every word before an optional pause {sign}.</textarea></label>
+  <div class="bsp">
+    <p class="frage" data-vorlage="Markiere jedes Wort vor einem freiwilligen Halt {sign}.">Markiere jedes Wort vor einem freiwilligen Halt ۚ.</p>
+    <p class="ar subj">لَعَلِّىٓ أَعْمَلُ صَٰلِحًا فِيمَا تَرَكْتُ ۚ كَلَّآ ۚ إِنَّهَا كَلِمَةٌ هُوَ قَآئِلُهَا ۖ وَمِن وَرَآئِهِم بَرْزَخٌ إِلَىٰ يَوْمِ يُبْعَثُونَ ١٠٠</p><p class="loesung">Antwort: <span class="ar">تَرَكْتُ</span> · <span class="ar">كَلَّآ</span></p><p class="quelle">Aufgabe 2151 · Sure 23 : 100</p>
+  </div>
+</section>
+
+<section class="karte" data-id="mark_waqf_better_continue">
+  <header>
+    <code class="kid">mark_waqf_better_continue</code>
+    <span class="zahl">16 Aufgaben</span>
+  </header>
+  <p class="wann">Lektion 36.</p>
+  <p class="gilt"><b>Waqf</b> · Lektion 36</p>
+  <label>Deutsch<textarea class="de" rows="2">Markiere jedes Wort, an dem besser weitergelesen wird {sign}.</textarea></label>
+  <label>English<textarea class="en" rows="2">Mark every word where it is better to read on {sign}.</textarea></label>
+  <div class="bsp">
+    <p class="frage" data-vorlage="Markiere jedes Wort, an dem besser weitergelesen wird {sign}.">Markiere jedes Wort, an dem besser weitergelesen wird ۖ.</p>
+    <p class="ar subj">وَأْمُرْ أَهْلَكَ بِٱلصَّلَوٰةِ وَٱصْطَبِرْ عَلَيْهَا ۖ لَا نَسْـَٔلُكَ رِزْقًا ۖ نَّحْنُ نَرْزُقُكَ ۗ وَٱلْعَٰقِبَةُ لِلتَّقْوَىٰ ١٣٢</p><p class="loesung">Antwort: <span class="ar">عَلَيْهَا</span> · <span class="ar">رِزْقًا</span></p><p class="quelle">Aufgabe 2185 · Sure 20 : 132</p>
+  </div>
+</section>
+
+<section class="karte" data-id="mark_waqf_better_pause">
+  <header>
+    <code class="kid">mark_waqf_better_pause</code>
+    <span class="zahl">16 Aufgaben</span>
+  </header>
+  <p class="wann">Lektion 37.</p>
+  <p class="gilt"><b>Waqf</b> · Lektion 37</p>
+  <label>Deutsch<textarea class="de" rows="2">Markiere jedes Wort, an dem besser angehalten wird {sign}.</textarea></label>
+  <label>English<textarea class="en" rows="2">Mark every word where it is better to pause {sign}.</textarea></label>
+  <div class="bsp">
+    <p class="frage" data-vorlage="Markiere jedes Wort, an dem besser angehalten wird {sign}.">Markiere jedes Wort, an dem besser angehalten wird ۗ.</p>
+    <p class="ar subj">وَقَالُوا۟ ٱتَّخَذَ ٱلرَّحْمَٰنُ وَلَدًا ۗ سُبْحَٰنَهُ ۚ بَلْ عِبَادٌ مُّكْرَمُونَ ٢٦</p><p class="loesung">Antwort: <span class="ar">وَلَدًا</span></p><p class="quelle">Aufgabe 2217 · Sure 21 : 26</p>
+  </div>
+</section>
+
+<section class="karte" data-id="mark_waqf_forbidden">
+  <header>
+    <code class="kid">mark_waqf_forbidden</code>
+    <span class="zahl">32 Aufgaben</span>
+  </header>
+  <p class="wann">Lektion 38.</p>
+  <p class="gilt"><b>Waqf</b> · Lektion 38</p>
+  <label>Deutsch<textarea class="de" rows="2">Markiere jedes Wort, an dem der Halt verboten ist {sign}.</textarea></label>
+  <label>English<textarea class="en" rows="2">Mark every word where pausing is forbidden {sign}.</textarea></label>
+  <div class="bsp">
+    <p class="frage" data-vorlage="Markiere jedes Wort, an dem der Halt verboten ist {sign}.">Markiere jedes Wort, an dem der Halt verboten ist ۙ.</p>
+    <p class="ar subj">إِلَّا ٱمْرَأَتَهُ قَدَّرْنَآ ۙ إِنَّهَا لَمِنَ ٱلْغَٰبِرِينَ ٦٠</p><p class="loesung">Antwort: <span class="ar">قَدَّرْنَآ</span></p><p class="quelle">Aufgabe 2242 · Sure 15 : 60</p>
+  </div>
+</section>
+
+<section class="karte" data-id="mark_waqf_mandatory">
+  <header>
+    <code class="kid">mark_waqf_mandatory</code>
+    <span class="zahl">16 Aufgaben</span>
+  </header>
+  <p class="wann">Lektion 39, Waqf Lazim und Saktah zusammen.</p>
+  <p class="gilt"><b>Waqf</b> · Lektion 39</p>
+  <label>Deutsch<textarea class="de" rows="2">An welchen Stellen darf man nicht ohne Anhalten weiterlesen?</textarea></label>
+  <label>English<textarea class="en" rows="2">Where may you not read on without pausing?</textarea></label>
+  <div class="bsp">
+    <p class="frage" data-vorlage="An welchen Stellen darf man nicht ohne Anhalten weiterlesen?">An welchen Stellen darf man nicht ohne Anhalten weiterlesen?</p>
+    <p class="ar subj">وَقِيلَ مَنْ ۜ رَاقٍ ٢٧</p><p class="loesung">Antwort: <span class="ar">مَنْ</span></p><p class="quelle">Aufgabe 2273 · Sure 75 : 27</p>
+  </div>
+</section>
+</div>
+
+<dialog id="dlg"><div class="inner">
+  <textarea id="roh" readonly></textarea>
+  <p style="text-align:right;margin:12px 0 0"><button type="button" id="zu">Schließen</button></p>
+</div></dialog>
+
+<script>
+"use strict";
+const KARTEN = [...document.querySelectorAll(".karte")];
+const SPEICHER = "tajweed.fragen";
+
+KARTEN.forEach(k => {
+  k.dataset.de = k.querySelector(".de").value;
+  k.dataset.en = k.querySelector(".en").value;
+});
+
+function vorschau(k){
+  const p = k.querySelector(".frage");
+  const roh = k.querySelector(".de").value;
+  /* Die Platzhalter werden wie im Beispiel gefüllt. */
+  p.textContent = roh.replace("{rule}", p.dataset.regel).replace("{sign}", p.dataset.zeichen);
+}
+KARTEN.forEach(k => {
+  const p = k.querySelector(".frage");
+  const alt = k.dataset.de, neu = p.textContent;
+  /* Aus Vorlage und gerendertem Text die eingesetzten Werte zurückgewinnen. */
+  p.dataset.regel = werte(alt, neu, "{rule}");
+  p.dataset.zeichen = werte(alt, neu, "{sign}");
+});
+function werte(vorlage, gerendert, platz){
+  const i = vorlage.indexOf(platz);
+  if (i < 0) return "";
+  const vorn = vorlage.slice(0, i);
+  const hinten = vorlage.slice(i + platz.length).replace(/\{[a-z]+\}/g, "");
+  let rest = gerendert.slice(vorn.length);
+  if (hinten) rest = rest.slice(0, rest.length - hinten.length);
+  return rest;
+}
+
+function geaendert(){
+  return KARTEN.filter(k => k.querySelector(".de").value !== k.dataset.de
+                         || k.querySelector(".en").value !== k.dataset.en);
+}
+function stand(){
+  const n = geaendert().length;
+  document.getElementById("stand").textContent =
+    n ? `${n} von ${KARTEN.length} geändert` : `${KARTEN.length} Fragestellungen, nichts geändert`;
+  KARTEN.forEach(k => k.classList.toggle("geaendert",
+    k.querySelector(".de").value !== k.dataset.de || k.querySelector(".en").value !== k.dataset.en));
+}
+function sichern(){
+  const d = {};
+  KARTEN.forEach(k => { d[k.dataset.id] = {de: k.querySelector(".de").value,
+                                           en: k.querySelector(".en").value}; });
+  try { localStorage.setItem(SPEICHER, JSON.stringify(d)); } catch(e){}
+}
+(function laden(){
+  let d = null;
+  try { d = JSON.parse(localStorage.getItem(SPEICHER) || "null"); } catch(e){}
+  if (d) KARTEN.forEach(k => {
+    const e = d[k.dataset.id];
+    if (!e) return;
+    k.querySelector(".de").value = e.de;
+    k.querySelector(".en").value = e.en;
+  });
+})();
+
+KARTEN.forEach(k => ["de","en"].forEach(f =>
+  k.querySelector("." + f).addEventListener("input", () => {
+    if (f === "de") vorschau(k);
+    stand(); sichern();
+  })));
+KARTEN.forEach(vorschau);
+stand();
+
+function json(){
+  const d = JSON.parse(JSON.stringify(KATALOG));
+  const nach = Object.fromEntries(KARTEN.map(k => [k.dataset.id, k]));
+  d.questions.forEach(q => {
+    const k = nach[q.id];
+    if (!k) return;
+    q.de = k.querySelector(".de").value.trim();
+    q.en = k.querySelector(".en").value.trim();
+  });
+  return JSON.stringify(d, null, 2) + "\n";
+}
+document.getElementById("kopieren").addEventListener("click", async ev => {
+  try { await navigator.clipboard.writeText(json());
+        ev.target.textContent = "kopiert ✓";
+        setTimeout(() => ev.target.textContent = "JSON kopieren", 1600); }
+  catch(e){ document.getElementById("zeigen").click(); }
+});
+document.getElementById("laden").addEventListener("click", () => {
+  const a = document.createElement("a");
+  a.href = URL.createObjectURL(new Blob([json()], {type:"application/json"}));
+  a.download = "questions.json";
+  a.click();
+  setTimeout(() => URL.revokeObjectURL(a.href), 4000);
+});
+document.getElementById("zeigen").addEventListener("click", () => {
+  document.getElementById("roh").value = json();
+  document.getElementById("dlg").showModal();
+});
+document.getElementById("zu").addEventListener("click", () => document.getElementById("dlg").close());
+document.getElementById("zuruecksetzen").addEventListener("click", () => {
+  if (!confirm("Alle Änderungen verwerfen?")) return;
+  KARTEN.forEach(k => { k.querySelector(".de").value = k.dataset.de;
+                        k.querySelector(".en").value = k.dataset.en;
+                        vorschau(k); });
+  try { localStorage.removeItem(SPEICHER); } catch(e){}
+  stand();
+});
+</script>
+</body>
+</html>

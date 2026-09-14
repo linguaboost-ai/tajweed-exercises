@@ -13,8 +13,9 @@ prüft sie vorher gegen den Tajweed Exercise Authoring Guide.
     json/waqf.json          Lektion 35–40
 
 Jede Datei ist ein Array von Aufgabenobjekten in der Feldreihenfolge des
-Guides. Das interne Feld „src" fällt weg. Hinzu kommt „spots" — die
-Zeichenspannen, an denen die Regel greift (siehe docs/spots.md).
+Guides. Das interne Feld „src" fällt weg. Hinzu kommen zwei Felder:
+„spots" — die Zeichenspannen, an denen die Regel greift (docs/spots.md) —
+und „question_id", der Schlüssel der Formulierung in questions.json.
 
 Aufruf:  python3 tools/export_json.py [index.html] [--out json]
 """
@@ -22,6 +23,9 @@ import json
 import re
 import sys
 from pathlib import Path
+
+sys.path.insert(0, str(Path(__file__).parent))
+from questions import frage_id                                  # noqa: E402
 
 ARGS = [a for a in sys.argv[1:] if not a.startswith("--")]
 HTML = Path(ARGS[0] if ARGS else "browser/index.html")
@@ -57,9 +61,9 @@ KATALOG = {
 }
 MARKEN = {"yes", "no", "start", "mid", "end", "none", "-"}
 LATEIN = re.compile(r"[A-Za-zÄÖÜäöüß]")
-REIHE = ["id", "rule", "lesson", "task_type", "question_type", "multiple",
-         "modality", "sura", "verse", "subject", "items", "options",
-         "answer", "pattern"]
+REIHE = ["id", "rule", "lesson", "task_type", "question_type", "question_id",
+         "multiple", "modality", "sura", "verse", "subject", "items",
+         "options", "answer", "pattern"]
 
 
 def ordne(x):
@@ -75,6 +79,12 @@ def ordne(x):
 
 def pruefe(data):
     fehler = []
+    katalog = Path("questions.json")
+    frage_ids = set()
+    if katalog.exists():
+        frage_ids = {q["id"] for q in
+                     json.loads(katalog.read_text(encoding="utf-8"))["questions"]}
+
 
     def f(x, text):
         fehler.append(f"{x['id']}: {text}")
@@ -98,6 +108,10 @@ def pruefe(data):
             f(x, f"unbekannter question_type {qt!r}")
         elif tt not in KATALOG[qt]:
             f(x, f"{qt} passt nicht zu {tt}")
+        if x.get("question_id") != frage_id(x):
+            f(x, f"question_id {x.get('question_id')!r} statt {frage_id(x)!r}")
+        elif frage_ids and x["question_id"] not in frage_ids:
+            f(x, f"Fragestellung {x['question_id']!r} steht nicht in questions.json")
         if not isinstance(x.get("lesson"), int):
             f(x, "lesson fehlt")
 
