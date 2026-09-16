@@ -208,6 +208,7 @@ def main() -> int:
         return 1
 
     OUT.mkdir(exist_ok=True)
+    nach_id = {x["id"]: x for x in data}
     rest = {x["id"] for x in data}
     for name, a, b in BLOECKE:
         teil = [ordne(x) for x in data if a <= x["lesson"] <= b]
@@ -220,6 +221,25 @@ def main() -> int:
     if rest:
         print("nicht zugeordnet:", sorted(rest))
         return 1
+
+    # Die zusammengefassten Lektionen für Fortgeschrittene: dieselben Aufgaben
+    # noch einmal, in der Reihenfolge der Lektion. Eigene Dateien, weil es
+    # eigene Lektionen sind — eigene IDs bekommen sie nicht, damit die
+    # Tonaufnahmen dieselben bleiben.
+    fort = Path("advanced.json")
+    if fort.exists():
+        for lek in json.loads(fort.read_text(encoding="utf-8"))["lessons"]:
+            fehlend = [i for i in lek["tasks"] if i not in nach_id]
+            if fehlend:
+                print(f"{lek['id']}: unbekannte Aufgaben {fehlend}")
+                return 1
+            teil = [ordne(nach_id[i]) for i in lek["tasks"]]
+            p = OUT / f"{lek['id']}.json"
+            p.write_text(json.dumps(teil, ensure_ascii=False, indent=2) + "\n",
+                         encoding="utf-8")
+            print(f"{p}  {len(teil):4d} Aufgaben  {p.stat().st_size / 1024:7.1f} kB  "
+                  f"ersetzt Lektion {lek['replaces'][0]}–{lek['replaces'][-1]}")
+
     print("Alle Aufgaben zugeordnet, keine Beanstandungen.")
     return 0
 

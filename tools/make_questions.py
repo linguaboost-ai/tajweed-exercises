@@ -50,8 +50,13 @@ GRUPPEN = [
 
 
 def aufgaben():
+    """Die Lektionen des Lehrplans. Die zusammengefassten Dateien für
+    Fortgeschrittene bleiben draußen — sie enthalten dieselben Aufgaben
+    noch einmal und würden jede doppelt zählen."""
     aus = []
     for f in sorted(glob.glob("json/*.json")):
+        if "-advanced" in f:
+            continue
         aus += json.load(open(f, encoding="utf-8"))
     aus.sort(key=lambda x: x["id"])
     return aus

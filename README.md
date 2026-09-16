@@ -18,6 +18,22 @@ Eine Aufgabe trägt keinen Fragetext, sondern nur ihre `question_id`; die
 Formulierung steht in `questions.json` und wird von beiden Seiten gelesen.
 `{rule}` wird darin zum Namen der Regel, `{sign}` zum Halt-Zeichen.
 
+## Für Fortgeschrittene
+
+Wer den Stoff schon kennt, geht die Buchstaben nicht einzeln durch. Zwei
+Schalter in der App-Vorschau fassen deshalb Lektionen zusammen — aus denselben
+Aufgaben, mit denselben IDs und Tonaufnahmen, nur anders gebündelt:
+
+| Schalter | fasst zusammen | wird zu |
+|---|---|---|
+| Tafkheem fortgeschritten | Lektion 1–7 | `tafkheem-1-advanced` (64 Aufgaben) |
+| Qalqalah fortgeschritten | Lektion 10–14 | `qalqala-1-advanced` (im Wort) und `qalqala-2-advanced` (im Vers) |
+
+Beide sind voreingestellt an; dann hat der Lehrplan 31 statt 40 Lektionen und
+die Nummerierung rückt auf. `advanced.json` sagt, welche Aufgaben zu welcher
+zusammengefassten Lektion gehören, `tools/make_advanced.py` stellt sie
+zusammen und `json/*-advanced.json` sind die fertigen Dateien.
+
 ## Korrekturen gegenüber der Fassung auf übung.qsk-methode.de
 
 1. **Versnummern.** Indische Ziffern am Wortende (z. B. `أَحَدٌ١`) wurden wie
@@ -130,6 +146,7 @@ Formulierung steht in `questions.json` und wird von beiden Seiten gelesen.
     browser/index.html  Aufgabenbrowser, mit dem Datensatz darin
     fragen/index.html   die Fragestellungen zum Bearbeiten
     questions.json      die Fragetexte, deutsch und englisch
+    advanced.json       die zusammengefassten Lektionen für Fortgeschrittene
     json/               die 2036 Aufgaben nach dem Authoring Guide, 7 Dateien
     icons/              Logo und Favicon
     fonts/              Hausschrift (Hafs) und Amiri Quran für die Versnummer
@@ -144,7 +161,8 @@ Authoring Guide. `tools/questions.py` entscheidet an einer einzigen Stelle,
 welche Aufgabe welche Formulierung bekommt; `tools/add_question_ids.py` trägt
 das Ergebnis in den Datensatz ein und `tools/make_questions.py` schreibt daraus
 `questions.json` und `fragen/index.html` — vorhandene Texte bleiben dabei
-erhalten. `tools/make_icons.py` zeichnet das Logo.
+erhalten. `tools/make_advanced.py` stellt die zusammengefassten Lektionen zusammen und
+`tools/make_icons.py` zeichnet das Logo.
 
 ## Deployment
 

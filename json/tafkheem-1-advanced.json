@@ -1,0 +1,3498 @@
+[
+  {
+    "id": 45,
+    "rule": "tafkheem",
+    "lesson": 1,
+    "task_type": "select_count",
+    "question_type": "count_rule",
+    "question_id": "count_rule",
+    "modality": "audio",
+    "sura": 53,
+    "verse": 7,
+    "subject": {
+      "text": "وَهُوَ بِٱلْأُفُقِ ٱلْأَعْلَىٰ ٧",
+      "spots": [
+        {
+          "start": 16,
+          "end": 18,
+          "text": "قِ"
+        }
+      ],
+      "audio": "45.wav"
+    },
+    "options": [
+      {
+        "id": 1,
+        "text": "0"
+      },
+      {
+        "id": 2,
+        "text": "1"
+      },
+      {
+        "id": 3,
+        "text": "2"
+      },
+      {
+        "id": 4,
+        "text": "3"
+      }
+    ],
+    "answer": [
+      2
+    ],
+    "pattern": "قِ"
+  },
+  {
+    "id": 53,
+    "rule": "tafkheem",
+    "lesson": 1,
+    "task_type": "select_count",
+    "question_type": "count_rule",
+    "question_id": "count_rule",
+    "modality": "audio",
+    "sura": 2,
+    "verse": 212,
+    "subject": {
+      "text": "وَٱلَّذِينَ ٱتَّقَوْا۟ فَوْقَهُمْ يَوْمَ ٱلْقِيَٰمَةِ ۗ",
+      "spots": [
+        {
+          "start": 16,
+          "end": 18,
+          "text": "قَ"
+        },
+        {
+          "start": 27,
+          "end": 29,
+          "text": "قَ"
+        },
+        {
+          "start": 44,
+          "end": 46,
+          "text": "قِ"
+        }
+      ],
+      "audio": "53.wav"
+    },
+    "options": [
+      {
+        "id": 1,
+        "text": "1"
+      },
+      {
+        "id": 2,
+        "text": "2"
+      },
+      {
+        "id": 3,
+        "text": "3"
+      },
+      {
+        "id": 4,
+        "text": "4"
+      }
+    ],
+    "answer": [
+      3
+    ],
+    "pattern": "قَ:قَ:قِ"
+  },
+  {
+    "id": 61,
+    "rule": "tafkheem",
+    "lesson": 1,
+    "task_type": "select_count",
+    "question_type": "count_rule",
+    "question_id": "count_rule",
+    "modality": "audio",
+    "sura": 4,
+    "verse": 157,
+    "subject": {
+      "text": "وَمَا قَتَلُوهُ يَقِينًا",
+      "spots": [
+        {
+          "start": 6,
+          "end": 8,
+          "text": "قَ"
+        },
+        {
+          "start": 18,
+          "end": 20,
+          "text": "قِ"
+        }
+      ],
+      "audio": "61.wav"
+    },
+    "options": [
+      {
+        "id": 1,
+        "text": "0"
+      },
+      {
+        "id": 2,
+        "text": "1"
+      },
+      {
+        "id": 3,
+        "text": "2"
+      },
+      {
+        "id": 4,
+        "text": "3"
+      }
+    ],
+    "answer": [
+      3
+    ],
+    "pattern": "قَ:قِ"
+  },
+  {
+    "id": 9,
+    "rule": "tafkheem",
+    "lesson": 1,
+    "task_type": "yes_no",
+    "question_type": "has_rule",
+    "question_id": "has_rule.word",
+    "modality": "audio",
+    "sura": null,
+    "verse": null,
+    "subject": {
+      "text": "حَسَبَ",
+      "audio": "9.wav"
+    },
+    "options": [
+      {
+        "id": 1,
+        "text": "yes"
+      },
+      {
+        "id": 2,
+        "text": "no"
+      }
+    ],
+    "answer": [
+      2
+    ]
+  },
+  {
+    "id": 12,
+    "rule": "tafkheem",
+    "lesson": 1,
+    "task_type": "matching",
+    "question_type": "match_pattern",
+    "question_id": "match_pattern",
+    "modality": "audio",
+    "sura": null,
+    "verse": null,
+    "subject": null,
+    "items": [
+      {
+        "id": 1,
+        "text": "سَقَفَ",
+        "spots": [
+          {
+            "start": 2,
+            "end": 4,
+            "text": "قَ"
+          }
+        ],
+        "audio": "12_1.wav"
+      },
+      {
+        "id": 2,
+        "text": "عَقِلَ",
+        "spots": [
+          {
+            "start": 2,
+            "end": 4,
+            "text": "قِ"
+          }
+        ],
+        "audio": "12_2.wav"
+      },
+      {
+        "id": 3,
+        "text": "سُقُفَ",
+        "spots": [
+          {
+            "start": 2,
+            "end": 4,
+            "text": "قُ"
+          }
+        ],
+        "audio": "12_3.wav"
+      },
+      {
+        "id": 4,
+        "text": "نَفَقَ",
+        "spots": [
+          {
+            "start": 4,
+            "end": 6,
+            "text": "قَ"
+          }
+        ],
+        "audio": "12_4.wav"
+      }
+    ],
+    "options": [
+      {
+        "id": 1,
+        "text": "قَ",
+        "spots": [
+          {
+            "start": 0,
+            "end": 2,
+            "text": "قَ"
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "text": "قِ",
+        "spots": [
+          {
+            "start": 0,
+            "end": 2,
+            "text": "قِ"
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "text": "قُ",
+        "spots": [
+          {
+            "start": 0,
+            "end": 2,
+            "text": "قُ"
+          }
+        ]
+      },
+      {
+        "id": 4,
+        "text": "قَ",
+        "spots": [
+          {
+            "start": 0,
+            "end": 2,
+            "text": "قَ"
+          }
+        ]
+      }
+    ],
+    "answer": [
+      {
+        "item": 1,
+        "option": 1
+      },
+      {
+        "item": 2,
+        "option": 2
+      },
+      {
+        "item": 3,
+        "option": 3
+      },
+      {
+        "item": 4,
+        "option": 4
+      }
+    ]
+  },
+  {
+    "id": 11,
+    "rule": "tafkheem",
+    "lesson": 1,
+    "task_type": "select_position",
+    "question_type": "position_in_word",
+    "question_id": "position_in_word",
+    "modality": "audio",
+    "sura": null,
+    "verse": null,
+    "subject": {
+      "text": "عَقَبَ",
+      "spots": [
+        {
+          "start": 2,
+          "end": 4,
+          "text": "قَ"
+        }
+      ],
+      "audio": "11.wav"
+    },
+    "options": [
+      {
+        "id": 1,
+        "text": "start"
+      },
+      {
+        "id": 2,
+        "text": "mid"
+      },
+      {
+        "id": 3,
+        "text": "end"
+      },
+      {
+        "id": 4,
+        "text": "none"
+      }
+    ],
+    "answer": [
+      2
+    ],
+    "pattern": "قَ"
+  },
+  {
+    "id": 18,
+    "rule": "tafkheem",
+    "lesson": 1,
+    "task_type": "select",
+    "question_type": "vowel_on_letter",
+    "question_id": "vowel_on_letter",
+    "multiple": false,
+    "modality": "audio",
+    "sura": null,
+    "verse": null,
+    "subject": {
+      "text": "قَالَ",
+      "spots": [
+        {
+          "start": 0,
+          "end": 2,
+          "text": "قَ"
+        }
+      ],
+      "audio": "18.wav"
+    },
+    "options": [
+      {
+        "id": 1,
+        "text": "َ"
+      },
+      {
+        "id": 2,
+        "text": "ُ"
+      },
+      {
+        "id": 3,
+        "text": "ِ"
+      },
+      {
+        "id": 4,
+        "text": "ْ"
+      },
+      {
+        "id": 5,
+        "text": "none"
+      }
+    ],
+    "answer": [
+      1
+    ],
+    "pattern": "قَ"
+  },
+  {
+    "id": 32,
+    "rule": "tafkheem",
+    "lesson": 1,
+    "task_type": "select",
+    "question_type": "vowels_on_letter",
+    "question_id": "vowels_on_letter",
+    "multiple": true,
+    "modality": "audio",
+    "sura": 101,
+    "verse": 2,
+    "subject": {
+      "text": "مَا ٱلْقَارِعَةُ ٢",
+      "spots": [
+        {
+          "start": 7,
+          "end": 9,
+          "text": "قَ"
+        }
+      ],
+      "audio": "32.wav"
+    },
+    "options": [
+      {
+        "id": 1,
+        "text": "َ"
+      },
+      {
+        "id": 2,
+        "text": "ُ"
+      },
+      {
+        "id": 3,
+        "text": "ِ"
+      },
+      {
+        "id": 4,
+        "text": "ْ"
+      },
+      {
+        "id": 5,
+        "text": "none"
+      }
+    ],
+    "answer": [
+      1
+    ],
+    "pattern": "قَ"
+  },
+  {
+    "id": 42,
+    "rule": "tafkheem",
+    "lesson": 1,
+    "task_type": "select",
+    "question_type": "vowels_on_letter",
+    "question_id": "vowels_on_letter",
+    "multiple": true,
+    "modality": "audio",
+    "sura": null,
+    "verse": null,
+    "subject": {
+      "text": "حُقُوقَ",
+      "spots": [
+        {
+          "start": 2,
+          "end": 4,
+          "text": "قُ"
+        },
+        {
+          "start": 5,
+          "end": 7,
+          "text": "قَ"
+        }
+      ],
+      "audio": "42.wav"
+    },
+    "options": [
+      {
+        "id": 1,
+        "text": "َ"
+      },
+      {
+        "id": 2,
+        "text": "ُ"
+      },
+      {
+        "id": 3,
+        "text": "ِ"
+      },
+      {
+        "id": 4,
+        "text": "ْ"
+      },
+      {
+        "id": 5,
+        "text": "none"
+      }
+    ],
+    "answer": [
+      1,
+      2
+    ],
+    "pattern": "قُ:قَ"
+  },
+  {
+    "id": 77,
+    "rule": "tafkheem",
+    "lesson": 2,
+    "task_type": "select_count",
+    "question_type": "count_rule",
+    "question_id": "count_rule",
+    "modality": "audio",
+    "sura": 95,
+    "verse": 2,
+    "subject": {
+      "text": "وَطُورِ سِينِينَ ٢",
+      "spots": [
+        {
+          "start": 2,
+          "end": 4,
+          "text": "طُ"
+        }
+      ],
+      "audio": "77.wav"
+    },
+    "options": [
+      {
+        "id": 1,
+        "text": "0"
+      },
+      {
+        "id": 2,
+        "text": "1"
+      },
+      {
+        "id": 3,
+        "text": "2"
+      },
+      {
+        "id": 4,
+        "text": "3"
+      }
+    ],
+    "answer": [
+      2
+    ],
+    "pattern": "طُ"
+  },
+  {
+    "id": 93,
+    "rule": "tafkheem",
+    "lesson": 2,
+    "task_type": "select_count",
+    "question_type": "count_rule",
+    "question_id": "count_rule",
+    "modality": "audio",
+    "sura": 24,
+    "verse": 26,
+    "subject": {
+      "text": "وَٱلطَّيِّبَٰتُ لِلطَّيِّبِينَ وَٱلطَّيِّبُونَ لِلطَّيِّبَٰتِ ۚ",
+      "spots": [
+        {
+          "start": 4,
+          "end": 7,
+          "text": "طَّ"
+        },
+        {
+          "start": 19,
+          "end": 22,
+          "text": "طَّ"
+        },
+        {
+          "start": 35,
+          "end": 38,
+          "text": "طَّ"
+        },
+        {
+          "start": 50,
+          "end": 53,
+          "text": "طَّ"
+        }
+      ],
+      "audio": "93.wav"
+    },
+    "options": [
+      {
+        "id": 1,
+        "text": "1"
+      },
+      {
+        "id": 2,
+        "text": "2"
+      },
+      {
+        "id": 3,
+        "text": "3"
+      },
+      {
+        "id": 4,
+        "text": "4"
+      }
+    ],
+    "answer": [
+      4
+    ],
+    "pattern": "طَّٰ:طَّ:طَّ:طَّ"
+  },
+  {
+    "id": 65,
+    "rule": "tafkheem",
+    "lesson": 2,
+    "task_type": "yes_no",
+    "question_type": "has_rule",
+    "question_id": "has_rule.word",
+    "modality": "audio",
+    "sura": null,
+    "verse": null,
+    "subject": {
+      "text": "طَبَعَ",
+      "spots": [
+        {
+          "start": 0,
+          "end": 2,
+          "text": "طَ"
+        }
+      ],
+      "audio": "65.wav"
+    },
+    "options": [
+      {
+        "id": 1,
+        "text": "yes"
+      },
+      {
+        "id": 2,
+        "text": "no"
+      }
+    ],
+    "answer": [
+      1
+    ],
+    "pattern": "طَ"
+  },
+  {
+    "id": 73,
+    "rule": "tafkheem",
+    "lesson": 2,
+    "task_type": "yes_no",
+    "question_type": "has_rule",
+    "question_id": "has_rule.word",
+    "modality": "audio",
+    "sura": null,
+    "verse": null,
+    "subject": {
+      "text": "جَعَلَ",
+      "audio": "73.wav"
+    },
+    "options": [
+      {
+        "id": 1,
+        "text": "yes"
+      },
+      {
+        "id": 2,
+        "text": "no"
+      }
+    ],
+    "answer": [
+      2
+    ]
+  },
+  {
+    "id": 68,
+    "rule": "tafkheem",
+    "lesson": 2,
+    "task_type": "matching",
+    "question_type": "match_pattern",
+    "question_id": "match_pattern",
+    "modality": "audio",
+    "sura": null,
+    "verse": null,
+    "subject": null,
+    "items": [
+      {
+        "id": 1,
+        "text": "طَلَبَ",
+        "spots": [
+          {
+            "start": 0,
+            "end": 2,
+            "text": "طَ"
+          }
+        ],
+        "audio": "68_1.wav"
+      },
+      {
+        "id": 2,
+        "text": "بَطِئَ",
+        "spots": [
+          {
+            "start": 2,
+            "end": 4,
+            "text": "طِ"
+          }
+        ],
+        "audio": "68_2.wav"
+      },
+      {
+        "id": 3,
+        "text": "طُمِسَ",
+        "spots": [
+          {
+            "start": 0,
+            "end": 2,
+            "text": "طُ"
+          }
+        ],
+        "audio": "68_3.wav"
+      },
+      {
+        "id": 4,
+        "text": "دَفَعَ",
+        "audio": "68_4.wav"
+      }
+    ],
+    "options": [
+      {
+        "id": 1,
+        "text": "طَ",
+        "spots": [
+          {
+            "start": 0,
+            "end": 2,
+            "text": "طَ"
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "text": "طِ",
+        "spots": [
+          {
+            "start": 0,
+            "end": 2,
+            "text": "طِ"
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "text": "طُ",
+        "spots": [
+          {
+            "start": 0,
+            "end": 2,
+            "text": "طُ"
+          }
+        ]
+      },
+      {
+        "id": 4,
+        "text": "-"
+      }
+    ],
+    "answer": [
+      {
+        "item": 1,
+        "option": 1
+      },
+      {
+        "item": 2,
+        "option": 2
+      },
+      {
+        "item": 3,
+        "option": 3
+      },
+      {
+        "item": 4,
+        "option": 4
+      }
+    ]
+  },
+  {
+    "id": 75,
+    "rule": "tafkheem",
+    "lesson": 2,
+    "task_type": "select_position",
+    "question_type": "position_in_word",
+    "question_id": "position_in_word",
+    "modality": "audio",
+    "sura": null,
+    "verse": null,
+    "subject": {
+      "text": "قَنَطَ",
+      "spots": [
+        {
+          "start": 0,
+          "end": 2,
+          "text": "قَ"
+        },
+        {
+          "start": 4,
+          "end": 6,
+          "text": "طَ"
+        }
+      ],
+      "audio": "75.wav"
+    },
+    "options": [
+      {
+        "id": 1,
+        "text": "start"
+      },
+      {
+        "id": 2,
+        "text": "mid"
+      },
+      {
+        "id": 3,
+        "text": "end"
+      },
+      {
+        "id": 4,
+        "text": "none"
+      }
+    ],
+    "answer": [
+      3
+    ],
+    "pattern": "طَ:قَ"
+  },
+  {
+    "id": 106,
+    "rule": "tafkheem",
+    "lesson": 2,
+    "task_type": "select",
+    "question_type": "vowel_on_letter",
+    "question_id": "vowel_on_letter",
+    "multiple": false,
+    "modality": "audio",
+    "sura": null,
+    "verse": null,
+    "subject": {
+      "text": "يَطُوفُ",
+      "spots": [
+        {
+          "start": 2,
+          "end": 4,
+          "text": "طُ"
+        }
+      ],
+      "audio": "106.wav"
+    },
+    "options": [
+      {
+        "id": 1,
+        "text": "َ"
+      },
+      {
+        "id": 2,
+        "text": "ُ"
+      },
+      {
+        "id": 3,
+        "text": "ِ"
+      },
+      {
+        "id": 4,
+        "text": "ْ"
+      },
+      {
+        "id": 5,
+        "text": "none"
+      }
+    ],
+    "answer": [
+      2
+    ],
+    "pattern": "طُ"
+  },
+  {
+    "id": 74,
+    "rule": "tafkheem",
+    "lesson": 2,
+    "task_type": "select",
+    "question_type": "vowels_on_letter",
+    "question_id": "vowels_on_letter",
+    "multiple": true,
+    "modality": "audio",
+    "sura": null,
+    "verse": null,
+    "subject": {
+      "text": "قُنُطَ",
+      "spots": [
+        {
+          "start": 0,
+          "end": 2,
+          "text": "قُ"
+        },
+        {
+          "start": 4,
+          "end": 6,
+          "text": "طَ"
+        }
+      ],
+      "audio": "74.wav"
+    },
+    "options": [
+      {
+        "id": 1,
+        "text": "َ"
+      },
+      {
+        "id": 2,
+        "text": "ُ"
+      },
+      {
+        "id": 3,
+        "text": "ِ"
+      },
+      {
+        "id": 4,
+        "text": "ْ"
+      },
+      {
+        "id": 5,
+        "text": "none"
+      }
+    ],
+    "answer": [
+      1,
+      2
+    ],
+    "pattern": "قُ:طَ"
+  },
+  {
+    "id": 122,
+    "rule": "tafkheem",
+    "lesson": 2,
+    "task_type": "select",
+    "question_type": "vowels_on_letter",
+    "question_id": "vowels_on_letter",
+    "multiple": true,
+    "modality": "audio",
+    "sura": null,
+    "verse": null,
+    "subject": {
+      "text": "قَطِيعَ",
+      "spots": [
+        {
+          "start": 0,
+          "end": 4,
+          "text": "قَطِ"
+        }
+      ],
+      "audio": "122.wav"
+    },
+    "options": [
+      {
+        "id": 1,
+        "text": "َ"
+      },
+      {
+        "id": 2,
+        "text": "ُ"
+      },
+      {
+        "id": 3,
+        "text": "ِ"
+      },
+      {
+        "id": 4,
+        "text": "ْ"
+      },
+      {
+        "id": 5,
+        "text": "none"
+      }
+    ],
+    "answer": [
+      1,
+      3
+    ],
+    "pattern": "طِ:قَ"
+  },
+  {
+    "id": 173,
+    "rule": "tafkheem",
+    "lesson": 3,
+    "task_type": "select_count",
+    "question_type": "count_rule",
+    "question_id": "count_rule",
+    "modality": "audio",
+    "sura": 11,
+    "verse": 119,
+    "subject": {
+      "text": "وَلِلَٰذٰلِكَ خَلَقَهُمْ ۗ",
+      "spots": [
+        {
+          "start": 14,
+          "end": 16,
+          "text": "خَ"
+        },
+        {
+          "start": 18,
+          "end": 20,
+          "text": "قَ"
+        }
+      ],
+      "audio": "173.wav"
+    },
+    "options": [
+      {
+        "id": 1,
+        "text": "0"
+      },
+      {
+        "id": 2,
+        "text": "1"
+      },
+      {
+        "id": 3,
+        "text": "2"
+      },
+      {
+        "id": 4,
+        "text": "3"
+      }
+    ],
+    "answer": [
+      3
+    ],
+    "pattern": "خَ:قَ"
+  },
+  {
+    "id": 183,
+    "rule": "tafkheem",
+    "lesson": 3,
+    "task_type": "select_count",
+    "question_type": "count_rule",
+    "question_id": "count_rule",
+    "modality": "audio",
+    "sura": 2,
+    "verse": 25,
+    "subject": {
+      "text": "وَأُتُوا۟ بِهِۦ مُتَشَٰبِهًا ۖ",
+      "audio": "183.wav"
+    },
+    "options": [
+      {
+        "id": 1,
+        "text": "0"
+      },
+      {
+        "id": 2,
+        "text": "1"
+      },
+      {
+        "id": 3,
+        "text": "2"
+      },
+      {
+        "id": 4,
+        "text": "3"
+      }
+    ],
+    "answer": [
+      1
+    ]
+  },
+  {
+    "id": 137,
+    "rule": "tafkheem",
+    "lesson": 3,
+    "task_type": "yes_no",
+    "question_type": "has_rule",
+    "question_id": "has_rule.word",
+    "modality": "audio",
+    "sura": null,
+    "verse": null,
+    "subject": {
+      "text": "سَأَلَ",
+      "audio": "137.wav"
+    },
+    "options": [
+      {
+        "id": 1,
+        "text": "yes"
+      },
+      {
+        "id": 2,
+        "text": "no"
+      }
+    ],
+    "answer": [
+      2
+    ]
+  },
+  {
+    "id": 140,
+    "rule": "tafkheem",
+    "lesson": 3,
+    "task_type": "matching",
+    "question_type": "match_pattern",
+    "question_id": "match_pattern",
+    "modality": "audio",
+    "sura": null,
+    "verse": null,
+    "subject": null,
+    "items": [
+      {
+        "id": 1,
+        "text": "مَسَخَ",
+        "spots": [
+          {
+            "start": 4,
+            "end": 6,
+            "text": "خَ"
+          }
+        ],
+        "audio": "140_1.wav"
+      },
+      {
+        "id": 2,
+        "text": "نُسِخَ",
+        "spots": [
+          {
+            "start": 4,
+            "end": 6,
+            "text": "خَ"
+          }
+        ],
+        "audio": "140_2.wav"
+      },
+      {
+        "id": 3,
+        "text": "نُسُخَ",
+        "spots": [
+          {
+            "start": 4,
+            "end": 6,
+            "text": "خَ"
+          }
+        ],
+        "audio": "140_3.wav"
+      },
+      {
+        "id": 4,
+        "text": "نَخْلَةَ",
+        "spots": [
+          {
+            "start": 2,
+            "end": 4,
+            "text": "خْ"
+          }
+        ],
+        "audio": "140_4.wav"
+      }
+    ],
+    "options": [
+      {
+        "id": 1,
+        "text": "خَ",
+        "spots": [
+          {
+            "start": 0,
+            "end": 2,
+            "text": "خَ"
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "text": "خِ",
+        "spots": [
+          {
+            "start": 0,
+            "end": 2,
+            "text": "خِ"
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "text": "خُ",
+        "spots": [
+          {
+            "start": 0,
+            "end": 2,
+            "text": "خُ"
+          }
+        ]
+      },
+      {
+        "id": 4,
+        "text": "خْ",
+        "spots": [
+          {
+            "start": 0,
+            "end": 2,
+            "text": "خْ"
+          }
+        ]
+      }
+    ],
+    "answer": [
+      {
+        "item": 1,
+        "option": 1
+      },
+      {
+        "item": 2,
+        "option": 2
+      },
+      {
+        "item": 3,
+        "option": 3
+      },
+      {
+        "item": 4,
+        "option": 4
+      }
+    ]
+  },
+  {
+    "id": 139,
+    "rule": "tafkheem",
+    "lesson": 3,
+    "task_type": "select_position",
+    "question_type": "position_in_word",
+    "question_id": "position_in_word",
+    "modality": "audio",
+    "sura": null,
+    "verse": null,
+    "subject": {
+      "text": "نَسَخَ",
+      "spots": [
+        {
+          "start": 4,
+          "end": 6,
+          "text": "خَ"
+        }
+      ],
+      "audio": "139.wav"
+    },
+    "options": [
+      {
+        "id": 1,
+        "text": "start"
+      },
+      {
+        "id": 2,
+        "text": "mid"
+      },
+      {
+        "id": 3,
+        "text": "end"
+      },
+      {
+        "id": 4,
+        "text": "none"
+      }
+    ],
+    "answer": [
+      3
+    ],
+    "pattern": "خَ"
+  },
+  {
+    "id": 155,
+    "rule": "tafkheem",
+    "lesson": 3,
+    "task_type": "select_position",
+    "question_type": "position_in_word",
+    "question_id": "position_in_word",
+    "modality": "audio",
+    "sura": null,
+    "verse": null,
+    "subject": {
+      "text": "خَافَ",
+      "spots": [
+        {
+          "start": 0,
+          "end": 2,
+          "text": "خَ"
+        }
+      ],
+      "audio": "155.wav"
+    },
+    "options": [
+      {
+        "id": 1,
+        "text": "start"
+      },
+      {
+        "id": 2,
+        "text": "mid"
+      },
+      {
+        "id": 3,
+        "text": "end"
+      },
+      {
+        "id": 4,
+        "text": "none"
+      }
+    ],
+    "answer": [
+      1
+    ],
+    "pattern": "خَ"
+  },
+  {
+    "id": 130,
+    "rule": "tafkheem",
+    "lesson": 3,
+    "task_type": "select",
+    "question_type": "vowel_on_letter",
+    "question_id": "vowel_on_letter",
+    "multiple": false,
+    "modality": "audio",
+    "sura": null,
+    "verse": null,
+    "subject": {
+      "text": "بَخِلَ",
+      "spots": [
+        {
+          "start": 2,
+          "end": 4,
+          "text": "خِ"
+        }
+      ],
+      "audio": "130.wav"
+    },
+    "options": [
+      {
+        "id": 1,
+        "text": "َ"
+      },
+      {
+        "id": 2,
+        "text": "ُ"
+      },
+      {
+        "id": 3,
+        "text": "ِ"
+      },
+      {
+        "id": 4,
+        "text": "ْ"
+      },
+      {
+        "id": 5,
+        "text": "none"
+      }
+    ],
+    "answer": [
+      3
+    ],
+    "pattern": "خِ"
+  },
+  {
+    "id": 168,
+    "rule": "tafkheem",
+    "lesson": 3,
+    "task_type": "select",
+    "question_type": "vowels_on_letter",
+    "question_id": "vowels_on_letter",
+    "multiple": true,
+    "modality": "audio",
+    "sura": 2,
+    "verse": 162,
+    "subject": {
+      "text": "خَٰلِدِينَ فِيهَا ۖ",
+      "spots": [
+        {
+          "start": 0,
+          "end": 3,
+          "text": "خَٰ"
+        }
+      ],
+      "audio": "168.wav"
+    },
+    "options": [
+      {
+        "id": 1,
+        "text": "َ"
+      },
+      {
+        "id": 2,
+        "text": "ُ"
+      },
+      {
+        "id": 3,
+        "text": "ِ"
+      },
+      {
+        "id": 4,
+        "text": "ْ"
+      },
+      {
+        "id": 5,
+        "text": "none"
+      }
+    ],
+    "answer": [
+      1
+    ],
+    "pattern": "خَٰ"
+  },
+  {
+    "id": 176,
+    "rule": "tafkheem",
+    "lesson": 3,
+    "task_type": "select",
+    "question_type": "vowels_on_letter",
+    "question_id": "vowels_on_letter",
+    "multiple": true,
+    "modality": "audio",
+    "sura": 20,
+    "verse": 101,
+    "subject": {
+      "text": "خَٰلِدِينَ فِيهِ ۖ",
+      "spots": [
+        {
+          "start": 0,
+          "end": 3,
+          "text": "خَٰ"
+        }
+      ],
+      "audio": "176.wav"
+    },
+    "options": [
+      {
+        "id": 1,
+        "text": "َ"
+      },
+      {
+        "id": 2,
+        "text": "ُ"
+      },
+      {
+        "id": 3,
+        "text": "ِ"
+      },
+      {
+        "id": 4,
+        "text": "ْ"
+      },
+      {
+        "id": 5,
+        "text": "none"
+      }
+    ],
+    "answer": [
+      1
+    ],
+    "pattern": "خَٰ"
+  },
+  {
+    "id": 207,
+    "rule": "tafkheem",
+    "lesson": 4,
+    "task_type": "select_count",
+    "question_type": "count_rule",
+    "question_id": "count_rule",
+    "modality": "audio",
+    "sura": 6,
+    "verse": 104,
+    "subject": {
+      "text": "وَمَنْ عَمِىَ فَعَلَيْهَا ۚ",
+      "audio": "207.wav"
+    },
+    "options": [
+      {
+        "id": 1,
+        "text": "0"
+      },
+      {
+        "id": 2,
+        "text": "1"
+      },
+      {
+        "id": 3,
+        "text": "2"
+      },
+      {
+        "id": 4,
+        "text": "3"
+      }
+    ],
+    "answer": [
+      1
+    ]
+  },
+  {
+    "id": 229,
+    "rule": "tafkheem",
+    "lesson": 4,
+    "task_type": "select_count",
+    "question_type": "count_rule",
+    "question_id": "count_rule",
+    "modality": "audio",
+    "sura": 10,
+    "verse": 68,
+    "subject": {
+      "text": "هُوَ ٱلْغَنِىُّ ۖ",
+      "spots": [
+        {
+          "start": 8,
+          "end": 10,
+          "text": "غَ"
+        }
+      ],
+      "audio": "229.wav"
+    },
+    "options": [
+      {
+        "id": 1,
+        "text": "0"
+      },
+      {
+        "id": 2,
+        "text": "1"
+      },
+      {
+        "id": 3,
+        "text": "2"
+      },
+      {
+        "id": 4,
+        "text": "3"
+      }
+    ],
+    "answer": [
+      2
+    ],
+    "pattern": "غَ"
+  },
+  {
+    "id": 225,
+    "rule": "tafkheem",
+    "lesson": 4,
+    "task_type": "yes_no",
+    "question_type": "has_rule",
+    "question_id": "has_rule.word",
+    "modality": "audio",
+    "sura": null,
+    "verse": null,
+    "subject": {
+      "text": "غُولَ",
+      "spots": [
+        {
+          "start": 0,
+          "end": 2,
+          "text": "غُ"
+        }
+      ],
+      "audio": "225.wav"
+    },
+    "options": [
+      {
+        "id": 1,
+        "text": "yes"
+      },
+      {
+        "id": 2,
+        "text": "no"
+      }
+    ],
+    "answer": [
+      1
+    ],
+    "pattern": "غُ"
+  },
+  {
+    "id": 196,
+    "rule": "tafkheem",
+    "lesson": 4,
+    "task_type": "matching",
+    "question_type": "match_pattern",
+    "question_id": "match_pattern",
+    "modality": "audio",
+    "sura": null,
+    "verse": null,
+    "subject": null,
+    "items": [
+      {
+        "id": 1,
+        "text": "غَشِيَ",
+        "spots": [
+          {
+            "start": 0,
+            "end": 2,
+            "text": "غَ"
+          }
+        ],
+        "audio": "196_1.wav"
+      },
+      {
+        "id": 2,
+        "text": "غِلَافَ",
+        "spots": [
+          {
+            "start": 0,
+            "end": 2,
+            "text": "غِ"
+          }
+        ],
+        "audio": "196_2.wav"
+      },
+      {
+        "id": 3,
+        "text": "غُشِيَ",
+        "spots": [
+          {
+            "start": 0,
+            "end": 2,
+            "text": "غُ"
+          }
+        ],
+        "audio": "196_3.wav"
+      },
+      {
+        "id": 4,
+        "text": "نَفَعَ",
+        "audio": "196_4.wav"
+      }
+    ],
+    "options": [
+      {
+        "id": 1,
+        "text": "غَ",
+        "spots": [
+          {
+            "start": 0,
+            "end": 2,
+            "text": "غَ"
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "text": "غِ",
+        "spots": [
+          {
+            "start": 0,
+            "end": 2,
+            "text": "غِ"
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "text": "غُ",
+        "spots": [
+          {
+            "start": 0,
+            "end": 2,
+            "text": "غُ"
+          }
+        ]
+      },
+      {
+        "id": 4,
+        "text": "-"
+      }
+    ],
+    "answer": [
+      {
+        "item": 1,
+        "option": 1
+      },
+      {
+        "item": 2,
+        "option": 2
+      },
+      {
+        "item": 3,
+        "option": 3
+      },
+      {
+        "item": 4,
+        "option": 4
+      }
+    ]
+  },
+  {
+    "id": 204,
+    "rule": "tafkheem",
+    "lesson": 4,
+    "task_type": "matching",
+    "question_type": "match_pattern",
+    "question_id": "match_pattern",
+    "modality": "audio",
+    "sura": null,
+    "verse": null,
+    "subject": null,
+    "items": [
+      {
+        "id": 1,
+        "text": "بَغَى",
+        "spots": [
+          {
+            "start": 2,
+            "end": 4,
+            "text": "غَ"
+          }
+        ],
+        "audio": "204_1.wav"
+      },
+      {
+        "id": 2,
+        "text": "غِيَابَ",
+        "spots": [
+          {
+            "start": 0,
+            "end": 2,
+            "text": "غِ"
+          }
+        ],
+        "audio": "204_2.wav"
+      },
+      {
+        "id": 3,
+        "text": "بُغِيَ",
+        "spots": [
+          {
+            "start": 2,
+            "end": 4,
+            "text": "غِ"
+          }
+        ],
+        "audio": "204_3.wav"
+      },
+      {
+        "id": 4,
+        "text": "يَغْلِبُ",
+        "spots": [
+          {
+            "start": 2,
+            "end": 4,
+            "text": "غْ"
+          }
+        ],
+        "audio": "204_4.wav"
+      }
+    ],
+    "options": [
+      {
+        "id": 1,
+        "text": "غَ",
+        "spots": [
+          {
+            "start": 0,
+            "end": 2,
+            "text": "غَ"
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "text": "غِ",
+        "spots": [
+          {
+            "start": 0,
+            "end": 2,
+            "text": "غِ"
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "text": "غُ",
+        "spots": [
+          {
+            "start": 0,
+            "end": 2,
+            "text": "غُ"
+          }
+        ]
+      },
+      {
+        "id": 4,
+        "text": "غْ",
+        "spots": [
+          {
+            "start": 0,
+            "end": 2,
+            "text": "غْ"
+          }
+        ]
+      }
+    ],
+    "answer": [
+      {
+        "item": 1,
+        "option": 1
+      },
+      {
+        "item": 2,
+        "option": 2
+      },
+      {
+        "item": 3,
+        "option": 3
+      },
+      {
+        "item": 4,
+        "option": 4
+      }
+    ]
+  },
+  {
+    "id": 219,
+    "rule": "tafkheem",
+    "lesson": 4,
+    "task_type": "select_position",
+    "question_type": "position_in_word",
+    "question_id": "position_in_word",
+    "modality": "audio",
+    "sura": null,
+    "verse": null,
+    "subject": {
+      "text": "يَغِيبُ",
+      "spots": [
+        {
+          "start": 2,
+          "end": 4,
+          "text": "غِ"
+        }
+      ],
+      "audio": "219.wav"
+    },
+    "options": [
+      {
+        "id": 1,
+        "text": "start"
+      },
+      {
+        "id": 2,
+        "text": "mid"
+      },
+      {
+        "id": 3,
+        "text": "end"
+      },
+      {
+        "id": 4,
+        "text": "none"
+      }
+    ],
+    "answer": [
+      2
+    ],
+    "pattern": "غِ"
+  },
+  {
+    "id": 210,
+    "rule": "tafkheem",
+    "lesson": 4,
+    "task_type": "select",
+    "question_type": "vowel_on_letter",
+    "question_id": "vowel_on_letter",
+    "multiple": false,
+    "modality": "audio",
+    "sura": null,
+    "verse": null,
+    "subject": {
+      "text": "غَابَ",
+      "spots": [
+        {
+          "start": 0,
+          "end": 2,
+          "text": "غَ"
+        }
+      ],
+      "audio": "210.wav"
+    },
+    "options": [
+      {
+        "id": 1,
+        "text": "َ"
+      },
+      {
+        "id": 2,
+        "text": "ُ"
+      },
+      {
+        "id": 3,
+        "text": "ِ"
+      },
+      {
+        "id": 4,
+        "text": "ْ"
+      },
+      {
+        "id": 5,
+        "text": "none"
+      }
+    ],
+    "answer": [
+      1
+    ],
+    "pattern": "غَ"
+  },
+  {
+    "id": 200,
+    "rule": "tafkheem",
+    "lesson": 4,
+    "task_type": "select",
+    "question_type": "vowels_on_letter",
+    "question_id": "vowels_on_letter",
+    "multiple": true,
+    "modality": "audio",
+    "sura": 44,
+    "verse": 46,
+    "subject": {
+      "text": "كَغَلْىِ ٱلْحَمِيمِ ٤٦",
+      "spots": [
+        {
+          "start": 2,
+          "end": 4,
+          "text": "غَ"
+        }
+      ],
+      "audio": "200.wav"
+    },
+    "options": [
+      {
+        "id": 1,
+        "text": "َ"
+      },
+      {
+        "id": 2,
+        "text": "ُ"
+      },
+      {
+        "id": 3,
+        "text": "ِ"
+      },
+      {
+        "id": 4,
+        "text": "ْ"
+      },
+      {
+        "id": 5,
+        "text": "none"
+      }
+    ],
+    "answer": [
+      1
+    ],
+    "pattern": "غَ"
+  },
+  {
+    "id": 224,
+    "rule": "tafkheem",
+    "lesson": 4,
+    "task_type": "select",
+    "question_type": "vowels_on_letter",
+    "question_id": "vowels_on_letter",
+    "multiple": true,
+    "modality": "audio",
+    "sura": 46,
+    "verse": 35,
+    "subject": {
+      "text": "بَلَٰغٌ ۚ",
+      "spots": [
+        {
+          "start": 5,
+          "end": 7,
+          "text": "غٌ"
+        }
+      ],
+      "audio": "224.wav"
+    },
+    "options": [
+      {
+        "id": 1,
+        "text": "َ"
+      },
+      {
+        "id": 2,
+        "text": "ُ"
+      },
+      {
+        "id": 3,
+        "text": "ِ"
+      },
+      {
+        "id": 4,
+        "text": "ْ"
+      },
+      {
+        "id": 5,
+        "text": "none"
+      }
+    ],
+    "answer": [
+      2
+    ],
+    "pattern": "غٌ"
+  },
+  {
+    "id": 248,
+    "rule": "tafkheem",
+    "lesson": 4,
+    "task_type": "select",
+    "question_type": "vowels_on_letter",
+    "question_id": "vowels_on_letter",
+    "multiple": true,
+    "modality": "audio",
+    "sura": 69,
+    "verse": 30,
+    "subject": {
+      "text": "خُذُوهُ فَغُلُّوهُ ٣٠",
+      "spots": [
+        {
+          "start": 0,
+          "end": 2,
+          "text": "خُ"
+        },
+        {
+          "start": 10,
+          "end": 12,
+          "text": "غُ"
+        }
+      ],
+      "audio": "248.wav"
+    },
+    "options": [
+      {
+        "id": 1,
+        "text": "َ"
+      },
+      {
+        "id": 2,
+        "text": "ُ"
+      },
+      {
+        "id": 3,
+        "text": "ِ"
+      },
+      {
+        "id": 4,
+        "text": "ْ"
+      },
+      {
+        "id": 5,
+        "text": "none"
+      }
+    ],
+    "answer": [
+      2
+    ],
+    "pattern": "خُ:غُ"
+  },
+  {
+    "id": 279,
+    "rule": "tafkheem",
+    "lesson": 5,
+    "task_type": "select_count",
+    "question_type": "count_rule",
+    "question_id": "count_rule",
+    "modality": "audio",
+    "sura": 53,
+    "verse": 28,
+    "subject": {
+      "text": "وَمَا لَهُم بِهِۦ مِنْ عِلْمٍ ۖ",
+      "audio": "279.wav"
+    },
+    "options": [
+      {
+        "id": 1,
+        "text": "0"
+      },
+      {
+        "id": 2,
+        "text": "1"
+      },
+      {
+        "id": 3,
+        "text": "2"
+      },
+      {
+        "id": 4,
+        "text": "3"
+      }
+    ],
+    "answer": [
+      1
+    ]
+  },
+  {
+    "id": 301,
+    "rule": "tafkheem",
+    "lesson": 5,
+    "task_type": "select_count",
+    "question_type": "count_rule",
+    "question_id": "count_rule",
+    "modality": "audio",
+    "sura": 7,
+    "verse": 30,
+    "subject": {
+      "text": "فَرِيقًا هَدَىٰ وَفَرِيقًا حَقَّ عَلَيْهِمُ ٱلضَّلَٰلَةُ ۗ",
+      "spots": [
+        {
+          "start": 5,
+          "end": 7,
+          "text": "قً"
+        },
+        {
+          "start": 23,
+          "end": 25,
+          "text": "قً"
+        },
+        {
+          "start": 29,
+          "end": 32,
+          "text": "قَّ"
+        },
+        {
+          "start": 46,
+          "end": 49,
+          "text": "ضَّ"
+        }
+      ],
+      "audio": "301.wav"
+    },
+    "options": [
+      {
+        "id": 1,
+        "text": "1"
+      },
+      {
+        "id": 2,
+        "text": "2"
+      },
+      {
+        "id": 3,
+        "text": "3"
+      },
+      {
+        "id": 4,
+        "text": "4"
+      }
+    ],
+    "answer": [
+      4
+    ],
+    "pattern": "قً:قً:قَّ:ضَّ"
+  },
+  {
+    "id": 257,
+    "rule": "tafkheem",
+    "lesson": 5,
+    "task_type": "yes_no",
+    "question_type": "has_rule",
+    "question_id": "has_rule.word",
+    "modality": "audio",
+    "sura": null,
+    "verse": null,
+    "subject": {
+      "text": "ضَلَّ",
+      "spots": [
+        {
+          "start": 0,
+          "end": 2,
+          "text": "ضَ"
+        }
+      ],
+      "audio": "257.wav"
+    },
+    "options": [
+      {
+        "id": 1,
+        "text": "yes"
+      },
+      {
+        "id": 2,
+        "text": "no"
+      }
+    ],
+    "answer": [
+      1
+    ],
+    "pattern": "ضَ"
+  },
+  {
+    "id": 260,
+    "rule": "tafkheem",
+    "lesson": 5,
+    "task_type": "matching",
+    "question_type": "match_pattern",
+    "question_id": "match_pattern",
+    "modality": "audio",
+    "sura": null,
+    "verse": null,
+    "subject": null,
+    "items": [
+      {
+        "id": 1,
+        "text": "ضَعُفَ",
+        "spots": [
+          {
+            "start": 0,
+            "end": 2,
+            "text": "ضَ"
+          }
+        ],
+        "audio": "260_1.wav"
+      },
+      {
+        "id": 2,
+        "text": "ضِعْفَ",
+        "spots": [
+          {
+            "start": 0,
+            "end": 2,
+            "text": "ضِ"
+          }
+        ],
+        "audio": "260_2.wav"
+      },
+      {
+        "id": 3,
+        "text": "ضُلَّ",
+        "spots": [
+          {
+            "start": 0,
+            "end": 2,
+            "text": "ضُ"
+          }
+        ],
+        "audio": "260_3.wav"
+      },
+      {
+        "id": 4,
+        "text": "كَشَفَ",
+        "audio": "260_4.wav"
+      }
+    ],
+    "options": [
+      {
+        "id": 1,
+        "text": "ضَ",
+        "spots": [
+          {
+            "start": 0,
+            "end": 2,
+            "text": "ضَ"
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "text": "ضِ",
+        "spots": [
+          {
+            "start": 0,
+            "end": 2,
+            "text": "ضِ"
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "text": "ضُ",
+        "spots": [
+          {
+            "start": 0,
+            "end": 2,
+            "text": "ضُ"
+          }
+        ]
+      },
+      {
+        "id": 4,
+        "text": "-"
+      }
+    ],
+    "answer": [
+      {
+        "item": 1,
+        "option": 1
+      },
+      {
+        "item": 2,
+        "option": 2
+      },
+      {
+        "item": 3,
+        "option": 3
+      },
+      {
+        "item": 4,
+        "option": 4
+      }
+    ]
+  },
+  {
+    "id": 275,
+    "rule": "tafkheem",
+    "lesson": 5,
+    "task_type": "select_position",
+    "question_type": "position_in_word",
+    "question_id": "position_in_word",
+    "modality": "audio",
+    "sura": null,
+    "verse": null,
+    "subject": {
+      "text": "ضُحَى",
+      "spots": [
+        {
+          "start": 0,
+          "end": 2,
+          "text": "ضُ"
+        }
+      ],
+      "audio": "275.wav"
+    },
+    "options": [
+      {
+        "id": 1,
+        "text": "start"
+      },
+      {
+        "id": 2,
+        "text": "mid"
+      },
+      {
+        "id": 3,
+        "text": "end"
+      },
+      {
+        "id": 4,
+        "text": "none"
+      }
+    ],
+    "answer": [
+      1
+    ],
+    "pattern": "ضُ"
+  },
+  {
+    "id": 266,
+    "rule": "tafkheem",
+    "lesson": 5,
+    "task_type": "select",
+    "question_type": "vowel_on_letter",
+    "question_id": "vowel_on_letter",
+    "multiple": false,
+    "modality": "audio",
+    "sura": null,
+    "verse": null,
+    "subject": {
+      "text": "يَضْلِلْ",
+      "spots": [
+        {
+          "start": 2,
+          "end": 4,
+          "text": "ضْ"
+        }
+      ],
+      "audio": "266.wav"
+    },
+    "options": [
+      {
+        "id": 1,
+        "text": "َ"
+      },
+      {
+        "id": 2,
+        "text": "ُ"
+      },
+      {
+        "id": 3,
+        "text": "ِ"
+      },
+      {
+        "id": 4,
+        "text": "ْ"
+      },
+      {
+        "id": 5,
+        "text": "none"
+      }
+    ],
+    "answer": [
+      4
+    ],
+    "pattern": "ضْ"
+  },
+  {
+    "id": 278,
+    "rule": "tafkheem",
+    "lesson": 5,
+    "task_type": "select",
+    "question_type": "vowels_on_letter",
+    "question_id": "vowels_on_letter",
+    "multiple": true,
+    "modality": "audio",
+    "sura": 9,
+    "verse": 95,
+    "subject": {
+      "text": "فَأَعْرِضُوا۟ عَنْهُمْ ۖ",
+      "spots": [
+        {
+          "start": 8,
+          "end": 10,
+          "text": "ضُ"
+        }
+      ],
+      "audio": "278.wav"
+    },
+    "options": [
+      {
+        "id": 1,
+        "text": "َ"
+      },
+      {
+        "id": 2,
+        "text": "ُ"
+      },
+      {
+        "id": 3,
+        "text": "ِ"
+      },
+      {
+        "id": 4,
+        "text": "ْ"
+      },
+      {
+        "id": 5,
+        "text": "none"
+      }
+    ],
+    "answer": [
+      2
+    ],
+    "pattern": "ضُ"
+  },
+  {
+    "id": 290,
+    "rule": "tafkheem",
+    "lesson": 5,
+    "task_type": "select",
+    "question_type": "vowels_on_letter",
+    "question_id": "vowels_on_letter",
+    "multiple": true,
+    "modality": "audio",
+    "sura": null,
+    "verse": null,
+    "subject": {
+      "text": "يَضِيقُ",
+      "spots": [
+        {
+          "start": 2,
+          "end": 4,
+          "text": "ضِ"
+        },
+        {
+          "start": 5,
+          "end": 7,
+          "text": "قُ"
+        }
+      ],
+      "audio": "290.wav"
+    },
+    "options": [
+      {
+        "id": 1,
+        "text": "َ"
+      },
+      {
+        "id": 2,
+        "text": "ُ"
+      },
+      {
+        "id": 3,
+        "text": "ِ"
+      },
+      {
+        "id": 4,
+        "text": "ْ"
+      },
+      {
+        "id": 5,
+        "text": "none"
+      }
+    ],
+    "answer": [
+      3,
+      2
+    ],
+    "pattern": "ضِ:قُ"
+  },
+  {
+    "id": 302,
+    "rule": "tafkheem",
+    "lesson": 5,
+    "task_type": "select",
+    "question_type": "vowels_on_letter",
+    "question_id": "vowels_on_letter",
+    "multiple": true,
+    "modality": "audio",
+    "sura": 2,
+    "verse": 189,
+    "subject": {
+      "text": "۞ يَسْـَٔلُونَكَ عَنِ ٱلْأَهِلَّةِ ۖ",
+      "audio": "302.wav"
+    },
+    "options": [
+      {
+        "id": 1,
+        "text": "َ"
+      },
+      {
+        "id": 2,
+        "text": "ُ"
+      },
+      {
+        "id": 3,
+        "text": "ِ"
+      },
+      {
+        "id": 4,
+        "text": "ْ"
+      },
+      {
+        "id": 5,
+        "text": "none"
+      }
+    ],
+    "answer": [
+      5
+    ]
+  },
+  {
+    "id": 325,
+    "rule": "tafkheem",
+    "lesson": 6,
+    "task_type": "select_count",
+    "question_type": "count_rule",
+    "question_id": "count_rule",
+    "modality": "audio",
+    "sura": 83,
+    "verse": 5,
+    "subject": {
+      "text": "لِيَوْمٍ عَظِيمٍ ٥",
+      "spots": [
+        {
+          "start": 11,
+          "end": 13,
+          "text": "ظِ"
+        }
+      ],
+      "audio": "325.wav"
+    },
+    "options": [
+      {
+        "id": 1,
+        "text": "0"
+      },
+      {
+        "id": 2,
+        "text": "1"
+      },
+      {
+        "id": 3,
+        "text": "2"
+      },
+      {
+        "id": 4,
+        "text": "3"
+      }
+    ],
+    "answer": [
+      2
+    ],
+    "pattern": "ظِ"
+  },
+  {
+    "id": 343,
+    "rule": "tafkheem",
+    "lesson": 6,
+    "task_type": "select_count",
+    "question_type": "count_rule",
+    "question_id": "count_rule",
+    "modality": "audio",
+    "sura": 9,
+    "verse": 63,
+    "subject": {
+      "text": "ذَٰلِكَ ٱلْخِزْىُ ٱلْعَظِيمُ",
+      "spots": [
+        {
+          "start": 11,
+          "end": 13,
+          "text": "خِ"
+        },
+        {
+          "start": 23,
+          "end": 25,
+          "text": "ظِ"
+        }
+      ],
+      "audio": "343.wav"
+    },
+    "options": [
+      {
+        "id": 1,
+        "text": "0"
+      },
+      {
+        "id": 2,
+        "text": "1"
+      },
+      {
+        "id": 3,
+        "text": "2"
+      },
+      {
+        "id": 4,
+        "text": "3"
+      }
+    ],
+    "answer": [
+      3
+    ],
+    "pattern": "خِ:ظِ"
+  },
+  {
+    "id": 321,
+    "rule": "tafkheem",
+    "lesson": 6,
+    "task_type": "yes_no",
+    "question_type": "has_rule",
+    "question_id": "has_rule.word",
+    "modality": "audio",
+    "sura": null,
+    "verse": null,
+    "subject": {
+      "text": "ظَلَمَ",
+      "spots": [
+        {
+          "start": 0,
+          "end": 2,
+          "text": "ظَ"
+        }
+      ],
+      "audio": "321.wav"
+    },
+    "options": [
+      {
+        "id": 1,
+        "text": "yes"
+      },
+      {
+        "id": 2,
+        "text": "no"
+      }
+    ],
+    "answer": [
+      1
+    ],
+    "pattern": "ظَ"
+  },
+  {
+    "id": 324,
+    "rule": "tafkheem",
+    "lesson": 6,
+    "task_type": "matching",
+    "question_type": "match_pattern",
+    "question_id": "match_pattern",
+    "modality": "audio",
+    "sura": null,
+    "verse": null,
+    "subject": null,
+    "items": [
+      {
+        "id": 1,
+        "text": "ظَعَنَ",
+        "spots": [
+          {
+            "start": 0,
+            "end": 2,
+            "text": "ظَ"
+          }
+        ],
+        "audio": "324_1.wav"
+      },
+      {
+        "id": 2,
+        "text": "عِظَمَ",
+        "spots": [
+          {
+            "start": 2,
+            "end": 4,
+            "text": "ظَ"
+          }
+        ],
+        "audio": "324_2.wav"
+      },
+      {
+        "id": 3,
+        "text": "عُظِمَ",
+        "spots": [
+          {
+            "start": 2,
+            "end": 4,
+            "text": "ظِ"
+          }
+        ],
+        "audio": "324_3.wav"
+      },
+      {
+        "id": 4,
+        "text": "حَلَبَ",
+        "audio": "324_4.wav"
+      }
+    ],
+    "options": [
+      {
+        "id": 1,
+        "text": "ظَ",
+        "spots": [
+          {
+            "start": 0,
+            "end": 2,
+            "text": "ظَ"
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "text": "ظَ",
+        "spots": [
+          {
+            "start": 0,
+            "end": 2,
+            "text": "ظَ"
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "text": "ظِ",
+        "spots": [
+          {
+            "start": 0,
+            "end": 2,
+            "text": "ظِ"
+          }
+        ]
+      },
+      {
+        "id": 4,
+        "text": "-"
+      }
+    ],
+    "answer": [
+      {
+        "item": 1,
+        "option": 1
+      },
+      {
+        "item": 2,
+        "option": 2
+      },
+      {
+        "item": 3,
+        "option": 3
+      },
+      {
+        "item": 4,
+        "option": 4
+      }
+    ]
+  },
+  {
+    "id": 355,
+    "rule": "tafkheem",
+    "lesson": 6,
+    "task_type": "select_position",
+    "question_type": "position_in_word",
+    "question_id": "position_in_word",
+    "modality": "audio",
+    "sura": null,
+    "verse": null,
+    "subject": {
+      "text": "عِظَامَ",
+      "spots": [
+        {
+          "start": 2,
+          "end": 4,
+          "text": "ظَ"
+        }
+      ],
+      "audio": "355.wav"
+    },
+    "options": [
+      {
+        "id": 1,
+        "text": "start"
+      },
+      {
+        "id": 2,
+        "text": "mid"
+      },
+      {
+        "id": 3,
+        "text": "end"
+      },
+      {
+        "id": 4,
+        "text": "none"
+      }
+    ],
+    "answer": [
+      2
+    ],
+    "pattern": "ظَ"
+  },
+  {
+    "id": 322,
+    "rule": "tafkheem",
+    "lesson": 6,
+    "task_type": "select",
+    "question_type": "vowel_on_letter",
+    "question_id": "vowel_on_letter",
+    "multiple": false,
+    "modality": "audio",
+    "sura": null,
+    "verse": null,
+    "subject": {
+      "text": "ظِلَّ",
+      "spots": [
+        {
+          "start": 0,
+          "end": 2,
+          "text": "ظِ"
+        }
+      ],
+      "audio": "322.wav"
+    },
+    "options": [
+      {
+        "id": 1,
+        "text": "َ"
+      },
+      {
+        "id": 2,
+        "text": "ُ"
+      },
+      {
+        "id": 3,
+        "text": "ِ"
+      },
+      {
+        "id": 4,
+        "text": "ْ"
+      },
+      {
+        "id": 5,
+        "text": "none"
+      }
+    ],
+    "answer": [
+      3
+    ],
+    "pattern": "ظِ"
+  },
+  {
+    "id": 328,
+    "rule": "tafkheem",
+    "lesson": 6,
+    "task_type": "select",
+    "question_type": "vowels_on_letter",
+    "question_id": "vowels_on_letter",
+    "multiple": true,
+    "modality": "audio",
+    "sura": 70,
+    "verse": 15,
+    "subject": {
+      "text": "إِنَّهَا لَظَىٰ",
+      "spots": [
+        {
+          "start": 11,
+          "end": 13,
+          "text": "ظَ"
+        }
+      ],
+      "audio": "328.wav"
+    },
+    "options": [
+      {
+        "id": 1,
+        "text": "َ"
+      },
+      {
+        "id": 2,
+        "text": "ُ"
+      },
+      {
+        "id": 3,
+        "text": "ِ"
+      },
+      {
+        "id": 4,
+        "text": "ْ"
+      },
+      {
+        "id": 5,
+        "text": "none"
+      }
+    ],
+    "answer": [
+      1
+    ],
+    "pattern": "ظَ"
+  },
+  {
+    "id": 352,
+    "rule": "tafkheem",
+    "lesson": 6,
+    "task_type": "select",
+    "question_type": "vowels_on_letter",
+    "question_id": "vowels_on_letter",
+    "multiple": true,
+    "modality": "audio",
+    "sura": 17,
+    "verse": 40,
+    "subject": {
+      "text": "إِنَّكُمْ لَتَقُولُونَ قَوْلًا عَظِيمًا",
+      "spots": [
+        {
+          "start": 14,
+          "end": 16,
+          "text": "قُ"
+        },
+        {
+          "start": 23,
+          "end": 25,
+          "text": "قَ"
+        },
+        {
+          "start": 33,
+          "end": 35,
+          "text": "ظِ"
+        }
+      ],
+      "audio": "352.wav"
+    },
+    "options": [
+      {
+        "id": 1,
+        "text": "َ"
+      },
+      {
+        "id": 2,
+        "text": "ُ"
+      },
+      {
+        "id": 3,
+        "text": "ِ"
+      },
+      {
+        "id": 4,
+        "text": "ْ"
+      },
+      {
+        "id": 5,
+        "text": "none"
+      }
+    ],
+    "answer": [
+      2,
+      1,
+      3
+    ],
+    "pattern": "قُ:قَ:ظِ"
+  },
+  {
+    "id": 384,
+    "rule": "tafkheem",
+    "lesson": 6,
+    "task_type": "select",
+    "question_type": "vowels_on_letter",
+    "question_id": "vowels_on_letter",
+    "multiple": true,
+    "modality": "audio",
+    "sura": 37,
+    "verse": 111,
+    "subject": {
+      "text": "إِنَّهُ مِنْ عِبَادِنَا ٱلْمُؤْمِنِينَ ١١١",
+      "audio": "384.wav"
+    },
+    "options": [
+      {
+        "id": 1,
+        "text": "َ"
+      },
+      {
+        "id": 2,
+        "text": "ُ"
+      },
+      {
+        "id": 3,
+        "text": "ِ"
+      },
+      {
+        "id": 4,
+        "text": "ْ"
+      },
+      {
+        "id": 5,
+        "text": "none"
+      }
+    ],
+    "answer": [
+      5
+    ]
+  },
+  {
+    "id": 389,
+    "rule": "tafkheem",
+    "lesson": 7,
+    "task_type": "select_count",
+    "question_type": "count_rule",
+    "question_id": "count_rule",
+    "modality": "audio",
+    "sura": 75,
+    "verse": 31,
+    "subject": {
+      "text": "فَلَا صَدَّقَ وَلَا صَلَّىٰ ٣١",
+      "spots": [
+        {
+          "start": 6,
+          "end": 8,
+          "text": "صَ"
+        },
+        {
+          "start": 11,
+          "end": 13,
+          "text": "قَ"
+        },
+        {
+          "start": 20,
+          "end": 22,
+          "text": "صَ"
+        }
+      ],
+      "audio": "389.wav"
+    },
+    "options": [
+      {
+        "id": 1,
+        "text": "1"
+      },
+      {
+        "id": 2,
+        "text": "2"
+      },
+      {
+        "id": 3,
+        "text": "3"
+      },
+      {
+        "id": 4,
+        "text": "4"
+      }
+    ],
+    "answer": [
+      3
+    ],
+    "pattern": "صَ:قَ:صَ"
+  },
+  {
+    "id": 391,
+    "rule": "tafkheem",
+    "lesson": 7,
+    "task_type": "select_count",
+    "question_type": "count_rule",
+    "question_id": "count_rule",
+    "modality": "audio",
+    "sura": 27,
+    "verse": 10,
+    "subject": {
+      "text": "وَأَلْقِ عَصَاكَ ۚ",
+      "spots": [
+        {
+          "start": 6,
+          "end": 8,
+          "text": "قِ"
+        },
+        {
+          "start": 11,
+          "end": 13,
+          "text": "صَ"
+        }
+      ],
+      "audio": "391.wav"
+    },
+    "options": [
+      {
+        "id": 1,
+        "text": "0"
+      },
+      {
+        "id": 2,
+        "text": "1"
+      },
+      {
+        "id": 3,
+        "text": "2"
+      },
+      {
+        "id": 4,
+        "text": "3"
+      }
+    ],
+    "answer": [
+      3
+    ],
+    "pattern": "قِ:صَ"
+  },
+  {
+    "id": 447,
+    "rule": "tafkheem",
+    "lesson": 7,
+    "task_type": "select_count",
+    "question_type": "count_rule",
+    "question_id": "count_rule",
+    "modality": "audio",
+    "sura": 19,
+    "verse": 47,
+    "subject": {
+      "text": "إِنَّهُ كَانَ بِى حَفِيًّا",
+      "audio": "447.wav"
+    },
+    "options": [
+      {
+        "id": 1,
+        "text": "0"
+      },
+      {
+        "id": 2,
+        "text": "1"
+      },
+      {
+        "id": 3,
+        "text": "2"
+      },
+      {
+        "id": 4,
+        "text": "3"
+      }
+    ],
+    "answer": [
+      1
+    ]
+  },
+  {
+    "id": 393,
+    "rule": "tafkheem",
+    "lesson": 7,
+    "task_type": "yes_no",
+    "question_type": "has_rule",
+    "question_id": "has_rule.word",
+    "modality": "audio",
+    "sura": null,
+    "verse": null,
+    "subject": {
+      "text": "لَمَحَ",
+      "audio": "393.wav"
+    },
+    "options": [
+      {
+        "id": 1,
+        "text": "yes"
+      },
+      {
+        "id": 2,
+        "text": "no"
+      }
+    ],
+    "answer": [
+      2
+    ]
+  },
+  {
+    "id": 396,
+    "rule": "tafkheem",
+    "lesson": 7,
+    "task_type": "matching",
+    "question_type": "match_pattern",
+    "question_id": "match_pattern",
+    "modality": "audio",
+    "sura": null,
+    "verse": null,
+    "subject": null,
+    "items": [
+      {
+        "id": 1,
+        "text": "فَصَلَ",
+        "spots": [
+          {
+            "start": 2,
+            "end": 4,
+            "text": "صَ"
+          }
+        ],
+        "audio": "396_1.wav"
+      },
+      {
+        "id": 2,
+        "text": "صِيَامَ",
+        "spots": [
+          {
+            "start": 0,
+            "end": 2,
+            "text": "صِ"
+          }
+        ],
+        "audio": "396_2.wav"
+      },
+      {
+        "id": 3,
+        "text": "نُصُحَ",
+        "spots": [
+          {
+            "start": 2,
+            "end": 4,
+            "text": "صُ"
+          }
+        ],
+        "audio": "396_3.wav"
+      },
+      {
+        "id": 4,
+        "text": "أَصْلَحَ",
+        "spots": [
+          {
+            "start": 2,
+            "end": 4,
+            "text": "صْ"
+          }
+        ],
+        "audio": "396_4.wav"
+      }
+    ],
+    "options": [
+      {
+        "id": 1,
+        "text": "صَ",
+        "spots": [
+          {
+            "start": 0,
+            "end": 2,
+            "text": "صَ"
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "text": "صِ",
+        "spots": [
+          {
+            "start": 0,
+            "end": 2,
+            "text": "صِ"
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "text": "صُ",
+        "spots": [
+          {
+            "start": 0,
+            "end": 2,
+            "text": "صُ"
+          }
+        ]
+      },
+      {
+        "id": 4,
+        "text": "صْ",
+        "spots": [
+          {
+            "start": 0,
+            "end": 2,
+            "text": "صْ"
+          }
+        ]
+      }
+    ],
+    "answer": [
+      {
+        "item": 1,
+        "option": 1
+      },
+      {
+        "item": 2,
+        "option": 2
+      },
+      {
+        "item": 3,
+        "option": 3
+      },
+      {
+        "item": 4,
+        "option": 4
+      }
+    ]
+  },
+  {
+    "id": 411,
+    "rule": "tafkheem",
+    "lesson": 7,
+    "task_type": "select_position",
+    "question_type": "position_in_word",
+    "question_id": "position_in_word",
+    "modality": "audio",
+    "sura": null,
+    "verse": null,
+    "subject": {
+      "text": "صَامَ",
+      "spots": [
+        {
+          "start": 0,
+          "end": 2,
+          "text": "صَ"
+        }
+      ],
+      "audio": "411.wav"
+    },
+    "options": [
+      {
+        "id": 1,
+        "text": "start"
+      },
+      {
+        "id": 2,
+        "text": "mid"
+      },
+      {
+        "id": 3,
+        "text": "end"
+      },
+      {
+        "id": 4,
+        "text": "none"
+      }
+    ],
+    "answer": [
+      1
+    ],
+    "pattern": "صَ"
+  },
+  {
+    "id": 434,
+    "rule": "tafkheem",
+    "lesson": 7,
+    "task_type": "select",
+    "question_type": "vowel_on_letter",
+    "question_id": "vowel_on_letter",
+    "multiple": false,
+    "modality": "audio",
+    "sura": null,
+    "verse": null,
+    "subject": {
+      "text": "مَوْصُولَ",
+      "spots": [
+        {
+          "start": 4,
+          "end": 6,
+          "text": "صُ"
+        }
+      ],
+      "audio": "434.wav"
+    },
+    "options": [
+      {
+        "id": 1,
+        "text": "َ"
+      },
+      {
+        "id": 2,
+        "text": "ُ"
+      },
+      {
+        "id": 3,
+        "text": "ِ"
+      },
+      {
+        "id": 4,
+        "text": "ْ"
+      },
+      {
+        "id": 5,
+        "text": "none"
+      }
+    ],
+    "answer": [
+      2
+    ],
+    "pattern": "صُ"
+  },
+  {
+    "id": 418,
+    "rule": "tafkheem",
+    "lesson": 7,
+    "task_type": "select",
+    "question_type": "vowels_on_letter",
+    "question_id": "vowels_on_letter",
+    "multiple": true,
+    "modality": "audio",
+    "sura": null,
+    "verse": null,
+    "subject": {
+      "text": "قُصِدَ",
+      "spots": [
+        {
+          "start": 0,
+          "end": 4,
+          "text": "قُصِ"
+        }
+      ],
+      "audio": "418.wav"
+    },
+    "options": [
+      {
+        "id": 1,
+        "text": "َ"
+      },
+      {
+        "id": 2,
+        "text": "ُ"
+      },
+      {
+        "id": 3,
+        "text": "ِ"
+      },
+      {
+        "id": 4,
+        "text": "ْ"
+      },
+      {
+        "id": 5,
+        "text": "none"
+      }
+    ],
+    "answer": [
+      3,
+      2
+    ],
+    "pattern": "صِ:قُ"
+  },
+  {
+    "id": 440,
+    "rule": "tafkheem",
+    "lesson": 7,
+    "task_type": "select",
+    "question_type": "vowels_on_letter",
+    "question_id": "vowels_on_letter",
+    "multiple": true,
+    "modality": "audio",
+    "sura": 10,
+    "verse": 49,
+    "subject": {
+      "text": "لِكُلِّ أُمَّةٍ أَجَلٌ ۚ",
+      "audio": "440.wav"
+    },
+    "options": [
+      {
+        "id": 1,
+        "text": "َ"
+      },
+      {
+        "id": 2,
+        "text": "ُ"
+      },
+      {
+        "id": 3,
+        "text": "ِ"
+      },
+      {
+        "id": 4,
+        "text": "ْ"
+      },
+      {
+        "id": 5,
+        "text": "none"
+      }
+    ],
+    "answer": [
+      5
+    ]
+  }
+]

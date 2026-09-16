@@ -20,6 +20,20 @@ Authoring Guide, in der Feldreihenfolge des Guides. Zwei Abweichungen:
   Frontend die richtige Antwort im Wort oder Vers einfärben kann. Beschreibung
   in [`../docs/spots.md`](../docs/spots.md).
 
+Dazu kommen drei Dateien für Fortgeschrittene, die vorhandene Lektionen
+zusammenfassen. Sie enthalten keine neuen Aufgaben, sondern dieselben noch
+einmal — gleiche IDs, gleiche Tonaufnahmen, andere Reihenfolge:
+
+| Datei | fasst zusammen | Aufgaben |
+|---|---|---|
+| `tafkheem-1-advanced.json` | Lektion 1–7 | 64 |
+| `qalqala-1-advanced.json` | Lektion 10–14, die Aufgaben am einzelnen Wort | 64 |
+| `qalqala-2-advanced.json` | Lektion 10–14, die Aufgaben am Vers | 64 |
+
+Das Feld `lesson` nennt darin weiter die Herkunftslektion — der Dateiname sagt,
+zu welcher zusammengefassten Lektion die Aufgabe gehört. Welche Aufgaben das
+sind, steht in [`../advanced.json`](../advanced.json).
+
 Neu erzeugen: `python3 tools/export_json.py index.html json`. Das Skript prüft
 vorher die Prüfliste des Guides (eindeutige IDs, erlaubte Werte, question_type
 passend zum task_type, Options-IDs, Antwortverweise, kein deutscher oder

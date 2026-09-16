@@ -71,9 +71,17 @@ button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
   background:rgba(255,255,255,.72);backdrop-filter:blur(8px);
   height:100vh;position:sticky;top:0;overflow-y:auto;
 }
-.brand{display:flex;align-items:baseline;gap:10px;padding:0 6px}
+.brand{display:flex;align-items:center;gap:10px;padding:0 6px}
 .brand .glyph{font-family:'Hafs','Amiri',serif;font-size:26px;line-height:1;color:var(--accent)}
-.brand h1{margin:0;font-size:14px;font-weight:600}
+.brand h1{margin:0;font-size:14px;font-weight:600;flex:1}
+.dl{
+  flex:none;width:30px;height:30px;border-radius:50%;display:grid;place-items:center;
+  color:var(--ink-2);background:var(--surface);border:1px solid var(--line);
+  transition:color .13s,border-color .13s,background .13s;
+}
+.dl:hover{color:var(--accent);border-color:var(--accent-soft);background:var(--accent-soft)}
+.dl[data-state="laeuft"]{color:var(--accent);border-color:var(--accent)}
+.dl[data-state="fertig"]{color:var(--ok);border-color:var(--ok-line);background:var(--ok-bg)}
 .brand .sub{display:block;font-size:11px;font-weight:400;color:var(--ink-3);letter-spacing:.03em}
 
 .ctl{display:flex;flex-direction:column;gap:12px;padding:14px;background:var(--surface);
@@ -123,6 +131,10 @@ button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
 .lesson[aria-current="true"]{background:var(--accent);color:var(--accent-ink)}
 .lesson[aria-current="true"] .no{background:rgba(255,255,255,.22);color:#fff}
 .lesson[aria-current="true"] .tt{color:#fff;font-weight:600}
+/* Eine zusammengefasste Lektion trägt ihre Nummer im Akzent — sie steht für
+   mehrere Lektionen des Lehrplans. */
+.lesson.fort .no{background:var(--accent-soft);color:var(--accent)}
+.lesson.fort[aria-current="true"] .no{background:rgba(255,255,255,.28);color:#fff}
 
 .railfoot{padding:0 6px;font-size:11.5px;color:var(--ink-3);line-height:1.5}
 .railfoot a{color:var(--accent);text-decoration:none;font-weight:600}
@@ -295,6 +307,13 @@ button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
     <div class="brand">
       <span class="glyph">تجويد</span>
       <h1>Tajweed<span class="sub" id="brandSub">App-Vorschau</span></h1>
+      <button type="button" class="dl" id="download" title="Alle Aufgaben als JSON herunterladen">
+        <svg viewBox="0 0 20 20" aria-hidden="true" width="17" height="17">
+          <path d="M10 2.6v9.2M6.2 8.4 10 12.2l3.8-3.8M3.6 14.4v1.2a1.8 1.8 0 0 0 1.8 1.8h9.2a1.8 1.8 0 0 0 1.8-1.8v-1.2"
+                fill="none" stroke="currentColor" stroke-width="1.8"
+                stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </button>
     </div>
 
     <div class="ctl">
@@ -307,6 +326,16 @@ button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
         <input type="checkbox" id="solve">
         <span class="track" aria-hidden="true"></span>
         <span id="solveLabel">Lösungen anzeigen</span>
+      </label>
+      <label class="switch">
+        <input type="checkbox" id="advTafkheem">
+        <span class="track" aria-hidden="true"></span>
+        <span id="advTafkheemLabel">Tafkheem fortgeschritten</span>
+      </label>
+      <label class="switch">
+        <input type="checkbox" id="advQalqala">
+        <span class="track" aria-hidden="true"></span>
+        <span id="advQalqalaLabel">Qalqalah fortgeschritten</span>
       </label>
     </div>
 
@@ -415,6 +444,8 @@ const RULE = {tafkheem:"Tafkheem", qalqala:"Qalqalah", idgham:"Idgham",
 const T = {
   de:{
     htmlLang:"de", sub:"App-Vorschau", view:"Ansicht", solve:"Lösungen anzeigen",
+    advTafkheem:"Tafkheem fortgeschritten", advQalqala:"Qalqalah fortgeschritten",
+    download:"Alle Aufgaben als JSON herunterladen", packen:"Wird gepackt …",
     lesson:"Lektion", next:"Weiter", back:"Zurück", of:"von", tasks:"Aufgaben",
     loading:"Lädt …", failed:"Die Aufgaben ließen sich nicht laden.",
     doneTitle:"Lektion geschafft", doneText:"Alle Aufgaben dieser Lektion durchgegangen.",
@@ -428,6 +459,8 @@ const T = {
   },
   en:{
     htmlLang:"en", sub:"App preview", view:"View", solve:"Show answers",
+    advTafkheem:"Tafkheem advanced", advQalqala:"Qalqalah advanced",
+    download:"Download every exercise as JSON", packen:"Packing …",
     lesson:"Lesson", next:"Next", back:"Back", of:"of", tasks:"exercises",
     loading:"Loading …", failed:"The exercises could not be loaded.",
     doneTitle:"Lesson complete", doneText:"You have been through every exercise in this lesson.",
@@ -522,17 +555,57 @@ const S = {
     return /^en\b/i.test(navigator.language || "") ? "en" : "de";   // beim ersten Besuch
   })(),
   solve: store.get("tajwid.solve", "0") === "1",
-  lesson: Math.min(40, Math.max(1, parseInt(store.get("tajwid.lesson", "1"), 10) || 1)),
+  /* Für Fortgeschrittene sind die Lektionen zusammengefasst — das ist der
+     Normalfall, wer den Stoff neu lernt, schaltet es ab. */
+  advTafkheem: store.get("tajwid.advTafkheem", "1") === "1",
+  advQalqala: store.get("tajwid.advQalqala", "1") === "1",
+  /* Gemerkt wird ein Schlüssel, keine Nummer: die Nummer verschiebt sich,
+     sobald ein Schalter umgelegt wird. */
+  schluessel: store.get("tajwid.lesson", "L1"),
   i: 0, aufgaben: [], picked: new Set(), pairs: {}
 };
 const cache = new Map();
+let FORT = null;          // die zusammengefassten Lektionen aus advanced.json
 
 const $ = id => document.getElementById(id);
 
 /* ==========================================================================
-   Leiste links
+   Lektionsliste — hängt davon ab, was zusammengefasst ist
    ========================================================================== */
 function blockOf(n){ return BLOCKS.find(b => n >= b.von && n <= b.bis); }
+
+function fortAktiv(){
+  return (FORT || []).filter(f => (f.group === "tafkheem" && S.advTafkheem)
+                              || (f.group === "qalqala" && S.advQalqala));
+}
+
+/* Die Liste, wie sie links steht: entweder eine Lektion des Lehrplans oder
+   eine zusammengefasste, die mehrere davon ersetzt. Durchnummeriert wird
+   fortlaufend, damit aus 1–7 die neue Lektion 1 wird und die alte 8 zur 2. */
+function lektionsliste(){
+  const zusammen = fortAktiv();
+  const aus = [];
+  let alt = 1, nr = 1;
+  while (alt <= 40){
+    const hier = zusammen.filter(f => f.replaces[0] === alt);
+    if (hier.length){
+      for (const f of hier)
+        aus.push({nr: nr++, key: f.id, fort: f, block: f.block,
+                  titel: l => f[l], quelle: f.replaces});
+      alt = hier[0].replaces[hier[0].replaces.length - 1] + 1;
+    } else {
+      const n = alt;
+      aus.push({nr: nr++, key: "L" + n, lesson: n, block: blockOf(n).file,
+                titel: l => LESSONS[n][l], quelle: [n]});
+      alt++;
+    }
+  }
+  return aus;
+}
+
+function aktuelle(liste){
+  return liste.find(e => e.key === S.schluessel) || liste[0];
+}
 
 function drawRail(){
   const l = S.lang, t = T[l];
@@ -541,30 +614,41 @@ function drawRail(){
   $("brandSub").textContent = t.sub;
   $("capView").textContent = t.view;
   $("solveLabel").textContent = t.solve;
+  $("advTafkheemLabel").textContent = t.advTafkheem;
+  $("advQalqalaLabel").textContent = t.advQalqala;
+  $("download").title = t.download;
   $("next").textContent = t.next;
   $("prev").setAttribute("aria-label", t.back);
   $("railfoot").innerHTML = t.footer;
   document.querySelectorAll(".seg button").forEach(b =>
     b.setAttribute("aria-pressed", String(b.dataset.lang === l)));
 
+  const liste = lektionsliste(), hier = aktuelle(liste);
   const nav = $("lessons");
   nav.innerHTML = "";
-  let aktiv = null;
-  BLOCKS.forEach(b => {
-    const box = el("div", "block");
-    box.append(el("div", "cap", `<span>${esc(b.name)}</span><b>${b.von}–${b.bis}</b>`));
-    for (let n = b.von; n <= b.bis; n++){
-      const btn = el("button", "lesson",
-        `<span class="no">${n}</span><span class="tt">${esc(LESSONS[n][l])}</span>`);
-      btn.type = "button";
-      btn.setAttribute("aria-current", String(n === S.lesson));
-      btn.addEventListener("click", () => openLesson(n));
-      if (n === S.lesson) aktiv = btn;
-      box.append(btn);
+  let aktiv = null, box = null, offen = null;
+  for (const e of liste){
+    if (e.block !== offen){
+      offen = e.block;
+      const b = BLOCKS.find(b => b.file === e.block);
+      const gleich = liste.filter(x => x.block === e.block);
+      const spanne = gleich.length > 1
+        ? `${gleich[0].nr}–${gleich[gleich.length - 1].nr}` : String(gleich[0].nr);
+      box = el("div", "block");
+      box.append(el("div", "cap", `<span>${esc(b.name)}</span><b>${spanne}</b>`));
+      nav.append(box);
     }
-    nav.append(box);
-  });
-  if (aktiv) aktiv.scrollIntoView({block:"nearest"});
+    const btn = el("button", "lesson" + (e.fort ? " fort" : ""),
+      `<span class="no">${e.nr}</span><span class="tt">${esc(e.titel(l))}</span>`);
+    btn.type = "button";
+    btn.setAttribute("aria-current", String(e.key === hier.key));
+    if (e.fort) btn.title = (l === "de" ? "Fasst Lektion " : "Covers lessons ")
+      + e.quelle[0] + "–" + e.quelle[e.quelle.length - 1] + (l === "de" ? " zusammen" : "");
+    btn.addEventListener("click", () => openLesson(e.key));
+    if (e.key === hier.key) aktiv = btn;
+    box.append(btn);
+  }
+  if (aktiv) aktiv.scrollIntoView({block: "nearest"});
 }
 
 /* ==========================================================================
@@ -578,6 +662,13 @@ async function ladeFragen(){
   } catch (e){ FRAGEN = {}; }
 }
 
+async function ladeFort(){
+  try {
+    const r = await fetch("advanced.json");
+    FORT = (await r.json()).lessons;
+  } catch (e){ FORT = []; }
+}
+
 async function loadBlock(file){
   if (cache.has(file)) return cache.get(file);
   const p = fetch(`json/${file}.json`).then(r => {
@@ -588,20 +679,29 @@ async function loadBlock(file){
   return p;
 }
 
-async function openLesson(n){
+async function openLesson(key){
   if (!FRAGEN) await ladeFragen();
-  S.lesson = n;
-  store.set("tajwid.lesson", String(n));
+  if (!FORT) await ladeFort();
+  S.schluessel = key;
+  store.set("tajwid.lesson", key);
   drawRail();
+  const e = aktuelle(lektionsliste());
+  S.schluessel = e.key;
   $("screen").innerHTML = `<div class="loading">${esc(T[S.lang].loading)}</div>`;
-  const b = blockOf(n);
   try {
-    const alle = await loadBlock(b.file);
-    if (S.lesson !== n) return;
-    S.aufgaben = alle.filter(x => x.lesson === n);
+    const alle = await loadBlock(e.block);
+    if (S.schluessel !== e.key) return;
+    if (e.fort){
+      /* Die zusammengefasste Lektion nennt ihre Aufgaben einzeln und in der
+         Reihenfolge, in der sie drankommen sollen. */
+      const nach = new Map(alle.map(x => [x.id, x]));
+      S.aufgaben = e.fort.tasks.map(i => nach.get(i)).filter(Boolean);
+    } else {
+      S.aufgaben = alle.filter(x => x.lesson === e.lesson);
+    }
     S.i = 0;
     draw();
-  } catch (e){
+  } catch (err){
     $("screen").innerHTML = `<div class="loading">${esc(T[S.lang].failed)}</div>`;
   }
 }
@@ -615,7 +715,8 @@ function draw(){
   S.picked = new Set();
   S.pairs = {};
 
-  $("barTitle").textContent = `${t.lesson} ${S.lesson} · ${LESSONS[S.lesson][l]}`;
+  const hier = aktuelle(lektionsliste());
+  $("barTitle").textContent = `${t.lesson} ${hier.nr} · ${hier.titel(l)}`;
   const fertig = S.i >= S.aufgaben.length;
   $("barCount").textContent = S.aufgaben.length
     ? `${Math.min(S.i + 1, S.aufgaben.length)} ${t.of} ${S.aufgaben.length}` : "";
@@ -799,11 +900,115 @@ $("solve").addEventListener("change", ev => {
   store.set("tajwid.solve", S.solve ? "1" : "0");
   draw();
 });
+[["advTafkheem", "tafkheem"], ["advQalqala", "qalqala"]].forEach(([id, gruppe]) =>
+  $(id).addEventListener("change", ev => {
+    S[id] = ev.target.checked;
+    store.set("tajwid." + id, S[id] ? "1" : "0");
+    /* Steht man gerade in einer Lektion, die es nach dem Umschalten nicht
+       mehr gibt, landet man in der, die sie ersetzt — oder umgekehrt. */
+    const weg = (FORT || []).find(f => f.group === gruppe && f.id === S.schluessel);
+    if (weg && !S[id]) S.schluessel = "L" + weg.replaces[0];
+    const zu = (FORT || []).find(f => f.group === gruppe
+      && S.schluessel.startsWith("L")
+      && f.replaces.includes(Number(S.schluessel.slice(1))));
+    if (zu && S[id]) S.schluessel = zu.id;
+    openLesson(S.schluessel);
+  }));
 document.addEventListener("keydown", ev => {
   if (ev.target.matches("input,textarea")) return;
   if (ev.key === "ArrowRight") $("next").click();
   if (ev.key === "ArrowLeft") $("prev").click();
 });
+
+/* ==========================================================================
+   Alles herunterladen
+   ==========================================================================
+   Ein ZIP ohne fremde Bibliothek: die Dateien werden unverändert abgelegt
+   (Methode 0, „stored"), das spart den Packer und kostet bei JSON wenig.
+   Aufbau je Datei ein lokaler Kopf, danach das zentrale Verzeichnis. */
+const CRC = (() => {
+  const t = new Uint32Array(256);
+  for (let i = 0; i < 256; i++){
+    let c = i;
+    for (let k = 0; k < 8; k++) c = (c & 1) ? (0xEDB88320 ^ (c >>> 1)) : (c >>> 1);
+    t[i] = c >>> 0;
+  }
+  return t;
+})();
+function crc32(bytes){
+  let c = 0xFFFFFFFF;
+  for (let i = 0; i < bytes.length; i++) c = CRC[(c ^ bytes[i]) & 0xFF] ^ (c >>> 8);
+  return (c ^ 0xFFFFFFFF) >>> 0;
+}
+function zip(dateien){
+  const enc = new TextEncoder();
+  const teile = [], verzeichnis = [];
+  let offset = 0;
+  for (const d of dateien){
+    const name = enc.encode(d.name), daten = enc.encode(d.text);
+    const summe = crc32(daten);
+    const kopf = new DataView(new ArrayBuffer(30));
+    kopf.setUint32(0, 0x04034b50, true);
+    kopf.setUint16(4, 20, true);            // benötigte Fassung
+    kopf.setUint16(6, 0x0800, true);        // Namen sind UTF-8
+    kopf.setUint16(8, 0, true);             // unkomprimiert
+    kopf.setUint32(14, summe, true);
+    kopf.setUint32(18, daten.length, true);
+    kopf.setUint32(22, daten.length, true);
+    kopf.setUint16(26, name.length, true);
+    teile.push(new Uint8Array(kopf.buffer), name, daten);
+
+    const ve = new DataView(new ArrayBuffer(46));
+    ve.setUint32(0, 0x02014b50, true);
+    ve.setUint16(4, 20, true);
+    ve.setUint16(6, 20, true);
+    ve.setUint16(8, 0x0800, true);
+    ve.setUint16(10, 0, true);
+    ve.setUint32(16, summe, true);
+    ve.setUint32(20, daten.length, true);
+    ve.setUint32(24, daten.length, true);
+    ve.setUint16(28, name.length, true);
+    ve.setUint32(42, offset, true);
+    verzeichnis.push(new Uint8Array(ve.buffer), name);
+    offset += 30 + name.length + daten.length;
+  }
+  const vLaenge = verzeichnis.reduce((n, a) => n + a.length, 0);
+  const ende = new DataView(new ArrayBuffer(22));
+  ende.setUint32(0, 0x06054b50, true);
+  ende.setUint16(8, dateien.length, true);
+  ende.setUint16(10, dateien.length, true);
+  ende.setUint32(12, vLaenge, true);
+  ende.setUint32(16, offset, true);
+  return new Blob([...teile, ...verzeichnis, new Uint8Array(ende.buffer)],
+                  {type: "application/zip"});
+}
+
+async function herunterladen(){
+  const knopf = $("download"), t = T[S.lang];
+  knopf.dataset.state = "laeuft";
+  knopf.title = t.packen;
+  try {
+    const namen = BLOCKS.map(b => `json/${b.file}.json`)
+      .concat((FORT || []).map(f => `json/${f.id}.json`))
+      .concat(["questions.json", "advanced.json"]);
+    const dateien = await Promise.all(namen.map(async n => {
+      const r = await fetch(n);
+      if (!r.ok) throw new Error(n + ": " + r.status);
+      return {name: n.replace("json/", "aufgaben/"), text: await r.text()};
+    }));
+    const a = document.createElement("a");
+    a.href = URL.createObjectURL(zip(dateien));
+    a.download = "tajweed-aufgaben.zip";
+    a.click();
+    setTimeout(() => URL.revokeObjectURL(a.href), 8000);
+    knopf.dataset.state = "fertig";
+    setTimeout(() => { knopf.dataset.state = ""; knopf.title = t.download; }, 2200);
+  } catch (e){
+    knopf.dataset.state = "";
+    knopf.title = t.failed;
+  }
+}
+$("download").addEventListener("click", () => { if (!FORT) ladeFort().then(herunterladen); else herunterladen(); });
 
 /* Das Handy soll auch auf niedrigen Fenstern ganz sichtbar bleiben. */
 function fit(){
@@ -814,9 +1019,11 @@ function fit(){
 window.addEventListener("resize", fit);
 
 $("solve").checked = S.solve;
+$("advTafkheem").checked = S.advTafkheem;
+$("advQalqala").checked = S.advQalqala;
 drawRail();
 fit();
-openLesson(S.lesson);
+openLesson(S.schluessel);
 </script>
 </body>
 </html>
