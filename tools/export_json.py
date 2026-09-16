@@ -59,7 +59,7 @@ KATALOG = {
     "mark_waqf_better_pause": {"mark_verse"},
     "mark_waqf_optional": {"mark_verse"},
 }
-MARKEN = {"yes", "no", "start", "mid", "end", "none", "-"}
+MARKEN = {"yes", "no", "start", "mid", "end", "none", "-"}   # feste Marken, kein Arabisch
 LATEIN = re.compile(r"[A-Za-zÄÖÜäöüß]")
 REIHE = ["id", "rule", "lesson", "task_type", "question_type", "question_id",
          "multiple", "modality", "sura", "verse", "subject", "items",
@@ -182,6 +182,8 @@ def pruefe(data):
                 continue
             if not re.fullmatch(rf"{x['id']}(_\d+|_prompt)?\.wav", au):
                 f(x, f"Audioname passt nicht zur ID: {au}")
+            if wo != "subject" and o.get("text") in MARKEN:
+                f(x, f"feste Marke {o['text']!r} mit Tondatei {au}")
 
         # Stellen
         for o in [subj] + opts + (x.get("items") or []):
