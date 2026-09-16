@@ -84,7 +84,7 @@ Anschließend wird jede Herleitung gegen den Antwortschlüssel geprüft: die
 Anzahl bei den Zählaufgaben, Ja/Nein, die Lage im Wort, die Vokale, die
 markierten Wörter. Geschrieben wird nur, was diese Probe besteht.
 
-Stand: 1108 Vorgabetexte geprüft, 403 bewusst leer, 249 nicht gegenprüfbar
+Stand: 1107 Vorgabetexte geprüft, 403 bewusst leer, 249 nicht gegenprüfbar
 (dort zählt die Regelherleitung), 0 offen. Dazu 1032 Optionen und Wortpaare.
 
 Die Probe hat zwölf Aufgaben mit unvollständigem Schlüssel gefunden — siehe den

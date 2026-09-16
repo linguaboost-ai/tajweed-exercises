@@ -7,7 +7,7 @@ Zwei statische Seiten aus einem Repository, Deployment über Vercel:
   „Lösungen anzeigen" und die Umschaltung Deutsch/Englisch. Sprache und
   Schalterstellung merkt sich der Browser. Die Aufgaben lädt die Seite aus
   `json/`; sie hält keine eigene Kopie.
-* **`/browser/`** — der Aufgabenbrowser zum Prüfen und Durchsuchen aller 2037
+* **`/browser/`** — der Aufgabenbrowser zum Prüfen und Durchsuchen aller 2036
   Aufgaben mit Filtern, Suche und Auffälligkeitsanzeige. Er trägt den
   Datensatz eingebettet; `json/` wird daraus erzeugt.
 * **`/fragen/`** — die 24 Fragestellungen zum Bearbeiten, jede mit einem
@@ -116,13 +116,21 @@ Formulierung steht in `questions.json` und wird von beiden Seiten gelesen.
     eine „1" zeigte, obwohl es keine Fundstelle gibt — der Hinweis fällt weg,
     wie bei allen anderen Aufgaben mit der Antwort 0.
 
+14. **Eine versehentliche Markieraufgabe beim Madd.** Aufgabe 2131 war das
+    einzige „Markiere jede Stelle im Vers" im ganzen Madd-Block — die
+    Lektionen 29–33 bestehen aus Ja/Nein und Zählen, Lektion 34 aus Zählen —,
+    und ihr „Vers" war das eine Wort الٓمٓ. Sie ist entfernt; Lektion 34 hat
+    damit sechzehn Aufgaben, der Datensatz 2036. Der Fragetext
+    `mark_rule_in_verse.madd` bleibt in `tools/questions.py` stehen und greift
+    wieder, sobald es solche Aufgaben gibt.
+
 ## Aufbau
 
     index.html          App-Vorschau (lädt die Aufgaben aus json/)
     browser/index.html  Aufgabenbrowser, mit dem Datensatz darin
     fragen/index.html   die Fragestellungen zum Bearbeiten
     questions.json      die Fragetexte, deutsch und englisch
-    json/               die 2037 Aufgaben nach dem Authoring Guide, 7 Dateien
+    json/               die 2036 Aufgaben nach dem Authoring Guide, 7 Dateien
     icons/              Logo und Favicon
     fonts/              Hausschrift (Hafs) und Amiri Quran für die Versnummer
     tools/              Korrekturskripte, angewandt auf browser/index.html

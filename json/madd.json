@@ -9949,33 +9949,5 @@
       2
     ],
     "pattern": "◌ٓ"
-  },
-  {
-    "id": 2131,
-    "rule": "madd",
-    "lesson": 34,
-    "task_type": "mark_verse",
-    "question_type": "mark_rule_in_verse",
-    "question_id": "mark_rule_in_verse.madd",
-    "modality": "audio",
-    "sura": 2,
-    "verse": 1,
-    "subject": {
-      "text": "الٓمٓ ١",
-      "spots": [
-        {
-          "start": 1,
-          "end": 5,
-          "text": "لٓمٓ"
-        }
-      ],
-      "audio": "2131.wav"
-    },
-    "options": [],
-    "answer": [
-      "لٓ",
-      "مٓ"
-    ],
-    "pattern": "◌ٓ"
   }
 ]

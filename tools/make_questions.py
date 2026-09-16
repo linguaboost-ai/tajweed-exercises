@@ -86,21 +86,23 @@ def katalog(alle):
     aus = []
     for i in reihe:
         teil = gruppiert.get(i, [])
+        if not teil:
+            continue          # Text bleibt in questions.py, bis es Aufgaben gibt
         de, en, wann = TEXTE[i]
         vor = alt.get(i, {})
-        bsp = einfachstes(teil) if teil else None
+        bsp = einfachstes(teil)
         aus.append({
             "id": i,
             "de": vor.get("de", de),
             "en": vor.get("en", en),
-            "question_type": teil[0]["question_type"] if teil else None,
+            "question_type": teil[0]["question_type"],
             "task_type": sorted({x["task_type"] for x in teil}),
             "note": wann,
             "rules": sorted({x["rule"] for x in teil}, key=list(RULE).index),
             "lessons": [min(x["lesson"] for x in teil),
-                        max(x["lesson"] for x in teil)] if teil else None,
+                        max(x["lesson"] for x in teil)],
             "count": len(teil),
-            "example": bsp["id"] if bsp else None,
+            "example": bsp["id"],
         })
     return aus, gruppiert
 
@@ -162,8 +164,11 @@ def seite(eintraege, gruppiert):
     alle = {x["id"]: x for xs in gruppiert.values() for x in xs}
     karten = []
     for titel, ids in GRUPPEN:
+        vorhanden = [i for i in ids if i in nach_id]
+        if not vorhanden:
+            continue
         karten.append(f'<h2>{html.escape(titel)}</h2>')
-        for i in ids:
+        for i in vorhanden:
             e, x = nach_id[i], alle[nach_id[i]["example"]]
             regeln = " · ".join(RULE[r] for r in e["rules"])
             a, b = e["lessons"]

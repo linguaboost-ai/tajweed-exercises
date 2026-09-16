@@ -342,25 +342,6 @@
       "example": 1740
     },
     {
-      "id": "mark_rule_in_verse.madd",
-      "de": "Markiere jede Stelle im Vers, an der länger als zwei Einheiten gedehnt wird.",
-      "en": "Mark every place in the verse prolonged longer than two counts.",
-      "question_type": "mark_rule_in_verse",
-      "task_type": [
-        "mark_verse"
-      ],
-      "note": "Dasselbe beim Madd.",
-      "rules": [
-        "madd"
-      ],
-      "lessons": [
-        34,
-        34
-      ],
-      "count": 1,
-      "example": 2131
-    },
-    {
       "id": "identify_waqf_sign",
       "de": "Welches Waqf-Zeichen steht in diesem Vers?",
       "en": "Which waqf sign is in this verse?",

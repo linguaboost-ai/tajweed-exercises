@@ -1,6 +1,6 @@
 # Aufgaben als JSON
 
-Sieben Dateien, eine je Lektionsblock, zusammen 2037 Aufgaben:
+Sieben Dateien, eine je Lektionsblock, zusammen 2036 Aufgaben:
 
 | Datei | Lektionen | Aufgaben |
 |---|---|---|
@@ -9,7 +9,7 @@ Sieben Dateien, eine je Lektionsblock, zusammen 2037 Aufgaben:
 | `idgham.json` | 15–21 | 288 |
 | `ikhfa-idgham.json` | 22–26 | 294 |
 | `iqlab.json` | 27–28 | 128 |
-| `madd.json` | 29–34 | 257 |
+| `madd.json` | 29–34 | 256 |
 | `waqf.json` | 35–40 | 176 |
 
 Jede Datei ist ein JSON-Array von Aufgabenobjekten nach dem Tajweed Exercise
