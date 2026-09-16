@@ -123,18 +123,14 @@ button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
 }
 .lesson:hover{background:var(--surface-2)}
 .lesson .no{
-  flex:none;width:22px;height:22px;border-radius:7px;background:var(--surface-2);
-  color:var(--ink-2);font-size:11px;font-weight:600;display:grid;place-items:center;
+  flex:none;width:22px;height:22px;border-radius:7px;background:var(--accent-soft);
+  color:var(--accent);font-size:11px;font-weight:600;display:grid;place-items:center;
   font-variant-numeric:tabular-nums;
 }
 .lesson .tt{font-size:12.5px;color:var(--ink-2);overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
 .lesson[aria-current="true"]{background:var(--accent);color:var(--accent-ink)}
-.lesson[aria-current="true"] .no{background:rgba(255,255,255,.22);color:#fff}
+.lesson[aria-current="true"] .no{background:rgba(255,255,255,.28);color:#fff}
 .lesson[aria-current="true"] .tt{color:#fff;font-weight:600}
-/* Eine zusammengefasste Lektion trägt ihre Nummer im Akzent — sie steht für
-   mehrere Lektionen des Lehrplans. */
-.lesson.fort .no{background:var(--accent-soft);color:var(--accent)}
-.lesson.fort[aria-current="true"] .no{background:rgba(255,255,255,.28);color:#fff}
 
 .railfoot{padding:0 6px;font-size:11.5px;color:var(--ink-3);line-height:1.5}
 .railfoot a{color:var(--accent);text-decoration:none;font-weight:600}
@@ -638,7 +634,7 @@ function drawRail(){
       box.append(el("div", "cap", `<span>${esc(b.name)}</span><b>${spanne}</b>`));
       nav.append(box);
     }
-    const btn = el("button", "lesson" + (e.fort ? " fort" : ""),
+    const btn = el("button", "lesson",
       `<span class="no">${e.nr}</span><span class="tt">${esc(e.titel(l))}</span>`);
     btn.type = "button";
     btn.setAttribute("aria-current", String(e.key === hier.key));

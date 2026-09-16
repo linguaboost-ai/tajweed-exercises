@@ -27,10 +27,12 @@ Aufgaben, mit denselben IDs und Tonaufnahmen, nur anders gebündelt:
 | Schalter | fasst zusammen | wird zu |
 |---|---|---|
 | Tafkheem fortgeschritten | Lektion 1–7 | `tafkheem-1-advanced` (64 Aufgaben) |
-| Qalqalah fortgeschritten | Lektion 10–14 | `qalqala-1-advanced` (im Wort) und `qalqala-2-advanced` (im Vers) |
+| Qalqalah fortgeschritten | Lektion 10–14 | `qalqala-1-advanced` (im Wort, 64 Aufgaben) und `qalqala-2-advanced` (am Versende, 40) |
 
 Beide sind voreingestellt an; dann hat der Lehrplan 31 statt 40 Lektionen und
-die Nummerierung rückt auf. `advanced.json` sagt, welche Aufgaben zu welcher
+die Nummerierung rückt auf. Die Versende-Lektion hat 40 statt 64 Aufgaben —
+mehr gibt der Vorrat nicht her, so viele Aufgaben handeln von der Qalqalah,
+die erst beim Anhalten am Versende entsteht. `advanced.json` sagt, welche Aufgaben zu welcher
 zusammengefassten Lektion gehören, `tools/make_advanced.py` stellt sie
 zusammen und `json/*-advanced.json` sind die fertigen Dateien.
 

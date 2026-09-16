@@ -112,31 +112,39 @@
     ]
   },
   {
-    "id": 585,
+    "id": 583,
     "rule": "qalqala",
     "lesson": 10,
-    "task_type": "yes_no",
-    "question_type": "has_rule",
-    "question_id": "has_rule.word",
+    "task_type": "select_count",
+    "question_type": "count_rule",
+    "question_id": "count_rule",
     "modality": "audio",
-    "sura": null,
-    "verse": null,
+    "sura": 26,
+    "verse": 80,
     "subject": {
-      "text": "رِضْوَانٌ",
-      "audio": "585.wav"
+      "text": "وَإِذَا مَرِضْتُ فَهُوَ يَشْفِينِ ٨٠",
+      "audio": "583.wav"
     },
     "options": [
       {
         "id": 1,
-        "text": "yes"
+        "text": "0"
       },
       {
         "id": 2,
-        "text": "no"
+        "text": "1"
+      },
+      {
+        "id": 3,
+        "text": "2"
+      },
+      {
+        "id": 4,
+        "text": "3"
       }
     ],
     "answer": [
-      2
+      1
     ]
   },
   {
@@ -252,6 +260,42 @@
     ]
   },
   {
+    "id": 591,
+    "rule": "qalqala",
+    "lesson": 10,
+    "task_type": "select_count",
+    "question_type": "count_rule",
+    "question_id": "count_rule",
+    "modality": "audio",
+    "sura": 83,
+    "verse": 24,
+    "subject": {
+      "text": "تَعْرِفُ فِى وُجُوهِهِمْ نَضْرَةَ ٱلنَّعِيمِ ٢٤",
+      "audio": "591.wav"
+    },
+    "options": [
+      {
+        "id": 1,
+        "text": "0"
+      },
+      {
+        "id": 2,
+        "text": "1"
+      },
+      {
+        "id": 3,
+        "text": "2"
+      },
+      {
+        "id": 4,
+        "text": "3"
+      }
+    ],
+    "answer": [
+      1
+    ]
+  },
+  {
     "id": 593,
     "rule": "qalqala",
     "lesson": 10,
@@ -333,118 +377,6 @@
     "pattern": "◌ِدْ"
   },
   {
-    "id": 596,
-    "rule": "qalqala",
-    "lesson": 10,
-    "task_type": "matching",
-    "question_type": "match_pattern",
-    "question_id": "match_pattern",
-    "modality": "audio",
-    "sura": null,
-    "verse": null,
-    "subject": null,
-    "items": [
-      {
-        "id": 1,
-        "text": "مَدْيَنَ",
-        "spots": [
-          {
-            "start": 2,
-            "end": 4,
-            "text": "دْ"
-          }
-        ],
-        "audio": "596_1.wav"
-      },
-      {
-        "id": 2,
-        "text": "إِدْرِيسَ",
-        "spots": [
-          {
-            "start": 2,
-            "end": 4,
-            "text": "دْ"
-          }
-        ],
-        "audio": "596_2.wav"
-      },
-      {
-        "id": 3,
-        "text": "هُدْهُدَ",
-        "spots": [
-          {
-            "start": 2,
-            "end": 4,
-            "text": "دْ"
-          }
-        ],
-        "audio": "596_3.wav"
-      },
-      {
-        "id": 4,
-        "text": "تَضْلِيلٍ",
-        "audio": "596_4.wav"
-      }
-    ],
-    "options": [
-      {
-        "id": 1,
-        "text": "◌َدْ",
-        "spots": [
-          {
-            "start": 2,
-            "end": 4,
-            "text": "دْ"
-          }
-        ]
-      },
-      {
-        "id": 2,
-        "text": "◌ِدْ",
-        "spots": [
-          {
-            "start": 2,
-            "end": 4,
-            "text": "دْ"
-          }
-        ]
-      },
-      {
-        "id": 3,
-        "text": "◌ُدْ",
-        "spots": [
-          {
-            "start": 2,
-            "end": 4,
-            "text": "دْ"
-          }
-        ]
-      },
-      {
-        "id": 4,
-        "text": "-"
-      }
-    ],
-    "answer": [
-      {
-        "item": 1,
-        "option": 1
-      },
-      {
-        "item": 2,
-        "option": 2
-      },
-      {
-        "item": 3,
-        "option": 3
-      },
-      {
-        "item": 4,
-        "option": 4
-      }
-    ]
-  },
-  {
     "id": 601,
     "rule": "qalqala",
     "lesson": 10,
@@ -473,301 +405,53 @@
     ]
   },
   {
-    "id": 604,
+    "id": 613,
     "rule": "qalqala",
     "lesson": 10,
-    "task_type": "matching",
-    "question_type": "match_pattern",
-    "question_id": "match_pattern",
+    "task_type": "select_count",
+    "question_type": "count_rule",
+    "question_id": "count_rule",
     "modality": "audio",
-    "sura": null,
-    "verse": null,
-    "subject": null,
-    "items": [
-      {
-        "id": 1,
-        "text": "رَدَدْنَا",
-        "spots": [
-          {
-            "start": 4,
-            "end": 6,
-            "text": "دْ"
-          }
-        ],
-        "audio": "604_1.wav"
-      },
-      {
-        "id": 2,
-        "text": "صِدْقٍ",
-        "spots": [
-          {
-            "start": 2,
-            "end": 4,
-            "text": "دْ"
-          }
-        ],
-        "audio": "604_2.wav"
-      },
-      {
-        "id": 3,
-        "text": "مُدْخَلًا",
-        "spots": [
-          {
-            "start": 2,
-            "end": 4,
-            "text": "دْ"
-          }
-        ],
-        "audio": "604_3.wav"
-      },
-      {
-        "id": 4,
-        "text": "بَعْضُ",
-        "audio": "604_4.wav"
-      }
-    ],
-    "options": [
-      {
-        "id": 1,
-        "text": "◌َدْ",
-        "spots": [
-          {
-            "start": 2,
-            "end": 4,
-            "text": "دْ"
-          }
-        ]
-      },
-      {
-        "id": 2,
-        "text": "◌ِدْ",
-        "spots": [
-          {
-            "start": 2,
-            "end": 4,
-            "text": "دْ"
-          }
-        ]
-      },
-      {
-        "id": 3,
-        "text": "◌ُدْ",
-        "spots": [
-          {
-            "start": 2,
-            "end": 4,
-            "text": "دْ"
-          }
-        ]
-      },
-      {
-        "id": 4,
-        "text": "-"
-      }
-    ],
-    "answer": [
-      {
-        "item": 1,
-        "option": 1
-      },
-      {
-        "item": 2,
-        "option": 2
-      },
-      {
-        "item": 3,
-        "option": 3
-      },
-      {
-        "item": 4,
-        "option": 4
-      }
-    ]
-  },
-  {
-    "id": 610,
-    "rule": "qalqala",
-    "lesson": 10,
-    "task_type": "select",
-    "question_type": "vowel_before_letter",
-    "question_id": "vowel_before_letter",
-    "multiple": false,
-    "modality": "audio",
-    "sura": null,
-    "verse": null,
+    "sura": 68,
+    "verse": 9,
     "subject": {
-      "text": "عِدْلٌ",
+      "text": "وَدُّوا۟ لَوْ تُدْهِنُ فَيُدْهِنُونَ ٩",
       "spots": [
         {
-          "start": 2,
-          "end": 4,
+          "start": 16,
+          "end": 18,
+          "text": "دْ"
+        },
+        {
+          "start": 27,
+          "end": 29,
           "text": "دْ"
         }
       ],
-      "audio": "610.wav"
+      "audio": "613.wav"
     },
     "options": [
       {
         "id": 1,
-        "text": "َ"
+        "text": "0"
       },
       {
         "id": 2,
-        "text": "ُ"
+        "text": "1"
       },
       {
         "id": 3,
-        "text": "ِ"
+        "text": "2"
       },
       {
         "id": 4,
-        "text": "none"
+        "text": "3"
       }
     ],
     "answer": [
       3
     ],
-    "pattern": "◌ِدْ"
-  },
-  {
-    "id": 612,
-    "rule": "qalqala",
-    "lesson": 10,
-    "task_type": "matching",
-    "question_type": "match_pattern",
-    "question_id": "match_pattern",
-    "modality": "audio",
-    "sura": null,
-    "verse": null,
-    "subject": null,
-    "items": [
-      {
-        "id": 1,
-        "text": "صَدْرِ",
-        "spots": [
-          {
-            "start": 2,
-            "end": 4,
-            "text": "دْ"
-          }
-        ],
-        "audio": "612_1.wav"
-      },
-      {
-        "id": 2,
-        "text": "قِدْمًا",
-        "spots": [
-          {
-            "start": 2,
-            "end": 4,
-            "text": "دْ"
-          }
-        ],
-        "audio": "612_2.wav"
-      },
-      {
-        "id": 3,
-        "text": "أَدْبَارَ",
-        "spots": [
-          {
-            "start": 2,
-            "end": 4,
-            "text": "دْ"
-          }
-        ],
-        "audio": "612_3.wav"
-      },
-      {
-        "id": 4,
-        "text": "أَفَضْتُمْ",
-        "audio": "612_4.wav"
-      }
-    ],
-    "options": [
-      {
-        "id": 1,
-        "text": "◌َدْ",
-        "spots": [
-          {
-            "start": 2,
-            "end": 4,
-            "text": "دْ"
-          }
-        ]
-      },
-      {
-        "id": 2,
-        "text": "◌ِدْ",
-        "spots": [
-          {
-            "start": 2,
-            "end": 4,
-            "text": "دْ"
-          }
-        ]
-      },
-      {
-        "id": 3,
-        "text": "◌ُدْ",
-        "spots": [
-          {
-            "start": 2,
-            "end": 4,
-            "text": "دْ"
-          }
-        ]
-      },
-      {
-        "id": 4,
-        "text": "-"
-      }
-    ],
-    "answer": [
-      {
-        "item": 1,
-        "option": 1
-      },
-      {
-        "item": 2,
-        "option": 2
-      },
-      {
-        "item": 3,
-        "option": 3
-      },
-      {
-        "item": 4,
-        "option": 4
-      }
-    ]
-  },
-  {
-    "id": 617,
-    "rule": "qalqala",
-    "lesson": 10,
-    "task_type": "yes_no",
-    "question_type": "has_rule",
-    "question_id": "has_rule.word",
-    "modality": "audio",
-    "sura": null,
-    "verse": null,
-    "subject": {
-      "text": "نَضْرَةً",
-      "audio": "617.wav"
-    },
-    "options": [
-      {
-        "id": 1,
-        "text": "yes"
-      },
-      {
-        "id": 2,
-        "text": "no"
-      }
-    ],
-    "answer": [
-      2
-    ]
+    "pattern": "ُدْ:ُدْ"
   },
   {
     "id": 618,
@@ -815,26 +499,26 @@
     "pattern": "◌ُدْ"
   },
   {
-    "id": 626,
+    "id": 630,
     "rule": "qalqala",
     "lesson": 10,
     "task_type": "select",
-    "question_type": "vowel_before_letter",
-    "question_id": "vowel_before_letter",
-    "multiple": false,
+    "question_type": "vowels_before_letter",
+    "question_id": "vowels_before_letter",
+    "multiple": true,
     "modality": "audio",
-    "sura": null,
-    "verse": null,
+    "sura": 89,
+    "verse": 30,
     "subject": {
-      "text": "خِدْنٍ",
+      "text": "وَٱدْخُلِى جَنَّتِى ٣٠",
       "spots": [
         {
-          "start": 2,
-          "end": 4,
+          "start": 3,
+          "end": 5,
           "text": "دْ"
         }
       ],
-      "audio": "626.wav"
+      "audio": "630.wav"
     },
     "options": [
       {
@@ -855,9 +539,143 @@
       }
     ],
     "answer": [
-      3
+      1
     ],
-    "pattern": "◌ِدْ"
+    "pattern": "َٱدْ"
+  },
+  {
+    "id": 632,
+    "rule": "qalqala",
+    "lesson": 10,
+    "task_type": "select",
+    "question_type": "vowels_before_letter",
+    "question_id": "vowels_before_letter",
+    "multiple": true,
+    "modality": "audio",
+    "sura": 96,
+    "verse": 17,
+    "subject": {
+      "text": "فَلْيَدْعُ نَادِيَهُ ١٧",
+      "spots": [
+        {
+          "start": 6,
+          "end": 8,
+          "text": "دْ"
+        }
+      ],
+      "audio": "632.wav"
+    },
+    "options": [
+      {
+        "id": 1,
+        "text": "َ"
+      },
+      {
+        "id": 2,
+        "text": "ُ"
+      },
+      {
+        "id": 3,
+        "text": "ِ"
+      },
+      {
+        "id": 4,
+        "text": "none"
+      }
+    ],
+    "answer": [
+      1
+    ],
+    "pattern": "َدْ"
+  },
+  {
+    "id": 637,
+    "rule": "qalqala",
+    "lesson": 10,
+    "task_type": "select_count",
+    "question_type": "count_rule",
+    "question_id": "count_rule",
+    "modality": "audio",
+    "sura": 96,
+    "verse": 18,
+    "subject": {
+      "text": "سَنَدْعُ ٱلزَّبَانِيَةَ ١٨",
+      "spots": [
+        {
+          "start": 4,
+          "end": 6,
+          "text": "دْ"
+        }
+      ],
+      "audio": "637.wav"
+    },
+    "options": [
+      {
+        "id": 1,
+        "text": "0"
+      },
+      {
+        "id": 2,
+        "text": "1"
+      },
+      {
+        "id": 3,
+        "text": "2"
+      },
+      {
+        "id": 4,
+        "text": "3"
+      }
+    ],
+    "answer": [
+      2
+    ],
+    "pattern": "َدْ"
+  },
+  {
+    "id": 638,
+    "rule": "qalqala",
+    "lesson": 10,
+    "task_type": "select",
+    "question_type": "vowels_before_letter",
+    "question_id": "vowels_before_letter",
+    "multiple": true,
+    "modality": "audio",
+    "sura": 100,
+    "verse": 2,
+    "subject": {
+      "text": "فَٱلْمُورِيَٰتِ قَدْحًا ٢",
+      "spots": [
+        {
+          "start": 18,
+          "end": 20,
+          "text": "دْ"
+        }
+      ],
+      "audio": "638.wav"
+    },
+    "options": [
+      {
+        "id": 1,
+        "text": "َ"
+      },
+      {
+        "id": 2,
+        "text": "ُ"
+      },
+      {
+        "id": 3,
+        "text": "ِ"
+      },
+      {
+        "id": 4,
+        "text": "none"
+      }
+    ],
+    "answer": [
+      1
+    ],
+    "pattern": "َدْ"
   },
   {
     "id": 644,
@@ -972,118 +790,6 @@
     ]
   },
   {
-    "id": 652,
-    "rule": "qalqala",
-    "lesson": 11,
-    "task_type": "matching",
-    "question_type": "match_pattern",
-    "question_id": "match_pattern",
-    "modality": "audio",
-    "sura": null,
-    "verse": null,
-    "subject": null,
-    "items": [
-      {
-        "id": 1,
-        "text": "حَبْلٌ",
-        "spots": [
-          {
-            "start": 2,
-            "end": 4,
-            "text": "بْ"
-          }
-        ],
-        "audio": "652_1.wav"
-      },
-      {
-        "id": 2,
-        "text": "شِبْهِ",
-        "spots": [
-          {
-            "start": 2,
-            "end": 4,
-            "text": "بْ"
-          }
-        ],
-        "audio": "652_2.wav"
-      },
-      {
-        "id": 3,
-        "text": "قُبْلًا",
-        "spots": [
-          {
-            "start": 2,
-            "end": 4,
-            "text": "بْ"
-          }
-        ],
-        "audio": "652_3.wav"
-      },
-      {
-        "id": 4,
-        "text": "يَلْعَبُ",
-        "audio": "652_4.wav"
-      }
-    ],
-    "options": [
-      {
-        "id": 1,
-        "text": "◌َبْ",
-        "spots": [
-          {
-            "start": 2,
-            "end": 4,
-            "text": "بْ"
-          }
-        ]
-      },
-      {
-        "id": 2,
-        "text": "◌ِبْ",
-        "spots": [
-          {
-            "start": 2,
-            "end": 4,
-            "text": "بْ"
-          }
-        ]
-      },
-      {
-        "id": 3,
-        "text": "◌ُبْ",
-        "spots": [
-          {
-            "start": 2,
-            "end": 4,
-            "text": "بْ"
-          }
-        ]
-      },
-      {
-        "id": 4,
-        "text": "-"
-      }
-    ],
-    "answer": [
-      {
-        "item": 1,
-        "option": 1
-      },
-      {
-        "item": 2,
-        "option": 2
-      },
-      {
-        "item": 3,
-        "option": 3
-      },
-      {
-        "item": 4,
-        "option": 4
-      }
-    ]
-  },
-  {
     "id": 657,
     "rule": "qalqala",
     "lesson": 11,
@@ -1120,264 +826,104 @@
     "pattern": "◌َبْ"
   },
   {
-    "id": 660,
+    "id": 669,
     "rule": "qalqala",
     "lesson": 11,
-    "task_type": "matching",
-    "question_type": "match_pattern",
-    "question_id": "match_pattern",
+    "task_type": "select_count",
+    "question_type": "count_rule",
+    "question_id": "count_rule",
     "modality": "audio",
-    "sura": null,
-    "verse": null,
-    "subject": null,
-    "items": [
-      {
-        "id": 1,
-        "text": "عَبْدُ",
-        "spots": [
-          {
-            "start": 2,
-            "end": 4,
-            "text": "بْ"
-          }
-        ],
-        "audio": "660_1.wav"
-      },
-      {
-        "id": 2,
-        "text": "صِبْغَةَ",
-        "spots": [
-          {
-            "start": 2,
-            "end": 4,
-            "text": "بْ"
-          }
-        ],
-        "audio": "660_2.wav"
-      },
-      {
-        "id": 3,
-        "text": "سُبْلَنَا",
-        "spots": [
-          {
-            "start": 2,
-            "end": 4,
-            "text": "بْ"
-          }
-        ],
-        "audio": "660_3.wav"
-      },
-      {
-        "id": 4,
-        "text": "سُلْطَانٍ",
-        "audio": "660_4.wav"
-      }
-    ],
-    "options": [
-      {
-        "id": 1,
-        "text": "◌َبْ",
-        "spots": [
-          {
-            "start": 2,
-            "end": 4,
-            "text": "بْ"
-          }
-        ]
-      },
-      {
-        "id": 2,
-        "text": "◌ِبْ",
-        "spots": [
-          {
-            "start": 2,
-            "end": 4,
-            "text": "بْ"
-          }
-        ]
-      },
-      {
-        "id": 3,
-        "text": "◌ُبْ",
-        "spots": [
-          {
-            "start": 2,
-            "end": 4,
-            "text": "بْ"
-          }
-        ]
-      },
-      {
-        "id": 4,
-        "text": "-"
-      }
-    ],
-    "answer": [
-      {
-        "item": 1,
-        "option": 1
-      },
-      {
-        "item": 2,
-        "option": 2
-      },
-      {
-        "item": 3,
-        "option": 3
-      },
-      {
-        "item": 4,
-        "option": 4
-      }
-    ]
-  },
-  {
-    "id": 668,
-    "rule": "qalqala",
-    "lesson": 11,
-    "task_type": "matching",
-    "question_type": "match_pattern",
-    "question_id": "match_pattern",
-    "modality": "audio",
-    "sura": null,
-    "verse": null,
-    "subject": null,
-    "items": [
-      {
-        "id": 1,
-        "text": "أَبْوَابُ",
-        "spots": [
-          {
-            "start": 2,
-            "end": 4,
-            "text": "بْ"
-          }
-        ],
-        "audio": "668_1.wav"
-      },
-      {
-        "id": 2,
-        "text": "عِبْرَةً",
-        "spots": [
-          {
-            "start": 2,
-            "end": 4,
-            "text": "بْ"
-          }
-        ],
-        "audio": "668_2.wav"
-      },
-      {
-        "id": 3,
-        "text": "يُبْدِئُ",
-        "spots": [
-          {
-            "start": 2,
-            "end": 4,
-            "text": "بْ"
-          }
-        ],
-        "audio": "668_3.wav"
-      },
-      {
-        "id": 4,
-        "text": "عَلَيْهِمْ",
-        "audio": "668_4.wav"
-      }
-    ],
-    "options": [
-      {
-        "id": 1,
-        "text": "◌َبْ",
-        "spots": [
-          {
-            "start": 2,
-            "end": 4,
-            "text": "بْ"
-          }
-        ]
-      },
-      {
-        "id": 2,
-        "text": "◌ِبْ",
-        "spots": [
-          {
-            "start": 2,
-            "end": 4,
-            "text": "بْ"
-          }
-        ]
-      },
-      {
-        "id": 3,
-        "text": "◌ُبْ",
-        "spots": [
-          {
-            "start": 2,
-            "end": 4,
-            "text": "بْ"
-          }
-        ]
-      },
-      {
-        "id": 4,
-        "text": "-"
-      }
-    ],
-    "answer": [
-      {
-        "item": 1,
-        "option": 1
-      },
-      {
-        "item": 2,
-        "option": 2
-      },
-      {
-        "item": 3,
-        "option": 3
-      },
-      {
-        "item": 4,
-        "option": 4
-      }
-    ]
-  },
-  {
-    "id": 673,
-    "rule": "qalqala",
-    "lesson": 11,
-    "task_type": "yes_no",
-    "question_type": "has_rule",
-    "question_id": "has_rule.word",
-    "modality": "audio",
-    "sura": null,
-    "verse": null,
+    "sura": 68,
+    "verse": 5,
     "subject": {
-      "text": "صَبْرًا",
+      "text": "فَسَتُبْصِرُ وَيُبْصِرُونَ ٥",
       "spots": [
         {
-          "start": 2,
-          "end": 4,
+          "start": 6,
+          "end": 8,
+          "text": "بْ"
+        },
+        {
+          "start": 17,
+          "end": 19,
           "text": "بْ"
         }
       ],
-      "audio": "673.wav"
+      "audio": "669.wav"
     },
     "options": [
       {
         "id": 1,
-        "text": "yes"
+        "text": "0"
       },
       {
         "id": 2,
-        "text": "no"
+        "text": "1"
+      },
+      {
+        "id": 3,
+        "text": "2"
+      },
+      {
+        "id": 4,
+        "text": "3"
       }
     ],
     "answer": [
-      1
+      3
     ],
-    "pattern": "◌َبْ"
+    "pattern": "ُبْ:ُبْ"
+  },
+  {
+    "id": 670,
+    "rule": "qalqala",
+    "lesson": 11,
+    "task_type": "select",
+    "question_type": "vowels_before_letter",
+    "question_id": "vowels_before_letter",
+    "multiple": true,
+    "modality": "audio",
+    "sura": 37,
+    "verse": 175,
+    "subject": {
+      "text": "وَأَبْصِرْهُمْ فَسَوْفَ يُبْصِرُونَ ١٧٥",
+      "spots": [
+        {
+          "start": 4,
+          "end": 6,
+          "text": "بْ"
+        },
+        {
+          "start": 26,
+          "end": 28,
+          "text": "بْ"
+        }
+      ],
+      "audio": "670.wav"
+    },
+    "options": [
+      {
+        "id": 1,
+        "text": "َ"
+      },
+      {
+        "id": 2,
+        "text": "ُ"
+      },
+      {
+        "id": 3,
+        "text": "ِ"
+      },
+      {
+        "id": 4,
+        "text": "none"
+      }
+    ],
+    "answer": [
+      1,
+      2
+    ],
+    "pattern": "َبْ:ُبْ"
   },
   {
     "id": 674,
@@ -1425,6 +971,55 @@
     "pattern": "◌ِبْ"
   },
   {
+    "id": 677,
+    "rule": "qalqala",
+    "lesson": 11,
+    "task_type": "select_count",
+    "question_type": "count_rule",
+    "question_id": "count_rule",
+    "modality": "audio",
+    "sura": 47,
+    "verse": 31,
+    "subject": {
+      "text": "وَلَنَبْلُوَنَّكُمْ حَتَّىٰ نَعْلَمَ ٱلْمُجَٰهِدِينَ مِنكُمْ وَٱلصَّٰبِرِينَ وَنَبْلُوَا۟ أَخْبَارَكُمْ ٣١",
+      "spots": [
+        {
+          "start": 6,
+          "end": 8,
+          "text": "بْ"
+        },
+        {
+          "start": 81,
+          "end": 83,
+          "text": "بْ"
+        }
+      ],
+      "audio": "677.wav"
+    },
+    "options": [
+      {
+        "id": 1,
+        "text": "0"
+      },
+      {
+        "id": 2,
+        "text": "1"
+      },
+      {
+        "id": 3,
+        "text": "2"
+      },
+      {
+        "id": 4,
+        "text": "3"
+      }
+    ],
+    "answer": [
+      3
+    ],
+    "pattern": "َبْ:َبْ"
+  },
+  {
     "id": 681,
     "rule": "qalqala",
     "lesson": 11,
@@ -1451,87 +1046,6 @@
     "answer": [
       2
     ]
-  },
-  {
-    "id": 682,
-    "rule": "qalqala",
-    "lesson": 11,
-    "task_type": "select",
-    "question_type": "vowel_before_letter",
-    "question_id": "vowel_before_letter",
-    "multiple": false,
-    "modality": "audio",
-    "sura": null,
-    "verse": null,
-    "subject": {
-      "text": "حُبْوَى",
-      "spots": [
-        {
-          "start": 2,
-          "end": 4,
-          "text": "بْ"
-        }
-      ],
-      "audio": "682.wav"
-    },
-    "options": [
-      {
-        "id": 1,
-        "text": "َ"
-      },
-      {
-        "id": 2,
-        "text": "ُ"
-      },
-      {
-        "id": 3,
-        "text": "ِ"
-      },
-      {
-        "id": 4,
-        "text": "none"
-      }
-    ],
-    "answer": [
-      2
-    ],
-    "pattern": "◌ُبْ"
-  },
-  {
-    "id": 689,
-    "rule": "qalqala",
-    "lesson": 11,
-    "task_type": "yes_no",
-    "question_type": "has_rule",
-    "question_id": "has_rule.word",
-    "modality": "audio",
-    "sura": null,
-    "verse": null,
-    "subject": {
-      "text": "ضَبْحًا",
-      "spots": [
-        {
-          "start": 2,
-          "end": 4,
-          "text": "بْ"
-        }
-      ],
-      "audio": "689.wav"
-    },
-    "options": [
-      {
-        "id": 1,
-        "text": "yes"
-      },
-      {
-        "id": 2,
-        "text": "no"
-      }
-    ],
-    "answer": [
-      1
-    ],
-    "pattern": "◌َبْ"
   },
   {
     "id": 690,
@@ -1579,26 +1093,70 @@
     "pattern": "◌ِبْ"
   },
   {
-    "id": 698,
+    "id": 693,
     "rule": "qalqala",
     "lesson": 11,
-    "task_type": "select",
-    "question_type": "vowel_before_letter",
-    "question_id": "vowel_before_letter",
-    "multiple": false,
+    "task_type": "select_count",
+    "question_type": "count_rule",
+    "question_id": "count_rule",
     "modality": "audio",
-    "sura": null,
-    "verse": null,
+    "sura": 56,
+    "verse": 36,
     "subject": {
-      "text": "شِبْرًا",
+      "text": "فَجَعَلْنَٰهُنَّ أَبْكَارًا ٣٦",
       "spots": [
         {
-          "start": 2,
-          "end": 4,
+          "start": 19,
+          "end": 21,
           "text": "بْ"
         }
       ],
-      "audio": "698.wav"
+      "audio": "693.wav"
+    },
+    "options": [
+      {
+        "id": 1,
+        "text": "0"
+      },
+      {
+        "id": 2,
+        "text": "1"
+      },
+      {
+        "id": 3,
+        "text": "2"
+      },
+      {
+        "id": 4,
+        "text": "3"
+      }
+    ],
+    "answer": [
+      2
+    ],
+    "pattern": "َبْ"
+  },
+  {
+    "id": 694,
+    "rule": "qalqala",
+    "lesson": 11,
+    "task_type": "select",
+    "question_type": "vowels_before_letter",
+    "question_id": "vowels_before_letter",
+    "multiple": true,
+    "modality": "audio",
+    "sura": 79,
+    "verse": 3,
+    "subject": {
+      "text": "وَٱلسَّٰبِحَٰتِ سَبْحًا ٣",
+      "spots": [
+        {
+          "start": 18,
+          "end": 20,
+          "text": "بْ"
+        }
+      ],
+      "audio": "694.wav"
     },
     "options": [
       {
@@ -1619,9 +1177,54 @@
       }
     ],
     "answer": [
-      3
+      1
     ],
-    "pattern": "◌ِبْ"
+    "pattern": "َبْ"
+  },
+  {
+    "id": 696,
+    "rule": "qalqala",
+    "lesson": 11,
+    "task_type": "select",
+    "question_type": "vowels_before_letter",
+    "question_id": "vowels_before_letter",
+    "multiple": true,
+    "modality": "audio",
+    "sura": 79,
+    "verse": 4,
+    "subject": {
+      "text": "فَٱلسَّٰبِقَٰتِ سَبْقًا ٤",
+      "spots": [
+        {
+          "start": 18,
+          "end": 20,
+          "text": "بْ"
+        }
+      ],
+      "audio": "696.wav"
+    },
+    "options": [
+      {
+        "id": 1,
+        "text": "َ"
+      },
+      {
+        "id": 2,
+        "text": "ُ"
+      },
+      {
+        "id": 3,
+        "text": "ِ"
+      },
+      {
+        "id": 4,
+        "text": "none"
+      }
+    ],
+    "answer": [
+      1
+    ],
+    "pattern": "َبْ"
   },
   {
     "id": 700,
@@ -1722,40 +1325,48 @@
     ]
   },
   {
-    "id": 705,
+    "id": 701,
     "rule": "qalqala",
-    "lesson": 12,
-    "task_type": "yes_no",
-    "question_type": "has_rule",
-    "question_id": "has_rule.word",
+    "lesson": 11,
+    "task_type": "select_count",
+    "question_type": "count_rule",
+    "question_id": "count_rule",
     "modality": "audio",
-    "sura": null,
-    "verse": null,
+    "sura": 100,
+    "verse": 3,
     "subject": {
-      "text": "يَجْعَلُ",
+      "text": "فَٱلْمُغِيرَٰتِ صُبْحًا ٣",
       "spots": [
         {
-          "start": 2,
-          "end": 4,
-          "text": "جْ"
+          "start": 18,
+          "end": 20,
+          "text": "بْ"
         }
       ],
-      "audio": "705.wav"
+      "audio": "701.wav"
     },
     "options": [
       {
         "id": 1,
-        "text": "yes"
+        "text": "0"
       },
       {
         "id": 2,
-        "text": "no"
+        "text": "1"
+      },
+      {
+        "id": 3,
+        "text": "2"
+      },
+      {
+        "id": 4,
+        "text": "3"
       }
     ],
     "answer": [
-      1
+      2
     ],
-    "pattern": "◌َجْ"
+    "pattern": "ُبْ"
   },
   {
     "id": 706,
@@ -1915,77 +1526,40 @@
     ]
   },
   {
-    "id": 713,
+    "id": 711,
     "rule": "qalqala",
     "lesson": 12,
-    "task_type": "yes_no",
-    "question_type": "has_rule",
-    "question_id": "has_rule.word",
+    "task_type": "select_count",
+    "question_type": "count_rule",
+    "question_id": "count_rule",
     "modality": "audio",
-    "sura": null,
-    "verse": null,
+    "sura": 38,
+    "verse": 88,
     "subject": {
-      "text": "يَغْفِرْ",
-      "audio": "713.wav"
+      "text": "وَلَتَعْلَمُنَّ نَبَأَهُ بَعْدَ حِينٍ ٨٨",
+      "audio": "711.wav"
     },
     "options": [
       {
         "id": 1,
-        "text": "yes"
+        "text": "0"
       },
       {
         "id": 2,
-        "text": "no"
-      }
-    ],
-    "answer": [
-      2
-    ]
-  },
-  {
-    "id": 714,
-    "rule": "qalqala",
-    "lesson": 12,
-    "task_type": "select",
-    "question_type": "vowel_before_letter",
-    "question_id": "vowel_before_letter",
-    "multiple": false,
-    "modality": "audio",
-    "sura": null,
-    "verse": null,
-    "subject": {
-      "text": "حُجْرَةٍ",
-      "spots": [
-        {
-          "start": 2,
-          "end": 4,
-          "text": "جْ"
-        }
-      ],
-      "audio": "714.wav"
-    },
-    "options": [
-      {
-        "id": 1,
-        "text": "َ"
-      },
-      {
-        "id": 2,
-        "text": "ُ"
+        "text": "1"
       },
       {
         "id": 3,
-        "text": "ِ"
+        "text": "2"
       },
       {
         "id": 4,
-        "text": "none"
+        "text": "3"
       }
     ],
     "answer": [
-      2
-    ],
-    "pattern": "◌ُجْ"
+      1
+    ]
   },
   {
     "id": 716,
@@ -2100,6 +1674,42 @@
     ]
   },
   {
+    "id": 719,
+    "rule": "qalqala",
+    "lesson": 12,
+    "task_type": "select_count",
+    "question_type": "count_rule",
+    "question_id": "count_rule",
+    "modality": "audio",
+    "sura": 23,
+    "verse": 3,
+    "subject": {
+      "text": "وَٱلَّذِينَ هُمْ عَنِ ٱللَّغْوِ مُعْرِضُونَ ٣",
+      "audio": "719.wav"
+    },
+    "options": [
+      {
+        "id": 1,
+        "text": "0"
+      },
+      {
+        "id": 2,
+        "text": "1"
+      },
+      {
+        "id": 3,
+        "text": "2"
+      },
+      {
+        "id": 4,
+        "text": "3"
+      }
+    ],
+    "answer": [
+      1
+    ]
+  },
+  {
     "id": 721,
     "rule": "qalqala",
     "lesson": 12,
@@ -2136,264 +1746,26 @@
     "pattern": "◌َجْ"
   },
   {
-    "id": 724,
-    "rule": "qalqala",
-    "lesson": 12,
-    "task_type": "matching",
-    "question_type": "match_pattern",
-    "question_id": "match_pattern",
-    "modality": "audio",
-    "sura": null,
-    "verse": null,
-    "subject": null,
-    "items": [
-      {
-        "id": 1,
-        "text": "وَجْهَ",
-        "spots": [
-          {
-            "start": 2,
-            "end": 4,
-            "text": "جْ"
-          }
-        ],
-        "audio": "724_1.wav"
-      },
-      {
-        "id": 2,
-        "text": "إِجْرَامِي",
-        "spots": [
-          {
-            "start": 2,
-            "end": 4,
-            "text": "جْ"
-          }
-        ],
-        "audio": "724_2.wav"
-      },
-      {
-        "id": 3,
-        "text": "فُرُوجٍ",
-        "audio": "724_3.wav"
-      },
-      {
-        "id": 4,
-        "text": "بَغْتَةً",
-        "audio": "724_4.wav"
-      }
-    ],
-    "options": [
-      {
-        "id": 1,
-        "text": "◌َجْ",
-        "spots": [
-          {
-            "start": 2,
-            "end": 4,
-            "text": "جْ"
-          }
-        ]
-      },
-      {
-        "id": 2,
-        "text": "◌ِجْ",
-        "spots": [
-          {
-            "start": 2,
-            "end": 4,
-            "text": "جْ"
-          }
-        ]
-      },
-      {
-        "id": 3,
-        "text": "جٍ"
-      },
-      {
-        "id": 4,
-        "text": "-"
-      }
-    ],
-    "answer": [
-      {
-        "item": 1,
-        "option": 1
-      },
-      {
-        "item": 2,
-        "option": 2
-      },
-      {
-        "item": 3,
-        "option": 3
-      },
-      {
-        "item": 4,
-        "option": 4
-      }
-    ]
-  },
-  {
-    "id": 729,
-    "rule": "qalqala",
-    "lesson": 12,
-    "task_type": "yes_no",
-    "question_type": "has_rule",
-    "question_id": "has_rule.word",
-    "modality": "audio",
-    "sura": null,
-    "verse": null,
-    "subject": {
-      "text": "يَغْشَى",
-      "audio": "729.wav"
-    },
-    "options": [
-      {
-        "id": 1,
-        "text": "yes"
-      },
-      {
-        "id": 2,
-        "text": "no"
-      }
-    ],
-    "answer": [
-      2
-    ]
-  },
-  {
-    "id": 732,
-    "rule": "qalqala",
-    "lesson": 12,
-    "task_type": "matching",
-    "question_type": "match_pattern",
-    "question_id": "match_pattern",
-    "modality": "audio",
-    "sura": null,
-    "verse": null,
-    "subject": null,
-    "items": [
-      {
-        "id": 1,
-        "text": "مَجْنُونٌ",
-        "spots": [
-          {
-            "start": 2,
-            "end": 4,
-            "text": "جْ"
-          }
-        ],
-        "audio": "732_1.wav"
-      },
-      {
-        "id": 2,
-        "text": "هِجْرَةِ",
-        "spots": [
-          {
-            "start": 2,
-            "end": 4,
-            "text": "جْ"
-          }
-        ],
-        "audio": "732_2.wav"
-      },
-      {
-        "id": 3,
-        "text": "مُجْتَبَى",
-        "spots": [
-          {
-            "start": 2,
-            "end": 4,
-            "text": "جْ"
-          }
-        ],
-        "audio": "732_3.wav"
-      },
-      {
-        "id": 4,
-        "text": "يَعْلَمُ",
-        "audio": "732_4.wav"
-      }
-    ],
-    "options": [
-      {
-        "id": 1,
-        "text": "◌َجْ",
-        "spots": [
-          {
-            "start": 2,
-            "end": 4,
-            "text": "جْ"
-          }
-        ]
-      },
-      {
-        "id": 2,
-        "text": "◌ِجْ",
-        "spots": [
-          {
-            "start": 2,
-            "end": 4,
-            "text": "جْ"
-          }
-        ]
-      },
-      {
-        "id": 3,
-        "text": "◌ُجْ",
-        "spots": [
-          {
-            "start": 2,
-            "end": 4,
-            "text": "جْ"
-          }
-        ]
-      },
-      {
-        "id": 4,
-        "text": "-"
-      }
-    ],
-    "answer": [
-      {
-        "item": 1,
-        "option": 1
-      },
-      {
-        "item": 2,
-        "option": 2
-      },
-      {
-        "item": 3,
-        "option": 3
-      },
-      {
-        "item": 4,
-        "option": 4
-      }
-    ]
-  },
-  {
-    "id": 738,
+    "id": 726,
     "rule": "qalqala",
     "lesson": 12,
     "task_type": "select",
-    "question_type": "vowel_before_letter",
-    "question_id": "vowel_before_letter",
-    "multiple": false,
+    "question_type": "vowels_before_letter",
+    "question_id": "vowels_before_letter",
+    "multiple": true,
     "modality": "audio",
-    "sura": null,
-    "verse": null,
+    "sura": 37,
+    "verse": 2,
     "subject": {
-      "text": "وِجْدَانِ",
+      "text": "فَٱلزَّٰجِرَٰتِ زَجْرًا ٢",
       "spots": [
         {
-          "start": 2,
-          "end": 4,
+          "start": 18,
+          "end": 20,
           "text": "جْ"
         }
       ],
-      "audio": "738.wav"
+      "audio": "726.wav"
     },
     "options": [
       {
@@ -2414,9 +1786,149 @@
       }
     ],
     "answer": [
+      1
+    ],
+    "pattern": "َجْ"
+  },
+  {
+    "id": 728,
+    "rule": "qalqala",
+    "lesson": 12,
+    "task_type": "select",
+    "question_type": "vowels_before_letter",
+    "question_id": "vowels_before_letter",
+    "multiple": true,
+    "modality": "audio",
+    "sura": 74,
+    "verse": 5,
+    "subject": {
+      "text": "وَٱلرُّجْزَ فَٱهْجُرْ ٥",
+      "spots": [
+        {
+          "start": 7,
+          "end": 9,
+          "text": "جْ"
+        }
+      ],
+      "audio": "728.wav"
+    },
+    "options": [
+      {
+        "id": 1,
+        "text": "َ"
+      },
+      {
+        "id": 2,
+        "text": "ُ"
+      },
+      {
+        "id": 3,
+        "text": "ِ"
+      },
+      {
+        "id": 4,
+        "text": "none"
+      }
+    ],
+    "answer": [
+      2
+    ],
+    "pattern": "ُجْ"
+  },
+  {
+    "id": 733,
+    "rule": "qalqala",
+    "lesson": 12,
+    "task_type": "select_count",
+    "question_type": "count_rule",
+    "question_id": "count_rule",
+    "modality": "audio",
+    "sura": 74,
+    "verse": 41,
+    "subject": {
+      "text": "عَنِ ٱلْمُجْرِمِينَ ٤١",
+      "spots": [
+        {
+          "start": 10,
+          "end": 12,
+          "text": "جْ"
+        }
+      ],
+      "audio": "733.wav"
+    },
+    "options": [
+      {
+        "id": 1,
+        "text": "0"
+      },
+      {
+        "id": 2,
+        "text": "1"
+      },
+      {
+        "id": 3,
+        "text": "2"
+      },
+      {
+        "id": 4,
+        "text": "3"
+      }
+    ],
+    "answer": [
+      2
+    ],
+    "pattern": "ُجْ"
+  },
+  {
+    "id": 742,
+    "rule": "qalqala",
+    "lesson": 12,
+    "task_type": "select",
+    "question_type": "vowels_before_letter",
+    "question_id": "vowels_before_letter",
+    "multiple": true,
+    "modality": "audio",
+    "sura": 26,
+    "verse": 95,
+    "subject": {
+      "text": "وَجُنُودُ إِبْلِيسَ أَجْمَعُونَ ٩٥",
+      "spots": [
+        {
+          "start": 12,
+          "end": 14,
+          "text": "بْ"
+        },
+        {
+          "start": 22,
+          "end": 24,
+          "text": "جْ"
+        }
+      ],
+      "audio": "742.wav"
+    },
+    "options": [
+      {
+        "id": 1,
+        "text": "َ"
+      },
+      {
+        "id": 2,
+        "text": "ُ"
+      },
+      {
+        "id": 3,
+        "text": "ِ"
+      },
+      {
+        "id": 4,
+        "text": "none"
+      }
+    ],
+    "answer": [
+      1,
       3
     ],
-    "pattern": "◌ِجْ"
+    "pattern": "ِبْ:َجْ"
   },
   {
     "id": 746,
@@ -2498,6 +2010,50 @@
       1
     ],
     "pattern": "◌َجْ"
+  },
+  {
+    "id": 757,
+    "rule": "qalqala",
+    "lesson": 12,
+    "task_type": "select_count",
+    "question_type": "count_rule",
+    "question_id": "count_rule",
+    "modality": "audio",
+    "sura": 81,
+    "verse": 22,
+    "subject": {
+      "text": "وَمَا صَاحِبُكُم بِمَجْنُونٍ ٢٢",
+      "spots": [
+        {
+          "start": 21,
+          "end": 23,
+          "text": "جْ"
+        }
+      ],
+      "audio": "757.wav"
+    },
+    "options": [
+      {
+        "id": 1,
+        "text": "0"
+      },
+      {
+        "id": 2,
+        "text": "1"
+      },
+      {
+        "id": 3,
+        "text": "2"
+      },
+      {
+        "id": 4,
+        "text": "3"
+      }
+    ],
+    "answer": [
+      2
+    ],
+    "pattern": "َجْ"
   },
   {
     "id": 770,
@@ -2685,51 +2241,6 @@
     ]
   },
   {
-    "id": 778,
-    "rule": "qalqala",
-    "lesson": 13,
-    "task_type": "select",
-    "question_type": "vowel_before_letter",
-    "question_id": "vowel_before_letter",
-    "multiple": false,
-    "modality": "audio",
-    "sura": null,
-    "verse": null,
-    "subject": {
-      "text": "لُقْمَانُ",
-      "spots": [
-        {
-          "start": 2,
-          "end": 4,
-          "text": "قْ"
-        }
-      ],
-      "audio": "778.wav"
-    },
-    "options": [
-      {
-        "id": 1,
-        "text": "َ"
-      },
-      {
-        "id": 2,
-        "text": "ُ"
-      },
-      {
-        "id": 3,
-        "text": "ِ"
-      },
-      {
-        "id": 4,
-        "text": "none"
-      }
-    ],
-    "answer": [
-      2
-    ],
-    "pattern": "◌ُقْ"
-  },
-  {
     "id": 780,
     "rule": "qalqala",
     "lesson": 13,
@@ -2870,94 +2381,40 @@
     ]
   },
   {
-    "id": 794,
+    "id": 799,
     "rule": "qalqala",
     "lesson": 13,
-    "task_type": "select",
-    "question_type": "vowel_before_letter",
-    "question_id": "vowel_before_letter",
-    "multiple": false,
+    "task_type": "select_count",
+    "question_type": "count_rule",
+    "question_id": "count_rule",
     "modality": "audio",
-    "sura": null,
-    "verse": null,
+    "sura": 26,
+    "verse": 209,
     "subject": {
-      "text": "مُقْسِطِينَ",
-      "spots": [
-        {
-          "start": 2,
-          "end": 4,
-          "text": "قْ"
-        }
-      ],
-      "audio": "794.wav"
+      "text": "ذِكْرَىٰ وَمَا كُنَّا ظَٰلِمِينَ ٢٠٩",
+      "audio": "799.wav"
     },
     "options": [
       {
         "id": 1,
-        "text": "َ"
+        "text": "0"
       },
       {
         "id": 2,
-        "text": "ُ"
+        "text": "1"
       },
       {
         "id": 3,
-        "text": "ِ"
+        "text": "2"
       },
       {
         "id": 4,
-        "text": "none"
+        "text": "3"
       }
     ],
     "answer": [
-      2
-    ],
-    "pattern": "◌ُقْ"
-  },
-  {
-    "id": 802,
-    "rule": "qalqala",
-    "lesson": 13,
-    "task_type": "select",
-    "question_type": "vowel_before_letter",
-    "question_id": "vowel_before_letter",
-    "multiple": false,
-    "modality": "audio",
-    "sura": null,
-    "verse": null,
-    "subject": {
-      "text": "إِقْرَارًا",
-      "spots": [
-        {
-          "start": 2,
-          "end": 4,
-          "text": "قْ"
-        }
-      ],
-      "audio": "802.wav"
-    },
-    "options": [
-      {
-        "id": 1,
-        "text": "َ"
-      },
-      {
-        "id": 2,
-        "text": "ُ"
-      },
-      {
-        "id": 3,
-        "text": "ِ"
-      },
-      {
-        "id": 4,
-        "text": "none"
-      }
-    ],
-    "answer": [
-      3
-    ],
-    "pattern": "◌ِقْ"
+      1
+    ]
   },
   {
     "id": 804,
@@ -3058,32 +2515,94 @@
     ]
   },
   {
-    "id": 809,
+    "id": 806,
     "rule": "qalqala",
     "lesson": 13,
-    "task_type": "yes_no",
-    "question_type": "has_rule",
-    "question_id": "has_rule.word",
+    "task_type": "select",
+    "question_type": "vowels_before_letter",
+    "question_id": "vowels_before_letter",
+    "multiple": true,
     "modality": "audio",
-    "sura": null,
-    "verse": null,
+    "sura": 52,
+    "verse": 5,
     "subject": {
-      "text": "يَكْتُمُ",
-      "audio": "809.wav"
+      "text": "وَٱلسَّقْفِ ٱلْمَرْفُوعِ ٥",
+      "spots": [
+        {
+          "start": 7,
+          "end": 9,
+          "text": "قْ"
+        }
+      ],
+      "audio": "806.wav"
     },
     "options": [
       {
         "id": 1,
-        "text": "yes"
+        "text": "َ"
       },
       {
         "id": 2,
-        "text": "no"
+        "text": "ُ"
+      },
+      {
+        "id": 3,
+        "text": "ِ"
+      },
+      {
+        "id": 4,
+        "text": "none"
       }
     ],
     "answer": [
-      2
-    ]
+      1
+    ],
+    "pattern": "َقْ"
+  },
+  {
+    "id": 808,
+    "rule": "qalqala",
+    "lesson": 13,
+    "task_type": "select",
+    "question_type": "vowels_before_letter",
+    "question_id": "vowels_before_letter",
+    "multiple": true,
+    "modality": "audio",
+    "sura": 78,
+    "verse": 8,
+    "subject": {
+      "text": "وَخَلَقْنَٰكُمْ أَزْوَٰجًا ٨",
+      "spots": [
+        {
+          "start": 6,
+          "end": 8,
+          "text": "قْ"
+        }
+      ],
+      "audio": "808.wav"
+    },
+    "options": [
+      {
+        "id": 1,
+        "text": "َ"
+      },
+      {
+        "id": 2,
+        "text": "ُ"
+      },
+      {
+        "id": 3,
+        "text": "ِ"
+      },
+      {
+        "id": 4,
+        "text": "none"
+      }
+    ],
+    "answer": [
+      1
+    ],
+    "pattern": "َقْ"
   },
   {
     "id": 810,
@@ -3131,138 +2650,129 @@
     "pattern": "◌ُقْ"
   },
   {
-    "id": 817,
+    "id": 815,
     "rule": "qalqala",
     "lesson": 13,
-    "task_type": "yes_no",
-    "question_type": "has_rule",
-    "question_id": "has_rule.word",
+    "task_type": "select_count",
+    "question_type": "count_rule",
+    "question_id": "count_rule",
     "modality": "audio",
-    "sura": null,
-    "verse": null,
+    "sura": 37,
+    "verse": 78,
     "subject": {
-      "text": "يَقْضِي",
-      "spots": [
-        {
-          "start": 2,
-          "end": 4,
-          "text": "قْ"
-        }
-      ],
-      "audio": "817.wav"
+      "text": "وَتَرَكْنَا عَلَيْهِ فِى ٱلْءَاخِرِينَ ٧٨",
+      "audio": "815.wav"
     },
     "options": [
       {
         "id": 1,
-        "text": "yes"
+        "text": "0"
       },
       {
         "id": 2,
-        "text": "no"
+        "text": "1"
+      },
+      {
+        "id": 3,
+        "text": "2"
+      },
+      {
+        "id": 4,
+        "text": "3"
+      }
+    ],
+    "answer": [
+      1
+    ]
+  },
+  {
+    "id": 822,
+    "rule": "qalqala",
+    "lesson": 13,
+    "task_type": "select",
+    "question_type": "vowels_before_letter",
+    "question_id": "vowels_before_letter",
+    "multiple": true,
+    "modality": "audio",
+    "sura": 90,
+    "verse": 15,
+    "subject": {
+      "text": "يَتِيمًا ذَا مَقْرَبَةٍ ١٥",
+      "spots": [
+        {
+          "start": 15,
+          "end": 17,
+          "text": "قْ"
+        }
+      ],
+      "audio": "822.wav"
+    },
+    "options": [
+      {
+        "id": 1,
+        "text": "َ"
+      },
+      {
+        "id": 2,
+        "text": "ُ"
+      },
+      {
+        "id": 3,
+        "text": "ِ"
+      },
+      {
+        "id": 4,
+        "text": "none"
       }
     ],
     "answer": [
       1
     ],
-    "pattern": "◌َقْ"
+    "pattern": "َقْ"
   },
   {
-    "id": 828,
+    "id": 829,
     "rule": "qalqala",
     "lesson": 13,
-    "task_type": "matching",
-    "question_type": "match_pattern",
-    "question_id": "match_pattern",
+    "task_type": "select_count",
+    "question_type": "count_rule",
+    "question_id": "count_rule",
     "modality": "audio",
-    "sura": null,
-    "verse": null,
-    "subject": null,
-    "items": [
-      {
-        "id": 1,
-        "text": "سَقْفًا",
-        "spots": [
-          {
-            "start": 2,
-            "end": 4,
-            "text": "قْ"
-          }
-        ],
-        "audio": "828_1.wav"
-      },
-      {
-        "id": 2,
-        "text": "اِقْتَدَى",
-        "spots": [
-          {
-            "start": 2,
-            "end": 4,
-            "text": "قْ"
-          }
-        ],
-        "audio": "828_2.wav"
-      },
-      {
-        "id": 3,
-        "text": "صَدِيقٍ",
-        "audio": "828_3.wav"
-      },
-      {
-        "id": 4,
-        "text": "عَمِيقٍ",
-        "audio": "828_4.wav"
-      }
-    ],
+    "sura": 91,
+    "verse": 15,
+    "subject": {
+      "text": "وَلَا يَخَافُ عُقْبَٰهَا ١٥",
+      "spots": [
+        {
+          "start": 16,
+          "end": 18,
+          "text": "قْ"
+        }
+      ],
+      "audio": "829.wav"
+    },
     "options": [
       {
         "id": 1,
-        "text": "◌َقْ",
-        "spots": [
-          {
-            "start": 2,
-            "end": 4,
-            "text": "قْ"
-          }
-        ]
+        "text": "0"
       },
       {
         "id": 2,
-        "text": "◌ِقْ",
-        "spots": [
-          {
-            "start": 2,
-            "end": 4,
-            "text": "قْ"
-          }
-        ]
+        "text": "1"
       },
       {
         "id": 3,
-        "text": "قٍ"
+        "text": "2"
       },
       {
         "id": 4,
-        "text": "قٍ"
+        "text": "3"
       }
     ],
     "answer": [
-      {
-        "item": 1,
-        "option": 1
-      },
-      {
-        "item": 2,
-        "option": 2
-      },
-      {
-        "item": 3,
-        "option": 3
-      },
-      {
-        "item": 4,
-        "option": 4
-      }
-    ]
+      2
+    ],
+    "pattern": "ُقْ"
   },
   {
     "id": 834,
@@ -3422,6 +2932,42 @@
     ]
   },
   {
+    "id": 839,
+    "rule": "qalqala",
+    "lesson": 14,
+    "task_type": "select_count",
+    "question_type": "count_rule",
+    "question_id": "count_rule",
+    "modality": "audio",
+    "sura": 84,
+    "verse": 4,
+    "subject": {
+      "text": "وَأَلْقَتْ مَا فِيهَا وَتَخَلَّتْ ٤",
+      "audio": "839.wav"
+    },
+    "options": [
+      {
+        "id": 1,
+        "text": "0"
+      },
+      {
+        "id": 2,
+        "text": "1"
+      },
+      {
+        "id": 3,
+        "text": "2"
+      },
+      {
+        "id": 4,
+        "text": "3"
+      }
+    ],
+    "answer": [
+      1
+    ]
+  },
+  {
     "id": 842,
     "rule": "qalqala",
     "lesson": 14,
@@ -3467,174 +3013,75 @@
     "pattern": "◌ُطْ"
   },
   {
-    "id": 844,
+    "id": 845,
     "rule": "qalqala",
     "lesson": 14,
-    "task_type": "matching",
-    "question_type": "match_pattern",
-    "question_id": "match_pattern",
+    "task_type": "select_count",
+    "question_type": "count_rule",
+    "question_id": "count_rule",
     "modality": "audio",
-    "sura": null,
-    "verse": null,
-    "subject": null,
-    "items": [
-      {
-        "id": 1,
-        "text": "شَطْطًا",
-        "spots": [
-          {
-            "start": 2,
-            "end": 4,
-            "text": "طْ"
-          }
-        ],
-        "audio": "844_1.wav"
-      },
-      {
-        "id": 2,
-        "text": "قِطْمِيرٍ",
-        "spots": [
-          {
-            "start": 2,
-            "end": 4,
-            "text": "طْ"
-          }
-        ],
-        "audio": "844_2.wav"
-      },
-      {
-        "id": 3,
-        "text": "خُطْوَاتِ",
-        "spots": [
-          {
-            "start": 2,
-            "end": 4,
-            "text": "طْ"
-          }
-        ],
-        "audio": "844_3.wav"
-      },
-      {
-        "id": 4,
-        "text": "أَتْمَمْتُ",
-        "audio": "844_4.wav"
-      }
-    ],
-    "options": [
-      {
-        "id": 1,
-        "text": "◌َطْ",
-        "spots": [
-          {
-            "start": 2,
-            "end": 4,
-            "text": "طْ"
-          }
-        ]
-      },
-      {
-        "id": 2,
-        "text": "◌ِطْ",
-        "spots": [
-          {
-            "start": 2,
-            "end": 4,
-            "text": "طْ"
-          }
-        ]
-      },
-      {
-        "id": 3,
-        "text": "◌ُطْ",
-        "spots": [
-          {
-            "start": 2,
-            "end": 4,
-            "text": "طْ"
-          }
-        ]
-      },
-      {
-        "id": 4,
-        "text": "-"
-      }
-    ],
-    "answer": [
-      {
-        "item": 1,
-        "option": 1
-      },
-      {
-        "item": 2,
-        "option": 2
-      },
-      {
-        "item": 3,
-        "option": 3
-      },
-      {
-        "item": 4,
-        "option": 4
-      }
-    ]
-  },
-  {
-    "id": 849,
-    "rule": "qalqala",
-    "lesson": 14,
-    "task_type": "yes_no",
-    "question_type": "has_rule",
-    "question_id": "has_rule.word",
-    "modality": "audio",
-    "sura": null,
-    "verse": null,
+    "sura": 71,
+    "verse": 14,
     "subject": {
-      "text": "قَطْعًا",
+      "text": "وَقَدْ خَلَقَكُمْ أَطْوَارًا ١٤",
       "spots": [
         {
-          "start": 2,
-          "end": 4,
+          "start": 4,
+          "end": 6,
+          "text": "دْ"
+        },
+        {
+          "start": 20,
+          "end": 22,
           "text": "طْ"
         }
       ],
-      "audio": "849.wav"
+      "audio": "845.wav"
     },
     "options": [
       {
         "id": 1,
-        "text": "yes"
+        "text": "0"
       },
       {
         "id": 2,
-        "text": "no"
+        "text": "1"
+      },
+      {
+        "id": 3,
+        "text": "2"
+      },
+      {
+        "id": 4,
+        "text": "3"
       }
     ],
     "answer": [
-      1
+      3
     ],
-    "pattern": "◌َطْ"
+    "pattern": "َدْ:َطْ"
   },
   {
-    "id": 850,
+    "id": 846,
     "rule": "qalqala",
     "lesson": 14,
     "task_type": "select",
-    "question_type": "vowel_before_letter",
-    "question_id": "vowel_before_letter",
-    "multiple": false,
+    "question_type": "vowels_before_letter",
+    "question_id": "vowels_before_letter",
+    "multiple": true,
     "modality": "audio",
-    "sura": null,
-    "verse": null,
+    "sura": 100,
+    "verse": 5,
     "subject": {
-      "text": "خِطْبَةِ",
+      "text": "فَوَسَطْنَ بِهِۦ جَمْعًا ٥",
       "spots": [
         {
-          "start": 2,
-          "end": 4,
+          "start": 6,
+          "end": 8,
           "text": "طْ"
         }
       ],
-      "audio": "850.wav"
+      "audio": "846.wav"
     },
     "options": [
       {
@@ -3655,121 +3102,9 @@
       }
     ],
     "answer": [
-      3
+      1
     ],
-    "pattern": "◌ِطْ"
-  },
-  {
-    "id": 852,
-    "rule": "qalqala",
-    "lesson": 14,
-    "task_type": "matching",
-    "question_type": "match_pattern",
-    "question_id": "match_pattern",
-    "modality": "audio",
-    "sura": null,
-    "verse": null,
-    "subject": null,
-    "items": [
-      {
-        "id": 1,
-        "text": "عَطْشَانُ",
-        "spots": [
-          {
-            "start": 2,
-            "end": 4,
-            "text": "طْ"
-          }
-        ],
-        "audio": "852_1.wav"
-      },
-      {
-        "id": 2,
-        "text": "قِطْعًا",
-        "spots": [
-          {
-            "start": 2,
-            "end": 4,
-            "text": "طْ"
-          }
-        ],
-        "audio": "852_2.wav"
-      },
-      {
-        "id": 3,
-        "text": "نُطْعِمُ",
-        "spots": [
-          {
-            "start": 2,
-            "end": 4,
-            "text": "طْ"
-          }
-        ],
-        "audio": "852_3.wav"
-      },
-      {
-        "id": 4,
-        "text": "تَتْلُوا",
-        "audio": "852_4.wav"
-      }
-    ],
-    "options": [
-      {
-        "id": 1,
-        "text": "◌َطْ",
-        "spots": [
-          {
-            "start": 2,
-            "end": 4,
-            "text": "طْ"
-          }
-        ]
-      },
-      {
-        "id": 2,
-        "text": "◌ِطْ",
-        "spots": [
-          {
-            "start": 2,
-            "end": 4,
-            "text": "طْ"
-          }
-        ]
-      },
-      {
-        "id": 3,
-        "text": "◌ُطْ",
-        "spots": [
-          {
-            "start": 2,
-            "end": 4,
-            "text": "طْ"
-          }
-        ]
-      },
-      {
-        "id": 4,
-        "text": "-"
-      }
-    ],
-    "answer": [
-      {
-        "item": 1,
-        "option": 1
-      },
-      {
-        "item": 2,
-        "option": 2
-      },
-      {
-        "item": 3,
-        "option": 3
-      },
-      {
-        "item": 4,
-        "option": 4
-      }
-    ]
+    "pattern": "َطْ"
   },
   {
     "id": 857,
@@ -3800,26 +3135,36 @@
     ]
   },
   {
-    "id": 858,
+    "id": 870,
     "rule": "qalqala",
     "lesson": 14,
     "task_type": "select",
-    "question_type": "vowel_before_letter",
-    "question_id": "vowel_before_letter",
-    "multiple": false,
+    "question_type": "vowels_before_letter",
+    "question_id": "vowels_before_letter",
+    "multiple": true,
     "modality": "audio",
-    "sura": null,
-    "verse": null,
+    "sura": 18,
+    "verse": 91,
     "subject": {
-      "text": "يُطْبَعُ",
+      "text": "كَذَٰلِكَ وَقَدْ أَحَطْنَا بِمَا لَدَيْهِ خُبْرًا ٩١",
       "spots": [
         {
-          "start": 2,
-          "end": 4,
+          "start": 14,
+          "end": 16,
+          "text": "دْ"
+        },
+        {
+          "start": 21,
+          "end": 23,
           "text": "طْ"
+        },
+        {
+          "start": 44,
+          "end": 46,
+          "text": "بْ"
         }
       ],
-      "audio": "858.wav"
+      "audio": "870.wav"
     },
     "options": [
       {
@@ -3840,9 +3185,97 @@
       }
     ],
     "answer": [
-      2
+      2,
+      1
     ],
-    "pattern": "◌ُطْ"
+    "pattern": "َدْ:َطْ:ُبْ"
+  },
+  {
+    "id": 879,
+    "rule": "qalqala",
+    "lesson": 14,
+    "task_type": "select_count",
+    "question_type": "count_rule",
+    "question_id": "count_rule",
+    "modality": "audio",
+    "sura": 26,
+    "verse": 210,
+    "subject": {
+      "text": "وَمَا تَنَزَّلَتْ بِهِ ٱلشَّيَٰطِينُ ٢١٠",
+      "audio": "879.wav"
+    },
+    "options": [
+      {
+        "id": 1,
+        "text": "0"
+      },
+      {
+        "id": 2,
+        "text": "1"
+      },
+      {
+        "id": 3,
+        "text": "2"
+      },
+      {
+        "id": 4,
+        "text": "3"
+      }
+    ],
+    "answer": [
+      1
+    ]
+  },
+  {
+    "id": 880,
+    "rule": "qalqala",
+    "lesson": 14,
+    "task_type": "select",
+    "question_type": "vowels_before_letter",
+    "question_id": "vowels_before_letter",
+    "multiple": true,
+    "modality": "audio",
+    "sura": 18,
+    "verse": 68,
+    "subject": {
+      "text": "وَكَيْفَ تَصْبِرُ عَلَىٰ مَا لَمْ تُحِطْ بِهِۦ خُبْرًا ٦٨",
+      "spots": [
+        {
+          "start": 38,
+          "end": 40,
+          "text": "طْ"
+        },
+        {
+          "start": 49,
+          "end": 51,
+          "text": "بْ"
+        }
+      ],
+      "audio": "880.wav"
+    },
+    "options": [
+      {
+        "id": 1,
+        "text": "َ"
+      },
+      {
+        "id": 2,
+        "text": "ُ"
+      },
+      {
+        "id": 3,
+        "text": "ِ"
+      },
+      {
+        "id": 4,
+        "text": "none"
+      }
+    ],
+    "answer": [
+      2,
+      3
+    ],
+    "pattern": "ِطْ:ُبْ"
   },
   {
     "id": 881,
@@ -3864,42 +3297,6 @@
         }
       ],
       "audio": "881.wav"
-    },
-    "options": [
-      {
-        "id": 1,
-        "text": "yes"
-      },
-      {
-        "id": 2,
-        "text": "no"
-      }
-    ],
-    "answer": [
-      1
-    ],
-    "pattern": "◌َطْ"
-  },
-  {
-    "id": 889,
-    "rule": "qalqala",
-    "lesson": 14,
-    "task_type": "yes_no",
-    "question_type": "has_rule",
-    "question_id": "has_rule.word",
-    "modality": "audio",
-    "sura": null,
-    "verse": null,
-    "subject": {
-      "text": "بَطْنِ",
-      "spots": [
-        {
-          "start": 2,
-          "end": 4,
-          "text": "طْ"
-        }
-      ],
-      "audio": "889.wav"
     },
     "options": [
       {

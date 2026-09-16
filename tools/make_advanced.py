@@ -8,10 +8,10 @@ Dafür werden Lektionen zusammengefasst — aus denselben Aufgaben, mit denselbe
 IDs, nur anders gebündelt:
 
     tafkheem-1-advanced   Lektion 1–7 in einer (alle Tafkheem-Buchstaben)
-    qalqala-1-advanced    Lektion 10–14, die Aufgaben am einzelnen Wort
-    qalqala-2-advanced    Lektion 10–14, die Aufgaben am Vers — dort kommt das
-                          Versende ins Spiel, weil der letzte Buchstabe beim
-                          Anhalten sein Sukūn bekommt
+    qalqala-1-advanced    Lektion 10–14, die Qalqalah im Wort
+    qalqala-2-advanced    Lektion 10–14, die Qalqalah am Versende — also nur
+                          die Aufgaben, bei denen der letzte Buchstabe vor der
+                          Versnummer beim Anhalten sein Sukūn bekommt
 
 Ausgewogen heißt dabei: ungefähr gleich viele Aufgaben je Herkunftslektion,
 die Aufgabentypen im Verhältnis des Vorrats, und die Antworten flacher
@@ -206,16 +206,23 @@ def main() -> int:
     if any(not 1 <= x["lesson"] <= 7 for x in tafkheem):
         raise SystemExit("Tafkheem-Auswahl enthält Aufgaben außerhalb der Lektionen 1–7")
 
-    qalqala = [x for x in alle.values() if 10 <= x["lesson"] <= 14]
-    im_wort = [x for x in qalqala if not mit_versnummer(x)]
-    am_ende = [x for x in qalqala if mit_versnummer(x)]
-    # „An welcher Stelle im Wort?" fällt in beiden Lektionen weg: durch die
-    # Aufteilung steht die Antwort schon vorher fest — im Wort ist die
-    # Qalqalah immer in der Mitte (am Wortanfang gibt es kein Sukūn), am
-    # Versende immer am Ende. Alle 40 Aufgaben dieses Typs bestätigen das.
+    # Lektion 2 sind die Aufgaben, in denen die Qalqalah am Versende steht —
+    # nicht die, in denen irgendwo im Vers eine vorkommt. Alles andere gehört
+    # in Lektion 1, auch Verse ohne Fundstelle am Ende.
+    #
+    # „An welcher Stelle im Wort?" fällt in beiden weg: durch die Aufteilung
+    # steht die Antwort schon vorher fest — im Wort liegt die Qalqalah immer
+    # in der Mitte (am Wortanfang gibt es kein Sukūn), am Versende immer am
+    # Ende. Alle 40 Aufgaben dieses Typs bestätigen das ausnahmslos.
     ohne = ("position_in_word",)
-    q1 = waehle(im_wort, 64, range(10, 15), ohne=ohne)
-    q2 = waehle(am_ende, 64, range(10, 15), bevorzugt=am_versende, ohne=ohne)
+    qalqala = [x for x in alle.values() if 10 <= x["lesson"] <= 14
+               and x["question_id"] not in ohne]
+    am_ende = [x for x in qalqala if am_versende(x)]
+    im_wort = [x for x in qalqala if not am_versende(x)]
+    q1 = waehle(im_wort, 64, range(10, 15))
+    # Am Versende gibt der Vorrat nur diese Aufgaben her — hier ist nichts
+    # auszuwählen, es sind alle.
+    q2 = sorted(am_ende, key=lambda x: (x["lesson"], x["question_id"], x["id"]))
 
     lektionen = [
         {"id": "tafkheem-1-advanced", "group": "tafkheem", "block": "tafkheem",
@@ -228,8 +235,7 @@ def main() -> int:
          "tasks": sorted(x["id"] for x in q1)},
         {"id": "qalqala-2-advanced", "group": "qalqala", "block": "qalqala",
          "replaces": list(range(10, 15)),
-         "de": "Qalqalah im Vers und am Versende",
-         "en": "Qalqalah in the verse and at its end",
+         "de": "Qalqalah am Versende", "en": "Qalqalah at the end of the verse",
          "tasks": sorted(x["id"] for x in q2)},
     ]
     ZIEL.write_text(json.dumps({
@@ -243,7 +249,9 @@ def main() -> int:
     bericht("Tafkheem 1 (Lektion 1–7)", tafkheem)
     bericht("Qalqalah 1 (im Wort)", q1)
     bericht("Qalqalah 2 (am Versende)", q2)
-    print(f"\n  davon mit Fundstelle am Versende: {sum(1 for x in q2 if am_versende(x))} von {len(q2)}")
+    print(f"\n  Vorrat an Versende-Aufgaben insgesamt: "
+          f"{sum(1 for x in alle.values() if 10 <= x['lesson'] <= 14 and am_versende(x))}, "
+          f"davon brauchbar {len(am_ende)}")
     print(f"\n{ZIEL} geschrieben.")
     return 0
 
