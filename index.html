@@ -34,6 +34,7 @@
   --accent:#26247B; --accent-soft:#D0CCF0; --accent-ink:#FFFFFF; --ring:#5A5595;
   --gold:#B99F6F; --gold-soft:#E4DCC9; --teal:#00AAAD;
   --ok:#4E8A56; --ok-line:#63C36F; --ok-bg:#E9F1EE;
+  --an:#45A05A;            /* eingeschaltet — grün, damit es ins Auge fällt */
   --mark:#936515; --mark-line:#D19F49; --mark-bg:#F8F1DA;
   --radius:1rem; --radius-pill:9999px;
   --shadow:0 1px 2px rgba(54,54,54,.06), 0 10px 28px -20px rgba(38,36,123,.30);
@@ -105,8 +106,9 @@ button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
   content:"";position:absolute;top:2.5px;left:2.5px;width:18px;height:18px;border-radius:50%;
   background:#fff;box-shadow:0 1px 3px rgba(0,0,0,.28);transition:transform .18s;
 }
-.switch input:checked + .track{background:var(--accent)}
+.switch input:checked + .track{background:var(--an)}
 .switch input:checked + .track::after{transform:translateX(17px)}
+.switch input:checked ~ span:not(.track){color:var(--ink);font-weight:600}
 .switch input:focus-visible + .track{outline:2px solid var(--ring);outline-offset:2px}
 
 .lessons{display:flex;flex-direction:column;gap:14px;flex:1}
