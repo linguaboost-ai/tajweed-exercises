@@ -544,14 +544,26 @@ def option_spots(x, o):
         return []
     r = x["rule"]
     st = (x.get("subject") or {}).get("text") or ""
+    if x.get("task_type") == "match" and o.get("id") not in (x.get("answer") or []):
+        # Nur die richtigen Wörter werden eingefärbt. Sonst leuchtete auch ein
+        # Ablenker auf, in dem die Regel zwar im Wort selbst steckt, aber nicht
+        # in der Verbindung, nach der gefragt ist (1370 إِنْ + أَحْسَنْتُمْ).
+        return []
     if r in ("idgham", "ikhfa", "iqlab") and x.get("task_type") in ("match", "matching"):
         if st and st not in PLATZ:
-            komb = st + " " + ot
+            # Meist steht das Vorgabewort vorn; bei 1624 gehört es hinter das
+            # Auswahlwort (أَلَمْ يَأْتِكُم بَشِيرٌ). Beide Lesarten prüfen.
             v = len(st) + 1
-            sp = [(a - v, b - v) for a, b in nun_spots(komb, r) if a >= v or b > v]
+            sp = [(a - v, b - v) for a, b in nun_spots(st + " " + ot, r)
+                  if a >= v or b > v]
             sp = [(max(a, 0), b) for a, b in sp if b > 0]
             if sp:
                 return sp
+            sp = [(a, min(b, len(ot))) for a, b in nun_spots(ot + " " + st, r)
+                  if a < len(ot)]
+            if sp:
+                return sp
+            return []
         return nun_spots(ot, r)
     if r == "qalqala":
         return qalqala_spots(ot)

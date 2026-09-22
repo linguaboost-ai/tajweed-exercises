@@ -1522,6 +1522,13 @@
     "verse": null,
     "subject": {
       "text": "هُمْ",
+      "spots": [
+        {
+          "start": 2,
+          "end": 4,
+          "text": "مْ"
+        }
+      ],
       "audio": "931_prompt.wav"
     },
     "options": [
@@ -1553,7 +1560,7 @@
       }
     ],
     "answer": [
-      4
+      2
     ]
   },
   {
@@ -3533,6 +3540,13 @@
     "verse": null,
     "subject": {
       "text": "هُمْ",
+      "spots": [
+        {
+          "start": 2,
+          "end": 4,
+          "text": "مْ"
+        }
+      ],
       "audio": "1007_prompt.wav"
     },
     "options": [
@@ -3571,7 +3585,8 @@
       }
     ],
     "answer": [
-      4
+      2,
+      3
     ]
   },
   {
@@ -4062,6 +4077,13 @@
     "verse": null,
     "subject": {
       "text": "لَمْ",
+      "spots": [
+        {
+          "start": 2,
+          "end": 4,
+          "text": "مْ"
+        }
+      ],
       "audio": "1019_prompt.wav"
     },
     "options": [
@@ -4100,7 +4122,8 @@
       }
     ],
     "answer": [
-      4
+      2,
+      3
     ]
   },
   {
@@ -6152,12 +6175,12 @@
     "sura": null,
     "verse": null,
     "subject": {
-      "text": "قُرَّةُ عَيْنٍ لَّي",
+      "text": "قُرَّتُ عَيْنٍ لِّى",
       "spots": [
         {
           "start": 12,
           "end": 18,
-          "text": "نٍ لَّ"
+          "text": "نٍ لِّ"
         }
       ],
       "audio": "1090.wav"
@@ -9061,13 +9084,6 @@
       {
         "id": 4,
         "text": "مُهِينٌ",
-        "spots": [
-          {
-            "start": 0,
-            "end": 2,
-            "text": "مُ"
-          }
-        ],
         "audio": "1185_4.wav"
       },
       {
@@ -9235,7 +9251,7 @@
     "sura": null,
     "verse": null,
     "subject": {
-      "text": "غَشَاوَةٌ وَلَهُمْ",
+      "text": "غِشَٰوَةٌ وَلَهُمْ",
       "spots": [
         {
           "start": 7,
@@ -12455,37 +12471,16 @@
       {
         "id": 2,
         "text": "يَخْرُجَ",
-        "spots": [
-          {
-            "start": 0,
-            "end": 2,
-            "text": "يَ"
-          }
-        ],
         "audio": "1321_2.wav"
       },
       {
         "id": 3,
         "text": "يَذْهَبَ",
-        "spots": [
-          {
-            "start": 0,
-            "end": 2,
-            "text": "يَ"
-          }
-        ],
         "audio": "1321_3.wav"
       },
       {
         "id": 4,
         "text": "يَفْعَلَ",
-        "spots": [
-          {
-            "start": 0,
-            "end": 2,
-            "text": "يَ"
-          }
-        ],
         "audio": "1321_4.wav"
       },
       {
